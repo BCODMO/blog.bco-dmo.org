@@ -2,11 +2,14 @@
 layout: default
 ---
 
-<h1 class="title is-1 is-primary">{{ page.title }}</h1>
-<h5 class="title is-5">{{ page.author.name }}</h5>
-<p>{{ page.date | date_to_string }}</p>
+<h1 class="title is-1 is-primary padding-bot-1 margin-bot-1">{{ page.title }}</h1>
+{% if page.subtitle %}
+<h5 class="subtitle is-italic padding-bot-1">{{ page.subtitle }}</h5>
+{% endif %}
+<h5 class="title is-5 margin-top-1 margin-bot-0">{{ page.author.name }}</h5>
+<p class="margin-bot-1">{{ page.date | date_to_string }}</p>
 {% if page.keywords %}
-<p>
+<p class="margin-bot-1">
 {% for keyword in page.keywords %}
   <span class="tag">{{ keyword }}</span>
 {% endfor %}
