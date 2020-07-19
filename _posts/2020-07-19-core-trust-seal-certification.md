@@ -3,7 +3,8 @@ layout: post
 type: BlogPosting
 title: "BCO-DMO certified as a CoreTrustSeal Data Repository"
 subtitle: "Aww, snap we rolling now!"
-date: 2020-07-19
+publishDate: 2020-07-19
+lastModified: 2020-07-19 16:30:00
 description: "BCO-DMO was awarded the CoreeTrustSeal certification on July 13, 2020"
 published: true
 author: 
