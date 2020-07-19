@@ -1,0 +1,66 @@
+/* Accordion Used in FAQ */
+.accordion {
+    .accordion-section{
+        border: 1px solid $light-gray;
+        border-bottom: 0; 
+        &.is-active{
+            .accordion-body{
+                display:block;
+            }
+            .accordion-title a{
+                background:$lightest-gray;
+                border-left:3px solid $primary-color;
+                i{
+                    transform: rotate(180deg)
+                }
+            }
+        }
+        &:last-of-type{
+            border-bottom:1px solid $light-gray;
+        }
+    }
+
+    transition:all 0.1s ease-in-out;
+    .accordion-title{
+        padding:0;
+        font-weight:400;
+        font-size:1.3rem;
+        a{
+            display: block;
+            padding:.75rem 1.5rem;
+            color: $primary-color;
+            border-left:3px solid $lightest-gray;
+            i{
+                float:right;
+                margin-top:5px;
+            }
+            &:hover{
+                background:$lightest-gray;
+            }
+        }
+        &.is-active{
+            background:$primary-color;
+            a{color:#fff;}
+        }
+    }
+
+   .accordion-body {
+      border-top: 0; 
+      font-size: 12px;
+      display:none;
+      overflow:hidden;
+      &.is-active{
+          height:auto;
+      }
+      .content{
+          padding:1.5rem;
+
+          .title{
+              margin-bottom:.5rem;
+              &:not(:first-of-type){
+                margin-top:3rem;
+            }
+          }
+      }
+   }
+ }

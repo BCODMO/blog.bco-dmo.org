@@ -1,0 +1,255 @@
+/* Hero */
+.hero {
+    .subtitle{
+        color:$accent-color-med;
+    }
+    .title strong{
+        display:block;
+        font-weight:700;
+    }
+
+    &.is-primary{
+        .subtitle a{
+            color:#fff;
+            font-weight:700;
+            text-decoration: underline;
+            &:hover{text-decoration: none;}
+        }
+    } 
+    /* Custom Hero with Image BG for Contribute Data and more */
+    &.has-image-bg{
+        background-size:cover;
+        background-position:center center;
+        position:relative;
+        color:#fff;
+        .title{color:#fff;}
+        .subtitle{color:#fff;opacity:0.75;}
+        &:before{
+            position:absolute;
+            content:'';
+            display:block;
+            top:0;
+            z-index:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,0.25);
+        }
+
+        .tabs{
+            font-size:1.1rem;
+            text-transform:uppercase;
+            position:relative;
+            a{
+                padding:1rem 1.5rem;
+                border-radius:0;
+                background:rgba(255,255,255,0.15);
+                &:hover{
+                    background:rgba(255,255,255,0.3);
+                }
+            }
+            &.scrolled{
+                background:$primary-color;
+                width:100%;
+                opacity:1.0;
+                z-index:3;
+                position:fixed;
+                top:0;
+                box-shadow:1px 3px 18px rgba(0,0,0,0.2);
+            }
+        }
+    }
+}
+
+/* Custom Split Hero from Home page
+    -- Base component https://bulma.io/documentation/layout/hero/
+*/
+.hero.split-hero{
+    margin-bottom:5rem;
+    .hero-body{
+        padding:3rem;
+        .button{margin-bottom:1em;}
+    }
+    & > .columns > .column{padding-right:0;}
+}
+
+
+.split-hero-image{
+    width:100%;
+    height:450px;
+    background-size:cover !important;
+    padding:0;
+    box-shadow:3px 3px 18px rgba(0,0,0,0.2);
+    position: relative;
+    &:after{
+        /* Overlay so text is legible */
+        position:absolute;
+        content:'';
+        width:100%;
+        height:100%;
+        background:rgba(0,0,0,0.1);
+        z-index:0;
+    }
+
+    /* The 2 boxes on the home page splash */
+    .split-callout{
+        display:flex;
+        width:100%;
+        position:absolute;
+        bottom:.75rem;
+        right:.75rem;
+        z-index:9;
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.02) 100%);
+        padding-top:1.5rem;
+        .column{
+            color:#fff;
+            text-align:center;
+        }
+        .callout-icon{
+            font-size:2.5em;
+            opacity:0.8;
+            color:$primary-color-light;
+            margin:1rem auto;
+        }
+        h4{
+            font-weight:500;
+            font-size:1.4em;
+            color:$primary-color-light;
+            opacity:0.8;
+        }
+        .buttons{
+            margin:1rem auto .5rem;
+            justify-content: center;
+            width:100%;
+        }
+        .button{
+            background:transparent;
+            color:#fff;
+            border:none;
+            font-weight:700;
+            padding-left:.5rem;
+            padding-right:.5rem;
+            font-size:0.9em;
+            &:hover{
+                background:rgba(255,255,255,0.1);
+            }
+            &:first-of-type{margin-right:.5rem;}
+        }
+    }
+}
+
+@media screen and (max-width:1216px){
+    .hero.split-hero .hero-body{padding:1.5rem 1rem;}
+
+    .split-hero > .columns{
+        display:block;
+        & > .column{width:100%;}
+    }
+    .split-hero-image{
+        height:300px;
+        .split-callout{
+            display:flex;
+            width:100%;
+            right:0;
+            bottom:0;
+        }
+    }
+
+    .split-callout .column{
+        width:50%;
+    }
+    .split-callout h4{font-size:1.1em;}
+}
+@media screen and (max-width:768px){
+    .split-hero-image{
+        height:400px;
+        .split-callout.columns{
+            display:block;
+            .column{width:100%;}
+        }
+    }
+}
+.split-hero-image label{
+    position:absolute;
+    top:.75rem;
+    right:.75rem;
+    max-width:90%;
+    z-index:1;
+    background:rgba(0,0,0,0.5);
+    padding:.75rem 1rem;
+    color:#fff;
+    text-align:right;
+    opacity:0.5;
+    display:inline-block;
+    a{
+        color:#fff;
+        &:hover{
+            text-decoration: underline;
+            opacity: 1.0;
+        }
+    }
+}
+
+/*Contribute Data Ordered List */
+ol.instructions{
+    list-style:none;
+    counter-reset:custom-counter;
+    li{
+        counter-increment: custom-counter;
+        padding:1.5rem 3rem;
+        padding-left:5rem;
+        position:relative;
+        &:before{
+            content: counter(custom-counter)". ";
+            display:block;
+            float:left;
+            color:$primary-color;
+            font-size:3rem;
+            font-weight:300;
+           // background:$light-gray;
+            width:2rem;
+            height:2rem;
+            text-align:center;
+            line-height:2rem;
+            margin-left:-5rem;
+        }
+    }
+}
+
+/* Icon-showcase with bubbles from Home page */
+.showcase{
+    padding:1.5rem 0;
+    p{
+        margin-bottom:1.5rem;
+    }
+}
+.showcase-icon{
+    width:100px;
+    height:100px;
+    position: relative;
+    margin:0 auto;
+    .icon{
+        width:60px;
+        height:60px;
+        border-radius:50%;
+        background:$primary-color;
+        color:#fff;
+        z-index:1;
+        position: absolute;
+        left:20px;
+        font-size:2em;
+    }
+    &::before{
+        content:'';
+        position: absolute;
+        width:100%;
+        height:100%;
+        top:-30px;
+        right:-30px;
+        transform: scale(1.2);
+        display:block;
+        background:url('../img/bubbles-bg.png') no-repeat;
+        background-size:cover;
+        z-index:0;
+    }
+}

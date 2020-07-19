@@ -1,0 +1,129 @@
+/* Card Component 
+    -- Base component: https://bulma.io/documentation/components/card/
+*/
+.card{
+    box-shadow: 0 0.5em 1em .75em rgba(10, 10, 10, 0.05), 0 0px 0 1px rgba(10, 10, 10, 0.005);
+}
+
+.card-image .image.image-fit img{
+    object-fit:cover;
+}
+
+/* Search Result Cards */
+.search-results{
+    padding:0 .75rem;
+}
+.search-pagination{
+    padding:1.5rem;
+    margin-bottom:3rem;
+}
+@media screen and (min-width:1024px){
+    .search-results{
+        padding:0 1.5rem;
+    }
+}
+
+
+.card.result-card{
+    position:relative;
+    border:1px solid $lightest-gray;
+    width:100%;
+    height:100%;
+    margin-bottom:.75rem;
+    box-shadow:0 0.25em .5em -0.125em rgba(10,10,10,.05), 0 0 0 1px rgba(10,10,10,.01);
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .card-details{
+            display:flex;
+            align-items:flex-end;
+            margin-top:auto;
+            font-size:0.875rem;
+        }
+    }
+
+    .card-status{
+        position:absolute;
+        right:0;
+        border-radius:0;
+        .tag{
+            border-radius:0 0 0 4px;
+            i{font-size:1rem;margin-right:.5rem;}
+        }
+    }
+    .content{
+        margin-bottom:0;
+        color:$gray;
+        &  .title {
+            font-weight:700;
+            font-size:1.3rem;
+            width:100%;
+            padding:0;
+            margin-bottom:0;
+            display:block;
+            color:$accent-color-med;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2; /* number of lines to show */
+            &.is-small{
+                font-size:1rem;
+            }
+        }
+        p{
+            margin-top:.5rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        a:hover{cursor:pointer; text-decoration: underline;}
+    }
+    .columns{margin-bottom:0;margin-top:0;}
+    .column{padding-top:0;padding-bottom:0;}
+    &:hover{box-shadow:none;}
+}
+
+.is-condensed{
+
+    .card.result-card{
+        box-shadow:none;
+        border-color:$light-gray;
+        margin-bottom:0;
+        border-bottom:0;
+        &:hover{background-color:$lightest-gray;}
+        .card-content{
+            padding:1.5rem;
+        }
+        &:last-of-type{
+            border-bottom:1px solid $light-gray;
+        }
+    }
+}
+
+/* Collapsible Card */
+
+.card.is-collapsible .card-header:hover{
+    cursor:pointer;
+}
+.card.is-collapsible .card-header-title{
+    color:$accent-color-med;
+    font-size:1.25rem;
+}
+.card.is-collapsible .card-header-icon{font-size:2rem;}
+.card.is-collapsible .card-header .is-small{
+    font-size:0.85rem;
+    font-weight:400;
+}
+.card.is-collapsible .card-header .is-light{
+    color: $gray;
+}
+
+.card-header.has-icon-left > i{
+    display:flex;
+    align-self:center;
+    justify-content: center;
+    margin-left:1.5rem;
+    color:$accent-color;
+}

@@ -1,0 +1,24 @@
+/* Layout */
+.padded-section{
+    padding:5rem 0;
+}
+
+.container{
+    padding:0 1rem;
+    @media screen and (min-width:1024px){
+        padding:0;
+    }
+
+    &.is-padded{padding:3rem;}
+    &.offset-right{margin-right:0;}
+    &.offset-left{margin-left:0;}
+    &.is-fluid{
+        padding-left:1.5rem;
+        padding-right:1.5rem;
+    }
+    &.narrow-container{
+        max-width:800px;
+    }
+}
+
+.columns.is-equal-height > .column{display:flex;width:100%;}

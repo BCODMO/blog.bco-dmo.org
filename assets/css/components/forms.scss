@@ -1,0 +1,157 @@
+/* Form Elements */
+.control.has-icons-left .icon, .control.has-icons-right .icon{
+    height:3rem;
+}
+
+/* Add button after form element control */
+.control.has-appended-button{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    input{
+        max-width:calc(100% - 2.5rem);
+    }
+    .appended-button{
+        width:2.5rem;
+        text-align:center;
+    }
+}
+
+/* Custom Search with Category Dropdown for Dataset Search */
+.has-dropdown-left > input{
+    padding-left:150px;
+    border:none;
+    box-shadow:1px 3px 18px rgba(0,0,0,0.15);
+}
+
+.has-dropdown-left .is-left{
+    left:0;
+    top:0;
+    width:140px;
+    position:absolute;
+}
+
+.has-dropdown-left .is-left .select{
+    width:100%;
+}
+.control.has-dropdown-left .select select{
+    border-radius:4px 0 0 4px;
+    background:$primary-color;
+    border-color:$primary-color;
+    font-weight:bold;
+    color:#fff;
+    width:100%;
+}
+.has-dropdown-left .is-left .select::after{border-color:#fff;}
+
+/* Dataset Search with Dropdown */
+.dataset-search{
+    padding-left:.75rem;
+    padding-right:.75rem;
+    input{height:3em;}
+    .select select{
+        height:3em;
+        line-height:1;
+        padding-left:1rem;
+    }
+    .has-dropdown-left .is-left .select{height:3em;}
+    .control.has-icons-right .icon{
+        height:3em;
+        color:$gray; 
+        margin-right:.5rem;
+        z-index:0;
+    }
+    @media screen and (min-width:1024px){
+        padding-left:1.5rem;
+        padding-right:1.5rem;
+    }
+}
+
+    .dataset-search-facets{ 
+        padding:1rem 0;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: nowrap;
+        overflow:visible;
+        position:relative;
+        .search-facet{
+            margin-right:.5rem;
+        }
+        .dropdown-menu{ 
+            min-width:20rem; 
+            max-height:450px;
+            overflow:auto;
+            box-shadow:3px 3px 18px rgba(0,0,0,0.2);
+        }
+        .dropdown-item .checkbox{
+            display:flex;
+            min-height:2rem;
+            font-weight:500;
+            color:$accent-color;
+            align-items:center;
+        }
+        .show-all-button{
+            position:absolute;
+            z-index:1;
+            right:-1.5rem;
+            top:1rem;
+            height:3rem;
+            box-shadow:-.5em -1px .5em .5em rgba(255, 255, 255, 0.85) !important;
+        }
+        
+        //When facets are expanded to show all
+        &.expanded{
+            flex-wrap:wrap;
+            min-height:7rem;
+            .search-facet{margin-bottom:.5rem;}
+            .show-all-button{
+                bottom:0;
+                box-shadow:none !important;
+                top:auto;
+            }
+        }
+    }
+
+.dataset-search-facets-result{
+    padding:.5rem 0;
+    flex-wrap:wrap;
+    .title{
+        font-weight:400;
+        min-width:300px;
+        strong{font-weight:700;}
+    }
+}
+
+
+/* Facet-style dropdown filters */
+.search-facet {
+    text-transform:none; 
+    border-radius:4px;
+    height:3rem;
+    
+    .button.is-light{
+        border-radius:4px !important;
+        text-transform: none;
+        transition:all 0.1s;
+        max-width:200px;
+    }
+    .facet-label{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+
+    &.is-active{
+        .button.is-light{
+            background:$primary-color;
+            color:#fff;
+        }
+    }
+     &.is-selected{
+        .button.is-light{
+            font-weight:bold;
+            border:2px solid $primary-color;
+        }
+    }
+}

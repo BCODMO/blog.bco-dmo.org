@@ -1,0 +1,292 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap');
+$family-primary:'Lato', sans-serif;
+
+//Override defalt bulma colors, before Bulma import
+$primary: #4CA6B8;
+$link: #4CA6B8;
+$grey-darker:#0A2333;
+$grey-dark:#444;
+$grey: #8B9DA9;
+@import '../vendor/bulma/bulma.sass';
+@import 'settings/settings';
+@import 'components/components';
+
+html{
+    width:100%;
+    margin:0;
+    padding:0;
+    font-size:15px;
+    overflow-y:auto;
+}
+
+body, button{
+    font-size:15px;
+}
+
+/* Base Elements */
+*{transition:all 0.2s;}
+p{font-size:1rem;line-height:1.5;}
+strong{color:inherit}
+.button, .input, .textarea, .select select, .file-cta, .file-name{
+    height:3rem; //To match button height
+}
+
+/* Styled Checkbox */
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: 2.5rem;
+    font-size:1rem;
+    cursor: pointer;
+    line-height:2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    .checkmark {
+        position: absolute;
+        top: .3rem;
+        left: 0;
+        font-size: 2rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        background-color: whitesmoke;
+        border:1px solid $light-gray;
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+      }
+
+      &:hover input ~ .checkmark {
+        background-color: $light-gray;
+      }
+      input:checked {
+        ~ .checkmark {
+            background-color: $primary;
+            border-color:$primary;
+        }
+        ~ .checkmark:after {
+            display: block;
+        }
+      }
+      .checkmark:after {
+        left: .5rem;
+        top: .2rem;
+        width: .4rem;
+        height: .8rem;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+}
+
+/* BUTTONS */
+button{border:none;}
+.button{
+    border-radius:0;
+    height:3em;
+    padding-left:1.5em;
+    padding-right:1.5em;
+    text-transform: uppercase;
+    
+    &.is-primary{
+    background:$primary-color;
+    font-weight:700;
+    box-shadow:3px 3px 18px rgba(0,0,0,0.2);
+        &:hover{
+            background:var($primary-color-dark);
+            box-shadow:none;
+        }
+    }
+
+    &.is-light{
+        background-color: #f0f8f9;
+        color: $primary-color-dark;
+    }
+    &:active, &.is-active{
+        background:$lightest-gray;
+        border-color:$light-gray;
+    }
+}
+
+/* Button Groups */
+.field.is-grouped.is-right{
+    justify-content: flex-end;
+}
+.field.is-grouped.is-centered{
+    justify-content: center;
+}
+
+/* Form Elements */
+.select:not(.is-multiple){height:auto;}
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5{
+    color:$accent-color;
+}
+h1{
+    font-size:3.5rem;
+}
+h2{
+    font-size:2.8rem;
+}
+h3{
+    font-size:2rem;
+}
+h4{
+    font-size:1.5rem;
+}
+h5{
+    font-size:1rem;
+}
+
+.title.is-primary{
+    position:relative;
+    padding-bottom:1.5rem;
+    margin-bottom:3rem;
+    &:after{
+        content:'';
+        display:inline-block;
+        position:absolute;
+        bottom:0;
+        left:0;
+        width:70px;
+        height:5px;
+        background:$primary-color;
+    }
+}
+
+p.is-light, h1.is-light, h2.is-light, h3.is-light, h4.is-light, h5.is-light{color:$grey;}
+.subtitle{
+    color:$accent-color-med;
+}
+
+.pre-title{
+    font-size:0.85rem;
+    font-weight:700;
+    color:$grey-light;
+}
+
+
+
+/* Breadcrumbs 
+    -- Base Component: https://bulma.io/documentation/components/breadcrumb/
+*/
+.breadcrumb{
+    padding:.5rem 1rem;
+    border-bottom:1px solid $light-gray;
+    position:relative;
+}
+.breadcrumb a{color:$primary-color;}
+
+/* Right-aligned button, used for Expand Map button on Dataset Search */
+.breadcrumb-button-right{
+    position:absolute;
+    right:0;
+    top:.5rem;
+}
+.breadcrumb-button-right i{margin-right:.5rem;}
+
+/* Dropdown */
+.dropdown-menu{
+    min-width:15rem;
+}
+
+/* Tags */
+.tag:not(body){font-size:.9rem;}
+.tag.has-icons-left{
+    .fa{margin-right:.5rem;}
+}
+
+.tag.has-icons-right{
+    .fa{margin-left:.5rem;}
+}
+
+/* Tabs */
+.tabs li.is-active a{
+    color:$primary-color;
+    font-weight:700;
+    border-bottom-color:$primary-color
+}
+
+/* Footer */
+.footer{
+    background:$accent-color-dark;
+    color:$accent-color-light;
+
+    h4{
+        opacity:0.5;
+        margin-bottom:1.5rem;
+        color:$accent-color-light;
+    }
+    a{
+        opacity:1.0;
+        color:#fff;
+        font-weight:400;
+        &:hover{text-decoration: underline;}
+    }
+}
+
+/* Bar just beneath footer for NSF logo, etc. */
+.footer-bar{
+    background:$accent-color;
+    padding:1rem 0;
+    color:#fff;
+    overflow:hidden;
+    span{float:left;margin-top:.25rem;opacity:0.5;}
+    img{float:left; margin-right:1rem;}
+}
+
+/* Menu List */
+.menu-list a{
+    color:$primary-color;
+    font-weight: 700;
+}
+
+/* Menu Used in FAQ page */
+.menu{min-width:240px;margin-right:3rem;}
+
+ /* Map */
+ map{z-index:1;}
+
+.map-legend{
+    display:block;
+    margin-bottom:1rem;
+    font-size:0.85rem;
+    color:$grey;
+    text-align:center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Responsive Video Player */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+     
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
