@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Template for redesign of BCO-DMO website">
+    <meta name="author" content="{{ page.author }}">
+
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <!-- Bulma + BCO-DMO Core CSS -->
+    <link href="/assets/css/bco-dmo.css" rel="stylesheet"/>
+    <!-- FontAwesome -->
+    <link href="/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <!-- Navigation -->
+    <!-- Navbar Component -->
+    <div class="pre-navbar">
+      <div class="columns">
+        <div class="column is-two-thirds">Biological & Chemical Oceanography Data Management Office</div>
+        <div class="column has-text-right">
+          <button class="button is-primary"><i class="fa fa-file-text-o margin-right-1"></i> Data Management Plan</button>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html"><img src="/assets/img/BCO-DMO-LogoNew.svg" alt="BCO-DMO Logo" /></a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbar" class="navbar-menu">
+        <div class="navbar-end">
+          <!-- Access Data Navbar Item -->
+          <div class="navbar-item has-dropdown" id="AccessDataDropdown">
+              <a class="navbar-link">Access Data</a>
+              <!-- Custom Dropdown Menu -->
+              <div class="navbar-dropdown">
+                <div class="navbar-dropdown-content">
+                  <div class="navbar-dropdown-wrap">
+                    <div class="navbar-dropdown-label"><strong><i class="fa fa-database"></i></strong><span>ACCESS DATA</span></div>
+                    <ul class="menu-list">
+                      <li class="is-primary">
+                        <a href="dataset-search.html" onclick="openSearchCategory('Datasets')">
+                          <i class="fa fa-search margin-right-1"></i> Dataset Search
+                        </a>
+                      </li>
+                      <li>
+                        <div class="nested dropdown is-hoverable">
+                          <div class="dropdown-trigger" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <a><i class="fa fa-database margin-right-1"></i> Browse Catalog <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                          </div>
+                          <div class="dropdown-menu dropdown-menu-long" id="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                              <a href="dataset-search.html" class="dropdown-item">Datasets</a>
+                              <a class="dropdown-item" onclick="openSearchCategory('Deployments')">Deployments</a>
+                              <a class="dropdown-item" onclick="openSearchCategory('Projects')">Projects</a>
+                              <a class="dropdown-item" onclick="openSearchCategory('Programs')">Programs</a>
+                              <a class="dropdown-item" onclick="openSearchCategory('Instruments')">Instruments</a>
+                              <a class="dropdown-item" onclick="openSearchCategory('People')">People</a>
+                              <a class="dropdown-item" onclick="openSearchCategory('Parameters')">Parameters</a>
+                              <a class="dropdown-item" onclick="openSearchCategory('Awards')">Awards</a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="nested dropdown is-hoverable">
+                          <div class="dropdown-trigger" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <a>Access Data Help <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                          </div>
+                          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                              <a class="dropdown-item" href="faq.html#access">How to Access Data</a>
+                              <a class="dropdown-item">What is a Data Package?</a>
+                              <a class="dropdown-item">Access Data FAQ's</a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li><a>BCO-DMO API</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contribute/Submit Data Navbar Item -->
+            <div class="navbar-item has-dropdown" id="ContributeDataDropdown">
+              <a class="navbar-link">Submit Data</a>
+              <!-- Custom Dropdown Menu -->
+              <div class="navbar-dropdown">
+                <div class="navbar-dropdown-content">
+                  <div class="navbar-dropdown-wrap">
+                    <div class="navbar-dropdown-label"><strong><i class="fa fa-cloud-upload"></i></strong><span>SUBMIT DATA</span></div>
+                    <ul class="menu-list">
+                      <li><a href="submit-data.html"><i class="fa fa-cloud-upload margin-right-1"></i> Submit Data <small>Data Submission Guide & Data Templates</small></a></li>
+                      <li><a href="submit-data.html">Register Your Project</a></li>
+                      <li>
+                        <div class="nested dropdown is-hoverable">
+                          <div class="dropdown-trigger" aria-haspopup="true" aria-controls="dropdown-menu">
+                              <a>Metadata Forms <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                          </div>
+                          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                              <a class="dropdown-item">Program Metadata Form</a>
+                              <a class="dropdown-item">Project Metadata Form</a>
+                              <a class="dropdown-item">Deployment Metadata Form</a>
+                              <a class="dropdown-item">Dataset Metadata Form</a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="nested dropdown is-hoverable">
+                          <div class="dropdown-trigger" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <a>Funding <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                          </div>
+                          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                              <a class="dropdown-item">NSF Investigators</a>
+                              <a class="dropdown-item">GBMF Investigators</a>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- About Navbar Item -->
+            <div class="navbar-item has-dropdown" id="AboutDropdown">
+              <a class="navbar-link">About Us</a>
+              <!-- Custom Dropdown Menu -->
+              <div class="navbar-dropdown">
+                <div class="navbar-dropdown-content">
+                  <div class="navbar-dropdown-wrap">
+                    <div class="navbar-dropdown-label"><strong><i class="fa fa-info-circle"></i></strong><span>ABOUT US</span></div>
+                    <ul class="menu-list">
+                      <li><a href="about.html">About BCO-DMO</a></li>
+                      <li><a href="team.html">Meet the Team</a></li>
+                      <li><a>Publications</a></li>
+                      <li><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="navbar-item has-dropdown" id="ResourcesDropdown">
+              <a class="navbar-link">Resources</a>
+              <!-- Custom Dropdown Menu -->
+              <div class="navbar-dropdown">
+                <div class="navbar-dropdown-content">
+                  <div class="navbar-dropdown-wrap">
+                    <div class="navbar-dropdown-label"><strong><i class="fa fa-book"></i></strong><span>RESOURCES</span></div>
+                    <ul class="menu-list">
+                      <li><a>Education & Training</a></li>
+                      <li><a href="faq.html">FAQs</a></li>
+                      <li><a>Documentation <small>API's, User Guides</small></a></li>
+                      <li><a>Data Models</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="navbar-item navbar-item-icon toggle-search" ><i class="fa fa-search"></i></a>
+        </div>
+        <div class="navbar-search is-hidden">
+          <div class="search-group">
+            <input class="input" type="search" placeholder="Search BCO-DMO site content...">
+            <button class="button is-primary"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Page Content -->
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumb margin-bot-0" aria-label="breadcrumbs">
+      <ul class="container">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <!-- Loop through any previous pages -->
+        <li class="is-active"><a aria-current="page">Frequently Asked Questions</a></li>
+      </ul>
+    </nav>
+
+    {{ content }}
+
+    <!-- Questions/Contact Us Callout Section -->
+    <section class="padded-section bg-color-primary has-text-centered">
+      <img src="/assets/img/questions-icon.svg" />
+      <h1 class="is-1">Still have questions?</h1>
+      <div class="buttons margin-top-3">
+        <a href="#" class="button is-primary">CONTACT US</a>
+        <a href="#" class="button is-primary is-inverted is-outlined">Read FAQ's</a>
+      </div>
+    </section>
+
+    <div class="has-text-right">
+      <a href="#top" class="button is-text"><i class="fa fa-arrow-up margin-right-1"></i> TOP</a>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h4>Access Data</h4>
+            <ul>
+              <li><a>Dataset Search</a></li>
+              <li><a>Browse all Data</a></li>
+              <li><a>Access Data Help</a></li>
+              <li><a>BCO-DMO API</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Submit Data</h4>
+            <ul>
+              <li><a href="submit-data.html">Submit Data</a></li>
+              <li><a>Register your Project</a></li>
+              <li><a>Metadata Forms</a></li>
+              <li><a>Data Management Forms</a></li>
+              <li><a>NSF Investigators</a></li>
+              <li><a>GBMF Investigators</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>About Us</h4>
+            <ul>
+              <li><a href="about.html">About BCO-DMO</a></li>
+              <li><a href="team.html">Meet the Team</a></li>
+              <li><a>Contact Us</a></li>
+              <li><a>Media</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h4>Resources</h4>
+            <ul>
+              <li><a>Education & Training</a></li>
+              <li><a>FAQs</a></li>
+              <li><a>Documentation</a></li>
+              <li><a>Data Models</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bar">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <img src="/assets/img/NSF-White.png" style="width:60px;" />
+            <span>©2020 Biological and Chemical Oceanography Data Management Office.<br/> Funded by the U.S. National Science Foundation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="/assets/vendor/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/assets/js/bco-dmo-components.js"></script>
+    <!-- Google Analytics -->
+    {% if site.google_analytics %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google_analytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}
+  </body>
+</html>
