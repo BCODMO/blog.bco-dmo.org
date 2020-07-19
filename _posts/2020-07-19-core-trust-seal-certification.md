@@ -6,7 +6,9 @@ description: "BCO-DMO was awarded the CoreeTrustSeal certification on July 13, 2
 author: 
   name: Danie Kinkade
 date: 2020-07-19
-keywords: certification, repositories
+keywords: 
+  - certification
+  - repositories
 
 ---
 
