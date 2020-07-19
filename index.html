@@ -17,7 +17,7 @@ description: "Keeping you up to date with the latest happenings at the Biologica
         <div class="content">
           <p class="title is-4"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></p>
           {% if post.subtitle %}
-          <p class="subtitle is-6">{{ post.subtitle }}</p>
+          <p class="subtitle is-6 is-italic">{{ post.subtitle }}</p>
           {% endif %}
           <p class="subtitle is-6">{{ post.author.name }}</p>
           <time>{{ post.date | date_to_string }}</time>
