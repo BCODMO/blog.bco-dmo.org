@@ -1,5 +1,5 @@
 ---
-layout: pos
+layout: post
 type: BlogPosting
 title: "BCO-DMO certified as a CoreTrustSeal Data Repository"
 author: 
