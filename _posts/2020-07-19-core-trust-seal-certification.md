@@ -1,9 +1,12 @@
 ---
-layout: post
+layout: pos
+type: BlogPosting
 title: "BCO-DMO certified as a CoreTrustSeal Data Repository"
-author: Danie Kinkade
+author: 
+  name: Danie Kinkade
 date: 2020-07-19
-tags: certification, repositories
+keywords: certification, repositories
+
 ---
 
 Say something here
