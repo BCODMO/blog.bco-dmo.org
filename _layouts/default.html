@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Template for redesign of BCO-DMO website">
-    <meta name="author" content="{{ page.author }}">
+    <meta name="author" content="{{ page.author.name }}">
 
     <title>{{ page.title }} | {{ site.title }}</title>
 
@@ -48,7 +48,7 @@
                     <div class="navbar-dropdown-label"><strong><i class="fa fa-database"></i></strong><span>ACCESS DATA</span></div>
                     <ul class="menu-list">
                       <li class="is-primary">
-                        <a href="dataset-search.html" onclick="openSearchCategory('Datasets')">
+                        <a>
                           <i class="fa fa-search margin-right-1"></i> Dataset Search
                         </a>
                       </li>
@@ -59,7 +59,7 @@
                           </div>
                           <div class="dropdown-menu dropdown-menu-long" id="dropdown-menu" role="menu">
                             <div class="dropdown-content">
-                              <a href="dataset-search.html" class="dropdown-item">Datasets</a>
+                              <a class="dropdown-item">Datasets</a>
                               <a class="dropdown-item" onclick="openSearchCategory('Deployments')">Deployments</a>
                               <a class="dropdown-item" onclick="openSearchCategory('Projects')">Projects</a>
                               <a class="dropdown-item" onclick="openSearchCategory('Programs')">Programs</a>
@@ -78,7 +78,7 @@
                           </div>
                           <div class="dropdown-menu" id="dropdown-menu" role="menu">
                             <div class="dropdown-content">
-                              <a class="dropdown-item" href="faq.html#access">How to Access Data</a>
+                              <a class="dropdown-item">How to Access Data</a>
                               <a class="dropdown-item">What is a Data Package?</a>
                               <a class="dropdown-item">Access Data FAQ's</a>
                             </div>
@@ -101,8 +101,8 @@
                   <div class="navbar-dropdown-wrap">
                     <div class="navbar-dropdown-label"><strong><i class="fa fa-cloud-upload"></i></strong><span>SUBMIT DATA</span></div>
                     <ul class="menu-list">
-                      <li><a href="submit-data.html"><i class="fa fa-cloud-upload margin-right-1"></i> Submit Data <small>Data Submission Guide & Data Templates</small></a></li>
-                      <li><a href="submit-data.html">Register Your Project</a></li>
+                      <li><a><i class="fa fa-cloud-upload margin-right-1"></i> Submit Data <small>Data Submission Guide & Data Templates</small></a></li>
+                      <li><a>Register Your Project</a></li>
                       <li>
                         <div class="nested dropdown is-hoverable">
                           <div class="dropdown-trigger" aria-haspopup="true" aria-controls="dropdown-menu">
@@ -146,8 +146,8 @@
                   <div class="navbar-dropdown-wrap">
                     <div class="navbar-dropdown-label"><strong><i class="fa fa-info-circle"></i></strong><span>ABOUT US</span></div>
                     <ul class="menu-list">
-                      <li><a href="about.html">About BCO-DMO</a></li>
-                      <li><a href="team.html">Meet the Team</a></li>
+                      <li><a>About BCO-DMO</a></li>
+                      <li><a>Meet the Team</a></li>
                       <li><a>Publications</a></li>
                       <li><a>Contact Us</a></li>
                     </ul>
@@ -164,7 +164,7 @@
                     <div class="navbar-dropdown-label"><strong><i class="fa fa-book"></i></strong><span>RESOURCES</span></div>
                     <ul class="menu-list">
                       <li><a>Education & Training</a></li>
-                      <li><a href="faq.html">FAQs</a></li>
+                      <li><a>FAQs</a></li>
                       <li><a>Documentation <small>API's, User Guides</small></a></li>
                       <li><a>Data Models</a></li>
                     </ul>
@@ -189,7 +189,7 @@
         <li><a href="https://www.bco-dmo.org" aria-current="page">Home</a></li>
         <!-- Loop through any previous pages -->
         {% if page.type and page.type == "BlogPosting" %}
-        <li><a aria-current="page">Blog</a></li>
+        <li><a href="https://blog.bco-dmo.org"  aria-current="page">Blog</a></li>
         <li class="is-active"><a aria-current="page">{{ page.title }}</a></li>
         {% else %}
         <li class="is-active"><a aria-current="page">Blog</a></li>
@@ -202,9 +202,9 @@
     <!-- Questions/Contact Us Callout Section -->
     <section class="padded-section bg-color-primary has-text-centered">
       <img src="/assets/img/questions-icon.svg" />
-      <h1 class="is-1">Still have questions?</h1>
+      <h1 class="is-1">Have questions?</h1>
       <div class="buttons margin-top-3">
-        <a href="#" class="button is-primary">CONTACT US</a>
+        <a href="mailto:info@bco-dmo.org" class="button is-primary">CONTACT US</a>
         <a href="#" class="button is-primary is-inverted is-outlined">Read FAQ's</a>
       </div>
     </section>
@@ -227,7 +227,7 @@
           <div class="column">
             <h4>Submit Data</h4>
             <ul>
-              <li><a href="submit-data.html">Submit Data</a></li>
+              <li><a>Submit Data</a></li>
               <li><a>Register your Project</a></li>
               <li><a>Metadata Forms</a></li>
               <li><a>Data Management Forms</a></li>
@@ -238,8 +238,8 @@
           <div class="column">
             <h4>About Us</h4>
             <ul>
-              <li><a href="about.html">About BCO-DMO</a></li>
-              <li><a href="team.html">Meet the Team</a></li>
+              <li><a>About BCO-DMO</a></li>
+              <li><a>Meet the Team</a></li>
               <li><a>Contact Us</a></li>
               <li><a>Media</a></li>
             </ul>
