@@ -4,13 +4,12 @@ layout: default
 
 <div class="container margin-top-3 margin-bot-3">
   <h1 class="title is-1 is-primary">{{ page.title }}</h1>
-
-  <p>by <h5 class="title is-5">{{ page.author }}</h5></p>
+  <h5 class="title is-5">{{ page.author }}</h5>
   <p>{{ page.date | date_to_string }}</p>
-  {% if page.tags %}
-  <p><span class="tag">{{ page.tags | join: "</span> <span class="tag">" }}</span></p>
+  {% if page.keywords %}
+  <p><span class="tag">{{ page.keywords | split: ", " | join: "</span> <span class="tag">" }}</span></p>
   {% endif %}
-  
+  <section class="padded-section">
   {{content}}
- 
+  </section>
 </div>
