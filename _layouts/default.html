@@ -188,7 +188,7 @@
       <ul class="container">
         <li><a href="https://www.bco-dmo.org" aria-current="page">Home</a></li>
         <!-- Loop through any previous pages -->
-        {% if page.seo.type and page.seo.type == "BlogPosting" %}
+        {% if page.type and page.type == "BlogPosting" %}
         <li><a aria-current="page">Blog</a></li>
         <li class="is-active"><a aria-current="page">{{ page.title }}</a></li>
         {% else %}
