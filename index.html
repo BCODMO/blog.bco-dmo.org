@@ -1,9 +1,15 @@
 ---
 layout: default
-title: Democratizing access to ocean science data
+type: Blog
+title: "BCO-DMO Blog"
+subtitle: "Democratizing access to ocean science data"
+description: "Keeping you up to date with the latest happenings at the Biological and Chemical Oceanography Data Management Office (BCO-DMO)"
 ---
 
 <h1>{{ page.title }}</h1>
+{% if page.subtitle %}
+<h5 class="subtitle is-5">{{ page.subtitle }}</h5>
+{% endif %}
 <ul class="posts">
 
   {% for post in site.posts %}
