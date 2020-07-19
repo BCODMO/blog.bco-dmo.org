@@ -15,13 +15,13 @@ description: "Keeping you up to date with the latest happenings at the Biologica
     <div class="card">
       <div class="card-content">
         <div class="content">
+          <time>{{ post.date | date_to_string }}</time>
           <p class="title is-4"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></p>
           {% if post.subtitle %}
           <p class="subtitle is-6 is-italic">{{ post.subtitle }}</p>
           {% endif %}
-          <p class="subtitle is-6">{{ post.author.name }}</p>
-          <time>{{ post.date | date_to_string }}</time>
-          {{ post.description }}
+          <p>{{ post.description }}</p>
+          <p class="subtitle is-6">by {{ post.author.name }}</p>
         </div>
       </div>
     </div> 
