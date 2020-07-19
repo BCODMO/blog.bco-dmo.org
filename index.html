@@ -10,9 +10,20 @@ description: "Keeping you up to date with the latest happenings at the Biologica
 {% if page.subtitle %}
 <h5 class="subtitle is-5">{{ page.subtitle }}</h5>
 {% endif %}
-<ul class="posts">
-
+{% if site.posts %}
   {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+    <div class="card">
+      <div class="card-content">
+        <div class="content">
+          <p class="title is-4"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></p>
+          {% if post.subtitle %}
+          <p class="subtitle is-6">{{ post.subtitle }}</p>
+          {% endif %}
+          <p class="subtitle is-6">{{ post.author.name }}</p>
+          <time>{{ post.date | date_to_string }}</time>
+          {{ post.description }}
+        </div>
+      </div>
+    </div> 
   {% endfor %}
-</ul>
+{% endif %}
