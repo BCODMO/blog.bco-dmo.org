@@ -1,9 +1,11 @@
 ---
 layout: none
 ---
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for post in site.posts %}
+  {% assign sitelastmod = null %}
+  {% for post in site.posts reversed %}
     {% unless post.published == false %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
@@ -25,6 +27,19 @@ layout: none
         <priority>0.5</priority>
       {% endif %}
     </url>
+      {% capture modtime %}{{post.lastModified | date: '%s'}}{% endcapture %}
+      {% capture posttime %}{{post.publishDate | date: '%s'}}{% endcapture %}
+      {% if modtime and modtime > posttime %}
+        {% assign posttime = modtime %}
+      {% endif %}
+      {% if sitelastmod == null or posttime > sitelastmod %}
+        {% assign sitelastmod = posttime %}
+      {% endif %}
     {% endunless %}
-  {% endfor %}
+    <url>
+      <loc>{{ site.url }}</loc>
+      <lastmod>{{ sitelastmod | date: "%Y-%m-%d" }}</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1</priority>
+    </url>
 </urlset>
