@@ -1,15 +1,13 @@
 ---
 layout: post
 type: BlogPosting
-title: "BCO-DMO certified as a CoreTrustSeal Data Repository"
-subtitle: "Aww, snap we rolling now!"
-date: 2020-07-19
-lastModified: 2020-07-19 16:30:00
-published: false
-author: danie
+title: "New website coming soon!"
+date: 2020-07-31
+published: true
+author: adam
+section: data-tools
 tags: 
-  - certification
-  - repositories
+  - website
 ---
 
-Should not be shown nat all
+Check it out: https://netlify.bco-dmo.org
