@@ -1,4 +1,4 @@
-
+{% assign author = site.data.authors[page.author] %}
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -10,7 +10,7 @@
     {% elsif post.excerpt %}
     <meta name="description" content="{{ post.excerpt }}">
     {% endif %}
-    <meta name="author" content="{{ page.author.name }}">
+    <meta name="author" content="{{ author.name }}">
 
     <title>{{ page.title }} | {{ site.title }}</title>
 
