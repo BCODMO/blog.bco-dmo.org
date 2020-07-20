@@ -5,7 +5,7 @@ $(document).ready(function () {
 $(window).on( 'hashchange', function( e ) {
   console.log(e);
   console.log('hash change: ' + window.location.hash );
-  $('.tag').each(function( index ) {
+  $('.tag-div').each(function( index ) {
     if (!$(this).hasClass('is-hidden')) {
       hideTag($(this).attr('id'));
     }
