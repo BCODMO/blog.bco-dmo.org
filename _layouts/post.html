@@ -12,7 +12,6 @@ layout: default
 {% if page.keywords %}
 <p class="margin-bot-1">
 {% for tag in page.tags %}
-  <!--span class="tag"><a href="/tag.html#{{ tag | slugify }}">{{ tag }}</a></span-->
   {% include tag.html tag=tag %}
 {% endfor %}
 </p>
