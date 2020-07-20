@@ -23,7 +23,7 @@ description: "Keeping you up to date with the latest happenings at the Biologica
     <div class="card">
       <div class="card-content">
         <div class="content">
-          <time>{{ post.date | date_to_string }}</time>
+          <p>{{ post.date | date_to_string }}</p>
           <p class="title is-4"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></p>
           {% if post.subtitle %}
           <p class="subtitle is-6 is-italic margin-bot-0">{{ post.subtitle }}</p>
