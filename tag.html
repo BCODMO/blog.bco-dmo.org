@@ -40,7 +40,7 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 =======================
 {% endcomment %}
 {% for tag in tags %}
-  <div id="{{ tag | slugify }}" class="tag is-hidden">
+  <div id="{{ tag | slugify }}" class="tag-div is-hidden">
     {% for post in site.posts %}
       {% if post.tags contains tag %}
         {% assign author = site.data.authors[post.author] %}
