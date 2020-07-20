@@ -4,6 +4,7 @@ description: Democratizing access to ocean science data.
 exclude: ["vendor", "CNAME", "Gemfile", "LICENSE", "README.md"]
 google_analytics:
 
+page_excerpts: true
 excerpt_separator: <!--more-->
 
 lsi: false
