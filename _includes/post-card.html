@@ -2,7 +2,7 @@
   <div class="card-content">
     <div class="content">
       <p>{{ include.post.date | date_to_string }}</p>
-      <p class="title is-4"><a href="{{ include.url }}" title="{{ include.post.title }}">{{ include.post.title }}</a></p>
+      <p class="title is-4"><a href="{{ include.post.url }}" title="{{ include.post.title }}">{{ include.post.title }}</a></p>
       {% if include.post.subtitle %}
       <p class="subtitle is-6 is-italic margin-bot-0">{{ include.post.subtitle }}</p>
       {% endif %}
