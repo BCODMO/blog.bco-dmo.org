@@ -13,6 +13,13 @@ description: "Keeping you up to date with the latest happenings at the Biologica
 {% if site.posts %}
   {% for post in site.posts %}
     {% assign author = site.data.authors[post.author] %}
+    {% if post.description %}
+      {% assign callout = post.description %}
+    {% elsif post.excerpt %}
+      {% assign callout = post.excerpt %}
+    {% else %}
+      {% assign callout = null %}
+    {% endif %}
     <div class="card">
       <div class="card-content">
         <div class="content">
@@ -21,7 +28,9 @@ description: "Keeping you up to date with the latest happenings at the Biologica
           {% if post.subtitle %}
           <p class="subtitle is-6 is-italic">{{ post.subtitle }}</p>
           {% endif %}
-          <p>{{ post.description }}</p>
+          {% if callout %}
+          <p>{{ callout }}</p>
+          {% endif %}
           <p class="subtitle is-6">by {{ author.name }}</p>
         </div>
       </div>
