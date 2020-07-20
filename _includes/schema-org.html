@@ -1,0 +1,29 @@
+<script type="application/ld+json">
+{
+  "@type":"{{ include.type }}",
+  "url":"{{ include.url }}",
+  "name":"{{ include.name }}",
+  {% if include.headline %}
+  "headline":"{{ include.headline }}",
+  {% endif %}
+  {% if include.description %}
+  "description":"{{ include.description }}",
+  {% endif %}
+  {% if include.date %}
+  "datePublished": "{{ include.date }}",
+  {% endif %}
+  {% if include.modified %}
+  "dateModified": "{{ include.modified }}",
+  {% endif %}
+  {% if include.keywords %}
+    {% for keyword in include.keywords %}
+    "keywords": ['{{ include.keywords | join: "', '" }}'],
+  {% endif %}
+  {% if include.author %}
+    "author": {
+      "type": "{{ include.author.type }}",
+      "name": "{{ include.author.name }}"
+    }
+  {% endif %}
+  "@context":"http://schema.org/"
+}</script>
