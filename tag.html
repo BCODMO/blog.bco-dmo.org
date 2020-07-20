@@ -51,7 +51,7 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
         {% else %}
           {% assign callout = null %}
         {% endif %}
-        {% include post-card.html post=post callout=callout %}
+        {% include post-card.html post=post callout=callout author=author %}
       {% endif %}
     {% endfor %}
   </div>
