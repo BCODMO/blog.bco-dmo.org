@@ -1,7 +1,7 @@
 <script type="application/ld+json">
 {
   "@type": {{ include.type | jsonify }},
-  "url": "{{ include.url }}",
+  "url": "{{ site.url }}{{ include.url }}",
   "name": {{ include.name | jsonify }},
   "headline": {{ include.name | jsonify }},
   {% if include.headline %}
