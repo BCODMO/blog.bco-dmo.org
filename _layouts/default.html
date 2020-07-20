@@ -195,6 +195,8 @@
         {% if page.type and page.type == "BlogPosting" %}
         <li><a href="https://blog.bco-dmo.org"  aria-current="page">Blog</a></li>
         <li class="is-active"><a aria-current="page">{{ page.title }}</a></li>
+        {% elsif page.type and page.type == "ItemList" %}
+        <li><a href="https://blog.bco-dmo.org"  aria-current="page">Blog</a></li>
         {% else %}
         <li class="is-active"><a aria-current="page">Blog</a></li>
         {% endif %}
