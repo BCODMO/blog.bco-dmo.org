@@ -12,7 +12,6 @@
       {% endif %}
       {% if include.post.tags %}
         {% for tag in include.post.tags %}
-          <!--span class="tag"><a href="/tag.html#{{ tag | slugify }}">{{ tag }}</a></span-->
           {% include tag.html tag=tag %}
         {% endfor %}
       {% endif %}
