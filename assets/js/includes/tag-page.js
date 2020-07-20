@@ -21,7 +21,7 @@ function showTag(tag) {
 }
 function hideTag(tag) {
   console.log('hide tag: ' + tag );
-  $(tag).addClass('is-hidden');
+  $('#' + tag).addClass('is-hidden');
 }
 
 function setTitleTag(tag) {
