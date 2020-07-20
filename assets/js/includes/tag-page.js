@@ -14,7 +14,12 @@ $(window).on( 'hashchange', function( e ) {
 
 function showTag(tag) {
   $(tag).removeClass('is-hidden');
+  setTitleTag(tag);
 }
 function hideTag(tag) {
   $(tag).addClass('is-hidden');
+}
+
+function setTitleTag(tag) {
+  $('#title-tag').text(tag); 
 }
