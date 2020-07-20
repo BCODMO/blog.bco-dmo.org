@@ -19,5 +19,11 @@ layout: default
 <div class="columns">
   <div class="column">
   {{content}}
+  
+  {% if page.lastModified %}
+    <p>Last modified: {{ page.lastmodified }}</p>
+  {% else %}
+    <p>Last modified: {{ page.date }}</p>
+  {% endif %}
   </div>
 </div>
