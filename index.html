@@ -32,6 +32,11 @@ description: "Keeping you up to date with the latest happenings at the Biologica
           {% if callout %}
           <p>{{ callout }}</p>
           {% endif %}
+          {% if post.tags %}
+            {% for tag in post.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          {% endif %}
         </div>
       </div>
     </div> 
