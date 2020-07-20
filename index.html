@@ -20,25 +20,6 @@ description: "Keeping you up to date with the latest happenings at the Biologica
     {% else %}
       {% assign callout = null %}
     {% endif %}
-    <div class="card">
-      <div class="card-content">
-        <div class="content">
-          <p>{{ post.date | date_to_string }}</p>
-          <p class="title is-4"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></p>
-          {% if post.subtitle %}
-          <p class="subtitle is-6 is-italic margin-bot-0">{{ post.subtitle }}</p>
-          {% endif %}
-          <p class="subtitle is-6">by {{ author.name }}</p>
-          {% if callout %}
-          <p>{{ callout }}</p>
-          {% endif %}
-          {% if post.tags %}
-            {% for tag in post.tags %}
-              <span class="tag">{{ tag }}</span>
-            {% endfor %}
-          {% endif %}
-        </div>
-      </div>
-    </div> 
+    {% include post-card.html post=post callout=callout %}
   {% endfor %}
 {% endif %}
