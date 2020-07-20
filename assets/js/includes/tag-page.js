@@ -26,5 +26,5 @@ function hideTag(tag) {
 
 function setTitleTag(tag) {
   console.log('set title: ' + tag );
-  $('#title-tag').text('Posts about `' + tag + '`'); 
+  $('#title-tag').text('Posts about `' + tag.substring(1) + '`'); 
 }
