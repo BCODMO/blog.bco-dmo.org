@@ -1,5 +1,6 @@
 danie:
   name: Danie Kinkade
+  type: Person
   orcid:
   url:
   social:
@@ -7,6 +8,7 @@ danie:
   
 adam:
   name: Adam Shepherd
+  type: Person
   orcid:
   url:
   social:
