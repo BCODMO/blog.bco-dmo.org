@@ -289,7 +289,7 @@
     </script>
     {% endif %}
     {% if page.js_includes %}
-      {% foreach include in page.js_includes %}
+      {% for include in page.js_includes %}
         <script src="/assets/js/includes/{{ include }}.js"></script>
       {% endfor %}
     {% endif %}
