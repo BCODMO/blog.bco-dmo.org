@@ -5,27 +5,27 @@
   "name": {{ include.name | jsonify }},
   "headline": {{ include.name | jsonify }},
   {% if include.headline %}
-    "alternativeHeadline":{{ include.headline | jsonify }},
+  "alternativeHeadline":{{ include.headline | jsonify }},
   {% endif %}
   {% if include.description %}
     "description": {{ include.description | jsonify }},
   {% endif %}
   {% if include.date %}
-    "datePublished": {{ include.date | jsonify }},
+  "datePublished": {{ include.date | jsonify }},
   {% endif %}
   {% if include.modified %}
-    "dateModified": {{ include.modified | jsonify }},
+  "dateModified": {{ include.modified | jsonify }},
   {% endif %}
   {% if include.keywords %}
     {% for keyword in include.keywords %}
-      "keywords": {{ keyword | jsonify }},
+  "keywords": {{ keyword | jsonify }},
     {% endfor %}
   {% endif %}
   {% if include.author %}
-    "author": {
-      "type": {{ include.author.type | jsonify }},
-      "name": {{ include.author.name | jsonify }}
-    }
+  "author": {
+    "type": {{ include.author.type | jsonify }},
+    "name": {{ include.author.name | jsonify }}
+  },
   {% endif %}
   "@context":"http://schema.org/"
 }</script>
