@@ -288,5 +288,10 @@
       ga('send', 'pageview');
     </script>
     {% endif %}
+    {% if page.js_includes %}
+      {% foreach include in page.js_includes %}
+        <script src="/assets/js/includes/{{ include }}"></script>
+      {% endfor %}
+    {% endif %}
   </body>
 </html>
