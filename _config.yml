@@ -5,7 +5,7 @@ exclude: ["vendor", "CNAME", "Gemfile", "LICENSE", "README.md"]
 google_analytics:
 
 page_excerpts: true
-excerpt_separator: <!--more-->
+excerpt_separator: "<!--more-->"
 
 show_drafts: true
 
