@@ -10,4 +10,4 @@ tags:
   - website
 ---
 
-Check it out: https://netlify.bco-dmo.org
+Check it out: [https://netlify.bco-dmo.org](https://netlify.bco-dmo.org)
