@@ -41,7 +41,7 @@ The purpose of this snippet is to list all your posts posted with a certain tag.
 =======================
 {% endcomment %}
 {% for tag in tags %}
-  <div id="{{ tag | slugify }}" class="is-hidden">
+  <div id="{{ tag | slugify }}" class="tag is-hidden">
     <h2 class="is-2">{{ tag }}</h2>
 	  {% for post in site.posts %}
 		  {% if post.tags contains tag %}
