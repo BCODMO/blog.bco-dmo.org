@@ -29,5 +29,5 @@ description: "Keeping you up to date with the latest happenings at the Biologica
   {% endfor %}
 {% endif %}
 {% for file in site.static_files %}
-  {{ file }}
+  {{ file.path }}
 {% endfor %}
