@@ -17,6 +17,7 @@
     {% endif %}
     {% assign author = site.data.authors[page.author] %}
     <meta name="author" content="{{ author.name }}">
+    {% include schema-org.html type=page.type url=page.url name=page.title headline=page.subtitle description=callout author=author keywords=page.tags date=page.date modified=page.lastModified %}
     <title>{{ page.title }} | {{ site.title }}</title>
 
     <!-- Bulma + BCO-DMO Core CSS -->
