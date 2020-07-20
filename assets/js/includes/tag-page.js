@@ -1,4 +1,20 @@
 $(document).ready(function () {
-  var target = $(window.location.hash); 
-  target.removeClass('is-hidden');
+  showTag(window.location.hash);
 });
+
+$(window).on( 'hashchange', function( e ) {
+  $('.tag').each(function( index ) {
+    if (!$(this).hasClass('is-hidden')) {
+      hideTag($(this).attr('id'));
+    }
+  });
+  
+  showTag(window.location.hash);
+});
+
+function showTag(tag) {
+  $(tag).removeClass('is-hidden');
+}
+function hideTag(tag) {
+  $(tag).addClass('is-hidden');
+}
