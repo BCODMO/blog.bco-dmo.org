@@ -12,6 +12,7 @@ description: "Keeping you up to date with the latest happenings at the Biologica
 {% endif %}
 {% if site.posts %}
   {% for post in site.posts %}
+    {% assign author = site.data.authors[post.author] %}
     <div class="card">
       <div class="card-content">
         <div class="content">
@@ -21,7 +22,7 @@ description: "Keeping you up to date with the latest happenings at the Biologica
           <p class="subtitle is-6 is-italic">{{ post.subtitle }}</p>
           {% endif %}
           <p>{{ post.description }}</p>
-          <p class="subtitle is-6">by {{ post.author.name }}</p>
+          <p class="subtitle is-6">by {{ author.name }}</p>
         </div>
       </div>
     </div> 
