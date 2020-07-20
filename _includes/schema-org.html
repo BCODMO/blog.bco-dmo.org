@@ -1,28 +1,30 @@
 <script type="application/ld+json">
 {
-  "@type":"{{ include.type }}",
-  "url":"{{ include.url }}",
-  "name":"{{ include.name }}",
+  "@type": {{ include.type | jsonify }},
+  "url": "{{ include.url }}",
+  "name": {{ include.name | jsonify }},
+  "headline": {{ include.name | jsonify }},
   {% if include.headline %}
-  "headline":"{{ include.headline }}",
+    "alternativeHeadline":{{ include.headline | jsonify }},
   {% endif %}
   {% if include.description %}
-  "description":"{{ include.description }}",
+    "description": {{ include.description | jsonify }},
   {% endif %}
   {% if include.date %}
-  "datePublished": "{{ include.date }}",
+    "datePublished": {{ include.date | jsonify }},
   {% endif %}
   {% if include.modified %}
-  "dateModified": "{{ include.modified }}",
+    "dateModified": {{ include.modified | jsonify }},
   {% endif %}
   {% if include.keywords %}
     {% for keyword in include.keywords %}
-    "keywords": ['{{ include.keywords | join: "', '" }}'],
+      "keywords": {{ keyword | jsonify }},
+    {% endfor %}
   {% endif %}
   {% if include.author %}
     "author": {
-      "type": "{{ include.author.type }}",
-      "name": "{{ include.author.name }}"
+      "type": {{ include.author.type | jsonify }},
+      "name": {{ include.author.name | jsonify }}
     }
   {% endif %}
   "@context":"http://schema.org/"
