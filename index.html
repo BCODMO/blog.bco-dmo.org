@@ -21,7 +21,16 @@ author: bcodmo
       <li><a>Engineering</a></li>
     </ul>
   </div>
+  <div class="columns">
   {% for post in site.posts %}
+    {% assign counter = forloop.index + 1 %}
+    {% assign remainder = counter | modulo: 3 %}
+    {% assign new_row = remainder == 0 %}
+    {% if new_row %}
+      </div>
+      <div class="columns">
+    {% endif %}
+        
     {% assign author = site.data.authors[post.author] %}
     {% if post.description %}
       {% assign callout = post.description %}
@@ -30,6 +39,10 @@ author: bcodmo
     {% else %}
       {% assign callout = null %}
     {% endif %}
-    {% include post-card.html post=post callout=callout author=author %}
+      <div class="column is-3">
+        {% include post-card.html post=post callout=callout author=author %}
+      </div>
   {% endfor %}
+    </div><! -- closes the last "columns" div -->
+  </div>
 {% endif %}
