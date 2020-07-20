@@ -1,0 +1,77 @@
+---
+layout: default
+type: ItemList 
+---
+<script src="/assets/js/tag-page.js"></script>
+<h1 class="title is-1 is-primary padding-bot-1 margin-bot-2-important">Posts about <em id="title-tag"></em></h1>
+
+{% comment %}
+=======================
+The following part extracts all the tags from your posts and sort tags, so that you do not need to manually collect your tags to a place.
+=======================
+{% endcomment %}
+{% assign rawtags = "" %}
+{% for post in site.posts %}
+	{% assign ttags = post.tags | join:'|' | append:'|' %}
+	{% assign rawtags = rawtags | append:ttags %}
+{% endfor %}
+{% assign rawtags = rawtags | split:'|' | sort %}
+{% comment %}
+=======================
+The following part removes dulpicated tags and invalid tags like blank tag.
+=======================
+{% endcomment %}
+{% assign tags = "" %}
+{% for tag in rawtags %}
+	{% if tag != "" %}
+		{% if tags == "" %}
+			{% assign tags = tag | split:'|' %}
+		{% endif %}
+		{% unless tags contains tag %}
+			{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+		{% endunless %}
+	{% endif %}
+{% endfor %}
+
+{% comment %}
+=======================
+The purpose of this snippet is to list all your posts posted with a certain tag.
+=======================
+{% endcomment %}
+{% for tag in tags %}
+  <div id="{{ tag | slugify }}" class="is-hidden">
+    <h2 class="is-2">{{ tag }}</h2>
+	  {% for post in site.posts %}
+		  {% if post.tags contains tag %}
+        {% assign author = site.data.authors[post.author] %}
+        {% if post.description %}
+          {% assign callout = post.description %}
+        {% elsif post.excerpt %}
+          {% assign callout = post.excerpt %}
+        {% else %}
+          {% assign callout = null %}
+        {% endif %}
+        <div class="card">
+          <div class="card-content">
+            <div class="content">
+              <time>{{ post.date | date_to_string }}</time>
+              <p class="title is-4"><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></p>
+              {% if post.subtitle %}
+              <p class="subtitle is-6 is-italic margin-bot-0">{{ post.subtitle }}</p>
+              {% endif %}
+              <p class="subtitle is-6">by {{ author.name }}</p>
+              {% if callout %}
+              <p>{{ callout }}</p>
+              {% endif %}
+              {% if post.tags %}
+                {% for tag in post.tags %}
+                  <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              {% endif %}
+            </div>
+          </div>
+        </div> 
+		  {% endif %}
+    {% endfor %}
+  </div>
+{% endfor %}
