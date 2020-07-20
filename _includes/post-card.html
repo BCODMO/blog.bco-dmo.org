@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="card-image">
+    {% if include.post.callout.image.url %}
+    <figure class="image is-4by3">
+      {% if include.post.callout.image.caption %}
+        {% assign caption = include.post.callout.image.caption %}
+      {% else %}
+        {% assign caption = include.post.title %}
+      {% endif %}
+      <img src="{{ include.post.callout.image.url }}" alt="{{ caption }}">
+    </figure>
+    {% endif %}
+  </div>
+  <div class="card-content">
+    <p>{{ include.post.date | date_to_string }}</p>
+    <h3 class="title"><a href="{{ include.post.url }}" title="{{ include.post.title }}">{{ include.post.title }}</a></h3>
+    {% if include.post.subtitle %}
+    <p class="subtitle is-6 is-italic margin-bot-0">{{ include.post.subtitle }}</p>
+    {% endif %}
+    <p class="subtitle is-6">by {{ include.author.name }}</p>
+    {% if include.callout %}
+    <div class="content">{{ include.callout }}</div>
+    {% endif %}
+    {% if include.post.tags %}
+      {% for tag in include.post.tags %}
+        {% include tag.html tag=tag %}
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
