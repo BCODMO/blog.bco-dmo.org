@@ -5,13 +5,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {% if post.description %}
-    <meta name="description" content="{{ post.description }}">
-    {% elsif post.excerpt %}
-    <meta name="description" content="{{ post.excerpt }}">
+    {% if page.description %}
+      {% assign callout = page.description %}
+    {% elsif page.excerpt %}
+      {% assign callout = page.excerpt %}
+    {% else %}
+      {% assign callout = null %}
     {% endif %}
+    {% if callout %}
+    <meta name="description" content="{{ callout }}">
+    {% endif %}
+    {% assign author = site.data.authors[page.author] %}
     <meta name="author" content="{{ author.name }}">
-
+    {% include schema-org.html 
+        type=page.type 
+        url=page.url 
+        name=page.title 
+        headline=page.subtitle 
+        description=callout 
+        author=author 
+        keywords=page.tags 
+        date=page.date 
+        modified=page.lastModified %}
     <title>{{ page.title }} | {{ site.title }}</title>
 
     <!-- Bulma + BCO-DMO Core CSS -->
