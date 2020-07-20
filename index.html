@@ -4,6 +4,7 @@ type: Blog
 title: "BCO-DMO Blog"
 subtitle: "Democratizing access to ocean science data"
 description: "Keeping you up to date with the latest happenings at the Biological and Chemical Oceanography Data Management Office (BCO-DMO)"
+author: bcodmo
 ---
 
 <h1 class="title is-1 is-primary padding-bot-1 margin-bot-2-important">{{ page.title }}</h1>
@@ -20,6 +21,6 @@ description: "Keeping you up to date with the latest happenings at the Biologica
     {% else %}
       {% assign callout = null %}
     {% endif %}
-    {% include post-card.html post=post callout=callout %}
+    {% include post-card.html post=post callout=callout author=author %}
   {% endfor %}
 {% endif %}
