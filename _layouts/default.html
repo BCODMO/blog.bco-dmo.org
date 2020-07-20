@@ -5,7 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Template for redesign of BCO-DMO website">
+    {% if post.description %}
+    <meta name="description" content="{{ post.description }}">
+    {% elsif post.excerpt %}
+    <meta name="description" content="{{ post.excerpt }}">
+    {% endif %}
     <meta name="author" content="{{ page.author.name }}">
 
     <title>{{ page.title }} | {{ site.title }}</title>
