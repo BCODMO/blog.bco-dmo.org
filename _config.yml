@@ -7,6 +7,8 @@ google_analytics:
 page_excerpts: true
 excerpt_separator: <!--more-->
 
+show_drafts: true
+
 lsi: false
 safe: true
 source: 
