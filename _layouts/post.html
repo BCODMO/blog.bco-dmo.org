@@ -11,8 +11,8 @@ layout: default
 <p class="margin-bot-1">{{ page.date | date_to_string }}</p>
 {% if page.keywords %}
 <p class="margin-bot-1">
-{% for keyword in page.keywords %}
-  <span class="tag">{{ keyword }}</span>
+{% for tag in page.tags %}
+  <span class="tag">{{ tag }}</span>
 {% endfor %}
 </p>
 {% endif %}
