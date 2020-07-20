@@ -14,7 +14,7 @@ layout: none
 		<email>info@bco-dmo.org</email>
 	</author>
 
-	{% for post in site.posts reversed %}
+	{% for post in site.posts %}
 		<entry>
 			<title>{{ post.title }}</title>
 			<link href="https://blog.bco-dmo.org{{ post.url }}"/>
