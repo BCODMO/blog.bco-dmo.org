@@ -27,7 +27,7 @@ layout: none
         <priority>0.5</priority>
       {% endif %}
     </url>
-      {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
+      {% capture posttime %}{{ post.date | date: '%s' }}{% endcapture %}
        <!-- posttime: {{ posttime }} -->
       {% if post.lastModified %}
         {% capture modtime %}{{ post.lastModified | date: '%s'}}{% endcapture %}
@@ -36,7 +36,7 @@ layout: none
           {% assign posttime = modtime %}
         {% endif %}
       {% endif %}
-      {% if sitelastmod is blank or posttime > sitelastmod %}
+      {% if sitelastmod = nil or posttime > sitelastmod %}
         <!-- mpdating sitelastmod: {{ posttime }} -->
         {% assign sitelastmod = posttime %}
       {% endif %}
