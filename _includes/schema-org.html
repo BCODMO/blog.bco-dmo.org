@@ -1,52 +1,5 @@
-<script type="application/ld+json">
-{
-  "@type": {{ include.type | jsonify }},
-  "url": "{{ site.url }}{{ include.url }}",
-  "name": {{ include.name | jsonify }},
-  "headline": {{ include.name | jsonify }},
-  {% if include.type == "BlogPosting" %}
-  "publisher": {
-    "@type": "Organization",
-    "name": "Biological and Chemical Oceanography Data Managemennt Office",
-    "url": "https://www.bco-dmo.org"
-  },
-  {% endif %}
-  {% if include.headline %}
-  "alternativeHeadline":{{ include.headline | jsonify }},
-  {% endif %}
-  {% if include.image %}
-    "image": {
-    "@type": "ImageObject",
-    "url": {{ include.image | jsonify }},
-  }
-  {% endif %}
-  {% if include.description %}
-    "description": {{ include.description | jsonify }},
-  {% endif %}
-  {% if include.date %}
-  "datePublished": "{{ include.date | date_to_xmlschema }}",
-  {% endif %}
-  {% if include.modified %}
-  "dateModified": "{{ include.modified | date_to_xmlschema }}",
-  {% endif %}
-  {% if include.keywords %}
-    {% for keyword in include.keywords %}
-  "keywords": {{ keyword | jsonify }},
-    {% endfor %}
-  {% endif %}
-  {% if include.author %}
-  "author": {
-    "type": {{ include.author.type | jsonify }},
-    "name": {{ include.author.name | jsonify }}
-  },
-  {% endif %}
-  {% if include.type == "Blog" %}
-    "blogPost": [
-    {% for post in site.posts %}
-      { "@type": "BlogPosting", "name": {{ post.title | jsonify }}, "url": "{{site.url }}{{ post.url }}", "datePublished": "{{ post.date | date_to_xmlschema }}"}
-      {% unless forloop.last %},{% endunless %}
-    {% endfor %}
-    ],
-  {% endif %}
-  "@context":"http://schema.org/"
-}</script>
+{% if page.type == "Blog" %}
+  {% include schema.org/Blog.html %}
+{% elsif page.type == "BlogPosting" %}
+  {% include schema.org/BlogPosting.html post=page %}
+{% endif %}
