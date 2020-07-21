@@ -21,28 +21,5 @@ author: bcodmo
       <li><a href="#engineering">Engineering</a></li>
     </ul>
   </div>
-  <div class="columns">
-  {% for post in site.posts %}
-    {% assign author = site.data.authors[post.author] %}
-    {% if post.description %}
-      {% assign callout = post.description %}
-    {% elsif post.excerpt %}
-      {% assign callout = post.excerpt %}
-    {% else %}
-      {% assign callout = null %}
-    {% endif %}
-      <div class="column is-6" data-index="{{ forloop.index }}">
-        {% include post-card.html post=post callout=callout author=author %}
-      </div>
-    
-    {% comment %} make 2 columns of post cards {% endcomment %}
-    {% assign remainder = forloop.index | modulo: 2 %}
-    {% if remainder == 0 and forloop.index > 1 %}
-      </div>
-      <div class="columns">
-    {% endif %}
-        
-  {% endfor %}
-    </div><!-- closes the last "columns" div -->
-  </div>
+  {% include post-listing.html category="all" %}
 {% endif %}
