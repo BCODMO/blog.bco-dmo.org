@@ -1,8 +1,8 @@
-{% assign posts = site.posts | where:"category", include.list.id }}
 {
-  {% if include.context %}
-    "@context": {% include {{ include.context }} %},
-  {% endif %}
+  {% assign posts = site.posts | where:"category", include.list.id }}
+  {% if include.context %}	
+    "@context": {% include {{ include.context }} %},	
+  {% endif %}	
   "@type": "ItemList",
   "name": {{ include.list.title | jsonify }},
   {% if include.list.description %}
