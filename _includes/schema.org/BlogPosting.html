@@ -11,7 +11,9 @@
     "name": "Biological and Chemical Oceanography Data Managemennt Office",
     "url": "https://www.bco-dmo.org"
   },
+  {% comment %}
   "author": {% include schema.org/Person.html person=site.data.authors[include.post.author] %},
+  {% endcomment %}
   {% if include.post.description %}
     {% assign callout = include.post.description %}
   {% elsif include.post.excerpt %}
