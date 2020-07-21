@@ -1,5 +1,6 @@
 {
   {% assign author = site.data.authors[include.post.author] %}
+
   {% if include.context %}	
     "@context": {% include {{ include.context }} %},	
   {% endif %}	
@@ -29,12 +30,10 @@
   {% if callout %}	
     "description": {{ callout | jsonify }},	
   {% endif %}	
-  {% if include.post.image %}	
-    "image": {	
-      "@type": "ImageObject",	
-      "url": {{ include.post.image | jsonify }},	
-    },	
-  {% endif %}		
+  "image": {	
+    "@type": "ImageObject",	
+    "url": "{{ site.url }}{{ include.post.image | default: "/assets/img/bco-dmo-avatar.jpg" }}",	
+  },	
   {% if include.post.tags %}	
     "keywords": [	
     {% for keyword in include.post.tags %}	
