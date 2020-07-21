@@ -1,12 +1,17 @@
 ---
 id: adam
-name: Adam Shepherd
 type: Person
+name: Adam Shepherd
+url: https://www.linkedin.com/in/ashep15/
 role: Technical Director
 orcid:
-url:
 social:
-  twitter: ashep_15
+  twitter: 
+    id: ashep_15
+    url: https://twitter.com/ashep_15
+  linkedin: 
+    id: ashep15
+    url: https://www.linkedin.com/in/ashep15/
 ---
 
 Adam is the Technical Director of BCO-DMO...
