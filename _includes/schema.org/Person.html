@@ -1,4 +1,7 @@
 {
+  {% if include.context %}
+    "@context": {% include {{ include.context }} %},
+  {% endif %}
   "@type": "Person",
   "name": {{ include.person.name | jsonify }}
 }
