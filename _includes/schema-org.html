@@ -1,10 +1,7 @@
 <script type="application/ld+json">
-{
-  "@context": "http://schema.org/",
-  {% if include.page.type == "Blog" %}
-    {% include schema.org/Blog.html blog=include.page %}
-  {% elsif include.page.type == "BlogPosting" %}
-    {% include schema.org/BlogPosting.html post=include.page %}
-  {% endif %}
-}
+{% if include.page.type == "Blog" %}
+  {% include schema.org/Blog.html blog=include.page add_context=true %}
+{% elsif include.page.type == "BlogPosting" %}
+  {% include schema.org/BlogPosting.html post=include.page add_context=true %}
+{% endif %}
 </script>
