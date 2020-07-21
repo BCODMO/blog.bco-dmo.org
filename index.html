@@ -24,9 +24,10 @@ author: bcodmo
   <div class="columns">
   {% for post in site.posts %}
     {% assign counter = forloop.index %}
+    <!-- counter: {{ counter }} -->
     {% assign remainder = counter | modulo: 2 %}
     {% assign new_row = remainder == 0 %}
-    {% if new_row %}
+    {% if new_row and counnter != 1 %}
       </div>
       <div class="columns">
     {% endif %}
