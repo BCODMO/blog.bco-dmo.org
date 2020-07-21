@@ -27,7 +27,7 @@ author: bcodmo
     {% assign remainder = forloop.index - 1 | modulo: 2 %}
     {% assign new_row = remainder == 0 %}
     <!-- New Row: {{ new_row }} and Counter: {{ forloop.index }} -->
-    {% if new_row and forloop.index != 1 %}
+    {% if new_row == 1 and forloop.index != 1 %}
       </div>
       <div class="columns">
     {% endif %}
