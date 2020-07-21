@@ -3,7 +3,9 @@
 <script type="application/ld+json">
 {% if include.page.type == "Blog" %}
   {% include schema.org/Blog.html blog=include.page context=context_file %}
+{% comment %}
 {% elsif include.page.type == "BlogPosting" %}
   {% include schema.org/BlogPosting.html post=include.page context=context_file %}
+{% endcomment %}
 {% endif %}
 </script>
