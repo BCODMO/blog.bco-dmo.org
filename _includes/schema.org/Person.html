@@ -1,7 +1,9 @@
 {
+  {% comment %}
   {% if include.context %}
     "@context": {% include {{ include.context }} %},
   {% endif %}
+  {% endcomment %}
   "@type": "Person",
   "name": {{ include.person.name | jsonify }}
 }
