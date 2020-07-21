@@ -4,6 +4,7 @@
     "@context": {% include {{ include.context }} %},	
   {% endif %}	
   "@type": "BlogPosting",	
+  "@id": "{{ site.url }}{{ include.post.url }}",
   "name": {{ include.post.title | jsonify }},	
   "headline": {{ include.post.title | jsonify }},	
   {% if include.post.subtitle %}	
