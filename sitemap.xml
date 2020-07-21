@@ -28,16 +28,13 @@ layout: none
       {% endif %}
     </url>
       {% capture posttime %}{{ post.date | date: '%s' }}{% endcapture %}
-       <!-- posttime: {{ posttime }} -->
       {% if post.lastModified %}
         {% capture modtime %}{{ post.lastModified | date: '%s'}}{% endcapture %}
-        <!-- modtime: {{ modtime }} -->
         {% if modtime > posttime %}
           {% assign posttime = modtime %}
         {% endif %}
       {% endif %}
       {% if sitelastmod == nil or posttime > sitelastmod %}
-        <!-- mpdating sitelastmod: {{ posttime }} -->
         {% assign sitelastmod = posttime %}
       {% endif %}
     {% endunless %}
