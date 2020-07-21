@@ -36,5 +36,8 @@
     {% endfor %}	
     ],	
   {% endif %}	
+  {% if include.position %}
+  "position": {{ include.position }},
+  {% endif %}
   "url": "{{ site.url }}{{ include.post.url }}"	
 }
