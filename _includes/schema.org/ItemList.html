@@ -4,6 +4,7 @@
     "@context": {% include {{ include.context }} %},	
   {% endif %}	
   "@type": "ItemList",
+  "@id": "{{ site.url }}{{ include.list.url }}",
   "name": {{ include.list.title | jsonify }},
   {% if include.list.description %}
     "description": {{ include.list.description | jsonify }},
