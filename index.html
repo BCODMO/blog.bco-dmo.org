@@ -17,6 +17,6 @@ include_in_sitemap: true
   {% include post-listing.html category="all" %}
 {% endif %}
 
-{% for page in site.pages %}
-<a href="{{ page.url }}">{{ page.title }}</a>
+{% for page in site.pages | where: "include_in_sitemap", true %}
+{{ page.url }} => {{ page.title }}
 {% endfor %}
