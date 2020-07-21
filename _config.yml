@@ -7,10 +7,6 @@ google_analytics:
 page_excerpts: true
 excerpt_separator: "<!--more-->"
 
-collections:
-  authors:
-    people: true
-
 lsi: false
 safe: true
 source: 
