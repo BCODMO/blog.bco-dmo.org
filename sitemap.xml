@@ -39,7 +39,7 @@ layout: none
       {% endif %}
     {% endunless %}
   {% endfor %}
-  {% assign pages = site.pages | where: "sitemap.include", true %}
+  {% assign pages = site.pages | where: "include_in_sitemap", true %}
   {% for page in pages %}
     {% capture pagedate %}{{ page.date | date: '%s' }}{% endcapture %}
     {% assign pagelastmod = pagedate %}
