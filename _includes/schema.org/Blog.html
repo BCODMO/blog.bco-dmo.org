@@ -1,4 +1,3 @@
-<script type="application/ld+json">
 {
   "@type": "Blog",
   "url": "{{ site.url }}{{ page.url }}",
@@ -23,5 +22,5 @@
     {% endfor %}
     ],
   {% endif %}
-  "@context":"http://schema.org/"
-}</script>
+  {% include schema.org/context.html %}
+}
