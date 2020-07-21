@@ -1,7 +1,8 @@
+{% assign context_file = "schema.org/context/default.html" %}
 <script type="application/ld+json">
 {% if include.page.type == "Blog" %}
-  {% include schema.org/Blog.html blog=include.page context="schema.org/context/default.html" %}
+  {% include schema.org/Blog.html blog=include.page context=context_file %}
 {% elsif include.page.type == "BlogPosting" %}
-  {% include schema.org/BlogPosting.html post=include.page context="schema.org/context/default.html" %}
+  {% include schema.org/BlogPosting.html post=include.page context=context_file %}
 {% endif %}
 </script>
