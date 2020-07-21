@@ -18,7 +18,6 @@
     {% endfor %}
     ],
   {% endif %}
-  {% comment %}
     {% if site.posts %}
       "blogPost": [
       {% for post in site.posts %}
@@ -27,6 +26,5 @@
       {% endfor %}
       ],
     {% endif %}
-  {% endcomment %}
   "url": "{{ site.url }}{{ include.blog.url }}"
 }
