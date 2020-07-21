@@ -23,7 +23,7 @@ author: bcodmo
   </div>
   <div class="columns">
   {% for post in site.posts %}
-    {% assign counter = forloop.index + 1 %}
+    {% assign counter = forloop.index %}
     {% assign remainder = counter | modulo: 2 %}
     {% assign new_row = remainder == 0 %}
     {% if new_row %}
