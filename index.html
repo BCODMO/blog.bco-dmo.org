@@ -23,9 +23,9 @@ author: bcodmo
   </div>
   <div class="columns">
   {% for post in site.posts %}
-    {% assign remainder = forloop.index | modulo: 2 %}
+    {% comment %} forloop.index - 1 becuase index starts at 1 {% endcomment %}
+    {% assign remainder = forloop.index - 1 | modulo: 2 %}
     {% assign new_row = remainder == 0 %}
-    <!-- Counter: {{ forloop.index }} New Row: {{ new_row }} -->
     {% if new_row and forloop.index != 1 %}
       </div>
       <div class="columns">
