@@ -39,10 +39,22 @@ layout: none
       {% endif %}
     {% endunless %}
   {% endfor %}
-  <url>
-    <loc>{{ site.url }}</loc>
-    <lastmod>{{ sitelastmod | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1</priority>
-  </url>
+  {% assign pages = site.pages | where: "sitemap.include", true %}
+  {% for page in pages %}
+    {% capture pagedate %}{{ page.date | date: '%s' }}{% endcapture %}
+    {% assign pagelastmod = pagedate %}
+    {% if page.lastModified %}
+        {% capture pagemod %}{{ page.lastModified | date: '%s'}}{% endcapture %}
+        {% if pagemod > pagedate %}
+          {% assign pagelastmod = modtime %}
+        {% endif %}
+      {% endif %}
+    <url>
+      <loc>{{ site.url }}{{ page.url }}</loc>
+      <lastmod>{{ pagelastmod | date_to_xmlschema }}</lastmod>
+      <changefreq>{{ page.sitemap.change_frequency | default: "monthly" }}</changefreq>
+      <priority>{{ page.sitemap.change_frequency | default: 0.5 }}</priority>
+    </url>
+  {% endfor %}
+  
 </urlset>
