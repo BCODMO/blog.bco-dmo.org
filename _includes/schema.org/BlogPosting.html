@@ -1,4 +1,5 @@
 {
+  {% assign author = site.data.authors[include.post.author] %}
   {% if include.context %}	
     "@context": {% include {{ include.context }} %},	
   {% endif %}	
@@ -17,7 +18,7 @@
     "name": "Biological and Chemical Oceanography Data Managemennt Office",	
     "url": "https://www.bco-dmo.org"	
   },
-  "author": {% include schema.org/Person.html person=site.data.authors[include.post.author] %},	
+  "author": {% include schema.org/Person.html person=author %},	
   {% if include.post.description %}	
     {% assign callout = include.post.description %}	
   {% elsif include.post.excerpt %}	
