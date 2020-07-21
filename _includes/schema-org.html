@@ -4,8 +4,21 @@
   "url": "{{ site.url }}{{ include.url }}",
   "name": {{ include.name | jsonify }},
   "headline": {{ include.name | jsonify }},
+  {% include.type == "BlogPosting" %}
+  "publisher": {
+    "@type": "Organization",
+    "name": "Biological and Chemical Oceanography Data Managemennt Office",
+    "url": "https://www.bco-dmo.org"
+  },
+  {% endif %}
   {% if include.headline %}
   "alternativeHeadline":{{ include.headline | jsonify }},
+  {% endif %}
+  {% if include.image %}
+    "image": {
+    "@type": "ImageObject",
+    "url": {{ include.image | jsonify }},
+  }
   {% endif %}
   {% if include.description %}
     "description": {{ include.description | jsonify }},
