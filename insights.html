@@ -1,0 +1,15 @@
+---
+layout: default
+type: ItemList
+id: insights
+permalink: /insights/
+title: "Insights"
+description: "Keeping you up to date with the latest insights at the Biological and Chemical Oceanography Data Management Office (BCO-DMO)"
+author: bcodmo
+---
+
+<h1 class="title is-1 is-primary padding-bot-1 margin-bot-0">{{ page.title }}</h1>
+{% if site.posts %}
+  {% include sub-nav.html active=page.id %}
+  {% include post-listing.html category=page.id %}
+{% endif %}
