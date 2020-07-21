@@ -1,0 +1,27 @@
+<script type="application/ld+json">
+{
+  "@type": "Blog",
+  "url": "{{ site.url }}{{ include.url }}",
+  "name": {{ include.name | jsonify }},
+  "headline": {{ include.name | jsonify }},
+  {% if include.headline %}
+  "alternativeHeadline":{{ include.headline | jsonify }},
+  {% endif %}
+  {% if include.description %}
+    "description": {{ include.description | jsonify }},
+  {% endif %}
+  {% if include.keywords %}
+    {% for keyword in include.keywords %}
+  "keywords": {{ keyword | jsonify }},
+    {% endfor %}
+  {% endif %}
+  {% if site.posts %}
+    "blogPost": [
+    {% for post in site.posts %}
+      {% include schema.org/BlogPosting.html post=post %}
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ],
+  {% endif %}
+  "@context":"http://schema.org/"
+}</script>
