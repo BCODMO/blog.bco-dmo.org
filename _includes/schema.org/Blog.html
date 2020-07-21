@@ -1,7 +1,9 @@
 {
+  {% comment %}
   {% if include.context %}
     "@context": {% include {{ include.context }} %},
   {% endif %}
+  {% endcomment %}
   "@type": "Blog",
   "name": {{ include.blog.title | jsonify }},
   "headline": {{ include.blog.title | jsonify }},
