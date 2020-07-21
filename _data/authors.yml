@@ -1,18 +1,25 @@
 danie:
   type: Person
   name: Danie Kinkade
-  orcid:
+  role: Director
   url:
   social:
+    orcid:
+      id: 0000-0002-1134-7347
+      url: https://orcid.org/0000-0002-1134-7347
     twitter:
+      id: danie_b_k
+      url: https://twitter.com/danie_b_k
   
 adam:
   type: Person
   name: Adam Shepherd
-  url: https://www.linkedin.com/in/ashep15/
   role: Technical Director
-  orcid:
+  url: https://www.linkedin.com/in/ashep15/
   social:
+    orcid:
+      id: 0000-0003-4486-9448
+      url: https://orcid.org/0000-0003-4486-9448
     twitter: 
       id: ashep_15
       url: https://twitter.com/ashep_15
