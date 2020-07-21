@@ -1,0 +1,48 @@
+<script type="application/ld+json">
+{
+  "@type": "BlogPosting",
+  "url": "{{ site.url }}{{ include.post.url }}",
+  "name": {{ include.post.name | jsonify }},
+  "headline": {{ include.post.name | jsonify }},
+  {% if include.post.subtitle %}
+    "alternativeHeadline":{{ include.post.subtitle | jsonify }},
+  {% endif %}
+  "datePublished": "{{ include.post.date | date_to_xmlschema }}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Biological and Chemical Oceanography Data Managemennt Office",
+    "url": "https://www.bco-dmo.org"
+  },
+  {% assign author = site.data.authors[include.post.author] %}
+  "author": {
+    "type": {{ author.type | jsonify }},
+    "name": {{ author.name | jsonify }}
+  },
+  {% if include.post.description %}
+    {% assign callout = include.post.description %}
+  {% elsif include.post.excerpt %}
+    {% assign callout = include.post.excerpt %}
+  {% else %}
+    {% assign callout = null %}
+  {% endif %}
+  {% if callout %}
+    "description": {{ callout | jsonify }},
+  {% endif %}
+  {% if include.post.image %}
+    "image": {
+      "@type": "ImageObject",
+      "url": {{ include.image | jsonify }},
+    }
+  {% endif %}
+  {% if include.post.lastModified %}
+  "dateModified": "{{ include.post.lastModified | date_to_xmlschema }}",
+  {% endif %}
+  {% if include.post.tags %}
+    "keywords": [
+    {% for keyword in include.post.tags %}
+      "{{ keyword }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ],
+  {% endif %}
+  "@context":"http://schema.org/"
+}</script>
