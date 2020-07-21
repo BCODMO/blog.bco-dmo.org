@@ -1,9 +1,7 @@
 {
-  {% comment %}
   {% if include.context %}
     "@context": {% include {{ include.context }} %},
   {% endif %}
-  {% endcomment %}
   "@type": "BlogPosting",
   "name": {{ include.post.title | jsonify }},
   "headline": {{ include.post.title | jsonify }},
@@ -16,9 +14,8 @@
     "name": "Biological and Chemical Oceanography Data Managemennt Office",
     "url": "https://www.bco-dmo.org"
   },
-  {% comment %}
+{% comment %}
   "author": {% include schema.org/Person.html person=site.data.authors[include.post.author] %},
-  {% endcomment %}
   {% if include.post.description %}
     {% assign callout = include.post.description %}
   {% elsif include.post.excerpt %}
@@ -45,5 +42,6 @@
     {% endfor %}
     ],
   {% endif %}
+{% endcomment %}
   "url": "{{ site.url }}{{ include.post.url }}"
 }
