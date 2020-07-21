@@ -6,7 +6,7 @@ role: Technical Director
 orcid:
 url:
 social:
-  twitter:
+  twitter: ashep_15
 ---
 
 Adam is the Technical Director of BCO-DMO...
