@@ -1,6 +1,6 @@
 {
   {% if include.context %}
-    {% include {{ include.context }} %}
+    "@context": {% include {{ include.context }} %},
   {% endif %}
   "@type": "Blog",
   "name": {{ include.blog.title | jsonify }},
