@@ -15,4 +15,7 @@ author: bcodmo
   {% include sub-nav.html active="all" %}
   {% include post-listing.html category="all" %}
 {% endif %}
-{{ site.pages }}
+
+{% for page in site.pages %}
+<a href="{{ page.url }}">{{ page.title }}</a>
+{% endfor %}
