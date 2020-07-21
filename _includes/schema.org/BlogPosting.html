@@ -13,11 +13,7 @@
   {% if include.post.lastModified %}	
   "dateModified": "{{ include.post.lastModified | date_to_xmlschema }}",	
   {% endif %}	
-  "publisher": {	
-    "@type": "Organization",	
-    "name": "Biological and Chemical Oceanography Data Managemennt Office",	
-    "url": "https://www.bco-dmo.org"	
-  },
+  "publisher": {% include schema.org/static/Organization_BCODMO.html %},
   "author": {% include schema.org/Person.html person=author %},	
   {% if include.post.description %}	
     {% assign callout = include.post.description %}	
