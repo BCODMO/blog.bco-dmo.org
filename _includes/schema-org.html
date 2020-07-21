@@ -3,7 +3,7 @@
 {% if include.page.type == "Blog" %}
   {% include schema.org/Blog.html blog=include.page context=context_file %}
 {% elsif include.page.type == "ItemList" %}
-  {% include schema.org/ItemList.html post=include.page context=context_file %}
+  {% include schema.org/ItemList.html list=include.page context=context_file %}
 {% elsif include.page.type == "BlogPosting" %}
   {% include schema.org/BlogPosting.html post=include.page context=context_file %}
 {% endif %}
