@@ -11,10 +11,10 @@
     "description": {{ include.description | jsonify }},
   {% endif %}
   {% if include.date %}
-  "datePublished": {{ include.date | jsonify }},
+  "datePublished": {{ include.date | date_to_xmlschema }},
   {% endif %}
   {% if include.modified %}
-  "dateModified": {{ include.modified | jsonify }},
+  "dateModified": {{ include.modified | date_to_xmlschema }},
   {% endif %}
   {% if include.keywords %}
     {% for keyword in include.keywords %}
