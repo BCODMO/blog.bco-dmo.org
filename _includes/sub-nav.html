@@ -1,0 +1,9 @@
+<div class="tabs is-centered">
+    <ul>
+      <li {% if include.active == "all" %}class="is-active"{% endif %}><a>All</a></li>
+      <li {% if include.active == "news" %}class="is-active"{% endif %}><a href="/news/">News</a></li>
+      <li {% if include.active == "data-tools" %}class="is-active"{% endif %}><a href="/data-tools/">Data & Tools</a></li>
+      <li {% if include.active == "insights" %}class="is-active"{% endif %}><a href="/insights/">Insights</a></li>
+      <li {% if include.active == "engineering" %}class="is-active"{% endif %}><a href="/engineering/">Engineering</a></li>
+    </ul>
+  </div>
