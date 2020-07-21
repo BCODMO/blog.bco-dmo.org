@@ -16,8 +16,3 @@ include_in_sitemap: true
   {% include sub-nav.html active="all" %}
   {% include post-listing.html category="all" %}
 {% endif %}
-
-{% assign pages = site.pages | where: "include_in_sitemap", true %}
-{% for page in pages %}
-{{ page.url }} => {{ page.title }}
-{% endfor %}
