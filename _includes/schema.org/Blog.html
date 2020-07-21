@@ -1,6 +1,5 @@
 {
   "@type": "Blog",
-  "url": "{{ site.url }}{{ include.blog.url }}",
   "name": {{ include.blog.title | jsonify }},
   "headline": {{ include.blog.title | jsonify }},
   {% if include.blog.subtitle %}
@@ -10,9 +9,21 @@
     "description": {{ include.blog.description | jsonify }},
   {% endif %}
   {% if include.blog.keywords %}
+    "keywords": [
     {% for keyword in include.blog.keywords %}
-  "keywords": {{ keyword | jsonify }},
+      {{ keyword | jsonify }}{% unless forloop.last %},{% endunless %}
     {% endfor %}
+    ],
   {% endif %}
-  {% include schema.org/context.html %}
+  {% comment %}
+    {% if site.posts %}
+      "blogPost": [
+      {% for post in site.posts %}
+        {% include schema.org/BlogPosting.html post=post %}
+        {% unless forloop.last %},{% endunless %}
+      {% endfor %}
+      ],
+    {% endif %}
+  {% endcomment %}
+  "url": "{{ site.url }}{{ include.blog.url }}"
 }
