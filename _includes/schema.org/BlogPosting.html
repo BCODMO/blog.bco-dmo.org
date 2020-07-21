@@ -1,1 +1,10 @@
-TEST
+{
+  {% if include.context %}	
+    "@context": {% include {{ include.context }} %},	
+  {% endif %}	
+  "@type": "BlogPosting",	
+  "name": {{ include.post.title | jsonify }},	
+  "headline": {{ include.post.title | jsonify }},	
+  
+  "url": "{{ site.url }}{{ include.post.url }}"	
+}
