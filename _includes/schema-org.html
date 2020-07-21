@@ -1,1 +1,6 @@
-
+<script type="application/ld+json">
+  "@context": "http://schema.org/",
+  {% if page.type == "Blog" %}
+    {% include schema.org/Blog.html blog=page %}
+  {% endif %}
+</script>
