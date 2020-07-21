@@ -26,6 +26,7 @@ author: bcodmo
     {% comment %} forloop.index - 1 becuase index starts at 1 {% endcomment %}
     {% assign remainder = forloop.index - 1 | modulo: 2 %}
     {% assign new_row = remainder == 0 %}
+    <!-- New Row: {{ new_row }} and Counter: {{ forloop.index }} -->
     {% if new_row and forloop.index != 1 %}
       </div>
       <div class="columns">
@@ -40,7 +41,6 @@ author: bcodmo
       {% assign callout = null %}
     {% endif %}
       <div class="column is-6">
-        {{ forloop.index }}
         {% include post-card.html post=post callout=callout author=author %}
       </div>
   {% endfor %}
