@@ -6,5 +6,10 @@
   {% include schema.org/ItemList.html list=include.page context=context_file %}
 {% elsif include.page.type == "BlogPosting" %}
   {% include schema.org/BlogPosting.html post=include.page context=context_file %}
+{% else %}
+  "@context": {% include {{ include.context }} %},
+  "@type": "Thing",
+  "name": {{ page.title | jsonify }},
+  "url": {{ page.url | jsonify }}
 {% endif %}
 </script>
