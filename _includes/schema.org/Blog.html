@@ -1,16 +1,16 @@
 {
   "@type": "Blog",
-  "url": "{{ site.url }}{{ page.url }}",
-  "name": {{ page.name | jsonify }},
-  "headline": {{ page.name | jsonify }},
-  {% if page.subtitle %}
-  "alternativeHeadline":{{ page.subtitle | jsonify }},
+  "url": "{{ site.url }}{{ include.blog.url }}",
+  "name": {{ include.blog.title | jsonify }},
+  "headline": {{ include.blog.title | jsonify }},
+  {% if include.blog.subtitle %}
+  "alternativeHeadline":{{ include.blog.subtitle | jsonify }},
   {% endif %}
-  {% if page.description %}
-    "description": {{ page.description | jsonify }},
+  {% if include.blog.description %}
+    "description": {{ include.blog.description | jsonify }},
   {% endif %}
-  {% if page.keywords %}
-    {% for keyword in page.keywords %}
+  {% if include.blog.keywords %}
+    {% for keyword in include.blog.keywords %}
   "keywords": {{ keyword | jsonify }},
     {% endfor %}
   {% endif %}
