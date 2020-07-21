@@ -9,11 +9,15 @@
     "alternativeHeadline":{{ include.post.subtitle | jsonify }},	
   {% endif %}	
   "datePublished": "{{ include.post.date | date_to_xmlschema }}",	
+  {% if include.post.lastModified %}	
+  "dateModified": "{{ include.post.lastModified | date_to_xmlschema }}",	
+  {% endif %}	
   "publisher": {	
     "@type": "Organization",	
     "name": "Biological and Chemical Oceanography Data Managemennt Office",	
     "url": "https://www.bco-dmo.org"	
   },
+  "author": {% include schema.org/Person.html person=site.data.authors[include.post.author] %},	
   {% if include.post.description %}	
     {% assign callout = include.post.description %}	
   {% elsif include.post.excerpt %}	
@@ -24,9 +28,12 @@
   {% if callout %}	
     "description": {{ callout | jsonify }},	
   {% endif %}	
-  {% if include.post.lastModified %}	
-  "dateModified": "{{ include.post.lastModified | date_to_xmlschema }}",	
-  {% endif %}	
+  {% if include.post.image %}	
+    "image": {	
+      "@type": "ImageObject",	
+      "url": {{ include.post.image | jsonify }},	
+    },	
+  {% endif %}		
   {% if include.post.tags %}	
     "keywords": [	
     {% for keyword in include.post.tags %}	
@@ -34,11 +41,5 @@
     {% endfor %}	
     ],	
   {% endif %}	
-  {% if include.post.image %}	
-    "image": {	
-      "@type": "ImageObject",	
-      "url": {{ include.post.image | jsonify }},	
-    },	
-  {% endif %}		
   "url": "{{ site.url }}{{ include.post.url }}"	
 }
