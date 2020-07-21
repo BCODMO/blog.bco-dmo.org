@@ -5,6 +5,14 @@
   "@type": "BlogPosting",	
   "name": {{ include.post.title | jsonify }},	
   "headline": {{ include.post.title | jsonify }},	
-  
+  {% if include.post.subtitle %}	
+    "alternativeHeadline":{{ include.post.subtitle | jsonify }},	
+  {% endif %}	
+  "datePublished": "{{ include.post.date | date_to_xmlschema }}",	
+  "publisher": {	
+    "@type": "Organization",	
+    "name": "Biological and Chemical Oceanography Data Managemennt Office",	
+    "url": "https://www.bco-dmo.org"	
+  },
   "url": "{{ site.url }}{{ include.post.url }}"	
 }
