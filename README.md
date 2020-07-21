@@ -119,6 +119,8 @@ mike:
     ...
 ```
 
+Non-blog posts should be authored by `bcodmo`.
+
 #### `image`
 
 | Property | Value |
