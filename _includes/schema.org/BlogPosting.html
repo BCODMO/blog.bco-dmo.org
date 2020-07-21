@@ -1,6 +1,5 @@
 {
   "@type": "BlogPosting",
-  "url": "{{ site.url }}{{ include.post.url }}",
   "name": {{ include.post.title | jsonify }},
   "headline": {{ include.post.title | jsonify }},
   {% if include.post.subtitle %}
@@ -39,5 +38,5 @@
     {% endfor %}
     ],
   {% endif %}
-  {% include schema.org/context.html %}
+  "url": "{{ site.url }}{{ include.post.url }}"
 }
