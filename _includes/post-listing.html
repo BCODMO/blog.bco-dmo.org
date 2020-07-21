@@ -1,0 +1,31 @@
+{% assign category = include.category | default: "all" %}
+{% if include.category == "all" %}
+  {% assign posts = site.posts %}
+{% else %}
+  {% assign posts = site.posts | where:"category", include.category %}
+{% endif %}
+
+<div class="columns">
+{% for post in posts %}
+  {% assign author = site.data.authors[post.author] %}
+  {% if post.description %}
+    {% assign callout = post.description %}
+  {% elsif post.excerpt %}
+    {% assign callout = post.excerpt %}
+  {% else %}
+    {% assign callout = null %}
+  {% endif %}
+    <div class="column is-6" data-index="{{ forloop.index }}">
+      {% include post-card.html post=post callout=callout author=author %}
+    </div>
+
+  {% comment %} make 2 columns of post cards {% endcomment %}
+  {% assign remainder = forloop.index | modulo: 2 %}
+  {% if remainder == 0 and forloop.index > 1 %}
+    </div>
+    <div class="columns">
+  {% endif %}
+
+{% endfor %}
+  </div><!-- closes the last "columns" div -->
+</div>
