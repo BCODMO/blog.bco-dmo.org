@@ -7,7 +7,6 @@ google_analytics:
 page_excerpts: true
 excerpt_separator: "<!--more-->"
 
-collections_dir: _collections
 collections:
   authors:
     people: true
