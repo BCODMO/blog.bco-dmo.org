@@ -4,7 +4,7 @@
   "url": "{{ site.url }}{{ include.url }}",
   "name": {{ include.name | jsonify }},
   "headline": {{ include.name | jsonify }},
-  {% include.type == "BlogPosting" %}
+  {% if include.type == "BlogPosting" %}
   "publisher": {
     "@type": "Organization",
     "name": "Biological and Chemical Oceanography Data Managemennt Office",
