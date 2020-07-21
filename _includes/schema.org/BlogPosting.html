@@ -24,6 +24,16 @@
   {% if callout %}	
     "description": {{ callout | jsonify }},	
   {% endif %}	
+  {% if include.post.lastModified %}	
+  "dateModified": "{{ include.post.lastModified | date_to_xmlschema }}",	
+  {% endif %}	
+  {% if include.post.tags %}	
+    "keywords": [	
+    {% for keyword in include.post.tags %}	
+      "{{ keyword }}"{% unless forloop.last %},{% endunless %}	
+    {% endfor %}	
+    ],	
+  {% endif %}	
 
   "url": "{{ site.url }}{{ include.post.url }}"	
 }
