@@ -23,11 +23,9 @@ author: bcodmo
   </div>
   <div class="columns">
   {% for post in site.posts %}
-    {% comment %} forloop.index - 1 becuase index starts at 1 {% endcomment %}
+    {% comment %} forloop.index - 1 because index starts at 1 {% endcomment %}
     {% assign remainder = forloop.index - 1 | modulo: 2 %}
-    {% assign new_row = remainder == 0 %}
-    <!-- New Row: {{ new_row }} and Counter: {{ forloop.index }} -->
-    {% if new_row == 1 and forloop.index != 1 %}
+    {% if remainder == 0 and forloop.index != 1 %}
       </div>
       <div class="columns">
     {% endif %}
