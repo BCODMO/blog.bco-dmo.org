@@ -1,17 +1,17 @@
 <script type="application/ld+json">
 {
   "@type": "Blog",
-  "url": "{{ site.url }}{{ include.url }}",
-  "name": {{ include.name | jsonify }},
-  "headline": {{ include.name | jsonify }},
-  {% if include.headline %}
-  "alternativeHeadline":{{ include.headline | jsonify }},
+  "url": "{{ site.url }}{{ page.url }}",
+  "name": {{ page.name | jsonify }},
+  "headline": {{ page.name | jsonify }},
+  {% if page.subtitle %}
+  "alternativeHeadline":{{ page.subtitle | jsonify }},
   {% endif %}
-  {% if include.description %}
-    "description": {{ include.description | jsonify }},
+  {% if page.description %}
+    "description": {{ page.description | jsonify }},
   {% endif %}
-  {% if include.keywords %}
-    {% for keyword in include.keywords %}
+  {% if page.keywords %}
+    {% for keyword in page.keywords %}
   "keywords": {{ keyword | jsonify }},
     {% endfor %}
   {% endif %}
