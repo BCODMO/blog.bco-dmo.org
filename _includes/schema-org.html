@@ -9,6 +9,7 @@
 {% else %}
   {
     "@context": {% include {{ include.context }} %},
+    "@id": "{{ site.url }}{{ page.url }}",
     "@type": "Thing",
     "name": {{ page.title | jsonify }},
     "url": {{ page.url | jsonify }}
