@@ -21,7 +21,7 @@ layout: default
   {{content}}
   
   {% if page.lastModified %}
-    <p class="margin-top-3 is-size-7 is-italic">Last modified: {{ page.lastModified  | date: "%Y-%m-%d %H:%M" }}</p>
+    <p class="margin-top-3 is-size-7 is-italic">Last modified: {{ page.lastModified  | date: "%Y-%m-%d %H:%M:%S" }}</p>
   {% else %}
     <p class="margin-top-3 is-size-7 is-italic">Last modified: {{ page.date }}</p>
   {% endif %}
