@@ -23,10 +23,10 @@ author: bcodmo
   </div>
   <div class="columns">
   {% for post in site.posts %}
-    {% assign counter = forloop.index %}
-    {% assign remainder = counter | modulo: 2 %}
+    {% assign remainder = forloop.index | modulo: 2 %}
     {% assign new_row = remainder == 0 %}
-    {% if new_row and counter != 1 %}
+    <!-- Counter: {{ forloop.index }} New Row: {{ new_row }} -->
+    {% if new_row and forloop.index != 1 %}
       </div>
       <div class="columns">
     {% endif %}
@@ -40,7 +40,7 @@ author: bcodmo
       {% assign callout = null %}
     {% endif %}
       <div class="column is-6">
-        {{ counter }}
+        {{ forloop.index }}
         {% include post-card.html post=post callout=callout author=author %}
       </div>
   {% endfor %}
