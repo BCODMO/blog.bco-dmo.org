@@ -1,0 +1,22 @@
+{% assign posts = site.posts | where:"category", include.list.id }}
+{
+  {% if include.context %}
+    "@context": {% include {{ include.context }} %},
+  {% endif %}
+  "@type": "ItemList",
+  "name": {{ include.list.title | jsonify }},
+  {% if include.list.description %}
+    "description": {{ include.list.description | jsonify }},
+  {% endif %}
+  "itemListOrder": "http://schema.org/ItemListOrderDescending",
+  "numberOfItems": {{ posts.size }},
+  {% if posts %}
+    "itemListElement": [
+    {% for post in posts %}
+      {% include schema.org/BlogPosting.html post=post %}
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ],
+  {% endif %}
+  "url": "{{ site.url }}{{ include.list.url }}"
+}
