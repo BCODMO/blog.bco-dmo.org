@@ -1,6 +1,5 @@
 {% assign context_file = "schema.org/context/default.html" %}
 <script type="application/ld+json">
-{% comment %}
 {% if include.page.type == "Blog" %}
   {% include schema.org/Blog.html blog=include.page context=context_file %}
 {% elsif include.page.type == "ItemList" %}
@@ -15,5 +14,4 @@
     "url": {{ page.url | jsonify }}
   }
 {% endif %}
-{% endcomment %}
 </script>
