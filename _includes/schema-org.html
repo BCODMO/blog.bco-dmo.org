@@ -1,5 +1,4 @@
 {% assign context_file = "schema.org/context/default.html" %}
-<!-- context: {{ context_file }} -->
 <script type="application/ld+json">
 {% if include.page.type == "Blog" %}
   {% include schema.org/Blog.html blog=include.page context=context_file %}
