@@ -25,7 +25,7 @@ author: bcodmo
   {% for post in site.posts %}
     {% comment %} forloop.index - 1 because index starts at 1 {% endcomment %}
     {% assign remainder = forloop.index - 1 | modulo: 2 %}
-    {% if remainder == 0 and forloop.index != 1 %}
+    {% if remainder == 0 and forloop.index > 1 %}
       </div>
       <div class="columns">
     {% endif %}
@@ -38,7 +38,7 @@ author: bcodmo
     {% else %}
       {% assign callout = null %}
     {% endif %}
-      <div class="column is-6">
+      <div class="column is-6" data-index="{{ forloop.index }}">
         {% include post-card.html post=post callout=callout author=author %}
       </div>
   {% endfor %}
