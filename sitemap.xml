@@ -36,7 +36,7 @@ layout: none
           {% assign posttime = modtime %}
         {% endif %}
       {% endif %}
-      {% if sitelastmod = nil or posttime > sitelastmod %}
+      {% if sitelastmod == nil or posttime > sitelastmod %}
         <!-- mpdating sitelastmod: {{ posttime }} -->
         {% assign sitelastmod = posttime %}
       {% endif %}
