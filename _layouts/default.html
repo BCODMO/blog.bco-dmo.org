@@ -46,9 +46,11 @@
             {% endfor %}
           {% endif %}
           {% endcomment %}
-          {% assign listing = site.pages | where: "id", page.category %}
-          {% if listing %}
-            <li><a href="{{ site.url }}{{ listing.url }}" aria-current="page">{{ listing.title }}</a></li>
+          {% assign pages = site.pages | where: "id", page.category %}
+          {% if pages %}
+            {% for listing in pages %}
+              <li><a href="{{ site.url }}{{ listing.url }}" aria-current="page">{{ listing.title }}</a></li>
+            {% endfor %}
           {% endif %}
           <li class="is-active"><a aria-current="page">{{ page.title }}</a></li>
         {% elsif page.type and page.type == "ItemList" %}
