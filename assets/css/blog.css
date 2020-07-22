@@ -1,0 +1,12 @@
+.margin-bot-2-important {
+  margin-bottom: 2rem !important; 
+}
+
+a.no-hover-effect:hover {
+  color: unset;
+}
+
+.image.is-256x256 {
+    height: 256px;
+    width: 256px; 
+}
