@@ -37,10 +37,10 @@
           <li><a href="{{ site.url }}" aria-current="page">Blog</a></li>
           {% if page.category %}
             {% assign pages = site.pages | where: "include_in_sitemap", true %}
-            {% for page in pages %}
-              <!-- ID: {{ page.id }} -->
-              {% if page.id == page.category %}
-                <li><a href="{{ site.url }}{{ category.url }}" aria-current="page">{{ category.title }}</a></li>
+            {% for listing in pages %}
+              <!-- ID: {{ plistingage.id }} -->
+              {% if listing.id == page.category %}
+                <li><a href="{{ site.url }}{{ listing.url }}" aria-current="page">{{ listing.title }}</a></li>
               {% endif %}
             {% endfor %}
           {% endif %}
