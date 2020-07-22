@@ -27,11 +27,17 @@
   {% endif %}	
   {% if callout %}	
     "description": {{ callout | jsonify }},	
-  {% endif %}	
-  "image": {	
-    "@type": "ImageObject",	
-    "url": "{{ site.url }}{{ include.post.image | default: "/assets/img/bco-dmo-avatar.jpg" }}"	
-  },	
+  {% endif %}
+  {% unless include.hideContent %}
+    "articleBody": {{ include.post.content | jsonify }},
+  {% endunless %}
+  "wordCount": {{ include.post.content | number_of_words }},
+  {% if include.post.image %}
+    "image": {	
+      "@type": "ImageObject",	
+      "url": "{{ site.url }}/assets/img/posts/{{ include.post.image.filename }}"	
+    },	
+  {% endif %}
   {% if include.post.tags %}	
     "keywords": [	
     {% for keyword in include.post.tags %}	
