@@ -4,16 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:site_name" content="BCO-DMO Blog" />
+    <meta property="og:type" content="article" />
     {% if page.description %}
       {% assign callout = page.description %}
     {% elsif page.excerpt %}
-      {% assign callout = page.excerpt %}
+      {% assign callout = page.excerpt | strip_html %}
     {% else %}
       {% assign callout = null %}
     {% endif %}
+    {% assign url = site.url | append: page.url %}
+    <meta property="og:url" content="{{ url }}" />
+    <meta property="og:title" content="{{ page.title }}" />
     {% if callout %}
-    <meta name="description" content="{{ callout }}">
+      <meta name="description" content="{{ callout }}">
+      <meta property="og:description" content="{{ callout }}" />
     {% endif %}
+    {% if page.image %}
+      {% assign image_url = "/assets/img/posts/" | append: include.post.image.filename %}
+    {% else %}
+      {% assign image_url = "/assets/img/bco-dmo-avatar.jpg" %}
+    {% endif %}
+    <link rel="image_src" href="{{ site.url }}{{ image_url }}" />
+    <meta property="og:image" content="{{ site.url }}{{ image_url }}" />
+    
     {% assign author = site.data.authors[page.author] %}
     <meta name="author" content="{{ author.name }}">
     {% include schema-org.html page=page %}
