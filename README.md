@@ -25,8 +25,15 @@ tags:
   - keyword2
 ---
 
-Callout text goes here<!--more--> Say more here
+Blog content starts. Callout text goes here<!--more--> Say more here
 ```
+### Linking to other blog posts
+
+See https://jekyllrb.com/docs/liquid/tags/#linking-to-posts
+
+### Excerpts
+
+Excerpts are snippets from the post that can be used elsewhere as callout text.  From the template above, notice the `<!--more-->`. All blog content up to this comment tag will be captured as the blog's official exceprt, or callout text. This text appears in all blog cards from the homepage, section listings and tag listing pages. These excerpts are also included in the RSS feed of the blog. 
 
 ## Publishing a Post
 
@@ -46,13 +53,7 @@ __Q: Why do we need to publish releases?__
 
 <img width="559" alt="Successful Deployment of the Blog" src="https://user-images.githubusercontent.com/2117576/88196632-6b993580-cc0f-11ea-8518-74446d5805d5.png">
 
-### Linking to other blog posts
 
-See https://jekyllrb.com/docs/liquid/tags/#linking-to-posts
-
-### Excerpts
-
-Excerpts are snippets from the post that can be used elsewhere as callout text. 
 
 ## Post metadata
 
