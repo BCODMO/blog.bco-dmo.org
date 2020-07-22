@@ -35,6 +35,7 @@
         <!-- Loop through any previous pages -->
         {% if page.type and page.type == "BlogPosting" %}
           <li><a href="{{ site.url }}" aria-current="page">Blog</a></li>
+          {% comment %}
           {% if page.category %}
             {% assign pages = site.pages | where: "include_in_sitemap", true %}
             {% for listing in pages %}
@@ -43,6 +44,11 @@
                 <li><a href="{{ site.url }}{{ listing.url }}" aria-current="page">{{ listing.title }}</a></li>
               {% endif %}
             {% endfor %}
+          {% endif %}
+          {% endcomment %}
+          {% assign listing = site.pages | where: "id", page.category %}
+          {% if listing %}
+            <li><a href="{{ site.url }}{{ listing.url }}" aria-current="page">{{ listing.title }}</a></li>
           {% endif %}
           <li class="is-active"><a aria-current="page">{{ page.title }}</a></li>
         {% elsif page.type and page.type == "ItemList" %}
