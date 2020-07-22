@@ -8,7 +8,7 @@ https://blog.bco-dmo.org
 
 ## Writing a blog post
 
-1. Create a post in `_drafts` folder like `_drafts/my-first-post.md` with the followign template:
+1. Create a post in `_drafts` folder like `_drafts/my-first-post.md` with the following template:
 
 ```
 ---
@@ -21,6 +21,8 @@ date: YYYY-MM-DD
 lastModified: YYYY-MM-DD HH:mm:ss
 author: your key from _data/authors.yml
 tags: 
+  - keyword1
+  - keyword2
 ---
 
 Callout text goes here<!--more--> Say more here
