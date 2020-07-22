@@ -2,9 +2,9 @@
 layout: none
 ---
 
-{% assign sitelastmod = nil %}
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign sitelastmod = nil %}
   {% comment %}
   ===============================================
   Include pages marked `include_in_sitemap: true`
@@ -67,5 +67,4 @@ layout: none
       <priority>{{ page.sitemap.priority | default: 0.5 }}</priority>
     </url>
   {% endfor %}
-  
 </urlset>
