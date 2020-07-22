@@ -13,13 +13,10 @@ tags:
   - repositories
 ---
 
-BCO-DMO was awarded the CoreTrustSeal certification on July 13, 2020...<!--more--> Say more here
+BCO-DMO was awarded the CoreTrustSeal certification on July 13, 2020...<!--more-->{% include image.html filename="CoreTrustSeal-logo-transparent.png" %}
+Say more here
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a mauris non erat cursus tempor. Donec elementum, sapien eget tristique vehicula, quam odio ultrices purus, non rhoncus nibh nulla sit amet sem. Donec ultrices massa ut ultricies sodales. Aliquam erat volutpat. Fusce pharetra commodo viverra. Donec ut feugiat neque. Donec ultricies, ligula non dapibus congue, sem velit ullamcorper augue, vel faucibus eros arcu eget erat. Ut semper metus non metus ullamcorper malesuada. Pellentesque ac tincidunt est. Donec vel tellus ac magna accumsan tincidunt sit amet at erat.
-
-<div><img src="https://blog.bco-dmo.org/assets/img/posts/CoreTrustSeal-logo-transparent.png"></div>
-
-{% include image.html filename="CoreTrustSeal-logo-transparent.png" %}
 
 Aliquam id sem cursus, iaculis elit ut, eleifend dui. Aliquam finibus porta ullamcorper. Donec elit risus, ultrices sit amet mattis vitae, eleifend in massa. Donec fringilla rhoncus diam placerat ullamcorper. Praesent bibendum erat non mauris maximus semper. Cras fermentum, purus non ultrices pretium, mi tortor pulvinar neque, ut tincidunt magna est nec arcu. Praesent nec consectetur odio. Vestibulum et lectus dolor.
 
