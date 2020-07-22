@@ -11,47 +11,49 @@ layout: default
 {% assign linkedin_share = "https://www.linkedin.com/shareArticle?" | append: linkedin_query %}
 {% assign email_subject = "BCO-DMO Blog: " | append: page.title %}
 {% capture email_share %}mailto:?Subject={{ email_subject }}&Body={{ excerpt_no_html }}%0D%0A%0D%0A{{ url | url_encode }}{% endcapture %}
-
-<h5 class="subtitle is-6 margin-bot-1">{{ page.date | date_to_long_string }}</h5>
-<h1 class="title is-1 is-primary padding-bot-1 margin-bot-2-important">{{ page.title }}</h1>
-{% if page.subtitle %}
-<h5 class="subtitle is-italic padding-bot-0 margin-bot-0">{{ page.subtitle }}</h5>
-{% endif %}
-<nav class="level margin-bot-0">
-  <div class="level-left">
-    <div class="level-item"><h5 class="title is-5 margin-top-0 margin-bot-0">{{ author.name }}</h5></div>
-  </div>
-  <div class="is-centered">
-    <nav class="level is-mobile">
-      <p class="level-item has-text-centered margin-left-1 margin-right-1"><a href="{{ twitter_share }}" target="_blank"><i class="fa fa-twitter social-size-small"></i></a></p>
-      <p class="level-item has-text-centered margin-left-1 margin-right-1"><a href="{{ linkedin_share }}" target="_blank"><i class="fa fa-linkedin social-size-small"></i></a></p>
-      <p class="level-item has-text-centered margin-left-1 margin-right-1"><a href="{{ email_share }}"><i class="fa fa-envelope fa-3 social-size-small" aria-hidden="true"></i></a></p>
-    </nav>
-  </div>
-  <div class="level-right">
-    <p class="level-item">
-      {% if page.tags %}
-        <p class="margin-bot-1">
-        {% for tag in page.tags %}
-          {% include tag.html tag=tag %}
-        {% endfor %}
-        </p>
+<article>
+  <h5 class="subtitle is-6 margin-bot-1">{{ page.date | date_to_long_string }}</h5>
+  <h1 class="title is-1 is-primary padding-bot-1 margin-bot-2-important">{{ page.title }}</h1>
+  {% if page.subtitle %}
+  <h5 class="subtitle is-italic padding-bot-0 margin-bot-0">{{ page.subtitle }}</h5>
+  {% endif %}
+  <nav class="level margin-bot-0">
+    <div class="level-left">
+      <div class="level-item"><h5 class="title is-5 margin-top-0 margin-bot-0">{{ author.name }}</h5></div>
+    </div>
+    <div class="is-centered">
+      <nav class="level is-mobile">
+        <p class="level-item has-text-centered margin-left-1 margin-right-1"><a href="{{ twitter_share }}" target="_blank"><i class="fa fa-twitter social-size-small"></i></a></p>
+        <p class="level-item has-text-centered margin-left-1 margin-right-1"><a href="{{ linkedin_share }}" target="_blank"><i class="fa fa-linkedin social-size-small"></i></a></p>
+        <p class="level-item has-text-centered margin-left-1 margin-right-1"><a href="{{ email_share }}"><i class="fa fa-envelope fa-3 social-size-small" aria-hidden="true"></i></a></p>
+      </nav>
+    </div>
+    <div class="level-right">
+      <p class="level-item">
+        {% if page.tags %}
+          <p class="margin-bot-1">
+          {% for tag in page.tags %}
+            {% include tag.html tag=tag %}
+          {% endfor %}
+          </p>
+        {% endif %}
+      </p>
+    </div>
+  </nav>
+  <hr class="margin-top-0 margin-bot-1">
+  <div class="columns">
+    <div class="column">
+      {% if page.image %}
+        {% include image.html image=page.image  %}
       {% endif %}
-    </p>
+
+      {{ content }}
+
+      {% if page.lastModified %}
+        <p class="margin-top-3 is-size-7 is-italic">Last modified: {{ page.lastModified | date: "%Y-%m-%d %H:%M:%S" }}</p>
+      {% else %}
+        <p class="margin-top-3 is-size-7 is-italic">Last modified: {{ page.date | date: "%Y-%m-%d %H:%M:%S" }}</p>
+      {% endif %}
+    </div>
   </div>
-</nav>
-<hr class="margin-top-0 margin-bot-1">
-<div class="columns">
-  <div class="column">
-  {% if page.image %}
-    {% include image.html image=page.image  %}
-  {% endif %}
-  <article>{{ content }}</article>
-  
-  {% if page.lastModified %}
-    <p class="margin-top-3 is-size-7 is-italic">Last modified: {{ page.lastModified | date: "%Y-%m-%d %H:%M:%S" }}</p>
-  {% else %}
-    <p class="margin-top-3 is-size-7 is-italic">Last modified: {{ page.date | date: "%Y-%m-%d %H:%M:%S" }}</p>
-  {% endif %}
-  </div>
-</div>
+</article>
