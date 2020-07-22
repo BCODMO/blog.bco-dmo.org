@@ -18,3 +18,7 @@ i.social-size-medium {
 i.social-size-small {
   font-size: 2em;
 }
+
+article p {
+  margin-bottom: 1em; 
+}
