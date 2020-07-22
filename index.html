@@ -19,9 +19,12 @@ sitemap:
   </div>
   <div class="level-right">
     {% if author.social.twitter.url %}
-      <p class="level-item"><a href="{{ author.social.twitter.url}}" target="_blank" class="button icon-before"><i class="fa fa-twitter"></i></a></p>
+      <p class="level-item"><a href="{{ author.social.twitter.url}}" target="_blank"><i class="fa fa-twitter social-size-medium"></i></a></p>
     {% endif %}
-    <p class="level-item"><a href="/atom.xml"><i class="fa fa-rss fa-3" style="font-size: 3em" aria-hidden="true"></i></a></p>
+    {% if author.social.linkedin.url %}
+      <p class="level-item"><a href="{{ author.social.linkedin.url}}" target="_blank"><i class="fa fa-linkedin social-size-medium"></i></a></p>
+    {% endif %}
+    <p class="level-item"><a href="/atom.xml"><i class="fa fa-rss fa-3 social-size-medium" aria-hidden="true"></i></a></p>
   </div>
 </nav>
 
