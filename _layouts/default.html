@@ -36,8 +36,9 @@
         {% if page.type and page.type == "BlogPosting" %}
           <li><a href="{{ site.url }}" aria-current="page">Blog</a></li>
           {% if page.category %}
-            <!-- Categorey: {{ page.category }} -->
+            <!-- {{ site.pages }} -->
             {% assign category = site.pages | where: "id", page.category %}
+            <!-- Category: {{ category }} -->
             <li><a href="{{ site.url }}{{ category.url }}" aria-current="page">{{ category.title }}</a></li>
           {% endif %}
           <li class="is-active"><a aria-current="page">{{ page.title }}</a></li>
