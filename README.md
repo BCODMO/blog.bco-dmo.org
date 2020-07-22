@@ -7,7 +7,7 @@
 
 https://blog.bco-dmo.org
 
-![Twitter Follow](https://img.shields.io/twitter/follow/BCODMO?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/BCODMO?style=social)](https://twitter.com/BCODMO/followers)
 
 <a name="getting-started"></a>
 ## Getting Started
