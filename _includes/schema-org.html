@@ -1,11 +1,11 @@
 {% assign context_file = "schema.org/context/default.html" %}
 <script type="application/ld+json">
 {% if include.page.type == "Blog" %}
-  {% include schema.org/Blog.html blog=include.page context=context_file %}
+  {% include schema.org/Blog.jsonld blog=include.page context=context_file %}
 {% elsif include.page.type == "ItemList" %}
-  {% include schema.org/ItemList.html list=include.page context=context_file %}
+  {% include schema.org/ItemList.jsonld list=include.page context=context_file %}
 {% elsif include.page.type == "BlogPosting" %}
-  {% include schema.org/BlogPosting.html post=include.page context=context_file %}
+  {% include schema.org/BlogPosting.jsonld post=include.page context=context_file %}
 {% else %}
   {
     "@context": {% include {{ include.context }} %},
