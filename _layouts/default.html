@@ -49,6 +49,7 @@
           {% assign pages = site.pages | where: "id", page.category %}
           {% if pages %}
             {% for listing in pages %}
+              <!-- Listing: {{ listing.url }} -->
               <li><a href="{{ site.url }}{{ listing.url }}" aria-current="page">{{ listing.title }}</a></li>
             {% endfor %}
           {% endif %}
