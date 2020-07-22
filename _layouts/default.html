@@ -20,8 +20,8 @@
       <meta name="description" content="{{ callout }}">
       <meta property="og:description" content="{{ callout }}" />
     {% endif %}
-    {% if page.image %}
-      {% assign image_url = "/assets/img/posts/" | append: include.post.image.filename %}
+    {% if page.image.filename %}
+      {% assign image_url = "/assets/img/posts/" | append: page.image.filename %}
     {% else %}
       {% assign image_url = "/assets/img/bco-dmo-avatar.jpg" %}
     {% endif %}
