@@ -1,6 +1,7 @@
 danie:
   type: Person
   name: Danie Kinkade
+  email: dkinkade@whoi.edu
   role: Director
   url:
   social:
@@ -14,6 +15,7 @@ danie:
 adam:
   type: Person
   name: Adam Shepherd
+  email: ashepherd@whoi.edu
   role: Technical Director
   url: https://www.linkedin.com/in/ashep15/
   social:
@@ -30,6 +32,7 @@ adam:
 bcodmo:
   type: Organization
   name: BCO-DMO
+  email: info@bco-dmo.org
   url: https://www.bco-dmo.org
   social:
     twitter: 
