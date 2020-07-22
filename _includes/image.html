@@ -3,5 +3,5 @@
   {% assign style = style  | append: " border: grey solid 2px; margin: 5px" %}
 {% endif %}
 <figure class="image {{ include.image.dimension | default: ""}}" style="{{ style }}">
-  <img src="{{ site.url }}/assets/img/posts/{{ include.filename }}">
+  <img src="{{ site.url }}/assets/img/posts/{{ include.image.filename }}">
 </figure>
