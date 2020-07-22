@@ -32,11 +32,15 @@
     "articleBody": {{ include.post.content | jsonify }},
   {% endunless %}
   "wordCount": {{ include.post.content | number_of_words }},
-  {% if include.post.image %}
-    "image": {	
-      "@type": "ImageObject",	
-      "url": "{{ site.url }}/assets/img/posts/{{ include.post.image.filename }}"	
-    },	
+  "image": {	
+    {% if  include.post.image %}
+      {% assign image_url = "/assets/img/posts/" | append: include.post.image.filename %}
+    {% else %}
+      {% assign image_url = "/assets/img/bco-dmo-avatar.jpg" %}
+    {% endif %}
+    "@type": "ImageObject",	
+    "url": "{{ site.url }}{{ image_url }}"	
+  },	
   {% endif %}
   {% if include.post.tags %}	
     "keywords": [	
