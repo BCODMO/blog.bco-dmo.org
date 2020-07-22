@@ -1,9 +1,9 @@
 # BCO-DMO blog
 
-![Website](https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fblog.bco-dmo.org)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/BCODMO/blog.bco-dmo.org?style=for-the-badge)
-![GitHub Release Date](https://img.shields.io/github/release-date/BCODMO/blog.bco-dmo.org?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/BCODMO/blog.bco-dmo.org?style=for-the-badge)
+[![Website](https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fblog.bco-dmo.org)](https://blog.bco-dmo.org)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/BCODMO/blog.bco-dmo.org?style=for-the-badge)](https://github.com/BCODMO/blog.bco-dmo.org/releases)
+[![GitHub Release Date](https://img.shields.io/github/release-date/BCODMO/blog.bco-dmo.org?style=for-the-badge)](https://github.com/BCODMO/blog.bco-dmo.org/releases)
+[![GitHub issues](https://img.shields.io/github/issues/BCODMO/blog.bco-dmo.org?style=for-the-badge)](https://github.com/BCODMO/blog.bco-dmo.org/issues)
 
 https://blog.bco-dmo.org
 
