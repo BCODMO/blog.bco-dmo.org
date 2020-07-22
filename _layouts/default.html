@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="twitter:card" content="summary_large_image" />
     {% assign bcodmo = site.data.authors["bcodmo"] %}
-    <meta name="twitter:site" content="@{{ bcodmo.social.twitter.id }}">
+    <meta name="twitter:site" content="@{{ bcodmo.social.twitter.id }}"/>
     <meta property="og:site_name" content="BCO-DMO Blog" />
     <meta property="og:type" content="article" />
     {% if page.description %}
@@ -19,11 +19,11 @@
     {% assign url = site.url | append: page.url %}
     <meta property="og:url" content="{{ url }}" />
     <meta property="og:title" content="{{ page.title }}" />
-    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:title" content="{{ page.title }}" />
     {% if callout %}
-      <meta name="description" content="{{ callout | strip }}">
+      <meta name="description" content="{{ callout | strip }}"/>
       <meta property="og:description" content="{{ callout | strip }}" />
-      <meta name="twitter:description" content="{{ callout | strip }}">
+      <meta name="twitter:description" content="{{ callout | strip }}"/>
     {% endif %}
     {% if page.image.filename %}
       {% assign image_url = "/assets/img/posts/" | append: page.image.filename %}
@@ -32,10 +32,11 @@
     {% endif %}
     <link rel="image_src" href="{{ site.url }}{{ image_url }}" />
     <meta property="og:image" content="{{ site.url }}{{ image_url }}" />
-    <meta name="twitter:image" content="{{ site.url }}{{ image_url }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ image_url }}"/>
     {% assign author = site.data.authors[page.author] %}
-    <meta name="author" content="{{ author.name }}">
+    <meta name="author" content="{{ author.name }}"/>
     {% include schema-org.html page=page %}
+    
     <title>{{ page.title }} | {{ site.title }}</title>
 
     <!-- Bulma + BCO-DMO Core CSS -->
