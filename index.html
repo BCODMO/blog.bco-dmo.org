@@ -10,19 +10,19 @@ sitemap:
   change_frequency: monthly
   priority: 1
 ---
-<nav class="level">
+<nav class="level margin-bot-0">
   <div class="level-left">
     <div class="level-item">
-      <h1 class="title is-1 is-primary padding-bot-1 margin-bot-2-important">{{ page.title }}</h1>
+      <h1 class="title is-1 is-primary padding-bot-1 margin-bot-0">{{ page.title }}</h1>
     </div>
   </div>
   <div class="level-right">
-    <p class="level-item"><a href="/atom.xml"><i class="fa fa-rss fa-2" aria-hidden="true"></i></a></p>
+    <p class="level-item"><a href="/atom.xml"><i class="fa fa-rss fa-3" style="font-size: 3em" aria-hidden="true"></i></a></p>
   </div>
 </nav>
 
 {% if page.subtitle %}
-<h5 class="subtitle is-italic padding-bot-0">{{ page.subtitle }}</h5>
+<h5 class="subtitle is-italic margin-top-1 margin-bot-0 padding-bot-0 ">{{ page.subtitle }}</h5>
 {% endif %}
 {% if site.posts %}
   {% include sub-nav.html active="all" %}
