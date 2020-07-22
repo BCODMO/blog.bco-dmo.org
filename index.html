@@ -10,6 +10,7 @@ sitemap:
   change_frequency: monthly
   priority: 1
 ---
+{% assign author = site.data.authors[page.author] %}
 <nav class="level margin-bot-0">
   <div class="level-left">
     <div class="level-item">
@@ -17,6 +18,9 @@ sitemap:
     </div>
   </div>
   <div class="level-right">
+    {% if author.social.twitter.url %}
+      <p class="level-item"><a href="{{ author.social.twitter.url}}" target="_blank" class="button icon-before"><i class="fa fa-twitter"></i></a></p>
+    {% endif %}
     <p class="level-item"><a href="/atom.xml"><i class="fa fa-rss fa-3" style="font-size: 3em" aria-hidden="true"></i></a></p>
   </div>
 </nav>
