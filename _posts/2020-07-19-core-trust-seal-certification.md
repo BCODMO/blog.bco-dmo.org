@@ -14,7 +14,8 @@ tags:
 image:
   filename: CoreTrustSeal-logo-transparent.png
   dimension: is-128x128
-  border: false
+  border: true
+  
 ---
 
 BCO-DMO was awarded the CoreTrustSeal certification on July 13, 2020...<!--more-->Say more here
