@@ -38,7 +38,7 @@ Excerpts are snippets from the post that can be used elsewhere as callout text. 
 ## Publishing a Post
 
 1. set the `published: true`
-2. rename the post to `_posts/YYYY-MM-DD-<desired-url-goes-here-using-dashes>.md`
+2. rename the post to `_posts/YYYY-MM-DD-<desired-url-goes-here-using-dashes>.md` (NOTE: `_drafts` was replaced by `_posts`
 3. Save post
 4. Create a new [Release](https://github.com/BCODMO/blog.bco-dmo.org/releases/new)
     1. `v(x).0` where `(x)` is incremented from the previous blog version number. For example, if the current version of the blog is `v1.0`, set release version to `v2.0`
@@ -46,14 +46,13 @@ Excerpts are snippets from the post that can be used elsewhere as callout text. 
     3. Click `Publish Release`
     
 __Q: Why do we need to publish releases?__
+
 `Releases help us preserve the state of the blog so that if for any reason, we can recapture content at certain important points in the history of the blog. THis helps us mitigate unforeseen circumstances where content is accidentally deleted or moved.`
 
     
 5. Ensure the blog was [successfully built](https://github.com/BCODMO/blog.bco-dmo.org/deployments/activity_log?environment=github-pages)
 
 <img width="559" alt="Successful Deployment of the Blog" src="https://user-images.githubusercontent.com/2117576/88196632-6b993580-cc0f-11ea-8518-74446d5805d5.png">
-
-
 
 ## Post metadata
 
@@ -166,6 +165,10 @@ Each keyword will create a new page. `keyword1` can be seen at: `https://blog.bc
 
 
 ## Resources
+
+### Need to upload Images?
+
+Images for documentation can be uploaded here: [How-To & Documentation Images](https://github.com/BCODMO/blog.bco-dmo.org/issues/7)
 
 ### Jekyll + Github Pages
 * http://jmcglone.com/guides/github-pages/
