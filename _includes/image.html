@@ -1,4 +1,7 @@
-{% assign style = "float: right; border: grey solid 2px; margin: 5px" %}
-<figure class="image {{ include.dimension | default: ""}}" style="{{ style }}">
+{% assign style = "float: right;" %}
+{% if include.image.border %}
+  {% assign style = style  | append: " border: grey solid 2px; margin: 5px" %}
+{% endif %}
+<figure class="image {{ include.image.dimension | default: ""}}" style="{{ style }}">
   <img src="{{ site.url }}/assets/img/posts/{{ include.filename }}">
 </figure>
