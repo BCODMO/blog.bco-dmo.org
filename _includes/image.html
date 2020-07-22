@@ -1,4 +1,4 @@
 {% assign style = "float: right; border: grey solid 2px; margin: 5px" %}
-<figure class="image {% if include.size %}{{ include.size }}{% endif %}" style="{{ style }}">
+<figure class="image {{ include.dimension | default: ""}}" style="{{ style }}">
   <img src="{{ site.url }}/assets/img/posts/{{ include.filename }}">
 </figure>
