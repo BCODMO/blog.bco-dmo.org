@@ -20,6 +20,8 @@ layout: default
   <div class="column">
   {% if page.image %}
     {% include image.html image=page.image  %}
+  {% else %}
+    <!-- {{ page.image }} -->
   {% endif %}
   {{ content }}
   
