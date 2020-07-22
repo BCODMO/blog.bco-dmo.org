@@ -32,24 +32,11 @@
     <nav class="breadcrumb margin-bot-0" aria-label="breadcrumbs">
       <ul class="container">
         <li><a href="https://www.bco-dmo.org" aria-current="page">Home</a></li>
-        <!-- Loop through any previous pages -->
         {% if page.type and page.type == "BlogPosting" %}
           <li><a href="{{ site.url }}" aria-current="page">Blog</a></li>
-          {% comment %}
-          {% if page.category %}
-            {% assign pages = site.pages | where: "include_in_sitemap", true %}
-            {% for listing in pages %}
-              <!-- ID: {{ listing.id }} -->
-              {% if listing.id == page.category %}
-                <li><a href="{{ site.url }}{{ listing.url }}" aria-current="page">{{ listing.title }}</a></li>
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-          {% endcomment %}
           {% assign pages = site.pages | where: "id", page.category %}
           {% if pages %}
             {% for listing in pages %}
-              <!-- Listing: {{ listing.url }} -->
               <li><a href="{{ site.url }}{{ listing.url }}" aria-current="page">{{ listing.title }}</a></li>
             {% endfor %}
           {% endif %}
