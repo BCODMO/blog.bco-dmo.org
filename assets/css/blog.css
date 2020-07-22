@@ -10,3 +10,7 @@ a.no-hover-effect:hover {
     height: 256px;
     width: 256px; 
 }
+
+i.social-size-medium {
+  font-size: 3em;
+}
