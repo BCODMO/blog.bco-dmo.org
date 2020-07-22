@@ -7,6 +7,26 @@ layout: default
 <h5 class="subtitle is-italic padding-bot-1">{{ page.subtitle }}</h5>
 {% endif %}
 {% assign author = site.data.authors[page.author] %}
+<nav class="level">
+  <div class="level-left">
+    <div class="level-item">
+      <p class="subtitle is-5"><strong>{{ author.name }}</strong></p>
+      <p class="margin-bot-1">{{ page.date | date_to_string: "ordinal", "US" }}</p>
+    </div>
+  </div>
+  <div class="level-right">
+    <p class="level-item">
+      {% if page.tags %}
+        <p class="margin-bot-1">
+        {% for tag in page.tags %}
+          {% include tag.html tag=tag %}
+        {% endfor %}
+        </p>
+      {% endif %}
+    </p>
+  </div>
+</nav>
+
 <h5 class="title is-5 margin-top-1 margin-bot-0">{{ author.name }}</h5>
 <p class="margin-bot-1">{{ page.date | date_to_string: "ordinal", "US" }}</p>
 {% if page.tags %}
