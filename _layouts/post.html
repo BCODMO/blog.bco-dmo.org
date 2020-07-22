@@ -10,7 +10,7 @@ layout: default
 {% capture linkedin_query %}mini=true&url={{ url | url_encode }}&title={{ page.title | url_encode }}&summary={{ excerpt_no_html | url_encode }}{% endcapture %}
 {% assign linkedin_share = "https://www.linkedin.com/shareArticle?" | append: linkedin_query %}
 {% assign email_subject = "BCO-DMO Blog: " | append: page.title %}
-{% capture email_share %}mailto:?Subject={{ email_subject | url_encode }}&Body={{ excerpt_no_html | url_encode }}%0D%0A%0D%0A{{ url | url_encode }}{% endcapture %}
+{% capture email_share %}mailto:?Subject={{ email_subject | url_encode }}&Body={{ excerpt_no_html }}%0D%0A%0D%0A{{ url | url_encode }}{% endcapture %}
 
 <h5 class="subtitle is-6 margin-bot-1">{{ page.date | date_to_long_string }}</h5>
 <h1 class="title is-1 is-primary padding-bot-1 margin-bot-2-important">{{ page.title }}</h1>
