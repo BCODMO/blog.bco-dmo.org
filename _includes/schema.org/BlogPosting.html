@@ -33,7 +33,7 @@
   {% endunless %}
   "wordCount": {{ include.post.content | number_of_words }},
   "image": {	
-    {% if  include.post.image %}
+    {% if include.post.image %}
       {% assign image_url = "/assets/img/posts/" | append: include.post.image.filename %}
     {% else %}
       {% assign image_url = "/assets/img/bco-dmo-avatar.jpg" %}
@@ -41,6 +41,12 @@
     "@type": "ImageObject",	
     "url": "{{ site.url }}{{ image_url }}"	
   },	
+  {% if include.post.image.url %}
+    "sharedContent": { 
+      "@type": "WebPage", 
+      "url": {{ include.post.image.url | jsonify }}
+    },
+  {% endif %}
   {% if include.post.tags %}	
     "keywords": [	
     {% for keyword in include.post.tags %}	
