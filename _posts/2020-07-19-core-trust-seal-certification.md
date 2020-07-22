@@ -15,4 +15,4 @@ tags:
 
 BCO-DMO was awarded the CoreTrustSeal certification on July 13, 2020...<!--more--> Say more here
 
-<img src="{{ site.url }}/assets/img/posts/CoreTrustSeal-logo-transparent.png"/>
+{% include image.html filename="CoreTrustSeal-logo-transparent.png" %}
