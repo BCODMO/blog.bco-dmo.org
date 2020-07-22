@@ -14,7 +14,7 @@
   {% if posts %}
     "itemListElement": [
     {% for post in posts %}
-      {% include schema.org/BlogPosting.html post=post position=forloop.index %}
+      {% include schema.org/BlogPosting.html post=post  hideContent=true position=forloop.index %}
       {% unless forloop.last %},{% endunless %}
     {% endfor %}
     ],
