@@ -13,8 +13,6 @@ tags:
   - repositories
 image:
   filename: CoreTrustSeal-logo-transparent.png
-  dimension: is-128x128
-  border: true
   
 ---
 
