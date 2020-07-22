@@ -18,7 +18,10 @@ layout: default
 {% endif %}
 <div class="columns">
   <div class="column">
-  {{content}}
+  {% if page.image %}
+    {% include image.html image=page.image  %}
+  {% endif %}
+  {{ content }}
   
   {% if page.lastModified %}
     <p class="margin-top-3 is-size-7 is-italic">Last modified: {{ page.lastModified | date: "%Y-%m-%d %H:%M:%S" }}</p>
