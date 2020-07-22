@@ -16,7 +16,7 @@
   {% if include.post.lastModified %}	
   "dateModified": "{{ include.post.lastModified | date_to_xmlschema }}",	
   {% endif %}	
-  "publisher": {% include schema.org/static/Organization_BCODMO.html %},
+  "publisher": {% include schema.org/static/Organization_BCODMO.jsonld %},
   "author": {% include schema.org/Person.jsonld person=author %},	
   {% if include.post.description %}	
     {% assign callout = include.post.description %}	
