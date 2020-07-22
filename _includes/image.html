@@ -2,6 +2,11 @@
 {% if include.image.border %}
   {% assign style = style  | append: " border: grey solid 2px; margin: 5px" %}
 {% endif %}
+{% capture img_tag %}<img src="{{ site.url }}/assets/img/posts/{{ include.image.filename }}">{% endcapture %}
 <figure class="image {{ include.image.dimension | default: ""}}" style="{{ style }}">
-  <img src="{{ site.url }}/assets/img/posts/{{ include.image.filename }}">
+  {% if include.image.url %}
+    <a href="{{ include.image.url }}" target="_blank">{{ img_tag }}</a>
+  {% else %}
+    {{ img_tag }}
+  {% endif %}
 </figure>
