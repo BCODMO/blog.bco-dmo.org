@@ -17,8 +17,8 @@
     <meta property="og:url" content="{{ url }}" />
     <meta property="og:title" content="{{ page.title }}" />
     {% if callout %}
-      <meta name="description" content="{{ callout }}">
-      <meta property="og:description" content="{{ callout }}" />
+      <meta name="description" content="{{ callout | strip }}">
+      <meta property="og:description" content="{{ callout | strip }}" />
     {% endif %}
     {% if page.image.filename %}
       {% assign image_url = "/assets/img/posts/" | append: page.image.filename %}
