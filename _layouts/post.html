@@ -4,7 +4,7 @@ layout: default
 {% assign author = site.data.authors[page.author] %}
 {% assign bocdmo = site.data.authors["bcodmo"] %}
 {% assign url = site.url | append: page.url %}
-{% capture twitter_query %}via={{ bcodmo.social.twitter.id | urlencode }}&url={{ url | urlencode }}&tweet={{ page.excerpt | urlencode }}{% endcapture %}
+{% capture twitter_query %}via={{ bcodmo.social.twitter.id | url_encode }}&url={{ url | url_encode }}&tweet={{ page.excerpt | url_encode }}{% endcapture %}
 {% assign twitter_share = "https://twitter.com/intent/tweet?" | append: twitter_query %}
 {% assign linkedin_share = "https://twitter.com/intent/tweet" %}
 {% assign email_share = "https://twitter.com/intent/tweet" %}
