@@ -1,5 +1,7 @@
 # BCO-DMO blog
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/BCODMO/blog.bco-dmo.org?style=for-the-badge)
+
 https://blog.bco-dmo.org
 
 <a name="getting-started"></a>
