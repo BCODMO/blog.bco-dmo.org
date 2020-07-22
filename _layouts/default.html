@@ -36,10 +36,13 @@
         {% if page.type and page.type == "BlogPosting" %}
           <li><a href="{{ site.url }}" aria-current="page">Blog</a></li>
           {% if page.category %}
-            <!-- {{ site.pages }} -->
-            {% assign category = site.pages | where: "id", page.category %}
-            <!-- Category: {{ category }} -->
-            <li><a href="{{ site.url }}{{ category.url }}" aria-current="page">{{ category.title }}</a></li>
+            {% assign pages = site.pages | where: "include_in_sitemap", true %}
+            {% for page in pages %}
+              <!-- ID: {{ page.id }} -->
+              {% if page.id == page.category %}
+                <li><a href="{{ site.url }}{{ category.url }}" aria-current="page">{{ category.title }}</a></li>
+              {% endif %}
+            {% endfor %}
           {% endif %}
           <li class="is-active"><a aria-current="page">{{ page.title }}</a></li>
         {% elsif page.type and page.type == "ItemList" %}
