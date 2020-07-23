@@ -6,9 +6,6 @@
   margin-bottom: 2rem !important; 
 }
 
-a.no-hover-effect:hover {
-  color: unset;
-}
 
 .image.is-256x256 {
     height: 256px;
@@ -32,10 +29,19 @@ i.social-size-small {
   font-size: 2em;
 }
 
-article p {
-  margin-bottom: 1em; 
+a.no-hover-effect:hover {
+  color: unset;
 }
 
 a.related-link {
   font-size: 1.5rem;
+}
+
+
+article p {
+  margin-bottom: 1em; 
+}
+
+article svg.icon {
+  height: unset; 
 }
