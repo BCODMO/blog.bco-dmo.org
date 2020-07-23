@@ -14,7 +14,7 @@
   <div class="card-content">
     <p>{{ include.post.date | date_to_string: "ordinal", "US" }}
       {% if show_category %}
-        {% assign categories = site.posts | where:"category", include.post.category %}
+        {% assign categories = site.pages | where:"id", include.post.category %}
         {% for category in categories %}{% assign category_label = category.title %}{% endfor %}
         {% include tag.html tag=category_label %}
       {% endif %}
