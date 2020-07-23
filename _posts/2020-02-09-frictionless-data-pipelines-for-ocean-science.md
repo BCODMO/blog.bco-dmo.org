@@ -23,7 +23,6 @@ sameAs:
 relations:
   - url: https://doi.org/10.1575/1912/25777
     title: Capturing Provenance of Data Curation at BCO-DMO
-    type: pdf
     description: A presentation given to the <a href="https://datacurationnetwork.org/" target="_blank">Data Curation Network</a> on why BCO-DMO chose declarative workflows
   - url: https://frictionlessdata.io
     title: Frictionless Data 
