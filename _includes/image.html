@@ -1,11 +1,7 @@
-{% assign style = "float: right;" %}
-{% if include.image.border %}
-  {% assign style = style  | append: " border: grey solid 2px; margin: 5px" %}
-{% endif %}
 {% assign alt_text = include.image.caption | default: "Image" %}
 {% capture image_src %}{% include image_src.html image=include.image %}{% endcapture %}
 {% capture img_tag %}<img src="{{ image_src }}" alt="{{ alt_text }}">{% endcapture %}
-<figure class="image {{ include.image.dimension | default: ""}}" style="{{ style }}">
+<figure class="image post-image {% if include.image.border %} border{% endif %}{% if include.image.dimension %} {{ include.image.dimension }}{% endif %}">
   {% if include.image.url %}
     <a href="{{ include.image.url }}" target="_blank">{{ img_tag }}</a>
   {% else %}
