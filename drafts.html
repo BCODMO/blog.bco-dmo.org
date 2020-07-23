@@ -1,16 +1,62 @@
 ---
-layout: default
+layout: none
 permalink: /drafts/
 title: "Draft Posts"
 description: "Listing of post currently being worked on"
 author: bcodmo
 include_in_sitemap: false
 ---
-<html>
-  <head><title>Drafts</title></head>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <!-- Bulma + BCO-DMO Core CSS -->
+    <link href="/assets/css/bco-dmo.css" rel="stylesheet"/>
+    <!-- Blog CSS -->
+    <link href="/assets/css/blog.css" rel="stylesheet"/>
+    <!-- FontAwesome -->
+    <link href="/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+  </head>
   <body>
-{% for draft in site.drafts %}
-  <h2><a href="{{ draft.url }}">{{ draft.title }}</a></h2>
-{% endfor %}
+
+  {% include header_nav.html %}
+  <!-- Page Content -->
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumb margin-bot-0" aria-label="breadcrumbs">
+      <ul class="container">
+        <li><a href="https://www.bco-dmo.org" aria-current="page">Home</a></li>
+        {% if page.type == "BlogPosting" %}
+          <li><a href="{{ site.url }}" aria-current="page">Blog</a></li>
+          {% assign pages = site.pages | where: "id", page.category %}
+          {% if pages %}
+            {% for listing in pages %}
+              <li><a href="{{ site.url }}{{ listing.url }}" aria-current="page">{{ listing.title }}</a></li>
+            {% endfor %}
+          {% endif %}
+          <li class="is-active"><a aria-current="page">{{ page.title }}</a></li>
+        {% elsif page.type and page.type == "ItemList" %}
+          <li><a href="{{ site.url }}" aria-current="page">Blog</a></li>
+          <li class="is-active"><a aria-current="page">{{ page.title }}</a></li>
+        {% elsif page.type and page.type == "Blog" %}
+          <li class="is-active"><a aria-current="page">Blog</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+    <div class="container margin-top-2-important margin-bot-1">
+    {% for draft in site.drafts %}
+      <h2><a href="{{ draft.url }}">{{ draft.title }}</a></h2>
+    {% endfor %}
+
+    {% include footer.html %}
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="/assets/vendor/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/assets/js/bco-dmo-components.js"></script>
+    <script src="/assets/js/category-page.js"></script>
   </body>
 </html>
