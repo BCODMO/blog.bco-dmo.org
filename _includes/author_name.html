@@ -1,0 +1,14 @@
+{% assign multiple_authors = include.author.size > 1 %}
+{% assign author_names = "" %}
+{% for author in include.author %}
+  {% if forloop.last %}
+    {% if multiple_authors %}
+      {% assign author_names = author_name | append: " and " | append: site.data.authors[page.author].name %}
+    {% else %}
+      {% assign author_names = author_name | append: site.data.authors[page.author].name %}
+    {% endif %}
+  {% else %}
+    {% assign author_names = author_name | append: site.data.authors[page.author].name | append: ", " %}
+  {% endif %}
+{% endfor %}
+{{ author_names }}
