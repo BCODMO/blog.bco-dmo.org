@@ -1,1 +1,1 @@
-<span class="tag"><a href="/tag.html#{{ include.tag | slugify }}">{{ include.tag }}</a></span>
+<span class="tag{% if include.style %} {{ include.style }}{% endif %}"><a href="/tag.html#{{ include.tag | slugify }}">{{ include.tag }}</a></span>
