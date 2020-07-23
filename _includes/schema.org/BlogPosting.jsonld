@@ -1,5 +1,4 @@
 {% capture url %}{{ site.url }}{{ include.post.url }}{% endcapture %}
-{% assign author = site.data.authors[include.post.author] %}
 {  
   {% if include.context %}	
     "@context": {% include {{ include.context }} %},	
@@ -17,7 +16,16 @@
   "dateModified": "{{ include.post.lastModified | date_to_xmlschema }}",	
   {% endif %}	
   "publisher": {% include schema.org/static/Organization_BCODMO.jsonld %},
-  "author": {% include schema.org/Person.jsonld person=author %},	
+  {% if include.post.author.size > 1 %}
+    "author": [
+      {% for author in include.post.author %}
+        {% include schema.org/Person.jsonld person=site.data.authors[author] %}
+        {% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ],
+  {% else %}
+    "author": {% include schema.org/Person.jsonld person=site.data.authors[include.post.author[1]] %},	
+  {% endif %}
   {% if include.post.description %}	
     {% assign callout = include.post.description %}	
   {% elsif include.post.excerpt %}	
