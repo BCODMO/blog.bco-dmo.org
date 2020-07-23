@@ -2,9 +2,8 @@
 {% for relation in include.relations %}
 <div class="card">
   <div class="card-content">
-    <h6 class="title"><a class="title is-small" href="{{ relation.url }}" target="_blank">{{ relation.title }}</a></h6>
-    <p class="margin-bot-0"><a class="title is-small" href="{{ relation.url }}" target="_blank">{{ relation.url }}</a></p>
+    <h4 class="title is-4"><a class="title is-small" href="{{ relation.url }}" target="_blank">{{ relation.title }}</a></hh>
+    <p class="margin-bot-0"><a href="{{ relation.url }}" target="_blank">{{ relation.url }}</a></p>
   </div>
 </div>
-<hr/>
 {% endfor %}
