@@ -4,7 +4,7 @@ type: BlogPosting
 published: false
 title: "New website coming soon!"
 date: YYYY-MM-DD
-author: adam
+author: [adam]
 category: news
 tags: 
   - website
