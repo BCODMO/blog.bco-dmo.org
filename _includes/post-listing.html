@@ -1,8 +1,10 @@
 {% assign category = include.category | default: "all" %}
 {% if include.category == "all" %}
   {% assign posts = site.posts %}
+  {% assign show_category = true %}
 {% else %}
   {% assign posts = site.posts | where:"category", include.category %}
+  {% assign show_category = false %}
 {% endif %}
 
 <div class="columns">
@@ -16,7 +18,7 @@
     {% assign callout = null %}
   {% endif %}
     <div class="column is-6" data-index="{{ forloop.index }}">
-      {% include post-card.html post=post callout=callout author=author %}
+      {% include post-card.html post=post callout=callout author=author show_category=show_category %}
     </div>
 
   {% comment %} make 2 columns of post cards {% endcomment %}
