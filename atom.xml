@@ -28,11 +28,12 @@ layout: none
       {% if post.category %}
         <category term="{{ post.category }}"/>
       {% endif %}
-      <author>
-        {% assign author = site.data.authors[post.author] %}
-        <name>{{ author.name }}</name>
-      </author>
-
+      {% for author in post.author %}
+        <author>
+          {% assign author = site.data.authors[author] %}
+          <name>{{ author.name }}</name>
+        </author>
+      {% endfor %}
     </entry>
   {% endfor %}
 </feed>
