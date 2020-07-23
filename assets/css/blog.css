@@ -15,6 +15,15 @@ a.no-hover-effect:hover {
     width: 256px; 
 }
 
+img.post-image {
+  float: right; 
+}
+
+img.border {
+  border: grey solid 2px; 
+  margin: 5px
+}
+
 i.social-size-medium {
   font-size: 3em;
 }
