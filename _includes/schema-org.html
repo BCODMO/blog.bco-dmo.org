@@ -8,7 +8,7 @@
   {% include schema.org/BlogPosting.jsonld post=include.page context=context_file %}
 {% else %}
   {
-    "@context": {% include {{ include.context }} %},
+    "@context": {% include {{ context_file }} %},
     "@id": "{{ site.url }}{{ page.url }}",
     "@type": "Thing",
     "name": {{ page.title | jsonify }},
