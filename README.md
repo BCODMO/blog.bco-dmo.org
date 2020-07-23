@@ -34,7 +34,7 @@ tags:
   - keyword1
   - keyword2
 image:
-  filename: CoreTrustSeal-logo-transparent.png
+  path: CoreTrustSeal-logo-transparent.png
   caption: "Short description goes here"
   url: https://www.coretrustseal.org/
   dimension: is-128x128
@@ -183,13 +183,13 @@ Category determines which section the post appears in the blog.
 |---|---|
 | Required | no, but recommended |
 | Data Type | object |
-| Fields | `filename`, `caption`, `url`, `dimension`, `border` |
+| Fields | `path`, `caption`, `url`, `dimension`, `border` |
 
 Images are placed in [`assets/img/posts`](https://github.com/BCODMO/blog.bco-dmo.org/tree/master/assets/img/posts) and they appear in the blog post in the upper-right corner with text wrapping around the image.
 
 | Fields | Required | Data Type | Description |
 |---|---|---|---|
-| `filename` | yes | string | The name of the file you uploaded to `assets/img/posts` |
+| `path` | yes | string | Either the name of the file you uploaded to `assets/img/posts` or an absolute URL to an external image |
 | `caption` | yes | string | A short descriptionn of the image |
 | `url` | no | URL | If you want the image to link off to another site or webpage |
 | `dimension` | no | string | A CSS class name that resizes the image. Valid values are here: [Bulma Images](https://bulma.io/documentation/elements/image/) |
