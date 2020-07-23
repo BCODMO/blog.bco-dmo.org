@@ -47,6 +47,9 @@ layout: default
       {% if page.image %}
         {% include image.html image=page.image  %}
       {% endif %}
+      {% if page.relations %}
+        {% include post_relations.html relations=page.relations %}
+      {% endif %}
 
       <div class="margin-bottom-3">{{ content }}</div>
 
