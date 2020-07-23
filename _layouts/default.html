@@ -33,8 +33,6 @@
     <link rel="image_src" href="{{ site.url }}{{ image_url }}" />
     <meta property="og:image" content="{{ site.url }}{{ image_url }}" />
     <meta name="twitter:image" content="{{ site.url }}{{ image_url }}"/>
-    {% assign author = site.data.authors[page.author] %}
-    <meta name="author" content="{{ author.name }}"/>
     {% include schema-org.html page=page %}
     
     <title>{{ page.title }} | {{ site.title }}</title>
