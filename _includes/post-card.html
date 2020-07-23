@@ -17,7 +17,7 @@
     {% if include.post.subtitle %}
     <p class="subtitle is-6 is-italic margin-bot-0">{{ include.post.subtitle }}</p>
     {% endif %}
-    <p class="subtitle is-6">by {% include author_names.html authors=include.author %}</p>
+    <p class="subtitle is-6">by {% include author_names.html authors=include.post.author %}</p>
     {% if include.callout %}
     <div class="content">{{ include.callout }}</div>
     {% endif %}
