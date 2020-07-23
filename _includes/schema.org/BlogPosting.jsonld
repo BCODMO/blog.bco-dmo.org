@@ -11,6 +11,11 @@
   {% if include.post.subtitle %}	
     "alternativeHeadline":{{ include.post.subtitle | jsonify }},	
   {% endif %}	
+  {% if include.post.sameAs %}
+    {% for same in include.post.sameAs %}
+      "sameAs": {{ same.url }},
+    {% endfor %}
+  {% endif %}
   "datePublished": "{{ include.post.date | date_to_xmlschema }}",	
   {% if include.post.lastModified %}	
   "dateModified": "{{ include.post.lastModified | date_to_xmlschema }}",	
@@ -38,9 +43,6 @@
   {% if callout %}	
     "description": {{ callout | jsonify }},	
   {% endif %}
-  {% unless include.hideContent %}
-    "articleBody": {{ include.post.content | jsonify }},
-  {% endunless %}
   "wordCount": {{ include.post.content | number_of_words }},
   "image": {	
     {% if include.post.image %}
@@ -51,15 +53,7 @@
     "@type": "ImageObject",	
     "url": "{{ image_url }}"	
   },	
-  {% if include.post.image.url %}
-    "sharedContent": { 
-      "@type": "WebPage", 
-      {% if include.post.image.caption %}
-      "name": {{ include.post.image.caption | jsonify }},
-      {% endif %}
-      "url": {{ include.post.image.url | jsonify }}
-    },
-  {% endif %}
+  
   {% if include.post.tags %}	
     "keywords": [	
     {% for keyword in include.post.tags %}	
@@ -70,5 +64,28 @@
   {% if include.position %}
   "position": {{ include.position }},
   {% endif %}
+  {% if include.post.image.url %}
+    "sharedContent": { 
+      "@type": "WebPage", 
+      {% if include.post.image.caption %}
+      "name": {{ include.post.image.caption | jsonify }},
+      {% endif %}
+      "url": {{ include.post.image.url | jsonify }}
+    },
+  {% endif %}
+  {% if include.post.relations %}
+    {% for relation in include.post.relations %}
+      "citation": {
+        "@type": "CreativeWork",
+        "name": {{ relation.title }},
+        "url": {{ relation.url }}
+      },
+    {% endfor %}
+  {% endif %}
+{% comment %}======== CONTENT for the POST PAGE ONLY ========{% endcomment %}
+  {% unless include.hideContent %}
+    "articleBody": {{ include.post.content | jsonify }},
+  {% endunless %}
+{% comment %}======== END of CONTENT for the POST PAGE ONLY ========{% endcomment %}
   "url": "{{ url }}"	
 }
