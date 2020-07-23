@@ -49,3 +49,6 @@ article svg.icon {
 .tag.is-accent {
   background-color: #96BBD1;  
 }
+.tag.is-accent a {
+    color: #fff;
+}
