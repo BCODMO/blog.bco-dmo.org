@@ -19,12 +19,14 @@
   {% if include.post.author.size > 1 %}
     "author": [
       {% for author in include.post.author %}
-        {% include schema.org/Person.jsonld person=site.data.authors[author] %}
+        {% assign person = site.data.authors[author] %}
+        {% include schema.org/Person.jsonld person=person %}
         {% unless forloop.last %},{% endunless %}
       {% endfor %}
     ],
   {% else %}
-    "author": {% include schema.org/Person.jsonld person=site.data.authors[include.post.author[0]] %},	
+    {% assign person = site.data.authors[include.post.author[0]] %}
+    "author": {% include schema.org/Person.jsonld person=person %},	
   {% endif %}
   {% if include.post.description %}	
     {% assign callout = include.post.description %}	
