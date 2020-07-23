@@ -15,11 +15,11 @@ a.no-hover-effect:hover {
     width: 256px; 
 }
 
-img.post-image {
+figure.post-image {
   float: right; 
 }
 
-img.border {
+figure.border {
   border: grey solid 2px; 
   margin: 5px
 }
