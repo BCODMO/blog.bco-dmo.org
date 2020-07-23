@@ -11,6 +11,7 @@ include_in_sitemap: false
   <thead>
     <tr>
       <th>Post</th>
+      <th>Date</th>
       <th>Category</th>
       <th>Authors</th>
     </tr>
@@ -19,6 +20,7 @@ include_in_sitemap: false
   {% for draft in site.drafts %}
     <tr>
       <th><a href="{{ draft.url }}">{{ draft.title }}</a></th>
+      <td>{% if draft.date %}{{ draft.date }}{% else %}<span class="is-italic">not specified</span></td>
       <td>{{ draft.category }}</td>
       <td>{{ draft.author }}</td>
     </tr>
