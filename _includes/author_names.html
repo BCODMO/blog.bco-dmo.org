@@ -1,11 +1,7 @@
-{% assign multiple_authors = include.authors.size > 1 %}
-<!-- Authors: {{ include.authors.size }} -->
 {% assign author_names = "" %}
 {% for author in include.authors %}
-  <!-- Authors: {{ author_names }} -->
-  <!-- Index: {{ site.data.authors[author].name }} -->
   {% if forloop.last %}
-    {% if multiple_authors %}
+    {% if include.authors.size > 1 %}
       {% assign author_names = author_names | append: " and " | append: site.data.authors[author].name %}
     {% else %}
       {% assign author_names = author_names | append: site.data.authors[author].name %}
