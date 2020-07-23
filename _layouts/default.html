@@ -31,7 +31,9 @@
       <meta property="og:image" content="{{ image_url }}" />
       <meta name="twitter:image" content="{{ image_url }}"/>
     {% endif %}
-    {% include schema-org.html page=page %}
+    {% unless page.collection == "drafts" %}
+      {% include schema-org.html page=page %}
+    {% endunless %}
     
     <title>{{ page.title }} | {{ site.title }}</title>
 
