@@ -45,6 +45,10 @@ image:
 Blog content starts. Callout text goes here<!--more--> Say more here
 ```
 
+To view how your draft `_drafts/my-first-post.md` will look, go to `https://blog.bco-dmo.org/drafts/my-first-post`.
+
+You can view a list of all drafts at: [https://blog.bco-dmo.org/drafts/](https://blog.bco-dmo.org/drafts/)
+
 <a name="linking-posts"></a>
 ### Linking to other blog posts
 
