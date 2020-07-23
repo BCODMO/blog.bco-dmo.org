@@ -77,8 +77,8 @@
     {% for relation in include.post.relations %}
       "citation": {
         "@type": "CreativeWork",
-        "name": {{ relation.title }},
-        "url": {{ relation.url }}
+        "name": {{ relation.title | jsonify }},
+        "url": {{ relation.url | jsonify }}
       },
     {% endfor %}
   {% endif %}
