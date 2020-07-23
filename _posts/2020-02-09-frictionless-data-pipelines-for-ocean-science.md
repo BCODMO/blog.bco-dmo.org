@@ -18,6 +18,8 @@ image:
   caption: "BCO-DMO Logo"
   url: https://www.bco-dmo.org
   border: false
+sameAs:
+  - https://frictionlessdata.io/blog/2020/02/10/frictionless-data-pipelines-for-open-ocean/
 relations:
   - url: https://doi.org/10.1575/1912/25777
     title: Capturing Provenance of Data Curation at BCO-DMO
