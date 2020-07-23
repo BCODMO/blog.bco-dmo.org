@@ -2,7 +2,7 @@
 layout: post
 type: BlogPosting
 title: "Frictionless Data Pipelines for Ocean Science"
-description: "For generating provenance for all data management activities, BCO-DMO has adopted the use of declarative workflows. These declarative workflows capture all the data processing steps made by data managers so that the transformation from original data submission to the final archived versionn are transparent annd reproducible by the community."
+description: "For generating provenance for all data management activities, BCO-DMO has adopted the use of declarative workflows that capture data processing steps supporting transparency for the community and reproducibility by data users."
 date: 2020-02-09
 lastModified: 2020-07-19 16:30:00
 published: true
