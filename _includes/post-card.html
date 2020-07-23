@@ -17,9 +17,9 @@
     {% if include.post.subtitle %}
     <p class="subtitle is-6 is-italic margin-bot-0">{{ include.post.subtitle }}</p>
     {% endif %}
-    <p class="subtitle is-6">by {% include author_names.html authors=include.post.author %}</p>
+    <p>by {% include author_names.html authors=include.post.author %}</p>
     {% if include.callout %}
-    <div class="content">{{ include.callout }}</div>
+    <div class="content margin-top-1">{{ include.callout }}</div>
     {% endif %}
     {% if include.post.tags %}
       {% for tag in include.post.tags %}
