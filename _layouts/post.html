@@ -3,7 +3,7 @@ layout: default
 ---
 {% assign bcodmo = site.data.authors["bcodmo"] %}
 {% assign url = site.url | append: page.url %}
-{% capture excerpt %}{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt }}{% endcapture %}
+{% capture excerpt %}{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt }}{% endif %}{% endcapture %}
 {% assign excerpt_no_html = excerpt | strip_html %}
 {% capture twitter_query %}via={{ bcodmo.social.twitter.id | uri_escape }}&url={{ url | uri_escape }}&text={{ excerpt_no_html | uri_escape }}{% endcapture %}
 {% assign twitter_share = "https://twitter.com/intent/tweet?" | append: twitter_query %}
