@@ -44,6 +44,9 @@
   {% if include.post.image.url %}
     "sharedContent": { 
       "@type": "WebPage", 
+      {% if include.post.image.caption %}
+      "name": {{ include.post.image.caption | jsonify }},
+      {% endif %}
       "url": {{ include.post.image.url | jsonify }}
     },
   {% endif %}
