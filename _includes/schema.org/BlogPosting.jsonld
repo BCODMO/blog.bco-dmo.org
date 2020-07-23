@@ -81,6 +81,7 @@
       {
         "@type": "CreativeWork",
         "name": {{ relation.title | jsonify }},
+        "name": {{ relation.description | jsonify }},
         "url": {{ relation.url | jsonify }}
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
