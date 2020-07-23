@@ -53,7 +53,7 @@
       {% capture image_url %}{{ site.url }}/assets/img/bco-dmo-avatar.jpg{% endcapture %}
     {% endif %}
     "@type": "ImageObject",	
-    "url": "{{ image_url }}"	
+    "url": "{{ image_url | strip }}"	
   },	
   
   {% if include.post.tags %}	
