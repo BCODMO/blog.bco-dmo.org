@@ -1,0 +1,11 @@
+---
+layout: default
+permalink: /drafts/
+title: "Draft Posts"
+description: "Listing of post currently being worked on"
+author: bcodmo
+include_in_sitemap: false
+---
+{% for draft in site.drafts %}
+  <h2><a href="{{ draft.url }}">{{ draft.title }}</a></h2>
+{% endfor %}
