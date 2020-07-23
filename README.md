@@ -188,7 +188,7 @@ Category determines which section the post appears in the blog.
 Images are placed in [`assets/img/posts`](https://github.com/BCODMO/blog.bco-dmo.org/tree/master/assets/img/posts) and they appear in the blog post in the upper-right corner with text wrapping around the image.
 
 | Fields | Required | Data Type | Description |
-|---|---|
+|---|---|---|---|
 | `filename` | yes | string | The name of the file you uploaded to `assets/img/posts` |
 | `caption` | yes | string | A short descriptionn of the image |
 | `url` | no | URL | If you want the image to link off to another site or webpage |
