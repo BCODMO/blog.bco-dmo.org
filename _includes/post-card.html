@@ -12,13 +12,14 @@
     {% endif %}
   </div>
   <div class="card-content">
-    <p>{{ include.post.date | date_to_string: "ordinal", "US" }}
-      {% if show_category %}
-        {% assign categories = site.pages | where:"id", include.post.category %}
-        {% for category in categories %}{% assign category_label = category.title %}{% endfor %}
-        {% include tag.html tag=category_label %}
-      {% endif %}
-    </p>
+    <nav class="level margin-bot-0">
+        <div class="level-left"><p class="level-item">{{ include.post.date | date_to_string: "ordinal", "US" }}</p></div>
+        {% if show_category %}
+          {% assign categories = site.pages | where:"id", include.post.category %}
+          {% for category in categories %}{% assign category_label = category.title %}{% endfor %}
+          <div class="level-right">{% include tag.html tag=category_label style="is-primary is-light" %}</div>
+        {% endif %}
+    </nav>
     <h3 class="title {% unless include.post.subtitle %} margin-bot-0{% endunless %}"><a href="{{ include.post.url }}" title="{{ include.post.title }}">{{ include.post.title }}</a></h3>
     {% if include.post.subtitle %}
     <p class="subtitle is-6 is-italic margin-bot-0">{{ include.post.subtitle }}</p>
