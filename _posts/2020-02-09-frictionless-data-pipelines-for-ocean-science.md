@@ -17,7 +17,7 @@ image:
   filename: ../bcodmo-logo.jpg
   caption: "BCO-DMO Logo"
   url: https://www.bco-dmo.org
-  border: true
+  border: false
 relations:
   - url: https://doi.org/10.1575/1912/25777
     title: Capturing Provenance of Data Curation at BCO-DMO
