@@ -45,3 +45,7 @@ article p {
 article svg.icon {
   height: min-content; 
 }
+
+.tag.is-accent {
+  background-color: #96BBD1;  
+}
