@@ -14,7 +14,7 @@ tags:
   - provenance
   - data curation
 image:
-  filename: ../bcodmo-logo.jpg
+  path: ../bcodmo-logo.jpg
   caption: "BCO-DMO Logo"
   url: https://www.bco-dmo.org
   border: false
