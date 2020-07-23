@@ -9,7 +9,7 @@ category: news
 tags: 
   - website
 image:
-  filename: CoreTrustSeal-logo-transparent.png
+  path: CoreTrustSeal-logo-transparent.png
   caption: "Short description goes here"
   url: https://www.coretrustseal.org/
   dimension: is-128x128
