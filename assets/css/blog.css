@@ -43,5 +43,5 @@ article p {
 }
 
 article svg.icon {
-  height: unset; 
+  height: min-content; 
 }
