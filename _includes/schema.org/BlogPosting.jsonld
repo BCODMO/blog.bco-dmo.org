@@ -46,10 +46,10 @@
     {% if include.post.image %}
       {% capture image_url %}{% include image_src.html image=include.post.image %}{% endcapture %}
     {% else %}
-      {% assign image_url = "/assets/img/bco-dmo-avatar.jpg" %}
+      {% capture image_url %}{{ site.url }}/assets/img/bco-dmo-avatar.jpg{% endcapture %}
     {% endif %}
     "@type": "ImageObject",	
-    "url": "{{ site.url }}{{ image_url }}"	
+    "url": "{{ image_url }}"	
   },	
   {% if include.post.image.url %}
     "sharedContent": { 
