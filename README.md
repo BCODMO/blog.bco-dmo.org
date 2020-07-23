@@ -99,6 +99,8 @@ At the top of each post, is a section of metadata in between `---` and `---`
 * category
 * tags
 * image
+* sameAs
+* relations
 
 <a name="post-metadata-published"></a>
 #### `published`
@@ -223,6 +225,55 @@ tags:
   - keyword3
 ```
 Each keyword will create a new page. `keyword1` can be seen at: `https://blog.bco-dmo.org/tag.html#keyword1`
+
+<a name="post-metadata-sameAs"></a>
+#### `sameAs`
+
+| Property | Value |
+|---|---|
+| Required | no |
+| Data Type | list |
+
+`sameAs` is used when the same blog post is also being posted by someone else. This field lets web crawler's know that the blog posts are the same. It alos puts links at the bottom of our blog posts to the other websites hosting the same post.
+
+Structured as a list, use it like this:
+
+```
+sameAs:
+  - https://frictionlessdata.io/blog/2020/02/10/frictionless-data-pipelines-for-open-ocean/
+```
+One hyphenated URL for each different website.
+
+<a name="post-metadata-relations"></a>
+#### `relations`
+
+| Property | Value |
+|---|---|
+| Required | no |
+| Data Type | object |
+
+| Fields | Required | Data Type | Description |
+|---|---|---|---|
+| `url` | yes | URL | The URL of the related resource |
+| `title` | yes | string | The title of the page or resource being linked |
+| `description` | yes | string | A description of why the URL is related to this post. Can contain HTML with links |
+
+`relations` is used when you want to include related links. This can be helpful when blogging about how to use ceertain software, tools, or data stadards and we want to provide links for readers and SEO.
+
+Structured as a list of object, use it like this:
+
+```
+relations:
+  - url: https://doi.org/10.1575/1912/25777
+    title: Capturing Provenance of Data Curation at BCO-DMO
+    description: A presentation given to the <a href="https://datacurationnetwork.org/" target="_blank">Data Curation Network</a> on why BCO-DMO chose declarative workflows
+  - url: https://frictionlessdata.io
+    title: Frictionless Data 
+    description: The Frictionless Data project, created by the <a href="https://okfn.org/" target="_blank">Open Knowledge Foundation</a>, where you can find tutorials, tools and more
+```
+One hyphenated URL for each different website.
+
+
 
 <a name="resources"></a>
 ## Resources
