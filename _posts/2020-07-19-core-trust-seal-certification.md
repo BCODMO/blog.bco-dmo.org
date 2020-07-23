@@ -6,7 +6,7 @@ subtitle: "Aww, snap we rolling now!"
 date: 2020-07-19
 lastModified: 2020-07-19 16:30:00
 published: true
-author: danie
+author: [danie]
 category: news
 tags: 
   - certification
