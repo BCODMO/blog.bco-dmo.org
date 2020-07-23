@@ -62,6 +62,7 @@ layout: default
         {% include post_relations.html relations=page.relations %}
       {% endif %}
       
+      <hr/>
       <p class="margin-top-1 is-size-7 is-italic">Last modified: 
         {% if page.lastModified %}
           {{ page.lastModified | date: "%Y-%m-%d %H:%M:%S" }}
