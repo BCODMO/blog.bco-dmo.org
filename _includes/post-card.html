@@ -13,7 +13,11 @@
   </div>
   <div class="card-content">
     <p>{{ include.post.date | date_to_string: "ordinal", "US" }}
-      {% if show_category %}{% include tag.html tag=post.category %}{% endif %}
+      {% if show_category %}
+        {% assign categories = site.posts | where:"category", include.post.category %}
+        {% for category in categories %}{% assign category_label = category.title %}{% endfor %}
+        {% include tag.html tag=category_label %}
+      {% endif %}
     </p>
     <h3 class="title {% unless include.post.subtitle %} margin-bot-0{% endunless %}"><a href="{{ include.post.url }}" title="{{ include.post.title }}">{{ include.post.title }}</a></h3>
     {% if include.post.subtitle %}
