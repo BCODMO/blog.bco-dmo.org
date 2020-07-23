@@ -24,7 +24,7 @@
       {% endfor %}
     ],
   {% else %}
-    "author": {% include schema.org/Person.jsonld person=site.data.authors[include.post.author[1]] %},	
+    "author": {% include schema.org/Person.jsonld person=site.data.authors[include.post.author[0]] %},	
   {% endif %}
   {% if include.post.description %}	
     {% assign callout = include.post.description %}	
