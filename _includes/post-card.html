@@ -27,7 +27,7 @@
       {% assign categories = site.pages | where:"id", include.post.category %}
       {% for category in categories %}{% assign category_label = category.title %}{% endfor %}
       <span class="tag is-primary">{{ category_label }}</span>
-      {% include tag.html tag=category_label style="is-accent is-light" %}
+      {% include tag.html tag=category_label style="is-accent" %}
     {% endif %}
     
     {% if include.post.tags %}
