@@ -48,8 +48,15 @@ layout: default
         {% include image.html image=page.image  %}
       {% endif %}
 
-      {{ content }}
+      <div class="margin-bottom-3">{{ content }}</div>
 
+      {% if page.sameAs %}
+        <p class="is-italic">This blog post was also published at:
+        {% for same in page.sameAs %}
+          <span><a href="{{ same.url }}" target="_blank">{{ same.url }}</a></span>
+        {% endfor %}
+        </p>
+      {% endif %}
       {% if page.lastModified %}
         <p class="margin-top-3 is-size-7 is-italic">Last modified: {{ page.lastModified | date: "%Y-%m-%d %H:%M:%S" }}</p>
       {% else %}
