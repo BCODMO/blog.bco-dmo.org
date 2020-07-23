@@ -25,14 +25,11 @@
       <meta property="og:description" content="{{ callout | strip }}" />
       <meta name="twitter:description" content="{{ callout | strip }}"/>
     {% endif %}
-    {% if page.image.filename %}
-      {% assign image_url = "/assets/img/posts/" | append: page.image.filename %}
-    {% else %}
-      {% assign image_url = "/assets/img/bco-dmo-avatar.jpg" %}
-    {% endif %}
+    {% capture image_url %}{% include image_src.html image=include.image %}{% endcapture %}
+    
     <link rel="image_src" href="{{ site.url }}{{ image_url }}" />
-    <meta property="og:image" content="{{ site.url }}{{ image_url }}" />
-    <meta name="twitter:image" content="{{ site.url }}{{ image_url }}"/>
+    <meta property="og:image" content="{{ image_url }}" />
+    <meta name="twitter:image" content="{{ image_url }}"/>
     {% include schema-org.html page=page %}
     
     <title>{{ page.title }} | {{ site.title }}</title>
