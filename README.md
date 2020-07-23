@@ -26,9 +26,10 @@ type: BlogPosting
 published: false
 title: "title goes here"
 subtitle: "an optional subtitle can go here"
+description: "A callout text to be used in SEO. Think about the text you'd want in a Twitter share."
 date: YYYY-MM-DD
 lastModified: YYYY-MM-DD HH:mm:ss
-author: your key from _data/authors.yml
+author: [your key from _data/authors.yml]
 category: news
 tags: 
   - keyword1
@@ -128,6 +129,16 @@ This is the title of your blog post.
 | Data Type | string |
 
 This is an optional subtitle for your blog post.
+
+<a name="post-metadata-description"></a>
+#### `description`
+
+| Property | Value |
+|---|---|
+| Required | no, highly recommended |
+| Data Type | string |
+
+An, optional, but highly valuable field used for search engien optimization. It's used as the callout text in Twitter and LinkedIn shares. For that reason, [keep the character count to around or under 200 characters](https://www.charactercountonline.com/).
 
 <a name="post-metadata-date"></a>
 #### `date`
