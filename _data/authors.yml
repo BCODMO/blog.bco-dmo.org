@@ -28,7 +28,17 @@ adam:
     linkedin: 
       id: ashep15
       url: https://www.linkedin.com/in/ashep15/
-    
+
+amber:
+  type: Person
+  name: Amber York
+  email: adyork@whoi.edu
+  role: Data Manager
+
+lillywinfree_okn:
+  type: Personn
+  name: Lilly Winfree
+  
 bcodmo:
   type: Organization
   name: BCO-DMO
