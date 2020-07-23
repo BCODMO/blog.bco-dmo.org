@@ -6,7 +6,7 @@ description: "For generating provenance for all data management activities, BCO-
 date: 2020-02-09
 lastModified: 2020-07-19 16:30:00
 published: true
-author: [adam]
+author: [adam, amber,lillywinfree_okn]
 category: engineering
 tags: 
   - frictionlessdata
