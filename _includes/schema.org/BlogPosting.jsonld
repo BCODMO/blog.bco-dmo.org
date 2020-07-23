@@ -44,7 +44,7 @@
   "wordCount": {{ include.post.content | number_of_words }},
   "image": {	
     {% if include.post.image %}
-      {% assign image_url = "/assets/img/posts/" | append: include.post.image.filename %}
+      {% capture image_url %}{% include image_src.html image=include.post.image %}{% endcapture %}
     {% else %}
       {% assign image_url = "/assets/img/bco-dmo-avatar.jpg" %}
     {% endif %}
