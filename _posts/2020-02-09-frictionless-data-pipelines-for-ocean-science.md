@@ -5,7 +5,7 @@ title: "Frictionless Data Pipelines for Ocean Science"
 description: "For generating provenance for all data management activities, BCO-DMO has adopted the use of declarative workflows that capture data processing steps supporting transparency for the community and reproducibility by data users."
 date: 2020-02-09
 lastModified: 2020-07-19 16:30:00
-published: true
+published: false
 author: [adam, amber,lillywinfree_okn]
 category: engineering
 tags: 
