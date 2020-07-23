@@ -1,20 +1,6 @@
 ---
 layout: default
 ---
-{% assign multiple_authors = page.author.size > 1 %}
-{% assign author_names = "" %}
-{% for author in page.author %}
-  {% if forloop.last %}
-    {% if multiple_authors %}
-      {% assign author_names = author_name | append: " and " | append: site.data.authors[page.author].name %}
-    {% else %}
-      {% assign author_names = author_name | append: site.data.authors[page.author].name %}
-    {% endif %}
-  {% else %}
-    {% assign author_names = author_name | append: site.data.authors[page.author].name | append: ", " %}
-  {% endif %}
-{% endfor %}
-
 {% assign bcodmo = site.data.authors["bcodmo"] %}
 {% assign url = site.url | append: page.url %}
 {% assign excerpt_no_html = page.excerpt | strip_html %}
@@ -32,7 +18,7 @@ layout: default
   {% endif %}
   <nav class="level margin-bot-0">
     <div class="level-left">
-      <div class="level-item"><h5 class="title is-5 margin-top-0 margin-bot-0">{{ author_names }}</h5></div>
+      <div class="level-item"><h5 class="title is-5 margin-top-0 margin-bot-0">{% include author_names.html authors=page.author %}</h5></div>
     </div>
     <div class="is-centered">
       <nav class="level is-mobile">
