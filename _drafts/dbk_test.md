@@ -1,7 +1,7 @@
 ---
 layout: post
 type: BlogPosting
-published: false
+published: true
 title: "Danie's blog test"
 subtitle: "WARNING: she doesn't know what she's doing!"
 description: "A callout text to be used in SEO. Think about the text you'd want in a Twitter share."
