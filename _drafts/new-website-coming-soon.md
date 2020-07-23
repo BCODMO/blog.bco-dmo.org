@@ -3,7 +3,7 @@ layout: post
 type: BlogPosting
 published: false
 title: "New website coming soon!"
-date: YYYY-MM-DD
+date: 2020-08-01
 author: [adam]
 category: news
 tags: 
