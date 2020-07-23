@@ -25,7 +25,7 @@
       <meta property="og:description" content="{{ callout | strip }}" />
       <meta name="twitter:description" content="{{ callout | strip }}"/>
     {% endif %}
-    {% capture image_url %}{% include image_src.html image=include.image %}{% endcapture %}
+    {% capture image_url %}{% include image_src.html image=page.image %}{% endcapture %}
     <link rel="image_src" href="{{ image_url }}" />
     <meta property="og:image" content="{{ image_url }}" />
     <meta name="twitter:image" content="{{ image_url }}"/>
