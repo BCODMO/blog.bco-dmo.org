@@ -3,11 +3,7 @@
   {% assign style = style  | append: " border: grey solid 2px; margin: 5px" %}
 {% endif %}
 {% assign alt_text = include.image.caption | default: "Image" %}
-{% if include.image.path contains "://" %}
-  {% assign image_src = include.image.path %}
-{% else %}
-  {% capture image_src %}{{ site.url }}/assets/img/posts/{{ include.image.path }}{% endcapture %}
-{% endif %}
+{% capture image_src %}{% include image_src.html image=include.image %}{% endcapture %}
 {% capture img_tag %}<img src="{{ image_src }}" alt="{{ alt_text }}">{% endcapture %}
 <figure class="image {{ include.image.dimension | default: ""}}" style="{{ style }}">
   {% if include.image.url %}
