@@ -25,8 +25,9 @@
     {% endif %}
     {% if show_category %}
       {% assign categories = site.pages | where:"id", include.post.category %}
-      {% for category in categories %}{% assign category_label = category.title %}{% endfor %}
-      {% include tag.html tag=category_label style="is-accent" %}
+      {% for category in categories %}
+        <span class="tag is-accent"><a href="{{ site.url }}{{category.url }}">{{ category.title }}</a></span>
+      {% endfor %}
     {% endif %}
     
     {% if include.post.tags %}
