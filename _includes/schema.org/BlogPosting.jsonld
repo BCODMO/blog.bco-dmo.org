@@ -12,9 +12,11 @@
     "alternativeHeadline":{{ include.post.subtitle | jsonify }},	
   {% endif %}	
   {% if include.post.sameAs %}
+    "sameAs": [
     {% for same in include.post.sameAs %}
-      "sameAs": {{ same | jsonify }},
+      {{ same | jsonify }}{% unless forloop.last %},{% endunless %}
     {% endfor %}
+    ],
   {% endif %}
   "datePublished": "{{ include.post.date | date_to_xmlschema }}",	
   {% if include.post.lastModified %}	
@@ -74,13 +76,15 @@
     },
   {% endif %}
   {% if include.post.relations %}
+    "citation": [
     {% for relation in include.post.relations %}
-      "citation": {
+      {
         "@type": "CreativeWork",
         "name": {{ relation.title | jsonify }},
         "url": {{ relation.url | jsonify }}
-      },
+      }{% unless forloop.last %},{% endunless %}
     {% endfor %}
+    ],
   {% endif %}
 {% comment %}======== CONTENT for the POST PAGE ONLY ========{% endcomment %}
   {% unless include.hideContent %}
