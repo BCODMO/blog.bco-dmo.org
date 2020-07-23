@@ -12,7 +12,7 @@ tags:
   - certification
   - repositories
 image:
-  filename: CoreTrustSeal-logo-transparent.png
+  path: CoreTrustSeal-logo-transparent.png
   caption: "Core Trust Seal Logo"
   url: https://www.coretrustseal.org/
   dimension: is-128x128
