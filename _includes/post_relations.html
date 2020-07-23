@@ -1,0 +1,10 @@
+<div class="card result-card">
+  <h5 class="title is-5">Related Links</h5>
+  <div class="card-content">
+      <div class="content">
+        {% for relation in include.relations %}
+          <a class="title is-small" href="{{ relation.url }}" target="_blank">{{ relation.title }}</a>
+        {% endfor %}
+      </div>
+  </div>
+</div>
