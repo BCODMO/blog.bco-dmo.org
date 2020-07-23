@@ -51,21 +51,24 @@
     <!-- Breadcrumbs -->
     <nav class="breadcrumb margin-bot-0" aria-label="breadcrumbs">
       <ul class="container">
-        <li><a href="https://www.bco-dmo.org" aria-current="page">Home</a></li>
+        <li><a href="https://www.bco-dmo.org">Home</a></li>
         {% if page.type and page.type == "BlogPosting" %}
-          <li><a href="{{ site.url }}" aria-current="page">Blog</a></li>
+          <li><a href="{{ site.url }}">Blog</a></li>
           {% assign pages = site.pages | where: "id", page.category %}
           {% if pages %}
             {% for listing in pages %}
-              <li><a href="{{ site.url }}{{ listing.url }}" aria-current="page">{{ listing.title }}</a></li>
+              <li><a href="{{ site.url }}{{ listing.url }}">{{ listing.title }}</a></li>
             {% endfor %}
           {% endif %}
           <li class="is-active"><a aria-current="page">{{ page.title }}</a></li>
         {% elsif page.type and page.type == "ItemList" %}
-          <li><a href="{{ site.url }}" aria-current="page">Blog</a></li>
+          <li><a href="{{ site.url }}">Blog</a></li>
           <li class="is-active"><a aria-current="page">{{ page.title }}</a></li>
         {% elsif page.type and page.type == "Blog" %}
           <li class="is-active"><a aria-current="page">Blog</a></li>
+        {% else %}
+          <li><a href="{{ site.url }}">Blog</a></li>
+          <li class="is-active"><a aria-current="page">{{ page.title }}</a></li>
         {% endif %}
       </ul>
     </nav>
