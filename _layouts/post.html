@@ -62,18 +62,13 @@ layout: default
         <div id="tweet"></div>
         <script src="/assets/js/tweet.js"></script>
         <script>
-          $(document).ready(function () {
+          twttr.ready(function (twttr) {
             twttr.widgets.createTweet(
             '{{ page.tweet }}',
             document.getElementById('tweet'),
-            {
-              theme: 'light'
-            }
-            ).then( function( el ) {
-              console.log('Tweet added.');
-            });
-          });
-          </script>
+            {theme: 'light'}
+          )});
+        </script>
       {% endif %}
       
       {% if page.relations %}
