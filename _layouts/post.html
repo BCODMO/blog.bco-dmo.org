@@ -59,34 +59,21 @@ layout: default
       {% endif %}
       
       {% if page.tweet %}
+        <div id="tweet"></div>
+        <script src="/assets/js/tweet.js"></script>
         <script>
-          window.twttr = (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0],
-              t = window.twttr || {};
-            if (d.getElementById(id)) return t;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "https://platform.twitter.com/widgets.js";
-            fjs.parentNode.insertBefore(js, fjs);
-
-            t._e = [];
-            t.ready = function(f) {
-              t._e.push(f);
-            };
-
-            return t;
-          }(document, "script", "twitter-wjs"));
-          twttr.widgets.createTweet(
-            '20',
+          $(document).ready(function () {
+            twttr.widgets.createTweet(
+            '{{ page.tweet }}',
             document.getElementById('tweet'),
             {
-              theme: 'dark'
+              theme: 'light'
             }
-          ).then( function( el ) {
-            console.log('Tweet added.');
+            ).then( function( el ) {
+              console.log('Tweet added.');
+            });
           });
-        </script>
-        <div id="tweet">{{ page.tweet }}</div>
+          </script>
       {% endif %}
       
       {% if page.relations %}
