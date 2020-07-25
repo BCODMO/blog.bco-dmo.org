@@ -58,19 +58,6 @@ layout: default
         </p>
       {% endif %}
       
-      {% if page.tweet %}
-        <div id="tweet"></div>
-        <script src="/assets/js/tweet.js"></script>
-        <script>
-          twttr.ready(function (twttr) {
-            twttr.widgets.createTweet(
-            '{{ page.tweet }}',
-            document.getElementById('tweet'),
-            {theme: 'light'}
-          )});
-        </script>
-      {% endif %}
-      
       {% if page.relations %}
         {% include post_relations.html relations=page.relations %}
       {% endif %}
