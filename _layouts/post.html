@@ -59,7 +59,21 @@ layout: default
       {% endif %}
       
       {% if page.tweet %}
+        
         {{ page.tweet }}
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div id="tweet"></div>
+        <script>
+          twttr.widgets.createTweet(
+            '20',
+            document.getElementById('tweet'),
+            {
+              theme: 'dark'
+            }
+          ).then( function( el ) {
+            console.log('Tweet added.');
+          });
+        </script>
       {% endif %}
       
       {% if page.relations %}
