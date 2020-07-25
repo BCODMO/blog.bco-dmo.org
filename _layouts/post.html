@@ -58,6 +58,10 @@ layout: default
         </p>
       {% endif %}
       
+      {% if page.tweet %}
+        {{ page.tweet }}
+      {% endif %}
+      
       {% if page.relations %}
         {% include post_relations.html relations=page.relations %}
       {% endif %}
