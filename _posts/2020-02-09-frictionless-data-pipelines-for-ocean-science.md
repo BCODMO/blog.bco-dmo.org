@@ -18,6 +18,7 @@ image:
   caption: "BCO-DMO Logo"
   url: https://www.bco-dmo.org
   border: false
+tweet: <blockquote class="twitter-tweet" data-theme="light"><p lang="en" dir="ltr">New blog post up about our <a href="https://twitter.com/hashtag/FrictionlessData?src=hash&amp;ref_src=twsrc%5Etfw">#FrictionlessData</a> for <a href="https://twitter.com/hashtag/ReproducibleResearch?src=hash&amp;ref_src=twsrc%5Etfw">#ReproducibleResearch</a> Pilot project with <a href="https://twitter.com/BCODMO?ref_src=twsrc%5Etfw">@BCODMO</a>. Read how BCO-DMO&#39;s new data processing UI uses Data Package Pipelines to help data managers work with diverse oceanographic data: <a href="https://t.co/0THfEdX1q3">https://t.co/0THfEdX1q3</a> <a href="https://t.co/fPtrWIOy5M">pic.twitter.com/fPtrWIOy5M</a></p>&mdash; Open Knowledge Foundation (@OKFN) <a href="https://twitter.com/OKFN/status/1226935041596575750?ref_src=twsrc%5Etfw">February 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 sameAs:
   - https://frictionlessdata.io/blog/2020/02/10/frictionless-data-pipelines-for-open-ocean/
 relations:
