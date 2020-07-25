@@ -59,11 +59,23 @@ layout: default
       {% endif %}
       
       {% if page.tweet %}
-        
-        {{ page.tweet }}
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <div id="tweet"></div>
         <script>
+          window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+              t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function(f) {
+              t._e.push(f);
+            };
+
+            return t;
+          }(document, "script", "twitter-wjs"));
           twttr.widgets.createTweet(
             '20',
             document.getElementById('tweet'),
@@ -74,6 +86,7 @@ layout: default
             console.log('Tweet added.');
           });
         </script>
+        <div id="tweet">{{ page.tweet }}</div>
       {% endif %}
       
       {% if page.relations %}
