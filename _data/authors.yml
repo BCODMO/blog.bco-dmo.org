@@ -34,6 +34,14 @@ amber:
   name: Amber York
   email: adyork@whoi.edu
   role: Data Manager
+  url: https://www.whoi.edu/profile/adyork/
+  social:
+    orcid:
+      id: 0000-0002-5133-5842
+      url: https://orcid.org/0000-0002-5133-5842
+    twitter: 
+      id: amber_science
+      url: https://twitter.com/amber_science
 
 lillywinfree_okn:
   type: Personn
