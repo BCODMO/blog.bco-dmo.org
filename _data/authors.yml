@@ -44,8 +44,12 @@ amber:
       url: https://twitter.com/amber_science
 
 lillywinfree_okn:
-  type: Personn
+  type: Person
   name: Lilly Winfree
+  social:
+    twitter: 
+      id: lilscientista
+      url: https://twitter.com/lilscientista
   
 bcodmo:
   type: Organization
