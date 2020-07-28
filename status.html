@@ -1,0 +1,41 @@
+---
+layout: default
+permalink: /admin/status
+title: "Status Report"
+description: "Lists the status of all posts and drafts"
+author: bcodmo
+include_in_sitemap: false
+---
+
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Post</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for post in site.posts %}
+    <tr>
+      <td><a href="{{ site.url }}{{ posts.url }}">{{ posts.title }}</a></td>
+      <th><% include status.html post=post %}</th>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>    
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Draft</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for draft in site.drafts %}
+    <tr>
+      <td><a href="{{ site.url }}{{ draft.url }}">{{ draft.title }}</a></td>
+      <th><% include status.html post=draft %}</th>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>    
