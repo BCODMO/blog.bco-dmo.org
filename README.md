@@ -248,6 +248,16 @@ sameAs:
 ```
 One hyphenated URL for each different website.
 
+<a name="post-metadata-comments"></a>
+#### `comments`
+
+| Property | Value |
+|---|---|
+| Required | no |
+| Data Type | `true` or `false` |
+
+You can disable commenting by setting `comments: false`.
+
 <a name="post-metadata-relations"></a>
 #### `relations`
 
