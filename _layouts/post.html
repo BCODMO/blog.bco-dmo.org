@@ -69,7 +69,18 @@ layout: default
         {% else %}
           {{ page.date | date: "%Y-%m-%d %H:%M:%S" }}
         {% endif %}
-      </p>      
+      </p>
+      <script defer src="https://commento.bco-dmo.org/js/commento.js"></script>
+      <div id="commento" class="margin-top-1"></div>
+      <style>
+        .commento-root .commento-markdown-help tr td pre {
+          display: contents;    
+        }
+
+        .commento-root .commento-footer {
+          display: none;
+        }
+      </style>
     </div>
   </div>
 </article>
