@@ -123,7 +123,7 @@
             $('#{{ post.id }}_status').click(function(){ $('#{{ post.id }}_status').toggle(); });
           });
         </script>
-        <tr><td colspan="10">{% if errors.size > 0 %}<ul>{% for error in errors %}<li>{{error }}</li>{% endfor %}</ul>{% endif %}</td></tr>
+        <tr><td colspan="7">{% if errors.size > 0 %}<ul>{% for error in errors %}<li>{{error }}</li>{% endfor %}</ul>{% endif %}</td></tr>
       </tbody>
     </table> 
   </div>
