@@ -17,7 +17,7 @@ include_in_sitemap: false
   <tbody>
   {% for post in site.posts %}
     <tr>
-      <td><a href="{{ site.url }}{{ posts.url }}">{{ posts.title }}</a></td>
+      <td><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></td>
       <th>{% include status.html post=post type="post" %}</th>
     </tr>
   {% endfor %}
@@ -34,7 +34,7 @@ include_in_sitemap: false
   {% for draft in site.drafts %}
     <tr>
       <td><a href="{{ site.url }}{{ draft.url }}">{{ draft.title }}</a></td>
-      <th><% include status.html post=draft type="draft" %}</th>
+      <th>{% include status.html post=draft type="draft" %}</th>
     </tr>
   {% endfor %}
   </tbody>
