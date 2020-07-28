@@ -118,7 +118,7 @@
           {% assign status = "Not Ready :(" %}
         {% endif %}
         <script>
-          $(document.ready(function(){ 
+          $(document).ready(function(){ 
             $('#{{ post.id }}_status').text('{{ status }}'); 
             $('#{{ post.id }}_status').click(function(){ $('#{{ post.id }}_status').toggle(); });
           });
