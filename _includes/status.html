@@ -43,6 +43,7 @@
             {% else %}
               <td class="validate-fail is-italic">{{ post.category }}</td>
               {{ errors | push: "Unknown category: {{ post.category }}. Select one from: `[news, data-tools, insights, engineering]`" }}
+            {% endif %}
           {% else %}
             <td class="validate-fail is-italic">not specified</td>
             {{ errors | push: "Specify a category: `category: one of [news, data-tools, insights, engineering]`" }}
@@ -93,6 +94,7 @@
             {% else %}
               <td class="validate-fail is-italic">{{ post.date }}</td>
               {{ errors | push: "Be sure to set: `date: YYYY-MM-DD` when ready to publish" }}
+            {% endif %}
           {% endif %}
 {% comment %} === AUTHORS === {% endcomment %}
           {% if post.author %}
