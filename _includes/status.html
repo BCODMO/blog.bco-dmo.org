@@ -2,8 +2,9 @@
 {% assign post_type = include.type %}
 {% assign errors = [] %}
 {% assign status = "Ready!" %}
-<div id="{{ post.id }}">
-  <span id="{{ post.id }}_status"></span>
+{% assign post_id = post.id | slugify %}
+<div id="{{ post_id }}">
+  <span id="{{ post_id }}_status"></span>
   <div class="is-hidden">
     <table class="table is-fullwidth">
       <thead>
@@ -119,8 +120,8 @@
         {% endif %}
         <script>
           $(document).ready(function(){ 
-            $('#{{ post.id }}_status').text('{{ status }}'); 
-            $('#{{ post.id }}_status').click(function(){ $('#{{ post.id }}_status').toggle(); });
+            $('#{{ post_id }}_status').text('{{ status }}'); 
+            $('#{{ post_id }}_status').click(function(){ $('#{{ post_id }}_status').toggle(); });
           });
         </script>
         <tr><td colspan="7">{% if errors.size > 0 %}<ul>{% for error in errors %}<li>{{error }}</li>{% endfor %}</ul>{% endif %}</td></tr>
