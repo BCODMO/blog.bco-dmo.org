@@ -82,7 +82,7 @@
 {% comment %} === DATE === {% endcomment %}
           {% if post_type == "post" %}
             {% if post.date %}
-              <td class="validate-success">{{ post.date | date_to_string: "ordinal", "US" %}</td>
+              <td class="validate-success">{{ post.date | date_to_string: "ordinal", "US" }}</td>
             {% else %}
               <td class="validate-fail is-italic">{{ post.date }}</td>
               {{ errors | push: "Specify a date in nthe post: `date: YYYY-MM-DD`" }}
