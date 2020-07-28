@@ -1,1 +1,128 @@
+{% assign post = include.post %}
+{% assign post_type include.type %}
+{% assign errors = [] %}
+{% assign status = "Ready!" %}
+<div id="{{ post.id }}">
+  <span id="{{ post.id }}_status"></span>
+  <div class="is-hidden">
+    <table class="table is-fullwidth">
+      <thead>
+        <tr>
+          <th>Layout</th>
+          <th>Schema.org Type</th>
+          <th>Category</th>
+          <th>Published</th>
+          <th>Filename</th>
+          <th>Post Date</th>
+          <th>Author(s)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+{% comment %} === LAYOUT === {% endcomment %}
+          {% if post.layout %}
+            <td class="validate-success">{{ post.layout }}</td>
+          {% else %}
+            <td class="validate-fail is-italic">not specified</td>
+            {{ errors | push: "Specify a layout: `layout: post`" }}
+          {% endif %}
+          
+{% comment %} === SCHEMA.ORG TYPE === {% endcomment %}
+          {% if post.type == "BlogPosting" %}
+            <td class="validate-success">{{ post.type }}</td>
+          {% else %}
+            <td class="validate-fail is-italic">{{ post.type }}</td>
+            {{ errors | push: "Specify a `BlogPosting` as the type: `type: BlogPosting`" }}
+          {% endif %}
+          
+{% comment %} === CATEGORY === {% endcomment %}
+          {% if post.category %}
+            {% assign categories = site.pages | where:"id", post.category %}
+            {% if categories.size > 0 %}
+              <td class="validate-success">{{ post.category }}</td>
+            {% else %}
+              <td class="validate-fail is-italic">{{ post.category }}</td>
+              {{ errors | push: "Unknown category: {{ post.category }}. Select one from: `[news, data-tools, insights, engineering]`" }}
+          {% else %}
+            <td class="validate-fail is-italic">not specified</td>
+            {{ errors | push: "Specify a category: `category: one of [news, data-tools, insights, engineering]`" }}
+          {% endif %}
+          
+{% comment %} === PUBLISHED === {% endcomment %}
+          {% if post_type == "post" %}
+            {% if post.published %}
+              <td class="validate-success">{{ post.published }}</td>
+            {% else %}
+              <td class="validate-fail is-italic">{{ post.published }}</td>
+              {{ errors | push: "Post is unpublished" }}
+            {% endif %}
+          {% else %}
+            <td class="validate-warning">
+              {% if post.published %}
+                When ready to publish, move to the `_posts` directory
+              {% else %}
+                Set `published: true` when ready to publish
+              {% endif %}
+            </td>
+          {% endif %}
+          
+{% comment %} === FILENAME === {% endcomment %}
+          {% if post_type == "post" %}
+            {% if post.path %}
+              <td class="validate-success">{{ post.path }}</td>
+            {% else %}
+              <td class="validate-fail is-italic">{{ post.path }}</td>
+              {{ errors | push: "Filename does follow the format `/YYYY/MM/DD/title`" }}
+            {% endif %}
+          {% else %}
+              <td class="validate-warning">{{ post.path }}</td>
+              {{ errors | push: "Be sure to rename the post in the format: `/YYYY/MM/DD/title`" }}
+          {% endif %}
 
+{% comment %} === DATE === {% endcomment %}
+          {% if post_type == "post" %}
+            {% if post.date %}
+              <td class="validate-success">{{ post.date | date_to_string: "ordinal", "US" %}</td>
+            {% else %}
+              <td class="validate-fail is-italic">{{ post.date }}</td>
+              {{ errors | push: "Specify a date in nthe post: `date: YYYY-MM-DD`" }}
+            {% endif %}
+          {% else %}
+            {% if post.date %}
+              <td class="validate-success">{{ post.date }}</td>
+            {% else %}
+              <td class="validate-fail is-italic">{{ post.date }}</td>
+              {{ errors | push: "Be sure to set: `date: YYYY-MM-DD` when ready to publish" }}
+          {% endif %}
+{% comment %} === AUTHORS === {% endcomment %}
+          {% if post.author %}
+            {% for author in post.author %}
+              {% unless site.data.authors contains author %}
+                {{ author_errors | push: "Unknown author: `{{ author }}`" }}
+              {% endunless %}
+            {% endfor %}
+            {% if author_errors.size > 1 %}
+              <td class="validate-fail is-italic">Not all authors defined in `_data/authors.yaml`: {{ post.author }}</td>
+              {% for err in author_errors %}{{ errors | push: err }}{% endfor %}
+            {% else %}
+              <td class="validate-success">All authors are defined in `_data/authors.yaml`: {{ post.author }}</td>
+            {% endif %}
+          {% else %}
+            <td class="validate-fail is-italic">not specified</td>
+            {{ errors | push: "Specify authors: `author: [author ids from _data/authors.yaml]`" }}
+          {% endif %}
+        </tr>
+        {% if errors.size > 0 %}
+          {% assign status = "Not Ready :(" %}
+        {% endif %}
+        <script>
+          $(document.ready(function(){ 
+            $('#{{ post.id }}_status').text('{{ status }}'); 
+            $('#{{ post.id }}_status').click(function(){ $('#{{ post.id }}_status').toggle(); });
+          });
+        </script>
+        <tr><td colspan="10">{% if errors.size > 0 %}<ul>{% for error in errors %}<li>{{error }}</li>{% endfor %}</ul>{% endif %}</td></tr>
+      </tbody>
+    </table> 
+  </div>
+</div>
