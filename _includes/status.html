@@ -4,39 +4,30 @@
 {% assign status = "Ready!" %}
 {% assign post_id = post.id | slugify %}
 <div id="{{ post_id }}">
-  <span id="{{ post_id }}_status"></span> <a id="{{post_id}}_toggle">view report</a>
+  <span id="{{ post_id }}_status"></span><span class="is-size-7">[<a id="{{post_id}}_toggle">view report</a>]</span>
   <div id="{{ post_id }}_report" class="is-hidden">
     <table class="table is-fullwidth">
-      <thead>
-        <tr>
-          <th>Layout</th>
-          <th>Schema.org Type</th>
-          <th>Category</th>
-          <th>Published</th>
-          <th>Filename</th>
-          <th>Post Date</th>
-          <th>Author(s)</th>
-        </tr>
-      </thead>
       <tbody>
         <tr>
-{% comment %} === LAYOUT === {% endcomment %}
+          <th>Layout</th>
           {% if post.layout %}
             <td class="is-success">{{ post.layout }}</td>
           {% else %}
             <td class="is-danger is-italic">not specified</td>
             {{ errors | push: "Specify a layout: `layout: post`" }}
           {% endif %}
-          
-{% comment %} === SCHEMA.ORG TYPE === {% endcomment %}
+        </tr>
+        <tr>
+          <th>Schema.org Type</th>
           {% if post.type == "BlogPosting" %}
             <td class="is-success">{{ post.type }}</td>
           {% else %}
             <td class="is-danger is-italic">{{ post.type }}</td>
             {{ errors | push: "Specify a `BlogPosting` as the type: `type: BlogPosting`" }}
           {% endif %}
-          
-{% comment %} === CATEGORY === {% endcomment %}
+        </tr>
+        <tr>
+          <th>Category</th>
           {% if post.category %}
             {% assign categories = site.pages | where:"id", post.category %}
             {% if categories.size > 0 %}
@@ -49,8 +40,9 @@
             <td class="is-danger is-italic">not specified</td>
             {{ errors | push: "Specify a category: `category: one of [news, data-tools, insights, engineering]`" }}
           {% endif %}
-          
-{% comment %} === PUBLISHED === {% endcomment %}
+        </tr>
+        <tr>
+          <th>Published</th>
           {% if post_type == "post" %}
             {% if post.published %}
               <td class="is-success">{{ post.published }}</td>
@@ -67,8 +59,9 @@
               {% endif %}
             </td>
           {% endif %}
-          
-{% comment %} === FILENAME === {% endcomment %}
+        </tr>
+        <tr>
+          <th>Filename</th>
           {% if post_type == "post" %}
             {% if post.path %}
               <td class="is-success">{{ post.path }}</td>
@@ -80,8 +73,9 @@
               <td class="is-warning">{{ post.path }}</td>
               {{ errors | push: "Be sure to rename the post in the format: `/YYYY/MM/DD/title`" }}
           {% endif %}
-
-{% comment %} === DATE === {% endcomment %}
+        </tr>
+        <tr>
+          <th>Date</th>
           {% if post_type == "post" %}
             {% if post.date %}
               <td class="is-success">{{ post.date | date_to_string: "ordinal", "US" }}</td>
@@ -97,7 +91,9 @@
               {{ errors | push: "Be sure to set: `date: YYYY-MM-DD` when ready to publish" }}
             {% endif %}
           {% endif %}
-{% comment %} === AUTHORS === {% endcomment %}
+        </tr>
+        <tr>
+          <th>Author(s)</th>
           {% if post.author %}
             {% for author in post.author %}
               {% unless site.data.authors contains author %}
@@ -133,7 +129,7 @@
             });
           });
         </script>
-        <tr><td colspan="7">{% if errors.size > 0 %}<ul>{% for error in errors %}<li>{{error }}</li>{% endfor %}</ul>{% endif %}</td></tr>
+        <tr><td colspan="2">{% if errors.size > 0 %}<ul>{% for error in errors %}<li>{{error }}</li>{% endfor %}</ul>{% endif %}</td></tr>
       </tbody>
     </table> 
   </div>
