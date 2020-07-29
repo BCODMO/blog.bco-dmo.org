@@ -4,7 +4,7 @@
 {% assign status = "Ready!" %}
 {% assign post_id = post.id | slugify %}
 <div id="{{ post_id }}">
-  <span id="{{ post_id }}_status"></span>
+  <span id="{{ post_id }}_status"></span> <a id="{{post_id}}_toggle">view report</a>
   <div id="{{ post_id }}_report" class="is-hidden">
     <table class="table is-fullwidth">
       <thead>
@@ -121,11 +121,13 @@
         <script>
           $(document).ready(function(){ 
             $('#{{ post_id }}_status').text('{{ status }}'); 
-            $('#{{ post_id }}_status').click(function(){ 
+            $('#{{ post_id }}_toggle').click(function(){ 
               if ($('#{{ post_id }}_report').hasClass('is-hidden')) {
+                $('#{{ post_id }}_toggle').text('hide report');
                 $('#{{ post_id }}_report').removeClass('is-hidden');
               }
               else {
+                $('#{{ post_id }}_toggle').text('view report');
                 $('#{{ post_id }}_report').addClass('is-hidden');
               }
             });
