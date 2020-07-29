@@ -101,10 +101,10 @@
               {% endunless %}
             {% endfor %}
             {% if author_errors.size > 1 %}
-              <td class="is-danger is-italic">Not all authors defined in `_data/authors.yaml`: {{ post.author }}</td>
+              <td class="is-danger is-italic">Not all authors defined in `_data/authors.yaml`: {{ post.author | array_to_sentence_string }}</td>
               {% for err in author_errors %}{{ errors | push: err }}{% endfor %}
             {% else %}
-              <td class="is-success">All authors are defined in `_data/authors.yaml`: {{ post.author }}</td>
+              <td class="is-success">All authors are defined in `_data/authors.yaml`: {{ post.author | array_to_sentence_string }}</td>
             {% endif %}
           {% else %}
             <td class="is-danger is-italic">not specified</td>
