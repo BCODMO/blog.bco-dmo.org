@@ -48,7 +48,7 @@ relations:
 
  Some notable BCO-DMO processors are:
 
- {% include link.html external=true url="https://github.com/BCODMO/bcodmo_processors#bcodmo_pipeline_processorsboolean_add_computed_field"text="boolean_add_computed_field" %} – Computes a new field to add to the data whether a particular row satisfies a certain set of criteria.<br>
+ {% include link.html external=true url="https://github.com/BCODMO/bcodmo_processors#bcodmo_pipeline_processorsboolean_add_computed_field" text="boolean_add_computed_field" %} – Computes a new field to add to the data whether a particular row satisfies a certain set of criteria.<br>
 Example: Where Cruise_ID = ‘AT39-05’ and Station = 6, set Latitude to 22.1645.
 
  {% include link.html external=true url="https://github.com/BCODMO/bcodmo_processors#bcodmo_pipeline_processorsconvert_date" text="convert_date" %} – Converts any number of fields containing date information into a single date field with display format and timezone options. Often data information is reported in multiple columns such as <code>year</code>, <code>month</code>, <code>day</code>, <code>hours_local_time</code>, <code>minutes_local_time</code>, <code>seconds_local_time</code>. For spatio-temporal datasets, it’s important to know the UTC date and time of the recorded data to ensure that searches for data with a time range are accurate. Here, these columns are combined to form an ISO 8601-compliant UTC datetime value.
