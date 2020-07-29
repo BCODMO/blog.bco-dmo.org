@@ -129,8 +129,8 @@
             });
           });
         </script>
-        <tr><td colspan="2">{% if errors.size > 0 %}<ul>{% for error in errors %}<li>{{error }}</li>{% endfor %}</ul>{% endif %}</td></tr>
       </tbody>
-    </table> 
+  </table> 
+  {% if errors.size > 0 %}<tr><td colspan="2"><ul>{% for error in errors %}<li>{{error }}</li>{% endfor %}</ul>{% endif %}
   </div>
 </div>
