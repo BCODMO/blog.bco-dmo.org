@@ -55,11 +55,11 @@ You can view a list of all drafts at: [https://blog.bco-dmo.org/drafts/](https:/
 It's important that whenn we want to link off to external websites, that we style thesee links in a way that tells the user the link is external. To create links in your post, use: `{% include link.html url="url-goes-here" text="The text that should be linked" external=true %}`
 
 Example: `{% include link.html url="url-goes-here" text="BCO-DMO website" external=true %}`
-will generate [https://www.bco-dmo.org](BCO-DMO website)
+will generate: [BCO-DMO website](https://www.bco-dmo.org)
 
 
 To link the URL, you can omit the `text` attribute: `{% include link.html url="https://www.bco-dmo.org" external=true %}`
-will generate [https://www.bco-dmo.org](https://www.bco-dmo.org)
+will generate: [https://www.bco-dmo.org](https://www.bco-dmo.org)
 
 
 See https://jekyllrb.com/docs/liquid/tags/#linking-to-posts
