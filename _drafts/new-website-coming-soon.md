@@ -1,7 +1,6 @@
 ---
 layout: post
 type: BlogPosting
-published: false
 title: "New website coming soon!"
 date: 2020-08-01
 author: [adam]
@@ -17,3 +16,5 @@ image:
 ---
 
 Check it out: [https://netlify.bco-dmo.org](https://netlify.bco-dmo.org)
+ 
+ OR {% include link.html url="https://netlify.bco-dmo.org" text="Staging Site" classes="is-italic" external=true %}
