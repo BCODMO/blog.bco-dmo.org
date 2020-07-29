@@ -18,7 +18,7 @@ include_in_sitemap: false
   <tbody>
   {% for post in site.posts %}
     <tr>
-      <td>{{ post.date | date_to_string: "ordinal", "US" }}</td>
+      <td>{{ forloop.index }}. {{ post.date | date_to_string: "ordinal", "US" }}</td>
       <td><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>{% include status.html post=post type="post" %}</td>
     </tr>
   {% endfor %}
@@ -35,7 +35,7 @@ include_in_sitemap: false
   <tbody>
   {% for draft in site.drafts %}
     <tr>
-      <td><a href="{{ site.url }}{{ draft.url }}">{{ draft.title }}</a>{% include status.html post=draft type="draft" %}</td>
+      <td>{{ forloop.index }}. <a href="{{ site.url }}{{ draft.url }}">{{ draft.title }}</a>{% include status.html post=draft type="draft" %}</td>
     </tr>
   {% endfor %}
   </tbody>
