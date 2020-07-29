@@ -50,7 +50,17 @@ To view how your draft `_drafts/my-first-post.md` will look, go to `https://blog
 You can view a list of all drafts at: [https://blog.bco-dmo.org/drafts/](https://blog.bco-dmo.org/drafts/)
 
 <a name="linking-posts"></a>
-### Linking to other blog posts
+### Linking in a post
+
+It's important that whenn we want to link off to external websites, that we style thesee links in a way that tells the user the link is external. To create links in your post, use: `{% include link.html url="url-goes-here" text="The text that should be linked" external=true %}`
+
+Example: `{% include link.html url="url-goes-here" text="BCO-DMO website" external=true %}`
+will generate [https://www.bco-dmo.org](BCO-DMO website)
+
+
+To link the URL, you can omit the `text` attribute: `{% include link.html url="https://www.bco-dmo.org" external=true %}`
+will generate [https://www.bco-dmo.org](https://www.bco-dmo.org)
+
 
 See https://jekyllrb.com/docs/liquid/tags/#linking-to-posts
 
