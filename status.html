@@ -12,14 +12,13 @@ include_in_sitemap: false
 <table class="table is-fullwidth">
   <thead>
     <tr>
-      <th>Date</th><th>Post</th>
+      <th>Post</th>
     </tr>
   </thead>
   <tbody>
   {% for post in site.posts %}
     <tr>
-      <td>{{ forloop.index }}. {{ post.date | date_to_string: "ordinal", "US" }}</td>
-      <td><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>{% include status.html post=post type="post" %}</td>
+      <td>{{ forloop.index }}. {{ post.date | date_to_string: "ordinal", "US" }} <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>{% include status.html post=post type="post" %}</td>
     </tr>
   {% endfor %}
   </tbody>
