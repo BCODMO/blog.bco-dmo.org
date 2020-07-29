@@ -3,9 +3,14 @@ layout: null
 ---
 [
   {% for post in site.posts %}
+    {% assign categories = site.pages | where:"id", include.post.category %}
+    {% for category in categories %}
+      {% assign category = category.title %}
+    {% endfor %}
     {
       "title"    : "{{ post.title | escape }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "category" : "{{ category }}",
       "date"     : "{{ post.date | date_to_string: "ordinal", "US" }}",
       "authors"  : "{% include author_names.html authors=post.author %}",
       "content"  : {{ post.content | strip | jsonify}}
