@@ -17,4 +17,4 @@ image:
 
 Check it out: [https://netlify.bco-dmo.org](https://netlify.bco-dmo.org)
  
- OR {% include link.html url="https://netlify.bco-dmo.org" text="Staging Site" classes="is-italic" external=true %}
+ OR {% include link.html url="https://netlify.bco-dmo.org" classes="is-italic" external=true %}
