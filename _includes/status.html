@@ -121,7 +121,14 @@
         <script>
           $(document).ready(function(){ 
             $('#{{ post_id }}_status').text('{{ status }}'); 
-            $('#{{ post_id }}_status').click(function(){ $('#{{ post_id }}_report').toggle(); });
+            $('#{{ post_id }}_status').click(function(){ 
+              if ($('#{{ post_id }}_report').hasClass('is-hidden')) {
+                $('#{{ post_id }}_report').removeClass('is-hidden');
+              }
+              else {
+                $('#{{ post_id }}_report').addClass('is-hidden');
+              }
+            });
           });
         </script>
         <tr><td colspan="7">{% if errors.size > 0 %}<ul>{% for error in errors %}<li>{{error }}</li>{% endfor %}</ul>{% endif %}</td></tr>
