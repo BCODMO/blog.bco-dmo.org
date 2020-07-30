@@ -6,7 +6,7 @@ $(document).ready( function(){
     json: '/search.json'
   });
   
-  $('#search-input').change(function() {
-    sjs.search( $( this ).val() );
+  $('#search-button').click(function() {
+    sjs.search( $('#search-input').val() );
   });
 });
