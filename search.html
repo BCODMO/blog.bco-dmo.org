@@ -5,7 +5,16 @@ permalink: /search/
 date: 2020-07-27
 ---
 
-<input type="text" id="search-input" placeholder="Search..."> <button id="search-button" class="button is-primary">Search</button>
+<div class="field">
+  <label class="label">Textbox with icon and validation</label>
+  <div class="control has-icons-left has-icons-right">
+    <input id="search-input" class="input is-success" type="text" placeholder="Search...">
+    <span class="icon is-small is-left">
+      <i class="fa fa-search"></i>
+    </span>
+  </div>
+</div>
+<button id="search-button" class="button is-primary">Search</button>
 <div class="margin-top-3">
   <ul id="results-container"></ul>
 </div>
