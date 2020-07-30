@@ -10,7 +10,7 @@ layout: null
     {% capture  authors %}{% include author_names.html authors=post.author %}{% endcapture %}
     {
       "title"    : "{{ post.title | escape }}",
-      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "url"      : "{{ site.url }}{{ post.url }}",
       "category" : "{{ category }}",
       "date"     : "{{ post.date | date_to_string: "ordinal", "US" }}",
       "authors"  : "{{ authors | strip }}",
