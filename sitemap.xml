@@ -62,7 +62,9 @@ layout: none
       {% endif %}
     <url>
       <loc>{{ site.url }}{{ page.url }}</loc>
-      <lastmod>{{ pagelastmod | date_to_xmlschema }}</lastmod>
+      {% if pagelastmod %}
+        <lastmod>{{ pagelastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
       <changefreq>{{ page.sitemap.change_frequency | default: "monthly" }}</changefreq>
       <priority>{{ page.sitemap.priority | default: 0.5 }}</priority>
     </url>
