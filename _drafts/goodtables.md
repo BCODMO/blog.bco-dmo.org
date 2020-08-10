@@ -1,7 +1,7 @@
 ---
 layout: post
 type: BlogPosting
-published: false
+published: true
 title: "Goodtables"
 subtitle: "Expediting the data submission and submitter feedback process"
 description: "A second pilot project with the Open Knowledge Foundation is focusing on immediate data quality feedback for BCO-DMO data contributors through a new data submission tool."
