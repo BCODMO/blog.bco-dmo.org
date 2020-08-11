@@ -23,7 +23,7 @@ https://blog.bco-dmo.org
 ---
 layout: post
 type: BlogPosting
-published: false
+published: true
 title: "title goes here"
 subtitle: "an optional subtitle can go here"
 description: "A callout text to be used in SEO. Think about the text you'd want in a Twitter share."
@@ -72,10 +72,9 @@ Excerpts are snippets from the post that can be used elsewhere as callout text. 
 ## Publishing a Post
 
 1. Decide which [category](#post-metadata-category) is the best fit. One of: [`news`, `data-tools`, `insights`, `engineering`]
-2. Set the `published: true`
-3. Rename the post to `_posts/YYYY-MM-DD-<desired-url-goes-here-using-dashes>.md` (NOTE: `_drafts` was replaced by `_posts`
-4. Save post
-5. Create a new [Release](https://github.com/BCODMO/blog.bco-dmo.org/releases/new)
+2. Rename the post to `_posts/YYYY-MM-DD-<desired-url-goes-here-using-dashes>.md` (NOTE: `_drafts` was replaced by `_posts`
+3. Save post
+4. Create a new [Release](https://github.com/BCODMO/blog.bco-dmo.org/releases/new)
     1. `v(x).0` where `(x)` is incremented from the previous blog version number. For example, if the current version of the blog is `v1.0`, set release version to `v2.0`
     2. Set the `Release Title` to the title of your post.
     3. Click `Publish Release`
@@ -123,7 +122,7 @@ At the top of each post, is a section of metadata in between `---` and `---`
 | Required | yes |
 | Data Type | `true` or `false` |
 
-`true` means the blog post will appear on the website. `false` means the post will not appear.
+`true` means the blog post will appear on the website. `false` means the post will not appear - this includes drafts. Drafts with `published: false` will not appear in drafts.
 
 <a name="post-metadata-title"></a>
 #### `title`
