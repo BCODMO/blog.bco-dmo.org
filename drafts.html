@@ -22,7 +22,7 @@ include_in_sitemap: false
       <th><a href="{{ draft.url }}">{{ draft.title }}</a></th>
       <td>{% if draft.date %}{{ draft.date | date_to_string: "ordinal", "US" }}{% else %}<span class="is-italic">not specified</span>{% endif %}</td>
       <td>{{ draft.category }}</td>
-      <td>{{ draft.author }}</td>
+      <td>{{ draft.author | array_to_sentence_string }}</td>
     </tr>
   {% endfor %}
   </tbody>
