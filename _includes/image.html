@@ -9,7 +9,7 @@
 {% else %}
   {% assign position = "right" %}
 {% endif %}
-<div class="card {{ margin }} {% if include.image.border %} border{% endif %}" style="float: {{ position }}">
+<div class="card padding-bot-1 {{ margin }} {% if include.image.border %} border{% endif %}" style="float: {{ position }}">
   <div class="card-image">
     <figure class="image {% if include.image.dimension %} {{ include.image.dimension }}{% endif %}">
       {% if include.image.url %}
