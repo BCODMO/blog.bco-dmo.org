@@ -7,9 +7,9 @@
 {% else %}
   {% assign position = "right" %}
 {% endif %}
-<div class="card">
+<div class="card" style="float: {{ position }}">
   <div class="card-image">
-    <figure class="image is-4by3 {% if include.image.dimension %} {{ include.image.dimension }}{% endif %}" style="float: {{ position }}">
+    <figure class="image is-4by3 {% if include.image.dimension %} {{ include.image.dimension }}{% endif %}">
       {% if include.image.url %}
         <a href="{{ include.image.url }}" target="_blank">{{ img_tag }}</a>
       {% else %}
