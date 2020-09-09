@@ -16,9 +16,8 @@ figure.post-image {
   float: right; 
 }
 
-figure.border {
-  border: grey solid 2px; 
-  margin: 5px
+border-grey-1 {
+  border: grey solid 1px; 
 }
 
 i.social-size-medium {
