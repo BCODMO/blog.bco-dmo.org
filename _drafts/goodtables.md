@@ -22,7 +22,8 @@ image:
 images:
   duplicate_row:
     path: 2020-09-14-goodtables/goodtables_duplicate-row.png
-    caption: "Duplicate Row"
+    dimension: is-256x256
+    caption: "Showing that Goodtables noticed a duplicate row in an uploaded tabular data file."
     
 ---
 
