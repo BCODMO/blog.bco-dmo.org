@@ -17,9 +17,10 @@
       {% endif %}
     </figure>
   </div>
-  <div class="card-content">
-    {% if include.image.title %}<h3 class="title">{{ image.title }}</h3>{% endif %}
-    {% if include.image.caption %}<h3 class="title">{{ image.title }}</h3>{% endif %}
-    <div class="content">{{ caption }}</div>
-  </div>
+  {% if include.image.title or include.image.caption %}
+    <div class="card-content">
+      {% if include.image.title %}<h3 class="title">{{ image.title }}</h3>{% endif %}
+      {% if include.image.caption %}<div class="content">{{ caption }}</div>{% endif %}
+    </div>
+  {% endif %}
 </div>
