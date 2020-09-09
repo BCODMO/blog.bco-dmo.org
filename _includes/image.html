@@ -1,11 +1,25 @@
 {% assign alt_text = include.image.caption | default: "Image" %}
 {% capture image_src %}{% include image_src.html image=include.image %}{% endcapture %}
 {% capture img_tag %}<img src="{{ image_src }}" alt="{{ alt_text }}">{% endcapture %}
-{% image_style = include.type | default: "inline" %}
-<figure class="image post-image {% if include.image.border %} border{% endif %}{% if include.image.dimension %} {{ include.image.dimension }}{% endif %}{% if image_style == "inline" %} style="float: unset !important;"{% endif %}">
-  {% if include.image.url %}
-    <a href="{{ include.image.url }}" target="_blank">{{ img_tag }}</a>
-  {% else %}
-    {{ img_tag }}
-  {% endif %}
-</figure>
+{% assign position = include.position | default: "right" %}
+{% if position == "left" %}
+  {% assign position = "left" %}
+{% elseif %}
+  {% assign position = "right" %}
+{% else %}
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-4by3 {% if include.image.dimension %} {{ include.image.dimension }}{% endif %}" style="float: {{ position }}">
+      {% if include.image.url %}
+        <a href="{{ include.image.url }}" target="_blank">{{ img_tag }}</a>
+      {% else %}
+        {{ img_tag }}
+      {% endif %}
+    </figure>
+  </div>
+  <div class="card-content">
+    {% if include.image.title %}<h3 class="title">{{ image.title }}</h3>{% endif %}
+    {% if include.image.caption %}<h3 class="title">{{ image.title }}</h3>{% endif %}
+    <div class="content">{{ caption }}</div>
+  </div>
+</div>
