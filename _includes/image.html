@@ -2,10 +2,10 @@
 {% capture image_src %}{% include image_src.html image=include.image %}{% endcapture %}
 {% capture img_tag %}<img src="{{ image_src }}" alt="{{ alt_text }}">{% endcapture %}
 {% assign position = include.position | default: "right" %}
-{% assign margin = margin-left-1" %}
+{% assign margin = "margin-left-1" %}
 {% if position == "left" %}
   {% assign position = "left" %}
-  {% assign margin = margin-right-1" %}
+  {% assign margin = "margin-right-1" %}
 {% else %}
   {% assign position = "right" %}
 {% endif %}
