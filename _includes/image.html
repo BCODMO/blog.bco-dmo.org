@@ -4,9 +4,9 @@
 {% assign position = include.position | default: "right" %}
 {% if position == "left" %}
   {% assign position = "left" %}
-{% elseif %}
-  {% assign position = "right" %}
 {% else %}
+  {% assign position = "right" %}
+{% endif %}
 <div class="card">
   <div class="card-image">
     <figure class="image is-4by3 {% if include.image.dimension %} {{ include.image.dimension }}{% endif %}" style="float: {{ position }}">
