@@ -1,5 +1,6 @@
 {% assign alt_text = include.image.caption | default: "Image" %}
 {% capture image_src %}{% include image_src.html image=include.image %}{% endcapture %}
+{% capture image_url %}{% if include.image.url %}{{ include.image.url }}{% else %}{{ image_src }}{% endif %}{% endcapture %}
 {% capture img_tag %}<img src="{{ image_src }}" alt="{{ alt_text }}"{% if include.image.max-width> %} style="max-width: {{ include.image.max-width }}"{% endif %}>{% endcapture %}
 
 {% assign position = include.position | default: "right" %}
@@ -17,14 +18,14 @@
       {% if include.image.url %}
         <a href="{{ include.image.url }}" target="_blank">{{ img_tag }}</a>
       {% else %}
-        {{ img_tag }}
+        <a href="{{ image_url }}">{{ img_tag }}</a>
       {% endif %}
     </figure>
   </div>
   {% if include.image.title or include.image.caption %}
     <div class="card-content">
-      {% if include.image.title %}<h3 class="title">{{ image.title }}</h3>{% endif %}
-      {% if include.image.caption %}<div class="content">{{ caption }}</div>{% endif %}
+      {% if include.image.title %}<h3 class="title">{{ include.image.title }}</h3>{% endif %}
+      {% if include.image.caption %}<div class="content">{{ include.image.caption }}</div>{% endif %}
     </div>
   {% endif %}
 </div>
