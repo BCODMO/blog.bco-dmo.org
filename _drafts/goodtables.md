@@ -17,13 +17,15 @@ image:
   path: https://iiif.elifesciences.org/journal-cms/labs_experiment%2F2017-10%2Ftitle_goodtables-logo.png/full/2000,/0/default.jpg
   caption: "goodtables.io"
   url: https://goodtables.io
-  dimension: is-256x256
+  max-width: 512px
   border: true
 images:
   duplicate_row:
     path: 2020-09-14-goodtables/goodtables_duplicate-row.png
     dimension: is-256x256
     caption: "Showing that Goodtables noticed a duplicate row in an uploaded tabular data file."
+    max-width: 512px
+    border: true
     
 ---
 
