@@ -17,7 +17,8 @@ image:
   path: https://iiif.elifesciences.org/journal-cms/labs_experiment%2F2017-10%2Ftitle_goodtables-logo.png/full/2000,/0/default.jpg
   caption: "goodtables.io"
   url: https://goodtables.io
-  max-width: 512px
+  dimension: is-256x256
+  max-width: 256px
   border: true
 images:
   duplicate_row:
