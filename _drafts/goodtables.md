@@ -23,7 +23,7 @@ images:
   duplicate_row:
     path: 2020-09-14-goodtables/goodtables_duplicate-row.png
     caption: "Showing that Goodtables noticed a duplicate row in an uploaded tabular data file."
-    max-width: 256px
+    max-width: 512px
     border: true
     
 ---
