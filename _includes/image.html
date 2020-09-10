@@ -1,6 +1,7 @@
 {% assign alt_text = include.image.caption | default: "Image" %}
 {% capture image_src %}{% include image_src.html image=include.image %}{% endcapture %}
 {% capture img_tag %}<img src="{{ image_src }}" alt="{{ alt_text }}"{% if include.image.max-width> %} style="max-width: {{ include.image.max-width }}"{% endif %}{% endcapture %}
+
 {% assign position = include.position | default: "right" %}
 {% assign margin = "margin-left-1" %}
 {% if position == "left" %}
@@ -9,6 +10,7 @@
 {% else %}
   {% assign position = "right" %}
 {% endif %}
+
 <div class="card margin-bot-1 {{ margin }} {% if include.image.border %} border-grey-1{% endif %}" style="float: {{ position }}">
   <div class="card-image">
     <figure class="image {% if include.image.dimension %} {{ include.image.dimension }}{% endif %}">
@@ -19,10 +21,4 @@
       {% endif %}
     </figure>
   </div>
-  {% if include.image.title or include.image.caption %}
-    <div class="card-content">
-      {% if include.image.title %}<h3 class="title">{{ image.title }}</h3>{% endif %}
-      {% if include.image.caption %}<div class="content">{{ caption }}</div>{% endif %}
-    </div>
-  {% endif %}
 </div>
