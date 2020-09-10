@@ -1,7 +1,7 @@
 {% assign alt_text = include.image.caption | default: "Image" %}
 {% capture image_src %}{% include image_src.html image=include.image %}{% endcapture %}
 {% capture image_url %}{% if include.image.url %}{{ include.image.url }}{% else %}{{ image_src }}{% endif %}{% endcapture %}
-{% capture img_tag %}<img src="{{ image_src }}" alt="{{ alt_text | strip_html }}}}"{% if include.image.max-width> %} style="max-width: {{ include.image.max-width }}"{% endif %}>{% endcapture %}
+{% capture img_tag %}<img src="{{ image_src }}" alt="{{ alt_text | strip_html }}"{% if include.image.max-width> %} style="max-width: {{ include.image.max-width }}"{% endif %}>{% endcapture %}
 
 {% assign position = include.position | default: "right" %}
 {% assign margin = "margin-left-1" %}
@@ -12,7 +12,7 @@
   {% assign position = "right" %}
 {% endif %}
 
-<div class="card margin-bot-1 {{ margin }} {% if include.image.border %} border-grey-1{% endif %}" style="float: {{ position }}">
+<div class="card margin-bot-1 {{ margin }} {% if include.image.border %} border-grey-1{% endif %}" style="float: {{ position }}{% if include.image.max-width> %}; max-width: {{ include.image.max-width }}{% endif %}">
   <div class="card-image">
     <figure class="image {% if include.image.dimension %} {{ include.image.dimension }}{% endif %}">
       {% if include.image.url %}
