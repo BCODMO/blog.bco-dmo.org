@@ -1,6 +1,6 @@
 {% assign alt_text = include.image.caption | default: "Image" %}
 {% capture image_src %}{% include image_src.html image=include.image %}{% endcapture %}
-{% capture img_tag %}<img src="{{ image_src }}" alt="{{ alt_text }}">{% endcapture %}
+{% capture img_tag %}<img src="{{ image_src }}" alt="{{ alt_text }}"{% if include.image.max-width> %} style="max-width: {{ include.image.max-width }}"{% endif %}{% endcapture %}
 {% assign position = include.position | default: "right" %}
 {% assign margin = "margin-left-1" %}
 {% if position == "left" %}
