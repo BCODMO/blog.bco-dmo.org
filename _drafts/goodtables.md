@@ -22,7 +22,13 @@ image:
 images:
   duplicate_row:
     path: 2020-09-14-goodtables/goodtables_duplicate-row.png
-    caption: "Showing that Goodtables noticed a duplicate row in an uploaded tabular data file."
+    caption: "Goodtables noticed a duplicate row in an uploaded tabular data file."
+    max-width: 512px
+    border: true
+    
+  lon_out-of-bounds:
+    path: 2020-09-14-goodtables/goodtables_lon-out-of-bounds.png
+    caption: "Goodtables noticed a longitude that is outside a range of -180 to 180. This happended because BCO-DMO recommends using decimal degrees format between -180 t0 180 and defined a Goodtables check for longitude fields."
     max-width: 512px
     border: true
     
@@ -36,4 +42,5 @@ Part of what makes BCO-DMO a successful data curation office is our hands-on wor
 
 Through a data submission platform, researchers would be able to upload data to BCO-DMO and, if tabular, get immediate feedback from Goodtables about whether it was correctly formatted or any other quality issues existed. With these reports at their disposal, submitters could update their submissions without having to wait for a BCO-DMO data manager to review. For small and minor changes this saves the submitter the headache of having to wait for simple feedback. The goal is to catch submitters at a time where they are focused on this data submission so that they don't have to return weeks later and reconstitute their headspace around these data again. We catch them when their head is in the game. 
 
-{% include image.html image=page.images.duplicate_row position="left" %}Goodtables provides us a framework to branch out beyond simple tabular validation by developing data profiles. These profiles would let a submitter specify the type of data they are submitting. Is the data a bottle or CTD file? Does it contain latitude, longitude time or depth observations? These questions, optional for submitters to answer, would provide even further validation steps to get improved feedback immediately. For example, specifying that a file contains latitude or longitude columns could detect whether all values fall within valid bounds. Or that a depth column contains values above the surface. Or that the column pertaining to the time of an observation has inconsistent formatting across some of the rows. BCO-DMO can expand on this platform to continue to add new and better quality checks that submitters can use. 
+{% include image.html image=page.images.duplicate_row position="left" %}Goodtables provides us a framework to branch out beyond simple tabular validation by developing data profiles. These profiles would let a submitter specify the type of data they are submitting. Is the data a bottle or CTD file? Does it contain latitude, longitude time or depth observations? These questions, optional for submitters to answer, would provide even further validation steps to get improved feedback immediately. For example, specifying that a file contains latitude or longitude columns could detect whether all values fall within valid bounds. Or that a depth column contains values above the surface. Or that the column pertaining to the time of an observation has inconsistent formatting across some of the rows. BCO-DMO can expand on this platform to continue to add new and better quality checks that submitters can use.{% include image.html image=page.images.lon_out-of-bounds position="right" %} 
+
