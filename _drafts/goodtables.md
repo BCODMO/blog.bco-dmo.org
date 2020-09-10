@@ -12,10 +12,10 @@ tags:
   - frictionlessdata
   - data management
   - data quality
-  - data submissionn
+  - data submission
 image:
   path: https://iiif.elifesciences.org/journal-cms/labs_experiment%2F2017-10%2Ftitle_goodtables-logo.png/full/2000,/0/default.jpg
-  caption: "goodtables.io"
+  caption: <a href="https://goodtables.io" target="_blank">https://goodtables.io</a>
   url: https://goodtables.io
   max-width: 256px
   border: true
