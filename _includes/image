@@ -1,4 +1,5 @@
 {% for img in page.images %}
+  <!-- {{ img }} -->
   {% if img.id == include.name %}
     {% include image.html image=img position=include.position %}
     {% break %}
