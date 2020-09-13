@@ -12,11 +12,11 @@ tags:
   - certification
   - repositories
 images:
-  - id:cts_logo 
+  - id: cts_logo 
     path: CoreTrustSeal-logo-transparent.png
-    caption: "Core Trust Seal Logo"
+    title: "Core Trust Seal Logo"
     url: https://www.coretrustseal.org/
-    dimension: is-128x128
+    max-width: 128px
     border: true
 ---
 
