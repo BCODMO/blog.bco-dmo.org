@@ -1,4 +1,9 @@
-{% assign alt_text = include.image.caption | default: "Image" %}
+{% assign alt_text = "Image" %}
+{% if include.image.caption %}
+  {% assign alt_text = include.image.caption %}
+{% elseif include.image.id %}
+  {% assign alt_text = include.image.id %}
+{% endif %}
 {% capture image_src %}{% include image_src.html image=include.image %}{% endcapture %}
 {% capture image_url %}{% if include.image.url %}{{ include.image.url }}{% else %}{{ image_src }}{% endif %}{% endcapture %}
 {% capture img_tag %}<img src="{{ image_src }}" alt="{{ alt_text | strip_html }}"{% if include.image.max-width> %} style="max-width: {{ include.image.max-width }}"{% endif %}>{% endcapture %}
