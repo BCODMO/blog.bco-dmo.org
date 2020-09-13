@@ -1,7 +1,7 @@
 {% assign alt_text = "Image" %}
 {% if include.image.caption %}
   {% assign alt_text = include.image.caption %}
-{% elseif include.image.id %}
+{% elsif include.image.id %}
   {% assign alt_text = include.image.id %}
 {% endif %}
 {% capture image_src %}{% include image_src.html image=include.image %}{% endcapture %}
