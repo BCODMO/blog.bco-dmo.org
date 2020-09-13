@@ -1,0 +1,6 @@
+{% for img in page.images %}
+  {% if img == include.image %}
+    {% include image.html image= position=include.position %}
+    {% break %}
+  {% endif %}
+{% endfor %}
