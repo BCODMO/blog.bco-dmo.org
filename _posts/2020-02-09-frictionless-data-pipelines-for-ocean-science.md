@@ -14,11 +14,11 @@ tags:
   - provenance
   - data curation
 images:
-  bcodmo_logo:
-    primary: true
-    path: ../bcodmo-logo.jpg
-    url: https://www.bco-dmo.org
-    border: false
+  - bcodmo_logo:
+      primary: true
+      path: ../bcodmo-logo.jpg
+      url: https://www.bco-dmo.org
+      border: false
 sameAs:
   - https://frictionlessdata.io/blog/2020/02/10/frictionless-data-pipelines-for-open-ocean/
 relations:
