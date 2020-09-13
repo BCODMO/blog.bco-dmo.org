@@ -11,14 +11,16 @@ category: news
 tags: 
   - certification
   - repositories
-image:
-  path: CoreTrustSeal-logo-transparent.png
-  caption: "Core Trust Seal Logo"
-  url: https://www.coretrustseal.org/
-  dimension: is-128x128
-  border: true
+images:
+  - id:cts_logo 
+    path: CoreTrustSeal-logo-transparent.png
+    caption: "Core Trust Seal Logo"
+    url: https://www.coretrustseal.org/
+    dimension: is-128x128
+    border: true
 ---
 
+{% include image.html id="cts_logo" %}
 BCO-DMO was awarded the CoreTrustSeal certification on July 13, 2020...<!--more-->Say more here
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a mauris non erat cursus tempor. Donec elementum, sapien eget tristique vehicula, quam odio ultrices purus, non rhoncus nibh nulla sit amet sem. Donec ultrices massa ut ultricies sodales. Aliquam erat volutpat. Fusce pharetra commodo viverra. Donec ut feugiat neque. Donec ultricies, ligula non dapibus congue, sem velit ullamcorper augue, vel faucibus eros arcu eget erat. Ut semper metus non metus ullamcorper malesuada. Pellentesque ac tincidunt est. Donec vel tellus ac magna accumsan tincidunt sit amet at erat.
