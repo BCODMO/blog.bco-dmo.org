@@ -1,6 +1,8 @@
-{% for img in page.images %}
-  {% if img == include.image %}
-    {% include image.html image= position=include.position %}
-    {% break %}
-  {% endif %}
+{% for img_hash in page.images %}
+  {% for img in img_hash %}
+    {% if img_hash == include.name %}
+      {% include image.html image=img position=include.position %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
 {% endfor %}
