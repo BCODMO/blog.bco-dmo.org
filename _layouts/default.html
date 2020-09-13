@@ -32,7 +32,6 @@
     {% if page.images %}
       {% for img_names in page.images %}
         {% for post_image in img_names %}
-          <!-- {{ post_image.primary }} = {{ post_image }} -->
           {% if post_image.primary %}
             {% capture image_url %}{% include image_src.html image=post_image %}{% endcapture %}
             <link rel="image_src" href="{{ image_url }}" />
