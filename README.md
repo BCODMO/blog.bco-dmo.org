@@ -217,13 +217,17 @@ Category determines which section the post appears in the blog.
 | Data Type | array of objects |
 | Fields | `id`, `path`, `primary`, `title`, `caption`, `url`, `max-width`, `border` |
 
-Images are placed in [`assets/img/posts`](https://github.com/BCODMO/blog.bco-dmo.org/tree/master/assets/img/posts) and they appear in the blog by using the following tag: `{% include image.html id="the-id-field-of-the-image-goes-here" position="right" %}`. NOTE: `position` can be set to eitheer `right` or `left`. Default : `right`.
+Images are placed in [`assets/img/posts`](https://github.com/BCODMO/blog.bco-dmo.org/tree/master/assets/img/posts) and they appear in the blog by using the following tag: 
+
+```{% include image.html id="the-id-field-of-the-image-goes-here" position="right" %}``` 
+
+NOTE: `position` can be set to eitheer `right` or `left`. Default : `right`.
 
 | Fields | Required | Data Type | Description |
 |---|---|---|---|
-| `id` | yes | string | An identifier used to reference the image from the `{% include image.html %}` tag
+| `id` | yes | string | An identifier used to reference the image from the `{% include image.html %}` tag |
 | `path` | yes | string | Either the name of the file you uploaded to `assets/img/posts` or an absolute URL to an external image |
-| `primary` | no | 'true' or 'false'. Default: 'false' | This tells search engines and social media which image to use as the its callout
+| `primary` | no | `true` or `false` | This tells search engines and social media which image to use as the its callout. Default: `false` |
 | `title` | no | string | An optional title to display belwo the image and above anny caption |
 | `caption` | yes | string | A short descriptionn of the image |
 | `url` | no | URL | If you want the image to link off to another site or webpage |
@@ -247,6 +251,9 @@ images:
     max-width: 512px
     border: true
 ```
+
+In the text, to place the Goodtables logo image, use: 
+```{% include image.html id="goodtables_logo" position="left" %}``
 
 <a name="post-metadata-tags"></a>
 #### `tags`
