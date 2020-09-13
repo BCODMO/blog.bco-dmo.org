@@ -32,7 +32,7 @@
     {% if page.images %}
       {% for img in page.images %}
         {% if img.primary %}
-          {% capture image_url %}{% include image_src.html image=post_image %}{% endcapture %}
+          {% capture image_url %}{% include image_src.html image=img %}{% endcapture %}
           <link rel="image_src" href="{{ image_url }}" />
           <meta property="og:image" content="{{ image_url }}" />
           <meta name="twitter:image" content="{{ image_url }}"/>
