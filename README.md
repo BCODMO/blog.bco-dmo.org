@@ -34,12 +34,19 @@ category: news
 tags: 
   - keyword1
   - keyword2
-image:
-  path: CoreTrustSeal-logo-transparent.png
-  caption: "Short description goes here"
-  url: https://www.coretrustseal.org/
-  dimension: is-128x128
-  border: true
+images:
+  - id: goodtables_logo
+    path: https://iiif.elifesciences.org/journal-cms/labs_experiment%2F2017-10%2Ftitle_goodtables-logo.png/full/2000,/0/default.jpg
+    caption: <a href="https://goodtables.io" target="_blank">https://goodtables.io</a>
+    url: https://goodtables.io
+    max-width: 256px
+    border: true
+  - id: duplicate_row
+    primary: true
+    path: 2020-09-14-goodtables/goodtables_duplicate-row.png
+    caption: "Goodtables noticed a duplicate row in an uploaded tabular data file."
+    max-width: 512px
+    border: true
 ---
 
 Blog content starts. Callout text goes here<!--more--> Say more here
@@ -110,7 +117,7 @@ At the top of each post, is a section of metadata in between `---` and `---`
 * author
 * category
 * tags
-* image
+* images
 * sameAs
 * relations
 
@@ -202,23 +209,44 @@ mike:
 Category determines which section the post appears in the blog. 
 
 <a name="post-metadata-image"></a>
-#### `image`
+#### `images`
 
 | Property | Value |
 |---|---|
 | Required | no, but recommended |
-| Data Type | object |
-| Fields | `path`, `caption`, `url`, `dimension`, `border` |
+| Data Type | array of objects |
+| Fields | `id`, `path`, `primary`, `title`, `caption`, `url`, `max-width`, `border` |
 
-Images are placed in [`assets/img/posts`](https://github.com/BCODMO/blog.bco-dmo.org/tree/master/assets/img/posts) and they appear in the blog post in the upper-right corner with text wrapping around the image.
+Images are placed in [`assets/img/posts`](https://github.com/BCODMO/blog.bco-dmo.org/tree/master/assets/img/posts) and they appear in the blog by using the following tag: `{% include image.html id="the-id-field-of-the-image-goes-here" position="right" %}`. NOTE: `position` can be set to eitheer `right` or `left`. Default : `right`.
 
 | Fields | Required | Data Type | Description |
 |---|---|---|---|
+| `id` | yes | string | An identifier used to reference the image from the `{% include image.html %}` tag
 | `path` | yes | string | Either the name of the file you uploaded to `assets/img/posts` or an absolute URL to an external image |
+| `primary` | no | 'true' or 'false'. Default: 'false' | This tells search engines and social media which image to use as the its callout
+| `title` | no | string | An optional title to display belwo the image and above anny caption |
 | `caption` | yes | string | A short descriptionn of the image |
 | `url` | no | URL | If you want the image to link off to another site or webpage |
-| `dimension` | no | string | A CSS class name that resizes the image. Valid values are here: [Bulma Images](https://bulma.io/documentation/elements/image/) |
+| `max-width` | no | string | The size in pixels you wish to limit the image to. Example: `256px` |
 | `border` | no | `true` or `false` | If you want a border around the image |
+
+Example:
+```
+images:
+  - id: goodtables_logo
+    path: https://iiif.elifesciences.org/journal-cms/labs_experiment%2F2017-10%2Ftitle_goodtables-logo.png/full/2000,/0/default.jpg
+    caption: <a href="https://goodtables.io" target="_blank">https://goodtables.io</a>
+    url: https://goodtables.io
+    max-width: 256px
+    border: true
+  - id: duplicate_row
+    primary: true
+    path: 2020-09-14-goodtables/goodtables_duplicate-row.png
+    title: "Figure 1. Duplicate Row"
+    caption: "Goodtables noticed a duplicate row in an uploaded tabular data file."
+    max-width: 512px
+    border: true
+```
 
 <a name="post-metadata-tags"></a>
 #### `tags`
