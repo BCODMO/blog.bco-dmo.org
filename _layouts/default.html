@@ -30,15 +30,13 @@
       <meta name="twitter:description" content="{{ callout | strip }}"/>
     {% endif %}
     {% if page.images %}
-      {% for img_names in page.images %}
-        {% for post_image in img_names %}
-          {% if post_image.primary %}
-            {% capture image_url %}{% include image_src.html image=post_image %}{% endcapture %}
-            <link rel="image_src" href="{{ image_url }}" />
-            <meta property="og:image" content="{{ image_url }}" />
-            <meta name="twitter:image" content="{{ image_url }}"/>
-          {% endif %}
-        {% endfor %}
+      {% for img in page.images %}
+        {% if img.primary %}
+          {% capture image_url %}{% include image_src.html image=post_image %}{% endcapture %}
+          <link rel="image_src" href="{{ image_url }}" />
+          <meta property="og:image" content="{{ image_url }}" />
+          <meta name="twitter:image" content="{{ image_url }}"/>
+        {% endif %}
       {% endfor %}
     {% endif %}
     {% unless page.collection == "drafts" %}
