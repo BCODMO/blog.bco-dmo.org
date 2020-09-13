@@ -30,7 +30,8 @@
       <meta name="twitter:description" content="{{ callout | strip }}"/>
     {% endif %}
     {% if page.images %}
-      {% for post_image in page.images %}
+      {% for img_names in page.images %}
+        {% for post_image in img_names %}
         <!-- {{ post_image.primary }} = {{ post_image }} -->
         {% if post_image.primary %}
           {% capture image_url %}{% include image_src.html image=post_image %}{% endcapture %}
