@@ -46,16 +46,22 @@
     "description": {{ callout | jsonify }},	
   {% endif %}
   "wordCount": {{ include.post.content | number_of_words }},
-  "image": {	
-    {% if include.post.image %}
-      {% capture image_url %}{% include image_src.html image=include.post.image %}{% endcapture %}
-    {% else %}
-      {% capture image_url %}{{ site.url }}/assets/img/bco-dmo-avatar.jpg{% endcapture %}
-    {% endif %}
-    "@type": "ImageObject",	
-    "url": "{{ image_url | strip }}"	
-  },	
-  
+  "image":[
+  {% if include.post.images %}
+    {% for img in include.post.images %}
+      {% capture image_url %}{% include image_src.html image=img %}{% endcapture %}
+      {	
+        "@type": "ImageObject",	
+        "url": "{{ image_url | strip }}"
+      }
+    {% endfor %}
+  {% else %}
+    { 
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/img/bco-dmo-avatar.jpg"
+    }
+  {% endif %}
+  ],
   {% if include.post.tags %}	
     "keywords": [	
     {% for keyword in include.post.tags %}	
