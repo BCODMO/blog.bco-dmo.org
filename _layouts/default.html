@@ -18,17 +18,25 @@
     {% endif %}
     {% assign url = site.url | append: page.url %}
     <meta property="og:url" content="{{ url }}" />
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta name="twitter:title" content="{{ page.title }}" />
+    {% assign meta_title = page.title %}
+    {% if page.subtitle %}
+      {% capture meta_title %}{{ meta_title }} - {{ page.subtitle }}{% endcapture %}
+    {% endif %}
+    <meta property="og:title" content="{{ meta_title }}" />
+    <meta name="twitter:title" content="{{ meta_title }}" />
     {% if callout %}
       <meta name="description" content="{{ callout | strip }}"/>
       <meta property="og:description" content="{{ callout | strip }}" />
       <meta name="twitter:description" content="{{ callout | strip }}"/>
     {% endif %}
     {% if page.images %}
-      {% for img_id in page.images %}
-        <!-- {{ img_id }} -->
-        
+      {% for post_image in page.images %}
+        {% if post_image.primary %}
+          {% capture image_url %}{% include image_src.html image=post_image %}{% endcapture %}
+          <link rel="image_src" href="{{ image_url }}" />
+          <meta property="og:image" content="{{ image_url }}" />
+          <meta name="twitter:image" content="{{ image_url }}"/>
+        {% endif %}
       {% endfor %}
     {% endif %}
     {% unless page.collection == "drafts" %}
