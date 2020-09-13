@@ -13,11 +13,13 @@ tags:
   - data management
   - provenance
   - data curation
-image:
-  path: ../bcodmo-logo.jpg
-  caption: "BCO-DMO Logo"
-  url: https://www.bco-dmo.org
-  border: false
+images:
+  bcodmo_logo:
+    primary: true
+    path: ../bcodmo-logo.jpg
+    caption: "BCO-DMO Logo"
+    url: https://www.bco-dmo.org
+    border: false
 sameAs:
   - https://frictionlessdata.io/blog/2020/02/10/frictionless-data-pipelines-for-open-ocean/
 relations:
