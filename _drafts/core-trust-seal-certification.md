@@ -14,7 +14,6 @@ tags:
 images:
   - id: cts_logo 
     path: CoreTrustSeal-logo-transparent.png
-    title: "Core Trust Seal Logo"
     url: https://www.coretrustseal.org/
     max-width: 128px
     border: true
