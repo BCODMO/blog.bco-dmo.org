@@ -1,10 +1,9 @@
 {% for img_hash in page.images %}
   {% for img in img_hash %}
-    <!-- {{ forloop.index }} -->
-    <!-- {{ img_hash }} -->
-    <!-- {{ img }} -->
-    {% if forloop.index == include.name %}
-      {% include image.html image=img position=include.position %}
+    {% if img == include.name %}
+      <!-- {{ page.images[img] }} -->
+      <!-- {{ img }} -->
+      {% include image.html image=page.images[img] position=include.position %}
       {% break %}
     {% endif %}
   {% endfor %}
