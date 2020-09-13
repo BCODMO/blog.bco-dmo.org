@@ -25,11 +25,15 @@
       <meta property="og:description" content="{{ callout | strip }}" />
       <meta name="twitter:description" content="{{ callout | strip }}"/>
     {% endif %}
-    {% if page.image %}
-      {% capture image_url %}{% include image_src.html image=page.image %}{% endcapture %}
-      <link rel="image_src" href="{{ image_url }}" />
-      <meta property="og:image" content="{{ image_url }}" />
-      <meta name="twitter:image" content="{{ image_url }}"/>
+    {% if page.images %}
+      {% for image in page.images %}
+        {% if image.primary %}
+          {% capture image_url %}{% include image_src.html image=page.image %}{% endcapture %}
+          <link rel="image_src" href="{{ image_url }}" />
+          <meta property="og:image" content="{{ image_url }}" />
+          <meta name="twitter:image" content="{{ image_url }}"/>
+        {% endif %}
+      {% endfor %}
     {% endif %}
     {% unless page.collection == "drafts" %}
       {% include schema-org.html page=page %}
