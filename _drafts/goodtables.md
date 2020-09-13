@@ -13,19 +13,19 @@ tags:
   - data management
   - data quality
   - data submission
-image:
-  path: https://iiif.elifesciences.org/journal-cms/labs_experiment%2F2017-10%2Ftitle_goodtables-logo.png/full/2000,/0/default.jpg
-  caption: <a href="https://goodtables.io" target="_blank">https://goodtables.io</a>
-  url: https://goodtables.io
-  max-width: 256px
-  border: true
 images:
+  goodtables_logo:
+    path: https://iiif.elifesciences.org/journal-cms/labs_experiment%2F2017-10%2Ftitle_goodtables-logo.png/full/2000,/0/default.jpg
+    caption: <a href="https://goodtables.io" target="_blank">https://goodtables.io</a>
+    url: https://goodtables.io
+    max-width: 256px
+    border: true
   duplicate_row:
     path: 2020-09-14-goodtables/goodtables_duplicate-row.png
     caption: "Goodtables noticed a duplicate row in an uploaded tabular data file."
     max-width: 512px
     border: true
-    
+    primary: true
   lon_out-of-bounds:
     path: 2020-09-14-goodtables/goodtables_lon-out-of-bounds.png
     caption: "Goodtables noticed a longitude that is outside a range of -180 to 180. This happended because BCO-DMO recommends using decimal degrees format between -180 t0 180 and defined a Goodtables check for longitude fields."
@@ -34,6 +34,7 @@ images:
     
 ---
 
+{% include image.html image=page.images.goodtables_logo position="right" %}
 Earlier this year, the [Biological and Chemical Oceanography Data Management Office (BCO-DMO)](https://www.bco-dmo.org) completed a pilot project with the [Open Knowledge Foundation (OKF)](https://okfn.org/) to streamline the [data curation processes for oceanographic datasets using Frictionless Data Pipelines (FDP)](https://blog.okfn.org/2020/02/10/frictionless-data-pipelines-for-ocean-science/). The goal of this pilot was to construct reproducible workflows that transformed the original data submitted to the office into archive-quality, [FAIR-compliant](https://doi.org/10.1038/sdata.2016.18) versions. FDP lets a user define an order of processing steps to perform on some data, and the project developed new processing steps specific to the needs of these oceanographic datasets. These ordered processing steps are saved into a configuration file that is then available to be used anytime the archived version of the dataset must be reproduced. The primary value of these configuration files is that they capture and make the curation process at BCO-DMO transparent. Subsequently, we found additional value internally by using FDP in three other areas. First, they made the curation process across our data managers much more consistent versus the ad-hoc data processing scripts they individually produced before FDP. Second, we found that data managers saved time because they could reuse pre-existing pipelines to process newer versions submitted for pre-existing datasets. Finally, the configuration files helped us keep track of what processes were used in case a bug or error was ever found in the processing code. This project exceeded our goal of using FDP on at least 80% of data submissions to BCO-DMO to where we now use it almost 100% of the time. 
 {% include image.html image=page.images.duplicate_row position="right" %}
 	
