@@ -26,7 +26,6 @@ images:
     caption: "Goodtables noticed a duplicate row in an uploaded tabular data file."
     max-width: 512px
     border: true
-
   - id: lon_out-of-bounds
     path: 2020-09-14-goodtables/goodtables_lon-out-of-bounds.png
     caption: "Goodtables noticed a longitude that is outside a range of -180 to 180. This happended because BCO-DMO recommends using decimal degrees format between -180 t0 180 and defined a Goodtables check for longitude fields."
