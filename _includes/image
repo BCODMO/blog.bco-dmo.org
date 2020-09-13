@@ -2,7 +2,7 @@
   <!-- {{ img.id }} v. {{ include.name }} -->
   {% if img.id == include.name %}
     <!-- found {{ img }} -->
-    {% include image.html image=img position=include.position %}
+    {% include image_tag.html image=img position=include.position %}
     {% break %}
   {% endif %}
 {% endfor %}
