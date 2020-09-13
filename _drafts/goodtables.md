@@ -14,23 +14,23 @@ tags:
   - data quality
   - data submission
 images:
-  goodtables_logo:
-    path: https://iiif.elifesciences.org/journal-cms/labs_experiment%2F2017-10%2Ftitle_goodtables-logo.png/full/2000,/0/default.jpg
-    caption: <a href="https://goodtables.io" target="_blank">https://goodtables.io</a>
-    url: https://goodtables.io
-    max-width: 256px
-    border: true
-  duplicate_row:
-    path: 2020-09-14-goodtables/goodtables_duplicate-row.png
-    caption: "Goodtables noticed a duplicate row in an uploaded tabular data file."
-    max-width: 512px
-    border: true
-    primary: true
-  lon_out-of-bounds:
-    path: 2020-09-14-goodtables/goodtables_lon-out-of-bounds.png
-    caption: "Goodtables noticed a longitude that is outside a range of -180 to 180. This happended because BCO-DMO recommends using decimal degrees format between -180 t0 180 and defined a Goodtables check for longitude fields."
-    max-width: 512px
-    border: true
+  - id: goodtables_logo:
+      path: https://iiif.elifesciences.org/journal-cms/labs_experiment%2F2017-10%2Ftitle_goodtables-logo.png/full/2000,/0/default.jpg
+      caption: <a href="https://goodtables.io" target="_blank">https://goodtables.io</a>
+      url: https://goodtables.io
+      max-width: 256px
+      border: true
+  - id: duplicate_row:
+      path: 2020-09-14-goodtables/goodtables_duplicate-row.png
+      caption: "Goodtables noticed a duplicate row in an uploaded tabular data file."
+      max-width: 512px
+      border: true
+      primary: true
+  - id: lon_out-of-bounds:
+      path: 2020-09-14-goodtables/goodtables_lon-out-of-bounds.png
+      caption: "Goodtables noticed a longitude that is outside a range of -180 to 180. This happended because BCO-DMO recommends using decimal degrees format between -180 t0 180 and defined a Goodtables check for longitude fields."
+      max-width: 512px
+      border: true
     
 ---
 
