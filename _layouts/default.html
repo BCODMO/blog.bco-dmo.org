@@ -32,13 +32,14 @@
     {% if page.images %}
       {% for img_names in page.images %}
         {% for post_image in img_names %}
-        <!-- {{ post_image.primary }} = {{ post_image }} -->
-        {% if post_image.primary %}
-          {% capture image_url %}{% include image_src.html image=post_image %}{% endcapture %}
-          <link rel="image_src" href="{{ image_url }}" />
-          <meta property="og:image" content="{{ image_url }}" />
-          <meta name="twitter:image" content="{{ image_url }}"/>
-        {% endif %}
+          <!-- {{ post_image.primary }} = {{ post_image }} -->
+          {% if post_image.primary %}
+            {% capture image_url %}{% include image_src.html image=post_image %}{% endcapture %}
+            <link rel="image_src" href="{{ image_url }}" />
+            <meta property="og:image" content="{{ image_url }}" />
+            <meta name="twitter:image" content="{{ image_url }}"/>
+          {% endif %}
+        {% endfor %}
       {% endfor %}
     {% endif %}
     {% unless page.collection == "drafts" %}
