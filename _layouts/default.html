@@ -27,12 +27,8 @@
     {% endif %}
     {% if page.images %}
       {% for img_id in page.images %}
-        {% if page.images[img_id].primary %}
-          {% capture image_url %}{% include image_src.html image=page.images[img_id] %}{% endcapture %}
-          <link rel="image_src" href="{{ image_url }}" />
-          <meta property="og:image" content="{{ image_url }}" />
-          <meta name="twitter:image" content="{{ image_url }}"/>
-        {% endif %}
+        <!-- {{ img_id }} -->
+        
       {% endfor %}
     {% endif %}
     {% unless page.collection == "drafts" %}
