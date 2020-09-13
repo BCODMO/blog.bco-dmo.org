@@ -20,17 +20,17 @@ images:
     url: https://www.bco-dmo.org
     border: false
   - id: arctic_dataset
-    url: 2020-02-09-frictionless-data-pipelines-for-ocean-science/bcodmo1.1e0069cf.png
+    path: 2020-02-09-frictionless-data-pipelines-for-ocean-science/bcodmo1.1e0069cf.png
   - id: Laminar
-    url: 2020-02-09-frictionless-data-pipelines-for-ocean-science/bcodmo2.1e6fde83.png
+    path: 2020-02-09-frictionless-data-pipelines-for-ocean-science/bcodmo2.1e6fde83.png
   - id: processor_step
-    url: 2020-02-09-frictionless-data-pipelines-for-ocean-science/bcodmo3.a2871755.png
+    path: 2020-02-09-frictionless-data-pipelines-for-ocean-science/bcodmo3.a2871755.png
   - id: date_processing_step
-    url: 2020-02-09-frictionless-data-pipelines-for-ocean-science/bcodmo4.74b606a5.png
+    path: 2020-02-09-frictionless-data-pipelines-for-ocean-science/bcodmo4.74b606a5.png
   - id: all_steps
-    url: 2020-02-09-frictionless-data-pipelines-for-ocean-science/bcodmo5.ab522411.png
+    path: 2020-02-09-frictionless-data-pipelines-for-ocean-science/bcodmo5.ab522411.png
   - id: data
-    url: 2020-02-09-frictionless-data-pipelines-for-ocean-science/bcodmo6.c90593b8.png
+    path: 2020-02-09-frictionless-data-pipelines-for-ocean-science/bcodmo6.c90593b8.png
 sameAs:
   - https://frictionlessdata.io/blog/2020/02/10/frictionless-data-pipelines-for-open-ocean/
 relations:
