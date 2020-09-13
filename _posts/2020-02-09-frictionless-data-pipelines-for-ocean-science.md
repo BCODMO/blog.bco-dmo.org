@@ -17,9 +17,8 @@ images:
   bcodmo_logo:
     primary: true
     path: ../bcodmo-logo.jpg
-    caption: "BCO-DMO Logo"
     url: https://www.bco-dmo.org
-    border: false
+    border: true
 sameAs:
   - https://frictionlessdata.io/blog/2020/02/10/frictionless-data-pipelines-for-open-ocean/
 relations:
