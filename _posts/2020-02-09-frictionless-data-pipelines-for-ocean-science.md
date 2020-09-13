@@ -30,7 +30,7 @@ relations:
     description: The Frictionless Data project, created by the <a href="https://okfn.org/" target="_blank">Open Knowledge Foundation</a>, where you can find tutorials, tools and more
 ---
 
-{% include image name="bcodmo_logo" position="right" %}
+{% include image.html id="bcodmo_logo" position="right" %}
  Scientific research is implicitly reliant upon the creation, management, analysis, synthesis, and interpretation of data. When properly stewarded, data hold great potential to demonstrate the reproducibility of scientific results and accelerate scientific discovery. {% include link.html external=true url="https://www.bco-dmo.org/" text="The Biological and Chemical Oceanography Data Management Office (BCO-DMO)" %} is a publicly accessible earth science data repository established by the {% include link.html external=true url="https://www.nsf.gov/" text="National Science Foundation (NSF)" %} for the curation of biological, chemical, and biogeochemical oceanographic data from research in coastal, marine, and laboratory environments. With the groundswell surrounding the 
  {% include link.html external=true url="https://doi.org/10.1038/sdata.2016.18" text="FAIR data principles" %}, BCO-DMO recognized an opportunity to improve its curation services to better support reproducibility of results, while increasing process efficiencies for incoming data submissions. <strong>In 2019, BCO-DMO worked with the Frictionless Data team at Open Knowledge Foundation to develop a web application called Laminar for creating Frictionlessdata Data Package Pipelines that help data managers process data efficiently while recording the provenance of their activities to support reproducibility of results.</strong>
 
