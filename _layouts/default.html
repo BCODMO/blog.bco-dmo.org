@@ -26,9 +26,9 @@
       <meta name="twitter:description" content="{{ callout | strip }}"/>
     {% endif %}
     {% if page.images %}
-      {% for image in page.images %}
-        {% if image.primary %}
-          {% capture image_url %}{% include image_src.html image=page.image %}{% endcapture %}
+      {% for img_id in page.images %}
+        {% if page.images[img_id].primary %}
+          {% capture image_url %}{% include image_src.html image=page.images[img_id] %}{% endcapture %}
           <link rel="image_src" href="{{ image_url }}" />
           <meta property="og:image" content="{{ image_url }}" />
           <meta name="twitter:image" content="{{ image_url }}"/>
