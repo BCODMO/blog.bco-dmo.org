@@ -5,7 +5,7 @@ published: true
 title: "Goodtables"
 subtitle: "Expediting the data submission and submitter feedback process"
 description: "A second pilot project with the Open Knowledge Foundation is focusing on immediate data quality feedback for BCO-DMO data contributors through a new data submission tool."
-date: 2020-08-14
+date: 2020-09-14
 author: [adam,amber,danie,lillywinfree_okn]
 category: engineering
 tags: 
