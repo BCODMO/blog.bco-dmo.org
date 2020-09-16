@@ -8,6 +8,8 @@ description: "A second pilot project with the Open Knowledge Foundation is focus
 date: 2020-09-14
 author: [adam,amber,danie,lillywinfree_okn]
 category: engineering
+sameAs:
+  - https://blog.okfn.org/2020/09/16/goodtables-expediting-the-data-submission-and-submitter-feedback-process/
 tags: 
   - frictionlessdata
   - data management
