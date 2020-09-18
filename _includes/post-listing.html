@@ -7,8 +7,9 @@
   {% assign show_category = false %}
 {% endif %}
 
-<div class="columns">
+
 {% if posts.size > 0 %}
+  <div class="columns">
   {% for post in posts %}
     {% assign author = site.data.authors[post.author] %}
     {% if post.description %}
@@ -30,7 +31,8 @@
     {% endif %}
   {% endfor %} 
   </div><!-- closes the last "columns" div -->
+  </div>
 {% else %}
-  {{ include.title }} posts are coming soon!
+ <div class="columns is-centered"><div class="column is-narrow"><em>{{ include.title }} posts are coming soon!</em></div></div>
 {% endif %}
-</div>
+
