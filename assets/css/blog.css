@@ -1,4 +1,7 @@
 /* Fixes color in prenavbar of BCO-DMO title link */
+.pre-navbar {
+  background: #0E2D40; 
+}
 div.pre-navbar .columns .column.is-two-thirds {
   opacity: 0.5;
 }
