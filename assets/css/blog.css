@@ -1,7 +1,11 @@
+/* Fixes color in prenavbar of BCO-DMO title link */
+div.pre-navbar .columns .column.is-two-thirds {
+  opacity: 0.5;
+}
 div.pre-navbar .columns .column.is-two-thirds a {
   color: #fff; 
-  opacity: unset;
 }
+/* END of fix */
 
 .margin-top-2-important {
   margin-top: 2rem !important; 
