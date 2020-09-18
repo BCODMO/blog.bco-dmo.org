@@ -1,6 +1,6 @@
 div.pre-navbar .columns .column.is-two-thirds a {
   color: #fff; 
-  opacity: 0.5;
+  opacity: unset;
 }
 
 .margin-top-2-important {
