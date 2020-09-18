@@ -8,7 +8,7 @@
 {% endif %}
 
 <div class="columns">
-{% if posts %}
+{% if posts.size > 0 %}
   {% for post in posts %}
     {% assign author = site.data.authors[post.author] %}
     {% if post.description %}
