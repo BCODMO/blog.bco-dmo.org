@@ -12,7 +12,7 @@ sameAs:
   - https://blog.okfn.org/2020/09/16/goodtables-expediting-the-data-submission-and-submitter-feedback-process/
 tags: 
   - frictionlessdata
-  - data management
+  - data validation
   - data quality
   - data submission
 images:
