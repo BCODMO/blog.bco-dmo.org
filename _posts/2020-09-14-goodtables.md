@@ -33,7 +33,10 @@ images:
     caption: "Goodtables noticed a longitude that is outside a range of -180 to 180. This happended because BCO-DMO recommends using decimal degrees format between -180 t0 180 and defined a Goodtables check for longitude fields."
     max-width: 512px
     border: true
-    
+relations:
+  - url: https://goodtables.io
+    title: Goodtables
+    description: Goodtables.io is validation service  that checks for common errors and problems in tabular data files.
 ---
 <em>This post was republished on the Open Knowledge Foundation blog at <a href="https://blog.okfn.org/2020/09/16/goodtables-expediting-the-data-submission-and-submitter-feedback-process/" target="_blank">https://blog.okfn.org/2020/09/16/goodtables-expediting-the-data-submission-and-submitter-feedback-process/</a>.</em>
 
