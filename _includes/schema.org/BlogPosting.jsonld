@@ -53,7 +53,7 @@
       {	
         "@type": "ImageObject",	
         "url": "{{ image_url | strip }}"
-      }
+      }{% if forloop.last != true %},{% endif %}
     {% endfor %}
   {% else %}
     { 
