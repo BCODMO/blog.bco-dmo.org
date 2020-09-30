@@ -48,17 +48,18 @@ layout: default
         {% include image.html image=page.image position="right" %}
       {% endif %}
 
-      <div class="margin-bot-3">{{ content }}</div>
-      
-      {% if page.sameAs %}
-        <div id="post-same-as" class="clear-all">
-          <span class="is-italic">This blog post was also published at:
-        {% for same in page.sameAs %}
-          <a href="{{ same }}" target="_blank">{{ same }}</a>
-        {% endfor %}
-          </span>
-        </div>
-      {% endif %}
+      <div class="margin-bot-3">
+        {{ content }}
+        {% if page.sameAs %}
+          <div id="post-same-as" class="clear-all">
+            <span class="is-italic">This blog post was also published at:
+          {% for same in page.sameAs %}
+            <a href="{{ same }}" target="_blank">{{ same }}</a>
+          {% endfor %}
+            </span>
+          </div>
+        {% endif %}
+      </div>
       
       {% if page.relations %}
         <div id="post-related-links" class="clear-all">
