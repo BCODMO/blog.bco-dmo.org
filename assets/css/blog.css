@@ -10,6 +10,10 @@ div.pre-navbar .columns .column.is-two-thirds a {
 }
 /* END of fix */
 
+.clear-all {
+  clear: both;
+}
+
 .margin-top-2-important {
   margin-top: 2rem !important; 
 }
