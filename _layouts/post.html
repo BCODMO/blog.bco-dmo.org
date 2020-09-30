@@ -49,20 +49,24 @@ layout: default
       {% endif %}
 
       <div class="margin-bot-3">{{ content }}</div>
-
+      
       {% if page.sameAs %}
-        <p class="is-italic">This blog post was also published at:
+        <div id="post-same-as" class="clear-all">
+          <span class="is-italic">This blog post was also published at:
         {% for same in page.sameAs %}
-          <span><a href="{{ same }}" target="_blank">{{ same }}</a></span>
+          <a href="{{ same }}" target="_blank">{{ same }}</a>
         {% endfor %}
-        </p>
+          </span>
+        </div>
       {% endif %}
       
       {% if page.relations %}
+        <div id="post-related-links" class="clear-all">
         {% include post_relations.html relations=page.relations %}
+        </div>
       {% endif %}
       
-      <hr style="clear: both"/>
+      <hr class="clear-all"/>
       <p class="margin-top-1 is-size-7 is-italic">Last modified: 
         {% if page.lastModified %}
           {{ page.lastModified | date: "%Y-%m-%d %H:%M:%S" }}
