@@ -21,6 +21,8 @@
   "datePublished": "{{ include.post.date | date_to_xmlschema }}",	
   {% if include.post.lastModified %}	
   "dateModified": "{{ include.post.lastModified | date_to_xmlschema }}",	
+  {% else %}
+  "dateModified": "{{ include.post.date | date_to_xmlschema }}",
   {% endif %}	
   "publisher": {% include schema.org/static/Organization_BCODMO.jsonld %},
   {% if include.post.author.size > 1 %}
