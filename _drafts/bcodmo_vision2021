@@ -1,0 +1,31 @@
+---
+layout: post
+type: BlogPosting
+published: true
+title: "Innovations Supporting a New Vision for 
+Adaptive Management of Oceanographic Data and Information"
+subtitle: ""
+description: "BCO-DMO crafts new vision for oceanographic data management" callout text to be used in SEO. Think about the text you'd want in a Twitter share."
+date: YYYY-MM-DD
+lastModified: YYYY-MM-DD HH:mm:ss
+author: [your key from _data/authors.yml]
+category: news
+tags: 
+  - keyword1
+  - keyword2
+images:
+  - id: goodtables_logo
+    path: https://iiif.elifesciences.org/journal-cms/labs_experiment%2F2017-10%2Ftitle_goodtables-logo.png/full/2000,/0/default.jpg
+    caption: <a href="https://goodtables.io" target="_blank">https://goodtables.io</a>
+    url: https://goodtables.io
+    max-width: 256px
+    border: true
+  - id: duplicate_row
+    primary: true
+    path: 2020-09-14-goodtables/goodtables_duplicate-row.png
+    caption: "Goodtables noticed a duplicate row in an uploaded tabular data file."
+    max-width: 512px
+    border: true
+---
+
+Blog content starts. Callout text goes here<!--more--> Say more here
