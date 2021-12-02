@@ -5,25 +5,19 @@ published: true
 title: "A New Vision for Management of Oceanographic Data and Information"
 subtitle: "Welcome to the BCO-DMO Revolution"
 description: "BCO-DMO crafts new vision for oceanographic data management" callout text to be used in SEO. Think about the text you'd want in a Twitter share."
-date: YYYY-MM-DD
-lastModified: YYYY-MM-DD HH:mm:ss
+date: 2021-12-02
+lastModified: 2021-12-02 HH:mm:ss
 author: [your key from _data/authors.yml]
 category: news
 tags: 
-  - keyword1
-  - keyword2
+  - BCO-DMO
+  - Vision
 images:
-  - id: goodtables_logo
-    path: https://iiif.elifesciences.org/journal-cms/labs_experiment%2F2017-10%2Ftitle_goodtables-logo.png/full/2000,/0/default.jpg
-    caption: <a href="https://goodtables.io" target="_blank">https://goodtables.io</a>
-    url: https://goodtables.io
+  - id: bcodom_logo
+    path: https://.../***.jpg
+    caption: <a href="https://xxx" target="_blank">https://xxx.io</a>
+    url: https://xxx.io
     max-width: 256px
-    border: true
-  - id: duplicate_row
-    primary: true
-    path: 2020-09-14-goodtables/goodtables_duplicate-row.png
-    caption: "Goodtables noticed a duplicate row in an uploaded tabular data file."
-    max-width: 512px
     border: true
 ---
 
@@ -32,4 +26,83 @@ marriage and a novel experiment for the time: combine two existing, well-functio
 research programs with a goal of gaining an economy of scale for NSF OCE’s data management needs. Turns out- it worked incredibly well. The BCO-DMO project 
 team has been successfully collaborating with the oceanographic community ever since to help share its research output. An activity that has created a rich 
 collection of marine and related data and information available for reuse in new scientific research. 
+
+The original system created for BCO-DMO was designed to accommodate the research data of the times- small, consistently-formatted, and locally-managed datasets, 
+such as cruise bottle and CTD files. The data were tabular, oftentimes shared via Excel spreadsheets. The overall size of the data collection was also much more 
+manageable back then. But, today’s rapidly evolving research techniques and instruments are producing data that challenge this original paradigm; either through 
+high volumes, complex types, or their distributed nature across multiple locations. BCO-DMO’s underlying system needs and catalog size began to outgrow its early 
+strategies for serving, browsing and searching the catalog. With over 1,000 projects today, and a growth in dataset holdings of more than 60% over the last five 
+years, browsing and using keyword searches to discover data had become arduous tasks.
+
+So, two years ago, BCO-DMO entered a very deliberate and rapid evolution, driven by the need to maintain the successful system and services built over the past 
+fifteen years, but also to adapt to emerging needs of our research community by leveraging new technologies and best practices in data curation and publication. 
+
+Our approach to addressing these challenges is adaptive, to respond not only to where the various data types are stored (e.g., links to external raw DNA sequence 
+or mass spectra data repositories), but also addresses their need for better documentation that will align with today's research data stewardship demands. To 
+ensure that BCO-DMO’s highly valuable oceanographic datasets are FAIR (Findable, Accessible, Interoperable, and Reusable) for both human and machine use, we began 
+rebuilding the entire system for flexibility in the submission, curation, and discovery of oceanographic data. This activity will increase our internal data 
+processing efficiency and accuracy, leading to improved interoperability of BCO-DMO datasets and ultimately faster time to data publication. A key technological 
+component of this effort is the adoption of a knowledge graph that will allow BCO-DMO to grow in a much more cost effective way. Knowledge graphs are powerful 
+semantic tools in the quest to build a robust and flexible F.A.I.R. data system (and a great topic for another blog).
+
+It’s a big departure from our old system, and the cliche that change is hard holds true even for repositories; but taking these hard steps now will result in a 
+system that’s more effective, efficient, sustainable, and most importantly, easy to use. This concept of adaptive data management will underpin all our operations 
+and forms the basis for our vision that we share below. Throughout our system redesign, we’ll continue our core operations to accept, process, and publish 
+oceanographic research output by working closely with the individual scientists producing it; and as always, our activities continue to be framed in the context 
+of the data lifecycle, with upcoming innovations aimed at supporting one or more of its phases. We’re excited to share some of our new system’s components and the 
+data lifecycle stages they support; sneak peeks provided here... 
+
+Acquisition:  Beginning with data acquisition, we are collaborating with the community to create common data type models that can serve as templates that can help 
+researchers early on in their data collection to ensure their data are well organized, described, and formatted for sharing. We plan to release one in each 
+reporting year of our current grant, and our first successful collaboration was with ocean proteomics researchers.
+
+Contribution:  To make it as easy as possible for our research community to submit their data to us, we are implementing an online submission system to streamline 
+the process of contributing data (stay tuned for its upcoming blog entry). The system serves as an alternative option to our current historical workflow, which 
+involves PIs completing text-based metadata forms and emailing forms and data files to us via a dedicated address. Having multiple pathways for researchers to 
+submit their data helps to further lower barriers to sharing data. This service is self-guided and web-based, allowing data contributors to upload their data and 
+supplemental documentation, and pre-populate new metadata or copy relevant metadata from a previous contribution to a new one. Additional planned features will 
+allow high level quality control on tabular data. Our overall goals being to save time for submitters, help expedite data processing, and provide transparency 
+throughout the data submission process. You can check out this new system at submit.bco-dmo.org using your ORCiD to log in (and can easily create your ORCiD at the 
+login page if you don’t yet have one).
+
+Publication: Preparing data for publishing is a task that underpins our role as a repository. In order to more effectively process data and information for 
+publication, we recently implemented a web application called Laminar that creates Frictionlessdata Data Package Pipelines to help our data managers work more 
+efficiently and consistently, while recording the provenance of their activities to support reproducibility. You can read more about this tool that resulted from 
+our great collaboration with the Open Knowledge Foundation in our blog post “Frictionless Data Pipelines for Ocean Science'' from 2020.02.09.
+
+Discovery: An effective website is a main avenue of engagement for many organizations, but our previous site was becoming outdated and challenging to maintain. So, 
+after much research and a fruitful partnership with Element84, we’re scheduled to soft launch our new website soon, which will be the keystone for enabling both human 
+and machine access to BCO-DMO data and information. This new site has been designed with data contributors, data searchers, and proposal developers in mind. It will 
+highlight data citation as a key theme for dataset page layout, and data discovery will focus on utilizing the multi-faceted inspection capability of our new knowledge 
+graph. Users can search and browse through data-driven facets that enable improved filtering, and enhanced keyword searches.  
+
+Access and Reuse: We’re keenly aware that our success as a repository depends critically on our user community’s ability to access and ultimately reuse the data we 
+serve. So, data access in our new system will be achieved through multiple ways in order to accommodate our end-users’ needs. Data and related files will now be 
+available right from the individual data pages via direct download. But, to provide enhanced options for data reuse (think: subsetting, filtering, and even automated 
+ingest for scripting-savvy users) we have implemented the open-source NOAA-supported, ERDDAP data server (Simons, 2015). ERDDAP is a web application that provides 
+features such as subsetting, filtering, data conversion to dozens of file formats, and even machine actionable URLs for automated filtering, data conversion, and 
+viewing of data and metadata. ERDDAP does this while not imposing restrictions on how or where data are stored. 
+
+We also received input from the community that downloading multiple datasets was an important feature that we currently lack. To respond to this need, we plan to 
+implement a dataset “shopping cart” to allow downloading of multiple datasets at once. This service will be able to calculate download sizes, informing the user 
+of any restrictions such as size limitations before any download takes place.
+
+Capacity Building: We believe that as curators of data, repositories can play a pivotal role in building data management capacity within the research community. 
+So, we’re re-envisioning our outreach and education efforts, collaborating with individual scientists, projects, and organizations to support data management 
+literacy within the oceanographic research community. We can also serve as an effective vehicle for cross-pollination of domain science and technical skills 
+among undergraduate and graduate students and have already worked with our first undergraduate intern. We’ve started to collaborate with teachers and 
+professors to gather needs and develop training materials, and plan to host published data analysis modules, and notebooks for use with BCO-DMO data holdings. 
+We’re working on a communication strategy that will help socialize scientists to the resources and opportunities we provide, and we began exhibiting last 
+year at professional conferences like Ocean Sciences, to provide additional opportunities for engagement and assist researchers in solving data challenges. 
+
+All of these activities together, feed the necessary evolution that will help BCO-DMO achieve its vision of: 
+An unparalleled data catalog of well-documented, interoperable oceanographic data and information, openly accessible to all end-users through an intuitive 
+web-based interface for the purposes of advancing marine research, education, and policy. 
+
+Over the past year and a half, we’ve made great strides toward realizing this vision, and will soon be implementing the components of our new system; many will 
+be transparent to our users, but others will be a significant departure (for the better!) from the system that our community has helped build with us. In the 
+coming months both data submitters and end users will see a vastly updated system that improves the acts of data sharing, discovery, and access. To help 
+introduce the components of this new system, we plan to announce changes through Twitter and blog posts like this one; not only to inform the community of 
+pending changes, but to provide opportunities for feedback.  So be sure to follow us on Twitter, check out our blog, and even look for our BCO-DMO related 
+posts in the OCB newsletter!
 
