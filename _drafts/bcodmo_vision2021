@@ -2,9 +2,8 @@
 layout: post
 type: BlogPosting
 published: true
-title: "Innovations Supporting a New Vision for 
-Adaptive Management of Oceanographic Data and Information"
-subtitle: ""
+title: "A New Vision for Management of Oceanographic Data and Information"
+subtitle: "Welcome to the BCO-DMO Revolution"
 description: "BCO-DMO crafts new vision for oceanographic data management" callout text to be used in SEO. Think about the text you'd want in a Twitter share."
 date: YYYY-MM-DD
 lastModified: YYYY-MM-DD HH:mm:ss
@@ -28,4 +27,9 @@ images:
     border: true
 ---
 
-Blog content starts. Callout text goes here<!--more--> Say more here
+<!Welcome to the BCO-DMO Revolution> Welcome to our quiet revolution. When the BCO-DMO data repository was founded in 2006, it was somewhat of an arranged 
+marriage and a novel experiment for the time: combine two existing, well-functioning, data management offices from two different, long-standing, oceanographic 
+research programs with a goal of gaining an economy of scale for NSF OCE’s data management needs. Turns out- it worked incredibly well. The BCO-DMO project 
+team has been successfully collaborating with the oceanographic community ever since to help share its research output. An activity that has created a rich 
+collection of marine and related data and information available for reuse in new scientific research. 
+
