@@ -5,19 +5,19 @@ published: true
 title: "A New Vision for Management of Oceanographic Data and Information"
 subtitle: "Welcome to the BCO-DMO Revolution"
 description: "BCO-DMO crafts new vision for oceanographic data management" callout text to be used in SEO. Think about the text you'd want in a Twitter share."
-date: 2021-12-02
-lastModified: 2021-12-02 HH:mm:ss
-author: [your key from _data/authors.yml]
+date: 2021-12-03
+lastModified: 2021-12-03 15:30:00
+author: [danie]
 category: news
 tags: 
   - BCO-DMO
+  - Adaptive Data Management
   - Vision
 images:
-  - id: bcodom_logo
-    path: https://.../***.jpg
-    caption: <a href="https://xxx" target="_blank">https://xxx.io</a>
-    url: https://xxx.io
-    max-width: 256px
+  - id: bcodmo_logo
+    primary: true
+    path: ../bcodmo-logo.jpg
+    url: https://www.bco-dmo.org
     border: true
 ---
 
