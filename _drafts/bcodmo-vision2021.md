@@ -21,7 +21,7 @@ images:
     border: true
 ---
 
-<!Welcome to the BCO-DMO Revolution> Welcome to our quiet revolution. When the BCO-DMO data repository was founded in 2006, it was somewhat of an arranged 
+Welcome to the BCO-DMO Revolution <!--more--> Welcome to our quiet revolution. When the BCO-DMO data repository was founded in 2006, it was somewhat of an arranged 
 marriage and a novel experiment for the time: combine two existing, well-functioning, data management offices from two different, long-standing, oceanographic 
 research programs with a goal of gaining an economy of scale for NSF OCE’s data management needs. Turns out- it worked incredibly well. The BCO-DMO project 
 team has been successfully collaborating with the oceanographic community ever since to help share its research output. An activity that has created a rich 
