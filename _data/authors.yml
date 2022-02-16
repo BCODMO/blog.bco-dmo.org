@@ -1,3 +1,17 @@
+shannon:
+  type: Person
+  name: Shannon Rauch
+  email: srauch@whoi.edu
+  role: Data Manager
+  url:
+  social:
+    orcid:
+      id: 0000-0002-9081-1004
+      url: https://orcid.org/0000-0002-9081-1004
+    twitter:
+      id: whshannon
+      url: https://twitter.com/whshannon
+
 danie:
   type: Person
   name: Danie Kinkade
