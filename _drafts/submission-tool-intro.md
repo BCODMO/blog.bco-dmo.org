@@ -39,3 +39,6 @@ In upcoming blog posts, we'll explore the features of the online submission tool
 - After selecting one of those options, you'll be guided through a series of metadata fields where you can enter the relevant information.
 - On the last step, you upload your files and hit "Submit"!
 - Once submitted, you'll receive an automated confirmation email. Soon after, a BCO-DMO data manager will review your submission and provide further details by email on the next steps. 
+
+We'll be sharing more tips on our new Submission Tool over the coming weeks, so be sure to follow us on {% include link.html external=true url="https://twitter.com/bcodmo/" text="Twitter" %}, check out {% include link.html external=true url="https://blog.bco-dmo.org/" text="our blog" %}, and even look for our BCO-DMO related 
+posts in {% include link.html external=true url="https://www.us-ocb.org/publications/newsletters/" text="the OCB newsletter" %}
