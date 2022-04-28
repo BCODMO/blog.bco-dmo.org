@@ -20,6 +20,7 @@ images:
     path: ../bcodmo-logo.jpg
     url: https://www.bco-dmo.org
     border: false
+    max-width: 1000px
   - id: submit_tool_login_screen_orcid
     primary: false
     path: ../submit_tool_login_screen_orcid.JPG
