@@ -21,17 +21,19 @@ images:
     url: https://www.bco-dmo.org
     border: false
   - id: submit_tool_login_screen_orcid
-    primary: true
+    primary: false
     path: ../submit_tool_login_screen_orcid.JPG
     max-width: 1100px
     border: true
+    title: Preview of the Submission Tool login screen.
     caption: If you don't have one already, sign up for an ORCiD at orcid.org
   - id: submit_tool_dataset_entry
-    primary: true
+    primary: false
     path: ../submit_tool_dataset_entry.JPG
     max-width: 1100px
     border: true
-    caption: Preview of the Submission Tool, which walks you through providing metadata step-by-step.
+    Title:  Preview of the new BCO-DMO Submission Tool
+    caption: The tools walks you through providing metadata step-by-step with instructions and examples.
  
 ---
 {% include image.html id="bcodmo_logo" position="right" %}
