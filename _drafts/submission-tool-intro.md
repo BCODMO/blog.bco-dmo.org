@@ -15,8 +15,8 @@ tags:
   - BCO-DMO
   - project registration
 images:
-  - id: 
-    path: 
+  - id: submit_tool_login_screen_orcid
+    path: ../submit_tool_login_screen_orcid.JPG
     caption: <a href="" target="_blank"></a>
     url: 
     max-width: 256px
@@ -36,7 +36,10 @@ To help streamline the process, we are pleased to announce the launch of our new
 Our new submission tool provides an interface you can access in your browser to submit data to and register new projects with BCO-DMO. We've added many features to enhance the user experience of data submission, including the ability to save your progress, work on your submission with collaborators, and view the real-time status of your submissions. If the old process is working well for you, you can continue to submit data by email, but we encourage you to try out the new tool to see if it improves your workflow. 
 
 In upcoming blog posts, we'll explore the features of the online submission tool in more detail, providing step-by-step how-tos. However, the tool has plenty of built-in instructions and guidance that make it intuitive for you to use on your next submission. To get you started, here are some basics:
-* When you navigate to the submission tool, you'll be prompted to login with your ORCiD. If you don't have one yet, you can sign up at {% include link.html url="https://orcid.org/" text="https://orcid.org/" external=true %}.
+* When you navigate to the submission tool, you'll be prompted to login with your ORCiD. If you don't have one yet, you can sign up at {% include link.html url="https://orcid.org/" text="https://orcid.org/" external=true %}. 
+
+{% include image.html id="submit_tool_login_screen_orcid" position="right" %}
+
 * Once logged in, you'll see two options: "Create a new dataset" and "Register a new project".
 * After selecting one of those options, you'll be guided through a series of metadata fields where you can enter the relevant information.
 * On the last step, you upload your files and hit "Submit"!
