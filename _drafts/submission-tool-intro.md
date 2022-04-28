@@ -5,8 +5,8 @@ published: true
 title: "Announcing BCO-DMO's New Online Submission Tool"
 subtitle: "Launching June 2022"
 description: "An introduction to and brief overview of BCO-DMO's Online Data Submission Tool"
-date: 2022-04-27
-lastModified: 2022-04-27 10:47
+date: 2022-04-28
+lastModified: 2022-04-28 10:47
 author: [shannon]
 category: news
 tags: 
@@ -29,14 +29,18 @@ To help streamline the process, we are pleased to announce the launch of our new
 Our new submission tool provides an interface you can access in your browser to submit data to and register new projects with BCO-DMO. We've added many features to enhance the user experience of data submission, including the ability to save your progress, work on your submission with collaborators, and view the real-time status of your submissions. If the old process is working well for you, you can continue to submit data by email, but we encourage you to try out the new tool to see if it improves your workflow. 
 
 In upcoming blog posts, we'll explore the features of the online submission tool in more detail, providing step-by-step how-tos. However, the tool has plenty of built-in instructions and guidance that make it intuitive for you to use on your next submission. To get you started, here are some basics:
-* When you navigate to the submission tool, you'll be prompted to login with your ORCiD. If you don't have one yet, you can sign up at {% include link.html url="https://orcid.org/" text="https://orcid.org/" external=true %}. 
 
-{% include image.html id="submit_tool_login_screen_orcid" position="right" %}
+When you navigate to the submission tool, you'll be prompted to login with your ORCiD. If you don't have one yet, you can sign up at {% include link.html url="https://orcid.org/" text="https://orcid.org/" external=true %}. 
 
-* Once logged in, you'll see two options: "Create a new dataset" and "Register a new project".
-* After selecting one of those options, you'll be guided through a series of metadata fields where you can enter the relevant information.
-* On the last step, you upload your files and hit "Submit"!
-* Once submitted, you'll receive an automated confirmation email. Soon after, a BCO-DMO data manager will review your submission and provide further details by email on the next steps. 
+{% include image.html id="submit_tool_login_screen_orcid" position="center" %}
+
+Once logged in, you'll see two options: "Create a new dataset" and "Register a new project".
+
+After selecting one of those options, you'll be guided through a series of metadata fields where you can enter the relevant information.
+
+On the last step, you upload your files and hit "Submit"!
+
+Once submitted, you'll receive an automated confirmation email. Soon after, a BCO-DMO data manager will review your submission and provide further details by email on the next steps. 
 
 We'll be sharing more tips on our new Submission Tool over the coming weeks, so be sure to follow us on {% include link.html external=true url="https://twitter.com/bcodmo/" text="Twitter" %}, check out {% include link.html external=true url="https://blog.bco-dmo.org/" text="our blog" %}, and even look for our BCO-DMO related 
 posts in {% include link.html external=true url="https://www.us-ocb.org/publications/newsletters/" text="the OCB newsletter" %}
