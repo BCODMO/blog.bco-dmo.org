@@ -26,16 +26,12 @@ images:
     max-width: 1100px
     border: true
     caption: If you don't have one already, sign up for an ORCiD at orcid.org
-  - id: submit_tool_buttons
-    primary: true
-    path: ../submit_tool_buttons.JPG
-    max-width: 600px
-    border: false
   - id: submit_tool_dataset_entry
     primary: true
     path: ../submit_tool_dataset_entry.JPG
     max-width: 1100px
     border: true
+    caption: Preview of the Submission Tool, which walks you through providing metadata step-by-step.
  
 ---
 {% include image.html id="bcodmo_logo" position="right" %}
