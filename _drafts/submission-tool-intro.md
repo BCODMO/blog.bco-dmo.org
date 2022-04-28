@@ -26,6 +26,11 @@ images:
     path: ../submit_tool_buttons.JPG
     max-width: 600px
     border: false
+  - id: submit_tool_dataset_entry
+    primary: true
+    path: ../submit_dataset_entry.JPG
+    max-width: 600px
+    border: false
  
 ---
 
@@ -42,9 +47,9 @@ When you navigate to the submission tool, you'll be prompted to login with your 
 {% include image.html id="submit_tool_login_screen_orcid" position="left" %}
 
 Once logged in, you'll see two options: "Create a new dataset" and "Register a new project".
-{% include image.html id="submit_tool_buttons" position="right" %}
 
 After selecting one of those options, you'll be guided through a series of metadata fields where you can enter the relevant information.
+{% include image.html id="submit_tool_dataset_entry" position="right" %}
 
 On the last step, you upload your files and hit "Submit"!
 
