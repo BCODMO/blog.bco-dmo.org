@@ -18,8 +18,15 @@ images:
   - id: submit_tool_login_screen_orcid
     primary: true
     path: ../submit_tool_login_screen_orcid.JPG
-    max-width: 1200px
+    max-width: 1100px
     border: false
+    caption: If you don't have one already, sign up for an ORCiD at orcid.org
+  - id: submit_tool_buttons
+    primary: true
+    path: ../submit_tool_buttons.JPG
+    max-width: 600px
+    border: false
+ 
 ---
 
 If you've submitted data to BCO-DMO before, you might be familiar with the process: download a metadata .rtf form, fill in all of the relevant details, save the file, and attach it to an email to {% include link.html url="mailto:info@bco-dmo.org" text="info@bco-dmo.org" external=true %} along with your data files. This process has served us and our community well, but we also realize there are occasionally challenges encountered when submitting data this way. Sometimes, the .rtf form may be difficult to work with in certain word processing programs, or perhaps you started to fill in a form and forgot to save it! (we've all made this mistake). Other times, email clients may have trouble sending messages with attachments. Over time, after many research projects and many data submissions, it may even become difficult for you to keep track of what data you've submitted to BCO-DMO. We understand things sometimes have a way of getting lost in email inboxes…
@@ -32,9 +39,10 @@ In upcoming blog posts, we'll explore the features of the online submission tool
 
 When you navigate to the submission tool, you'll be prompted to login with your ORCiD. If you don't have one yet, you can sign up at {% include link.html url="https://orcid.org/" text="https://orcid.org/" external=true %}. 
 
-{% include image.html id="submit_tool_login_screen_orcid" position="right" %}
+{% include image.html id="submit_tool_login_screen_orcid" position="left" %}
 
 Once logged in, you'll see two options: "Create a new dataset" and "Register a new project".
+{% include image.html id="submit_tool_buttons" position="right" %}
 
 After selecting one of those options, you'll be guided through a series of metadata fields where you can enter the relevant information.
 
