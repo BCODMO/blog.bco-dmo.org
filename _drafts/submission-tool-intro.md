@@ -28,8 +28,8 @@ images:
     border: false
   - id: submit_tool_dataset_entry
     primary: true
-    path: ../submit_dataset_entry.JPG
-    max-width: 600px
+    path: ../submit_tool_dataset_entry.JPG
+    max-width: 800px
     border: false
  
 ---
