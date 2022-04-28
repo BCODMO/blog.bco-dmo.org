@@ -18,7 +18,7 @@ images:
   - id: submit_tool_login_screen_orcid
     primary: true
     path: ../submit_tool_login_screen_orcid.JPG
-    max-width: 600px
+    max-width: 1200px
     border: false
 ---
 
@@ -32,7 +32,7 @@ In upcoming blog posts, we'll explore the features of the online submission tool
 
 When you navigate to the submission tool, you'll be prompted to login with your ORCiD. If you don't have one yet, you can sign up at {% include link.html url="https://orcid.org/" text="https://orcid.org/" external=true %}. 
 
-{% include image.html id="submit_tool_login_screen_orcid" position="left" %}
+{% include image.html id="submit_tool_login_screen_orcid" position="right" %}
 
 Once logged in, you'll see two options: "Create a new dataset" and "Register a new project".
 
