@@ -43,16 +43,16 @@ Our new submission tool provides an interface you can access in your browser to 
 
 In upcoming blog posts, we'll explore the features of the online submission tool in more detail, providing step-by-step how-tos. However, the tool has plenty of built-in instructions and guidance that make it intuitive for you to use on your next submission. To get you started, here are some basics:
 
-When you navigate to the submission tool, you'll be prompted to login with your ORCiD. If you don't have one yet, you can sign up at {% include link.html url="https://orcid.org/" text="https://orcid.org/" external=true %}. 
+**_Login:_** When you navigate to the submission tool, you'll be prompted to login with your ORCiD. If you don't have one yet, you can sign up at {% include link.html url="https://orcid.org/" text="https://orcid.org/" external=true %}. 
 
 {% include image.html id="submit_tool_login_screen_orcid" position="left" %}
 
-Once logged in, you'll see two options: "Create a new dataset" and "Register a new project".
+**_Once logged in, you'll see two options:_** "Create a new dataset" and "Register a new project".
 
-After selecting one of those options, you'll be guided through a series of metadata fields where you can enter the relevant information.
+**_Describe your dataset or project:_** After selecting one of those options, you'll be guided through a series of metadata fields where you can enter the relevant information.
 {% include image.html id="submit_tool_dataset_entry" position="left" %}
 
-On the last step, you upload your files and hit "Submit"!
+**_Add files:_** On the last step, you upload your files and hit "Submit"!
 
 Once submitted, you'll receive an automated confirmation email. Soon after, a BCO-DMO data manager will review your submission and provide further details by email on the next steps. 
 
