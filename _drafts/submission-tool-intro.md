@@ -19,7 +19,7 @@ images:
     primary: true
     path: ../submit_tool_login_screen_orcid.JPG
     max-width: 1100px
-    border: false
+    border: true
     caption: If you don't have one already, sign up for an ORCiD at orcid.org
   - id: submit_tool_buttons
     primary: true
@@ -29,8 +29,8 @@ images:
   - id: submit_tool_dataset_entry
     primary: true
     path: ../submit_tool_dataset_entry.JPG
-    max-width: 800px
-    border: false
+    max-width: 1100px
+    border: true
  
 ---
 
@@ -49,7 +49,7 @@ When you navigate to the submission tool, you'll be prompted to login with your 
 Once logged in, you'll see two options: "Create a new dataset" and "Register a new project".
 
 After selecting one of those options, you'll be guided through a series of metadata fields where you can enter the relevant information.
-{% include image.html id="submit_tool_dataset_entry" position="right" %}
+{% include image.html id="submit_tool_dataset_entry" position="left" %}
 
 On the last step, you upload your files and hit "Submit"!
 
