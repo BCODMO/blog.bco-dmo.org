@@ -34,7 +34,7 @@ images:
     caption: Preview of the new BCO-DMO Submission Tool, which walks you through providing metadata step-by-step with instructions and examples.
  
 ---
-{% include image.html id="bcodmo_logo" position="right" %}
+{% include image.html id="bcodmo_logo" position="left" %}
 If you've submitted data to BCO-DMO before, you might be familiar with the process: download a metadata .rtf form, fill in all of the relevant details, save the file, and attach it to an email to {% include link.html url="mailto:info@bco-dmo.org" text="info@bco-dmo.org" external=true %} along with your data files. This process has served us and our community well, but we also realize there are occasionally challenges encountered when submitting data this way. Sometimes, the .rtf form may be difficult to work with in certain word processing programs, or perhaps you started to fill in a form and forgot to save it! (we've all made this mistake). Other times, email clients may have trouble sending messages with attachments. Over time, after many research projects and many data submissions, it may even become difficult for you to keep track of what data you've submitted to BCO-DMO. We understand things sometimes have a way of getting lost in email inboxes…
 
 To help streamline the process, we are pleased to announce the launch of our new online submission tool! This new tool will offically launch during the {% include link.html url="https://web.whoi.edu/ocb-workshop/" text="OCB Summer Workshop" external=true %} being held June 20-23, 2022. 
