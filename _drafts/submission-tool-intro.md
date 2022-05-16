@@ -35,7 +35,7 @@ images:
     caption: Preview of the new BCO-DMO Submission Tool, which walks you through providing metadata step-by-step with instructions and examples.
  
 ---
-{% include image.html id="bcodmo_logo" position="right" %}
+{% include image.html id="bcodmo_logo" position="left" %}
 If you've submitted data to BCO-DMO before, you might be familiar with the process: 
 
 download a metadata .rtf form, 
