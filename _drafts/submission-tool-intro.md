@@ -42,7 +42,7 @@ If you've submitted data to BCO-DMO before, you might be familiar with the proce
 - save the form, 
 - and then email the form to {% include link.html url="mailto:info@bco-dmo.org" text="info@bco-dmo.org" external=true %} with your data files. 
 
-This process has served our community well, but we know you may have occasionally encourntered challenges when submitting data this way. Perhaps you've had the experience of filling in a form and forgetting to save it! Or perhaps you've had trouble with your email clients when trying to send messages with many attachments. Over time, and after many research projects and many data submissions, it may even be difficult for you to keep track of what data you've submitted to BCO-DMO. 
+This process has served our community well, but we know you may have occasionally encourntered challenges when submitting data this way. Perhaps you've had the experience of filling in a form and forgetting to save it! Or perhaps you've had trouble with your email client when trying to send messages with many attachments. Over time, and after many research projects and many submissions, it may even be difficult for you to keep track of what data you've submitted to BCO-DMO. 
 
 To help streamline the process, we are **pleased to announce the launch of our new online submission tool!** This new tool will offically launch during the {% include link.html url="https://web.whoi.edu/ocb-workshop/" text="OCB Summer Workshop" external=true %} on June 20-23, 2022. 
 
@@ -64,7 +64,7 @@ If the old process is working well for you, you can continue to submit data by e
 
 Once submitted, you'll receive an automated confirmation email. Soon after, a BCO-DMO data manager will review your submission and provide further details by email on the next steps. 
 
-We'll be sharing more tips on our new Submission Tool over the coming weeks, so be sure to follow us on {% include link.html external=true url="https://twitter.com/bcodmo/" text="Twitter" %}, check out {% include link.html external=true url="https://blog.bco-dmo.org/" text="our blog" %}, and even look for our BCO-DMO related 
+We'll be sharing more tips on our new submission tool over the coming weeks, so be sure to follow us on {% include link.html external=true url="https://twitter.com/bcodmo/" text="Twitter" %}, check out {% include link.html external=true url="https://blog.bco-dmo.org/" text="our blog" %}, and even look for our BCO-DMO related 
 posts in {% include link.html external=true url="https://www.us-ocb.org/publications/newsletters/" text="the OCB newsletter" %}
 
 As always, you can still reach us by emailing {% include link.html url="mailto:info@bco-dmo.org" text="info@bco-dmo.org" external=true %} to get personalized help with questions or remarks!
