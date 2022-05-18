@@ -36,11 +36,7 @@ images:
  
 ---
 {% include image.html id="bcodmo_logo" position="right" %}
-If you've submitted data to BCO-DMO before, you might be familiar with the process: 
-- download a metadata .rtf form, 
-- fill in the form, 
-- save the form, 
-- and then email the form to {% include link.html url="mailto:info@bco-dmo.org" text="info@bco-dmo.org" external=true %} with your data files. 
+If you've submitted data to BCO-DMO before, you might be familiar with the process: download a metadata .rtf form, fill in the form, save it and then email it to {% include link.html url="mailto:info@bco-dmo.org" text="info@bco-dmo.org" external=true %} with your data files. 
 
 This process has served our community well, but we know you may have occasionally encourntered challenges when submitting data this way. Perhaps you've had the experience of filling in a form and forgetting to save it! Or perhaps you've had trouble with your email client when trying to send messages with many attachments. Over time, and after many research projects and many submissions, it may even be difficult for you to keep track of what data you've submitted to BCO-DMO. 
 
