@@ -5,8 +5,8 @@ published: true
 title: "Announcing BCO-DMO's New Online Submission Tool"
 subtitle: "Launching June 2022"
 description: "An introduction to and brief overview of BCO-DMO's Online Data Submission Tool"
-date: 2022-05-18
-lastModified: 2022-05-18 12:20
+date: 2022-05-20
+lastModified: 2022-05-20 12:15
 author: [shannon]
 category: news
 tags: 
@@ -42,9 +42,9 @@ This process has served our community well, but we know you may have occasionall
 
 To help streamline the process, we are **pleased to announce the launch of our new online submission tool!** This new tool will offically launch during the {% include link.html url="https://web.whoi.edu/ocb-workshop/" text="OCB Summer Workshop" external=true %} on June 20-23, 2022. 
 
-Our new submission tool provides an interface you can access in your browser to submit data to and register new projects with BCO-DMO. We've added many features to enhance the user experience of data submission, including the ability to save your progress and work on your submission with collaborators. You'll also be able to easily see all of the previous datasets and projects on which you are a contributor and view the real-time status of each one. 
+Our new submission tool provides an interface you can access in your browser to submit data to and register new projects with BCO-DMO. We've added many features to enhance the user experience of data submission, including the ability to save your progress and work on your submission with collaborators. You'll also be able to easily see all of the previous datasets and projects on which you are a contributor and view the real-time status of each one.  
 
-If the old process is working well for you, you can continue to submit data by email, but we encourage you to try out the new tool to see if it improves your workflow. In upcoming blog posts, we'll explore the features of the online submission tool in more detail, providing step-by-step how-tos. 
+If the old process is working well for you, you can continue to submit data by email, but we encourage you to try out the new tool to see if it improves your workflow. We also anticipate you'll expereince shorter data processing times for datasets submitted through the tool, particularly down the road as we build additional quality checks. In upcoming blog posts, we'll explore the features of the online submission tool in more detail, providing step-by-step how-tos. 
 
 The tool has plenty of built-in instructions and guidance that make it intuitive for you to use on your next submission. To get you started, here are some basics:
 
