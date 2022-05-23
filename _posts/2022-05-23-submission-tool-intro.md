@@ -16,7 +16,7 @@ tags:
   - project registration
 images:
   - id: bcodmo_logo
-    primary: true
+    primary: false
     path: ../bcodmo-logo.jpg
     url: https://www.bco-dmo.org
     border: false
@@ -28,7 +28,7 @@ images:
     border: true
     caption: Preview of the Submission Tool login screen.
   - id: submit_tool_dataset_entry
-    primary: false
+    primary: true
     path: ../submit_tool_dataset_entry.JPG
     max-width: 600px
     border: true
