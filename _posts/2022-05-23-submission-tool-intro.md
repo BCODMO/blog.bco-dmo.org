@@ -38,13 +38,13 @@ images:
 {% include image.html id="bcodmo_logo" position="right" %}
 If you've submitted data to BCO-DMO before, you might be familiar with the process: download a metadata .rtf form, fill in the form, save it, and then email it to {% include link.html url="mailto:info@bco-dmo.org" text="info@bco-dmo.org" external=true %} with your data files. 
 
-This process has served our community well, but we know you may have occasionally encourntered challenges when submitting data this way. Perhaps you've had the experience of filling in a form and forgetting to save it! Or perhaps you've had trouble with your email client when trying to send messages with many attachments. Over time, and after many research projects and many submissions, it may even be difficult for you to keep track of what data you've submitted to BCO-DMO. 
+This process has served our community well, but we know you may have occasionally encountered challenges when submitting data this way. Perhaps you've had the experience of filling in a form and forgetting to save it! Or perhaps you've had trouble with your email client when trying to send messages with many attachments. Over time, and after many research projects and many submissions, it may even be difficult for you to keep track of what data you've submitted to BCO-DMO. 
 
 To help streamline the process, we are **pleased to announce the launch of our new online submission tool!** This new tool will officially launch during the {% include link.html url="https://web.whoi.edu/ocb-workshop/" text="OCB Summer Workshop" external=true %} on June 20-23, 2022. 
 
 Our new submission tool provides an interface you can access in your browser to submit data to and register new projects with BCO-DMO. We've added many features to enhance the user experience of data submission, including the ability to save your progress and work on your submission with collaborators. You'll also be able to easily see all of the previous datasets and projects on which you are a contributor and view the real-time status of each one.  
 
-If the old process is working well for you, you can continue to submit data by email, but we encourage you to try out the new tool to see if it improves your workflow. We also anticipate you'll expereince shorter data processing times for datasets submitted through the tool, particularly down the road as we build additional quality checks. In upcoming blog posts, we'll explore the features of the online submission tool in more detail, providing step-by-step how-tos. 
+If the old process is working well for you, you can continue to submit data by email, but we encourage you to try out the new tool to see if it improves your workflow. We also anticipate you'll experience shorter data processing times for datasets submitted through the tool, particularly down the road as we build additional quality checks. In upcoming blog posts, we'll explore the features of the online submission tool in more detail, providing step-by-step how-to's. 
 
 The tool has plenty of built-in instructions and guidance that make it intuitive for you to use on your next submission. To get you started, here are some basics:
 
