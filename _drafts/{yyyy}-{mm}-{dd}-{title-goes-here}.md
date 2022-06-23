@@ -1,8 +1,8 @@
 ---
 layout: post
 type: BlogPosting
-published: true|false 
-# false = takes a post down
+published: false 
+# Valid options: `true` or `false`. `false` takes a post down
 title: "Announcing BCO-DMO's New Online Submission Tool"
 subtitle: "Launching June 2022"
 description: "An introduction to and brief overview of BCO-DMO's Online Data Submission Tool"
@@ -19,6 +19,7 @@ tags:
   - data management
   - BCO-DMO
   - project registration
+# To view a list of tags
 images:
   - id: bcodmo_logo
     primary: true
