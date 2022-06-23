@@ -5,10 +5,10 @@ published: false
 title: "Announcing BCO-DMO's New Online Submission Tool"
 subtitle: "Launching June 2022"
 description: "An introduction to and brief overview of BCO-DMO's Online Data Submission Tool"
-date: {yyyy}-{mm}-{dd} 
-lastModified: {yyyy}-{mm}-{dd} 
-author: [shannon,danie,adam,amber,bcodmo] 
 category: news
+date: 2222-01-01
+lastModified: 2222-01-01 12:43
+author: [shannon,danie,adam,amber,bcodmo] 
 tags: 
   - data submission
   - data management
