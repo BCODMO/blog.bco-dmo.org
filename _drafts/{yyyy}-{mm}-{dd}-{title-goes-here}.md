@@ -1,13 +1,18 @@
 ---
 layout: post
 type: BlogPosting
-published: true
+published: true|false 
+# false = takes a post down
 title: "Announcing BCO-DMO's New Online Submission Tool"
 subtitle: "Launching June 2022"
 description: "An introduction to and brief overview of BCO-DMO's Online Data Submission Tool"
-date: 2022-05-20
-lastModified: 2022-05-20 12:15
-author: [shannon]
+date: {yyyy}-{mm}-{dd} 
+# The date of your post (same as what is in the title)
+lastModified: {yyyy}-{mm}-{dd} 
+# The date the post was last modified. Always update this if you've edited a post after publishing
+author: [shannon,danie,adam,amber,bcodmo] 
+# Pick the author(s). This value is the key to the author profile at _data/authors.yml. 
+# Be sure to add any new authors to authors.yml  
 category: news
 tags: 
   - data submission
