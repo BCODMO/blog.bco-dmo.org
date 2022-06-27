@@ -7,7 +7,7 @@ title: "Registering a Dataset"
 description: "A walkthrough of how to submit data to BCO-DMO using the submit.bco-dmo.org"
 date: 2022-07-21
 lastModified: 2022-06-23 10:52
-author: [shannon,adam]
+author: [shannon]
 category: data-tools
 tags: 
   - data submission
