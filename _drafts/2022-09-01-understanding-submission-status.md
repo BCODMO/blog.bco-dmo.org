@@ -7,7 +7,7 @@ title: "Understanding the Status of Your Submission"
 description: "What stages are part of the submission process and how to navigate them"
 date: 2022-09-01
 lastModified: 2022-06-23 10:52
-author: [shannon,adam]
+author: [shannon]
 category: data-tools
 tags: 
   - data submission
