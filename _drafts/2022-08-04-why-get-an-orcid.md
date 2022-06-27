@@ -5,7 +5,7 @@ published: false
 title: "Why Should I Get an ORCiD?"
 #subtitle: ""
 description: "How an ORCiD helps your research"
-date: 2022-07-21
+date: 2022-08-04
 lastModified: 2022-06-23 10:52
 author: [shannon,adam]
 category: data-tools
