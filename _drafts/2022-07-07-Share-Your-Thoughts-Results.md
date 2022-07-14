@@ -1,7 +1,7 @@
 ---
 layout: post
 type: BlogPosting
-published: false 
+published: true 
 title: "Announcing BCO-DMO's New Online Submission Tool"
 subtitle: "Launching June 2022"
 description: "An introduction to and brief overview of BCO-DMO's Online Data Submission Tool"
