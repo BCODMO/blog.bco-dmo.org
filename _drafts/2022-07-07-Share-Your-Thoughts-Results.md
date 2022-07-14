@@ -2,9 +2,9 @@
 layout: post
 type: BlogPosting
 published: true 
-title: "Announcing BCO-DMO's New Online Submission Tool"
-subtitle: "Launching June 2022"
-description: "An introduction to and brief overview of BCO-DMO's Online Data Submission Tool"
+title: "Gathering Community Feedback"
+subtitle: "Share Your Thoughts Results"
+description: "A review of BCO-DMO strategy based on the results of the Share Your Thoughts posters"
 category: news
 date: 2222-01-01
 lastModified: 2222-01-01 12:43
