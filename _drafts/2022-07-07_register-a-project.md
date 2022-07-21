@@ -36,3 +36,9 @@ images:
 * point #1
 * point #2
 * point #3
+
+<!-- blank line -->
+<figure class="video_container">
+  <iframe src="https://www.youtube.com/embed/QbrNQY_78sc" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
+<!-- blank line -->
