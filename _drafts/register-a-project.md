@@ -2,7 +2,7 @@
 layout: post
 type: BlogPosting
 published: true
-title: "Registering a Project"
+title: "How to Register a Project"
 subtitle: "A walkthrough of how to register your project with BCO-DMO using submit.bco-dmo.org"
 description: "A walkthrough of how to register your project with BCO-DMO using submit.bco-dmo.org"
 date: 2022-07-21
