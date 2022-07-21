@@ -1,7 +1,7 @@
 ---
 layout: post
 type: BlogPosting
-published: false
+published: true
 title: "Registering a Project"
 #subtitle: ""
 description: "A walkthrough of how to register your project with BCO-DMO using submit.bco-dmo.org"
