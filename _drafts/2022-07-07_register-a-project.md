@@ -4,9 +4,9 @@ type: BlogPosting
 published: false
 title: "Registering a Project"
 #subtitle: ""
-description: "A walkthrough of how to register your project with BCO-DMO using the submit.bco-dmo.org"
-date: 2022-07-07
-lastModified: 2022-06-23 10:52
+description: "A walkthrough of how to register your project with BCO-DMO using submit.bco-dmo.org"
+date: 2022-07-21
+lastModified: 2022-07-21 13:20
 author: [shannon]
 category: data-tools
 tags: 
