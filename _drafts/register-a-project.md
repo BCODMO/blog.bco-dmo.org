@@ -29,7 +29,7 @@ images:
     caption: Preview of the Submission Tool login screen.
  
 ---
-Last month, we officially launched our new online {% include link.html url="https://submit.bco-dmo.org/" text="Submission Tool" external=true %}, which can be used to submit datasets and register projects with BCO-DMO. We encourage you to try the tool on your next BCO-DMO submission! If you're curious how it works, **this short video walks you through the steps involved in Project Registration**. Check it below or on our {% include link.html url="https://www.youtube.com/channel/UCDesCJb07KskF4C-b8IgFJQ" text="YouTube Channel" external=true %} .
+Last month, we officially launched our new online {% include link.html url="https://submit.bco-dmo.org/" text="Submission Tool" external=true %}, which can be used to submit datasets and register projects with BCO-DMO. We encourage you to try the tool on your next BCO-DMO submission! If you're curious how it works, **this short video walks you through the steps involved in Project Registration**. Check it out below or on our {% include link.html url="https://www.youtube.com/channel/UCDesCJb07KskF4C-b8IgFJQ" text="YouTube Channel" external=true %} .
 
 We plan to release more how-to videos like this, so follow us on {% include link.html url="https://twitter.com/bcodmo/" text="Twitter" external=true %} and subscribe to the {% include link.html url="https://www.us-ocb.org/publications/newsletters/" text="OCB Newsletter" external=true%} for the latest news from BCO-DMO!
 
