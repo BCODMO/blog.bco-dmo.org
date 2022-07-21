@@ -33,11 +33,10 @@ Last month, we officially launched our new online {% include link.html url="http
 
 If you're curious how it works, this short video walks you through the steps involved in Project Registration. Check it below or on our {% include link.html url="https://www.youtube.com/channel/UCDesCJb07KskF4C-b8IgFJQ" text="YouTube Channel" external=true %} .
 
+We plan to release more how-to videos like this, so follow us on {% include link.html url="https://twitter.com/bcodmo/" text="Twitter" external=true %} and subscribe to the {% include link.html url="https://www.us-ocb.org/publications/newsletters/" text="OCB Newsletter" external=true%} for the latest news from BCO-DMO!
+
 <!-- blank line -->
 <figure class="video_container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/QbrNQY_78sc" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 <!-- blank line -->
-
-
-We plan to release more how-to videos like this, so follow us on {% include link.html url="https://twitter.com/bcodmo/" text="Twitter" external=true %} and subscribe to the {% include link.html url="https://www.us-ocb.org/publications/newsletters/" text="OCB Newsletter" external=true%} for the latest news from BCO-DMO!
