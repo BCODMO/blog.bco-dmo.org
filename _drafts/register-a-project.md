@@ -29,6 +29,7 @@ images:
     caption: Preview of the Submission Tool login screen.
  
 ---
+{% include image.html id="bcodmo_logo" position="left" %}
 
 Last month, we officially launched our new online {% include link.html url="https://submit.bco-dmo.org/" text="Submission Tool" external=true %} Submission Tool, which can be used to submit datasets and register projects with BCO-DMO. We encourage you to try the tool on your next BCO-DMO submission!
 
