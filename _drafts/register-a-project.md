@@ -3,7 +3,7 @@ layout: post
 type: BlogPosting
 published: true
 title: "Registering a Project"
-#subtitle: ""
+subtitle: "A walkthrough of how to register your project with BCO-DMO using submit.bco-dmo.org"
 description: "A walkthrough of how to register your project with BCO-DMO using submit.bco-dmo.org"
 date: 2022-07-21
 lastModified: 2022-07-21 13:20
@@ -29,7 +29,6 @@ images:
     caption: Preview of the Submission Tool login screen.
  
 ---
-{% include image.html id="bcodmo_logo" position="right" %}
 
 # Ideas to communicate
 
