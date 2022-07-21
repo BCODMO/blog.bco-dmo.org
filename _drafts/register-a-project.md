@@ -30,11 +30,9 @@ images:
  
 ---
 
-# Ideas to communicate
+Last month, we officially launched our new online {% include link.html url="https://submit.bco-dmo.org/" text="Submission Tool" external=true %} Submission Tool, which can be used to submit datasets and register projects with BCO-DMO. We encourage you to try the tool on your next BCO-DMO submission!
 
-* point #1
-* point #2
-* point #3
+If you're curious how it works, this short video walks you through the steps involved in Project Registration. Check it below or on our {% include link.html url="https://www.youtube.com/channel/UCDesCJb07KskF4C-b8IgFJQ" text="YouTube Channel" external=true %} .
 
 <!-- blank line -->
 <figure class="video_container">
