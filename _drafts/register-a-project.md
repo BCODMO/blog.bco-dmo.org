@@ -6,7 +6,7 @@ title: "Registering a Project"
 subtitle: "A walkthrough of how to register your project with BCO-DMO using submit.bco-dmo.org"
 description: "A walkthrough of how to register your project with BCO-DMO using submit.bco-dmo.org"
 date: 2022-07-21
-lastModified: 2022-07-21 13:20
+lastModified: 2022-07-21 13:27
 author: [shannon]
 category: data-tools
 tags: 
