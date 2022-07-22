@@ -35,6 +35,6 @@ We plan to release more how-to videos like this, so follow us on {% include link
 
 <!-- blank line -->
 <figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/QbrNQY_78sc" frameborder="0" allowfullscreen="true"> </iframe>
+  <iframe width="560" height="315" src="ttps://www.youtube.com/embed/LWt1U6wbXaI" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 <!-- blank line -->
