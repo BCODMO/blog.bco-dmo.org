@@ -31,10 +31,17 @@ images:
 ---
 Last month, we officially launched our new online {% include link.html url="https://submit.bco-dmo.org/" text="Submission Tool" external=true %}, which can be used to submit datasets and register projects with BCO-DMO. We encourage you to try the tool on your next BCO-DMO submission! If you're curious how it works, **this short video walks you through the steps involved in Project Registration**. Check it out below or on our {% include link.html url="https://www.youtube.com/channel/UCDesCJb07KskF4C-b8IgFJQ" text="YouTube Channel" external=true %} .
 
-We plan to release more how-to videos like this, so follow us on {% include link.html url="https://twitter.com/bcodmo/" text="Twitter" external=true %} and subscribe to the {% include link.html url="https://www.us-ocb.org/publications/newsletters/" text="OCB Newsletter" external=true%} for the latest news from BCO-DMO!
-
 <!-- blank line -->
 <figure class="video_container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/LWt1U6wbXaI" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 <!-- blank line -->
+
+
+To register your project, you'll want to be sure to have the following information at hand:
+- funding award numbers
+- official name/title
+- PI and Co-PI names, contact information, and ORCiD numbers
+- a copy of your Data Management Plan in PDF format
+
+We plan to release more how-to videos like this, so follow us on {% include link.html url="https://twitter.com/bcodmo/" text="Twitter" external=true %} and subscribe to the {% include link.html url="https://www.us-ocb.org/publications/newsletters/" text="OCB Newsletter" external=true%} for the latest news from BCO-DMO!
