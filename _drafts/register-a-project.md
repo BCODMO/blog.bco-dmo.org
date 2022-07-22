@@ -37,11 +37,12 @@ Last month, we officially launched our new online {% include link.html url="http
 </figure>
 <!-- blank line -->
 
+---
 
 To register your project, you'll want to be sure to have the following information at hand:
-- funding award numbers
-- official name/title
-- PI and Co-PI names, contact information, and ORCiD numbers
-- a copy of your Data Management Plan in PDF format
+funding award numbers;
+official project name/title;
+all PI and Co-PI names, contact information, and ORCiD numbers;
+a copy of your Data Management Plan in PDF format.
 
 We plan to release more how-to videos like this, so follow us on {% include link.html url="https://twitter.com/bcodmo/" text="Twitter" external=true %} and subscribe to the {% include link.html url="https://www.us-ocb.org/publications/newsletters/" text="OCB Newsletter" external=true%} for the latest news from BCO-DMO!
