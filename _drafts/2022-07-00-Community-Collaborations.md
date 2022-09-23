@@ -28,10 +28,10 @@ images:
  
 ---
 {% include image.html id="bcodmo_logo" position="right" %}
-Disciplinary data repositories provide valuable services to their research communities in a number of ways, that well, let's face it, can sometimes go unnoticed. Aimed at supporting an open scientific process, these services can include FAIR curation and stewardship of precious research output; trusted access to data assets, associated documentation, and software or tools; education in data management best practices; and consultation on data management planning, just to name a few. 
-But, did you know that data repositories can also serve as a resrource for you research project through partnerships enabling broader impacts? Here, repositories can play a critical role in helping to build data capacity within a research community. 
+Disciplinary data repositories provide valuable services to their research communities in a number of ways. Aimed at supporting an open scientific process, these services can include FAIR curation and stewardship of precious research output; trusted access to data assets, associated documentation, and software or tools; education in data management best practices; and consultation on data management planning, just to name a few. But, did you know that data repositories can also serve as a resrource for your research project through direct partnerships? These can include activities such as applied data training or supporting development of infrastructure that fills gaps in research community capacity or capabilities.enabling broader impacts? Here, repositories can play a critical role in helping to build data capacity within a research community. 
 
 Partnering with researchers can include activities such as applied data training or supporting development of infrastructure that fills gaps in research community capacity or capabilities. 
+that can sometimes go unnoticed
 
 We'd like to share one recent and particularly successful partnership with researchers at the Bermuda Institute of Ocean Sciences ({% include link.html url="http://www.bios.edu/" text="BIOS" external=true %})
 
