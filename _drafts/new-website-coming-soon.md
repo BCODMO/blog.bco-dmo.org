@@ -25,7 +25,7 @@ images:
     border: true
   
 ---
-{% include image.html id="bcodmo_logo" position="right" %}
+{% include image.html id="bcodmo_logo" position="centered" %}
 
 Check it out: [https://netlify.bco-dmo.org](https://netlify.bco-dmo.org)
  
