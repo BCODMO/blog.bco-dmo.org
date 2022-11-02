@@ -16,7 +16,6 @@ images:
     path: ../bcodmo-logo.jpg
     url: https://www.bco-dmo.org
     border: false
-    max-width: 500px
   - id: coretrustseal_logo
     path: CoreTrustSeal-logo-transparent.png
     caption: "Short description goes here"
