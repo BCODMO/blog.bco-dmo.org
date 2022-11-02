@@ -1,0 +1,31 @@
+{% assign alt_text = "Image" %}
+{% if include.image.caption %}
+  {% assign alt_text = include.image.caption %}
+{% elsif include.image.id %}
+  {% assign alt_text = include.image.id %}
+{% endif %}
+{% capture image_src %}{% include image_src.html image=include.image %}{% endcapture %}
+{% capture image_url %}{% if include.image.url %}{{ include.image.url }}{% else %}{{ image_src }}{% endif %}{% endcapture %}
+{% capture img_tag %}<img src="{{ image_src }}" alt="{{ alt_text | strip_html }}"{% if include.image.max-width> %} style="max-width: {{ include.image.max-width }}"{% endif %}>{% endcapture %}
+
+<div class="card margin-bot-1 {{ margin }}" style="clear: both; {% if include.image.max-width> %}; max-width: {{ include.image.max-width }}{% endif %}">
+  <div class="columns is-centered">
+    <div class="column is-half">
+      <div class="card-image">
+        <figure class="image {% if include.image.dimension %} {{ include.image.dimension }}{% endif %} {% if include.image.border %} border-grey-1{% endif %}">
+          {% if include.image.url %}
+            <a href="{{ include.image.url }}" target="_blank">{{ img_tag }}</a>
+          {% else %}
+            <a href="{{ image_url }}">{{ img_tag }}</a>
+          {% endif %}
+        </figure>
+      </div>
+      {% if include.image.title or include.image.caption %}
+        <div class="card-content" style="text-align: center">
+          {% if include.image.title %}<h3 class="title">{{ include.image.title }}</h3>{% endif %}
+          {% if include.image.caption %}<div class="content">{{ include.image.caption }}</div>{% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
