@@ -7,13 +7,22 @@ author: [adam]
 category: news
 tags: 
   - website
-image:
+images:
   path: CoreTrustSeal-logo-transparent.png
   caption: "Short description goes here"
   url: https://www.coretrustseal.org/
   dimension: is-128x128
   border: true
+  
+  id: bcodmo_logo
+  primary: false
+  path: ../bcodmo-logo.jpg
+  url: https://www.bco-dmo.org
+  border: false
+  max-width: 500px
+  
 ---
+{% include image.html id="bcodmo_logo" position="right" %}
 
 Check it out: [https://netlify.bco-dmo.org](https://netlify.bco-dmo.org)
  
