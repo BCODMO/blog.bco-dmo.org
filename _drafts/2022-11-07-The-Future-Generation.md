@@ -25,6 +25,6 @@ images:
     max-width: 500px
     
 ---
-{% include image.html id="bcodmo_logo" position="right" %}
+{% include image.html id="bcodmo_logo" position="center" %}
 
 Blog content starts. 
