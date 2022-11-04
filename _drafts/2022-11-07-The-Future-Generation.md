@@ -22,7 +22,6 @@ images:
     path: ../bcodmo-logo.jpg
     url: https://www.bco-dmo.org
     border: false
-    max-width: 500px
     
 ---
 {% include image.html id="bcodmo_logo" position="center" %}
