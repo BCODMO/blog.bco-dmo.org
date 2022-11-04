@@ -1,3 +1,17 @@
+karen:
+  type: Person
+  name: Karen Soenen
+  email: ksoenen@whoi.edu
+  role: Data Manager
+  url:
+  social:
+    orcid:
+      id: 0000-0002-4602-3537
+      url: https://orcid.org/0000-0002-4602-3537
+    twitter:
+      id: kasoenen
+      url: https://twitter.com/kasoenen
+
 shannon:
   type: Person
   name: Shannon Rauch
