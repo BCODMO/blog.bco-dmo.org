@@ -221,7 +221,7 @@ Images are placed in [`assets/img/posts`](https://github.com/BCODMO/blog.bco-dmo
 
 ```{% include image.html id="the-id-field-of-the-image-goes-here" position="right" %}``` 
 
-NOTE: `position` can be set to eitheer `right` or `left`. Default : `right`.
+NOTE: `position` can be set to either `right`, `left`, or `centered`. Default : `right`.
 
 | Fields | Required | Data Type | Description |
 |---|---|---|---|
