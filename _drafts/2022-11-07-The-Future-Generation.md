@@ -24,7 +24,7 @@ images:
     border: false
     
 ---
-{% include image.html id="bcodmo_logo" position="center" %}
+{% include image.html id="bcodmo_logo" position="centered" %}
 
 Ever wondered what happens to your data after you submit them to BCO-DMO? A general workflow looks like this: researchers submit their project-specific data, we (BCO-DMO data managers) communicate with the submitters, we curate the data (ensuring their format data and associated metadata are easily comprehensible and reusable to the science community), and — finally — we publish it online.
 
