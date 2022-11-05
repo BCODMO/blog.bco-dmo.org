@@ -11,7 +11,7 @@ layout: default
 {% assign linkedin_share = "https://www.linkedin.com/shareArticle?" | append: linkedin_query %}
 {% assign email_subject = "BCO-DMO Blog: " | append: page.title %}
 {% capture email_share %}mailto:?Subject={{ email_subject | uri_escape }}&Body={{ excerpt_no_html | uri_escape }}%0D%0A%0D%0A{{ url | uri_escape }}{% endcapture %}
-<article>
+<article class="content">
   <h5 class="subtitle is-6 margin-bot-1">{{ page.date | date_to_long_string }}</h5>
   <h1 class="title is-1 is-primary padding-bot-1 margin-bot-2-important">{{ page.title }}</h1>
   {% if page.subtitle %}
