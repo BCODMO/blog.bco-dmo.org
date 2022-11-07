@@ -62,7 +62,6 @@ The tool has plenty of built-in instructions and guidance that make it intuitive
 
 Once submitted, you'll receive an automated confirmation email. Soon after, a BCO-DMO data manager will review your submission and provide further details by email on the next steps. 
 
-We'll be sharing more tips on our new submission tool over the coming weeks, so be sure to follow us on {% include link.html external=true url="https://twitter.com/bcodmo/" text="Twitter" %}, check out {% include link.html external=true url="https://blog.bco-dmo.org/" text="our blog" %}, and even look for our BCO-DMO related 
-posts in {% include link.html external=true url="https://www.us-ocb.org/publications/newsletters/" text="the OCB newsletter" %}
+We'll be sharing more tips on our new submission tool over the coming weeks, so be sure to follow us on {% include link.html external=true url="https://twitter.com/bcodmo/" text="Twitter" %}, check out {% include link.html external=true url="https://blog.bco-dmo.org/" text="our blog" %}, and even look for our BCO-DMO related posts in {% include link.html external=true url="https://www.us-ocb.org/publications/newsletters/" text="the OCB newsletter" %}
 
 As always, you can still reach us by emailing {% include link.html url="mailto:info@bco-dmo.org" text="info@bco-dmo.org" external=true %} to get personalized help with questions or remarks!
