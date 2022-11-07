@@ -7,7 +7,7 @@ subtitle: "A data manager's perspective: from Karen Soenen"
 description: "A story about (perhaps) making an impression on a future generation of scientists."
 category: news
 date: 2022-11-07
-lastModified: 2022-11-07 12:48
+lastModified: 2022-11-07 13:48
 author: [karen]
 tags: 
   - a data manager's perspective
