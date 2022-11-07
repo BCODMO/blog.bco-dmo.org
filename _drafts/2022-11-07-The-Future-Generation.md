@@ -22,7 +22,6 @@ images:
     path: ../bcodmo-logo.jpg
     url: https://www.bco-dmo.org
     border: false
-    max-width: 800px
   - id: bios_workshop
     primary: false
     path: ../bios_workshop.jpg
