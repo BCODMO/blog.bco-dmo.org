@@ -25,7 +25,7 @@ images:
   - id: bios_workshop
     primary: false
     path: ../bios_workshop.jpg
-    border: false
+    border: true
     caption: BCO-DMO staff at a BIOS workshop.
     
 ---
