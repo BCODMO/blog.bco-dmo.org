@@ -47,7 +47,7 @@ If the old process is working well for you, you can continue to submit data by e
 
 The tool has plenty of built-in instructions and guidance that make it intuitive for you to use on your next submission. To get you started, here are some basics:
 
-{% include image.html id="submit_tool_login_screen_orcid" position="right" %}
+{% include image.html id="submit_tool_login_screen_orcid" position="centered" %}
 
 **_Login:_** When you navigate to the submission tool, you'll be prompted to login with your ORCiD. If you don't have one yet, you can sign up at {% include link.html url="https://orcid.org/" text="https://orcid.org/" external=true %}. If your ORCiD is linked to your institutional email, you will have the option to sign in via your institution.
 
@@ -55,7 +55,7 @@ The tool has plenty of built-in instructions and guidance that make it intuitive
 
 **_Describe your dataset or project:_** After selecting one of those two options, you'll be guided through a series of metadata fields where you can enter the relevant information.
 
-{% include image.html id="submit_tool_dataset_entry" position="right" %}
+{% include image.html id="submit_tool_dataset_entry" position="centered" %}
 
 **_Add files:_** On the last step, you upload your files and hit "Submit"! You also have the option to save a draft that will capture your progress.
 
