@@ -20,17 +20,14 @@ images:
     path: ../bcodmo-logo.jpg
     url: https://www.bco-dmo.org
     border: false
-    caption: BCO-DMO logo
   - id: submit_tool_login_screen_orcid
     primary: false
     path: ../submit_tool_login_screen_orcid.JPG
-    max-width: 600px
     border: true
     caption: Preview of the Submission Tool login screen.
   - id: submit_tool_dataset_entry
     primary: true
     path: ../submit_tool_dataset_entry.JPG
-    max-width: 600px
     border: true
     caption: Preview of the new BCO-DMO Submission Tool.
  
