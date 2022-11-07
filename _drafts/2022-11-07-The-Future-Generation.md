@@ -7,7 +7,7 @@ subtitle: "A data manager's perspective: from Karen Soenen"
 description: "A story about (perhaps) making an impression on a future generation of scientists."
 category: news
 date: 2022-11-07
-lastModified: 2022-11-04 12:37
+lastModified: 2022-11-07 12:48
 author: [karen]
 tags: 
   - a data manager's perspective
@@ -22,9 +22,16 @@ images:
     path: ../bcodmo-logo.jpg
     url: https://www.bco-dmo.org
     border: false
+    max-width: 800px
+  - id: bios_workshop
+    primary: false
+    path: ../bios_workshop.jpg
+    border: false
+    caption: BCO-DMO staff at a BIOS workshop.
     
 ---
 {% include image.html id="bcodmo_logo" position="centered" %}
+
 
 Ever wonder what happens to your data after you submit them to BCO-DMO? The general workflow looks like this: researchers submit their project-specific data, we (BCO-DMO data managers) communicate with the submitters, we curate the data (ensuring their format and associated metadata are comprehensible and easily reusable), and — finally — we publish it online.
 
@@ -37,6 +44,7 @@ But once in a while, a magical opportunity comes along, triggering our wildest i
   - Another occasion was when BCO-DMO collaborated with the Bermuda Institute of Ocean Sciences (BIOS). We guided undergraduate college professors through 'Databytes', which are packaged data exploration and analysis modules they can adapt and use in their courses at their home institutions. 
   - Yet for another opportunity, I sat on a panel at a "career day" for eighth graders, inspiring (hopefully) students to realize the importance of data. 
 
+{% include image.html id=bios_workshop" position="centered" %}
 
 There is one other magic opportunity that I'm particularly fond of...why, you ask? It is because it came absolutely out of the blue and required no action from our side, yet the result was incredibly gratifying.
 
