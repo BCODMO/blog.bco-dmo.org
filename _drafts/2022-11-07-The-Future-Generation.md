@@ -45,7 +45,7 @@ But once in a while, a magical opportunity comes along, triggering our wildest i
 
 * Yet for another opportunity, I sat on a panel at a "career day" for eighth graders, inspiring (hopefully) students to realize the importance of data. 
 
-{% include image.html id=bios_workshop" position="centered" %}
+{% include image.html id="bios_workshop" position="centered" %}
 
 There is one other magic opportunity that I'm particularly fond of...why, you ask? It is because it came absolutely out of the blue and required no action from our side, yet the result was incredibly gratifying.
 
