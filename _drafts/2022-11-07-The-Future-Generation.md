@@ -22,9 +22,11 @@ images:
     path: ../bcodmo-logo.jpg
     url: https://www.bco-dmo.org
     border: false
+    caption: BCO-DMO logo
   - id: bios_workshop
     path: ../bios_workshop.jpg
     border: false
+    caption: BCO-DMO staff at a BIOS workshop.
 ---
 {% include image.html id="bcodmo_logo" position="centered" %}
 
