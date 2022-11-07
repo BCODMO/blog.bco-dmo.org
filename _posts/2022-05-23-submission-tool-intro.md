@@ -32,7 +32,7 @@ images:
     caption: Preview of the new BCO-DMO Submission Tool.
  
 ---
-{% include image.html id="bcodmo_logo" position="centered" %}
+
 If you've submitted data to BCO-DMO before, you might be familiar with the process: download a metadata .rtf form, fill in the form, save it, and then email it to {% include link.html url="mailto:info@bco-dmo.org" text="info@bco-dmo.org" external=true %} with your data files. 
 
 This process has served our community well, but we know you may have occasionally encountered challenges when submitting data this way. Perhaps you've had the experience of filling in a form and forgetting to save it! Or perhaps you've had trouble with your email client when trying to send messages with many attachments. Over time, and after many research projects and many submissions, it may even be difficult for you to keep track of what data you've submitted to BCO-DMO. 
@@ -63,3 +63,8 @@ Once submitted, you'll receive an automated confirmation email. Soon after, a BC
 We'll be sharing more tips on our new submission tool over the coming weeks, so be sure to follow us on {% include link.html external=true url="https://twitter.com/bcodmo/" text="Twitter" %}, check out {% include link.html external=true url="https://blog.bco-dmo.org/" text="our blog" %}, and even look for our BCO-DMO related posts in {% include link.html external=true url="https://www.us-ocb.org/publications/newsletters/" text="the OCB newsletter" %}
 
 As always, you can still reach us by emailing {% include link.html url="mailto:info@bco-dmo.org" text="info@bco-dmo.org" external=true %} to get personalized help with questions or remarks!
+
+---
+
+{% include image.html id="bcodmo_logo" position="centered" %}
+
