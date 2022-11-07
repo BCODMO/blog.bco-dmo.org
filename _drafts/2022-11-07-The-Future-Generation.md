@@ -23,10 +23,8 @@ images:
     url: https://www.bco-dmo.org
     border: false
   - id: bios_workshop
-    primary: false
     path: ../bios_workshop.jpg
     border: false
-    caption: BCO-DMO staff at a BIOS workshop
 ---
 {% include image.html id="bcodmo_logo" position="centered" %}
 
