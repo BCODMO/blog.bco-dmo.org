@@ -43,3 +43,7 @@ Last month, we officially launched our new online {% include link.html url="http
 
 
 We plan to release more how-to videos like this in the coming weeks, so follow us on {% include link.html url="https://twitter.com/bcodmo/" text="Twitter" external=true %} and subscribe to the {% include link.html url="https://www.us-ocb.org/publications/newsletters/" text="OCB Newsletter" external=true%} for the latest news from BCO-DMO!
+
+---
+
+{% include image.html id="bcodmo_logo" position="centered" %}
