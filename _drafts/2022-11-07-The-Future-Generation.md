@@ -16,6 +16,7 @@ tags:
   - data reuse
   - outreach 
   - education
+  - test
 images:
   - id: bcodmo_logo
     primary: true
