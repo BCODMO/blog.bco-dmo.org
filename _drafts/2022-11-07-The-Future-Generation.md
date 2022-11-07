@@ -33,3 +33,6 @@ images:
 {% include image.html id="bcodmo_logo" position="centered" %}
 
 Ever wonder what happens to your data after you submit them to BCO-DMO? The general workflow looks like this: researchers submit their project-specific data, we (BCO-DMO data managers) communicate with the submitters, we curate the data (ensuring their format and associated metadata are comprehensible and easily reusable), and — finally — we publish it online.
+
+As a data manager, I have pushed hundreds of datasets through this general flow. However, it is rare that we are directly involved in the next step, which is reusing our data holdings. It is up to the public and the research community to complete the whole reuse cycle and actually **use** these curated data. 
+
