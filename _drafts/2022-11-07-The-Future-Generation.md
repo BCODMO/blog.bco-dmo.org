@@ -31,8 +31,6 @@ images:
 ---
 {% include image.html id="bcodmo_logo" position="centered" %}
 
----
-
 Ever wonder what happens to your data after you submit them to BCO-DMO? The general workflow looks like this: researchers submit their project-specific data, we (BCO-DMO data managers) communicate with the submitters, we curate the data (ensuring their format and associated metadata are comprehensible and easily reusable), and — finally — we publish it online.
 
 As a data manager, I have pushed *hundreds* of datasets through this general flow. However, it is rare that we are directly involved in the next step, which is reusing our data holdings. It is up to the public and the research community to complete the whole reuse cycle and actually **use** these curated data. 
@@ -51,12 +49,12 @@ There is one other magic opportunity that I'm particularly fond of...why, you as
 
 Let me paint you a picture: one wintery morning in March 2021, the data manager on watch for new, incoming requests (probably sitting behind their desk with some newly brewed, steaming cup of coffee) gets the following, uncommon, question:
 
->“I am a high school math teacher, and am emailing on behalf of a student who is taking a statistics independent study. She is looking into a career >in marine biology, with a current interest in jellyfish (or in carbon sequestration in living organisms, specifically oceanic plants). She is hoping >to apply what she is learning about statistics to a relevant dataset. I was wondering if there are any datasets that you all would be able to share >that she could use for a project? We are hoping to do basic statistical analyses (box plot, t test, ANOVA, and/or Chi-squared)."
+>“I am a high school math teacher, and am emailing on behalf of a student who is taking a statistics independent study. She is looking into a career in marine biology, with a current interest in jellyfish (or in carbon sequestration in living organisms, specifically oceanic plants). She is hoping to apply what she is learning about statistics to a relevant dataset. I was wondering if there are any datasets that you all would be able to share that she could use for a project? We are hoping to do basic statistical analyses (box plot, t test, ANOVA, and/or Chi-squared)."
 
 Searching our database with the term "jellyfish", returns about 27 datasets. So yes, even though none of us are jellyfish experts, we could point the teacher in a helpful direction. Which we did, then we moved on to the next email and the next cup of coffee.
 
 Months go by (18 to be exact) and one late summer morning in September 2022, the following email appears in our inbox:
-> I know this was forever ago, but I wanted to reach out and let you know that the data was super useful, and my student was so grateful and excited >to play with the information. Thank you so much for the time you put into finding the data and emailing it to me.”
+> I know this was forever ago, but I wanted to reach out and let you know that the data was super useful, and my student was so grateful and excited to play with the information. Thank you so much for the time you put into finding the data and emailing it to me.”
 
 And that kind email just made my week! Something so small, having an impact on this student. Maybe it was improving their statistics skills, maybe it triggered more interest in jellyfish or maybe they decided that vertebrates are more compelling after all. Whatever the outcome, it was incredibly rewarding to read that my job might have left the littlest impression on a future generation of scientists.
 
