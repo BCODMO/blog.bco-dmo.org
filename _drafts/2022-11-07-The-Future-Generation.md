@@ -38,10 +38,9 @@ As a data manager, I have pushed hundreds of datasets through this general flow.
 
 But once in a while, a magical opportunity comes along that triggers our wildest ideas in helping to motivate and encourage others to complete that last step in the data life cycle. (Don't let the unassuming term "data manager" deceive you; we have lots of ideas on how to improve the data world!) Here are some examples of opportunities I have recently been involved with:
 
-
-
-
-
+- I had the chance to plunge into the world of "{% include link.html url=["mailto:info@bco-dmo.org](https://datacarpentry.org/)" text="The Carpentries" external=true %}", developing and teaching workshops on the fundamental software and data skills needed to conduct research.
+- On another occasion, BCO-DMO collaborated with the Bermuda Institute of Ocean Sciences (BIOS). We guided undergraduate college professors through 'Databytes', which are packaged data exploration and analysis modules they can adapt and use in their courses at their home institutions.
+- Yet for another opportunity, I sat on a panel at a "career day" for eighth graders, inspiring (hopefully) students to realize the importance of data. 
 
 {% include image.html id="bios_workshop" position="centered" %}
 
