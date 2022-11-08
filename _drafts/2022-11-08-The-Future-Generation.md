@@ -54,7 +54,7 @@ Searching our database with the term "jellyfish", returns about 27 datasets. So 
 Months go by (18 to be exact) and one late summer morning in September 2022, the following email appears in our inbox:
 > "I know this was forever ago, but I wanted to reach out and let you know that the data was super useful, and my student was so grateful and excited to play with the information. Thank you so much for the time you put into finding the data and emailing it to me."
 
-And that kind email just made my week! Something so small, having an impact on this student. Maybe it was improving their statistics skills, maybe it triggered more interest in jellyfish or maybe they decided that vertebrates are more compelling after all. Whatever the outcome, it was incredibly rewarding to read that my job might have left the littlest impression on a future generation of scientists.
+And that kind email just made my week! Something so small, having an impact on this student. Maybe it was improving their statistics skills, maybe it sparked more interest in jellyfish, or maybe they decided that vertebrates are more compelling after all. Whatever the outcome, it was incredibly rewarding to read that my job might have left the littlest impression on a future generation of scientists.
 
 Have you ever used BCO-DMO data for your science project? Or do you have a data question? Let us know at {% include link.html url="mailto:info@bco-dmo.org" text="info@bco-dmo.org" external=true %}!
 
