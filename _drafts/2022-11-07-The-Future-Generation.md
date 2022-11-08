@@ -23,14 +23,11 @@ images:
     path: ../bcodmo-logo.jpg
     url: https://www.bco-dmo.org
     border: false
-    caption: BCO-DMO logo
   - id: bios_workshop
     path: ../bios_workshop.jpg
     border: false
     caption: BCO-DMO staff at a BIOS workshop.
 ---
-
-{% include image.html id="bcodmo_logo" position="centered" %}
 
 Ever wonder what happens to your data after you submit them to BCO-DMO? The general workflow looks like this: researchers submit their project-specific data, we (BCO-DMO data managers) communicate with the submitters, we curate the data (ensuring their format and associated metadata are comprehensible and easily reusable), and — finally — we publish it online.
 
@@ -58,3 +55,7 @@ Months go by (18 to be exact) and one late summer morning in September 2022, the
 And that kind email just made my week! Something so small, having an impact on this student. Maybe it was improving their statistics skills, maybe it triggered more interest in jellyfish or maybe they decided that vertebrates are more compelling after all. Whatever the outcome, it was incredibly rewarding to read that my job might have left the littlest impression on a future generation of scientists.
 
 Have you ever used BCO-DMO data for your science project? Or do you have a data question? Let us know at {% include link.html url="mailto:info@bco-dmo.org" text="info@bco-dmo.org" external=true %}!
+
+---
+
+{% include image.html id="bcodmo_logo" position="centered" %}
