@@ -61,4 +61,4 @@ Have you ever used BCO-DMO data for your science project? Or do you have a data 
 
 ---
 
-{% include image.html id="bcodmo_logo" position="centered" %}
+{% include image.html id="bcodmo_logo" position="left" %}
