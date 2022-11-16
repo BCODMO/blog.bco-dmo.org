@@ -5,9 +5,9 @@ published: true
 title: "The future generation of scientists, a data story"
 subtitle: "A data manager's perspective: from Karen Soenen"
 description: "A story about (perhaps) making an impression on a future generation of scientists."
-category: news
-date: 2022-11-08
-lastModified: 2022-11-08 10:58
+category: insights
+date: 2022-11-16
+lastModified: 2022-11-16 11:21
 author: [karen]
 tags: 
   - a data manager's perspective
