@@ -3,7 +3,6 @@ layout: post
 type: BlogPosting
 published: true
 title: "The future generation of scientists, a data story"
-subtitle: "A data manager's perspective: from Karen Soenen"
 description: "A story about (perhaps) making an impression on a future generation of scientists."
 category: insights
 date: 2022-11-16
