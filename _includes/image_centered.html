@@ -8,7 +8,7 @@
 {% capture image_url %}{% if include.image.url %}{{ include.image.url }}{% else %}{{ image_src }}{% endif %}{% endcapture %}
 {% capture img_tag %}<img src="{{ image_src }}" alt="{{ alt_text | strip_html }}"{% if include.image.max-width> %} style="max-width: {{ include.image.max-width }}"{% endif %}>{% endcapture %}
 
-<div class="card margin-bot-1 {{ margin }}" style="clear: both; {% if include.image.max-width> %}; max-width: {{ include.image.max-width }}{% endif %}">
+<div class="margin-bot-1 {{ margin }}" style="clear: both; {% if include.image.max-width> %}; max-width: {{ include.image.max-width }}{% endif %}">
   <div class="columns is-centered">
     <div class="column is-half">
       <div class="card-image">
