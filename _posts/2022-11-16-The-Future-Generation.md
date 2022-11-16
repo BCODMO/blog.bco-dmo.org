@@ -6,7 +6,7 @@ title: "The future generation of scientists, a data story"
 description: "A story about (perhaps) making an impression on a future generation of scientists."
 category: insights
 date: 2022-11-16
-lastModified: 2022-11-16 11:21
+lastModified: 2022-11-16 12:47
 author: [karen]
 tags: 
   - a data manager's perspective
