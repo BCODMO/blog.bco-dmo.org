@@ -28,11 +28,11 @@ images:
     caption: BCO-DMO staff at a BIOS workshop.
 ---
 
-Ever wonder what happens to your data after you submit them to BCO-DMO? The general workflow looks like this: researchers submit their project-specific data, we (BCO-DMO data managers) communicate with the submitters, we curate the data (ensuring they have comprehensible metadata and can be easily reused), and — finally — we publish it online.
+Do you ever wonder what happens to your data after you submit them to BCO-DMO? The general workflow looks like this: researchers submit their project-specific data, then we (BCO-DMO data managers) communicate with the submitters, we curate the data (ensuring they have comprehensible metadata and can be easily reused), and — finally — we publish it online.
 
 As a data manager, I have pushed *hundreds* of datasets through this general flow. However, it is rare that we are directly involved in the next step, which is reusing our data holdings. It is up to the public and the research community to complete the whole reuse cycle and actually **use** these curated data. 
 
-But once in a while, a magical opportunity comes along that triggers our wildest ideas in helping to motivate and encourage others to complete that last step in the data life cycle. (Don't let the unassuming term "data manager" deceive you; we have lots of ideas on how to improve the data world!) Here are some examples of opportunities I have recently been involved with:
+But once in a while, an opportunity comes along that allows us to explore our ideas on helping to motivate and encourage others to complete that last step in the data life cycle. (Don't let the unassuming term "data manager" deceive you; we have lots of ideas on how to improve the data world!) Here are some examples of opportunities I have recently been involved with:
 
 - I had the chance to plunge into the world of "{% include link.html url="https://datacarpentry.org/" text="The Carpentries" external=true %}", developing and teaching workshops on the fundamental software and data skills needed to conduct research.
 
@@ -42,7 +42,7 @@ But once in a while, a magical opportunity comes along that triggers our wildest
 
 {% include image.html id="bios_workshop" position="centered" %}
 
-There is one other magic opportunity that I'm particularly fond of...why, you ask? It is because it came absolutely out of the blue and required no action from our side, yet the result was incredibly gratifying.
+There is one other magical opportunity that I'm particularly fond of...why, you ask? It is because it came absolutely out of the blue and required no action from our side, yet the result was incredibly gratifying.
 
 Let me paint you a picture: one wintery morning in March 2021, the data manager on watch for new, incoming requests (probably sitting behind their desk with some newly brewed, steaming cup of coffee) gets the following, uncommon, question:
 
