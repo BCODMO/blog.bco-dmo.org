@@ -38,8 +38,4 @@ We'd like to share one recent and particularly successful partnership with resea
 
 **_Login:_** When you navigate to the submission tool, you'll be prompted to login with your ORCiD. If you don't have one yet, you can sign up at {% include link.html url="https://orcid.org/" text="https://orcid.org/" external=true %}. If your ORCiD is linked to your institutional email, you will have the option to sign in via your institution.
 
-
-be sure to follow us on {% include link.html external=true url="https://twitter.com/bcodmo/" text="Twitter" %}, check out {% include link.html external=true url="https://blog.bco-dmo.org/" text="our blog" %}, and even look for our BCO-DMO related 
-posts in {% include link.html external=true url="https://www.us-ocb.org/publications/newsletters/" text="the OCB newsletter" %}
-
-As always, you can still reach us by emailing {% include link.html url="mailto:info@bco-dmo.org" text="info@bco-dmo.org" external=true %} to get personalized help with questions or remarks!
+text... {% include link.html url="mailto:info@bco-dmo.org" text="info@bco-dmo.org" external=true %} to get personalized help with questions or remarks!
