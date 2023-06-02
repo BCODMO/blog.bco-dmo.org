@@ -13,19 +13,12 @@ tags:
   - geospatial access
   - ERDDAP
 images:
-   - id: bcodmo_logo
+  - id: bcodmo_logo
     primary: true
     path: ../bcodmo-logo.jpg
     url: https://www.bco-dmo.org
     border: false
-  - id: duplicate_row
-    primary: true
-    path: 2020-09-14-goodtables/goodtables_duplicate-row.png
-    caption: "Goodtables noticed a duplicate row in an uploaded tabular data file."
-    max-width: 512px
-    border: true
 ---
-
 {% include image.html id="bcodmo_logo" position="right" %}
 still working on updated the site and how we work with our users
 changes are happening even though you may not see them yet
@@ -39,11 +32,12 @@ Why this works for us...
 Why it works for you, the user...
 We look forward to hearing your thoughts on its implementation, feel free to send comments to...
 
-Around this time last year, we posted a entry about our plans to re-envision the BCO-DMO repository. We called it our "quiet revolution". 
-And for the most part, it has been just that; quiet. If you've come to our site to discover and access oceanographic data for your research
-our website may look mostly the same. Some minor changes have occurred, like new datasets being accessed
+Around this time last year, we introduced our plans to re-envision the BCO-DMO repository. We called it our "quiet revolution". 
+And for the most part, it has been just that; quiet. If you've come to our site to discover and access oceanographic data for your research today, you find that our website looks much the same way it did several years ago. Some minor changes have occurred, like new datasets being accessed by 
 
 One feature that we've been tirelessly working on behind the scenes is 
 
 
 Callout text goes here<!--more--> Say more here
+
+
