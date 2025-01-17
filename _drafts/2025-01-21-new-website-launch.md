@@ -2,7 +2,7 @@
 layout: post
 type: BlogPosting
 title: "The New BCO-DMO Website is Here!"
-description: "Announcing the new and improved BCO-DMO website! Please visit and let us know your thoughts!"
+description: "Announcing the new BCO-DMO website! We look forward to hearing your thoughts!"
 date: 2025-01-21
 author: [danie]
 category: news
@@ -25,7 +25,7 @@ images:
 {% include image.html id="bcodmo_logo" position="centered" %}
 
 {% include image.html id="newBCODMOSite" position="right" %}
-We know what you're thinking... "You guys have been saying your new website is coming for a while now." And you'd be right. A little over four years if you've been counting! Turns out, completely redesigning your website while rearchitecting the entire system behind it and ensuring fidelity of all the data and information it contains takes a little longer than we anticipated. But we're confident it was worth the wait. And, we're excited to finally share it with you.
+We know what you're thinking... "You guys have been saying your new website is coming for a while now." And you'd be right. A little over four years if you've been counting. Turns out, completely redesigning your website while rearchitecting the entire system behind it and ensuring fidelity of all the data and information it contains takes a little longer than we anticipated. But we're confident it was worth the wait. And, we're excited to finally share it with you.
 
 If you've used the current site in the past few months - whether to publish or discover data, you might have noticed the unassuming little green banner at the top of our data pages that let you take a sneak peek into what what the new site will look like. The new webpages look dramatically different from the now decade's old site you may be familiar with, and that's by design. A design that you, our user community, helped shape during focus groups, through surveys, and even informal engagement with us at meetings. The look and feel have been designed to visually begin aligning data publications pages with those of their scholarly publication counterparts[revise this text?], while still retaining all the robust metadata needed for determining fitness for purpose and reuse. We've also replaced our previous means of data access and download, and provided the ability to sort and filter observations while viewing them from the dataset's landing page. For those who appreciate deeper interrogation, subsetting and downloading in alternative formats, our fully functioning ERDDAP server provides you with this capability.
 
