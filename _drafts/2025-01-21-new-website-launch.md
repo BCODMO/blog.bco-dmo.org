@@ -1,9 +1,9 @@
 ---
 layout: post
 type: BlogPosting
-title: "New website coming soon!"
-date: 2020-08-01
-author: [adam]
+title: "New BCO-DMO Website is Here!"
+date: 2025-01-21
+author: [danie]
 category: news
 tags: 
   - website
@@ -27,6 +27,6 @@ images:
 ---
 {% include image.html id="bcodmo_logo" position="centered" %}
 
-Check it out: [https://netlify.bco-dmo.org](https://netlify.bco-dmo.org)
+Check it out: [https://demo.bco-dmo.org](https://demo.bco-dmo.org)
  
- OR {% include link.html url="https://netlify.bco-dmo.org" classes="is-italic" external=true %}
+ OR {% include link.html url="https://demo.bco-dmo.org" classes="is-italic" external=true %}
