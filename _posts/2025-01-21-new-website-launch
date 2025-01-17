@@ -3,12 +3,12 @@ layout: post
 type: BlogPosting
 title: "The New BCO-DMO Website is Here!"
 description: "Announcing the new BCO-DMO website! We look forward to hearing your thoughts!"
-date: 2025-01-21
+date: 2025-01-15
+lastModified: 2025-01-17
 author: [danie]
 category: news
 tags: 
   - website
-
 images:
   - id: bcodmo_logo
     primary: false
@@ -23,7 +23,6 @@ images:
     caption: New BCO-DMO website
 ---
 {% include image.html id="bcodmo_logo" position="centered" %}
-
 {% include image.html id="newBCODMOSite" position="right" %}
 We know what you're thinking... "You guys have been saying your new website is coming for a while now." And you'd be right. A little over four years if you've been counting. Turns out, completely redesigning your website while rearchitecting the entire system behind it and ensuring fidelity of all the data and information it contains takes a little longer than we anticipated. But we're confident it was worth the wait. And, we're excited to finally share it with you.
 
