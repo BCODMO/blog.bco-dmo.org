@@ -1,6 +1,7 @@
 ---
 layout: post
 type: BlogPosting
+published: true
 title: "The New BCO-DMO Website is Here!"
 description: "Announcing the new BCO-DMO website! We look forward to hearing your thoughts!"
 date: 2025-01-21
