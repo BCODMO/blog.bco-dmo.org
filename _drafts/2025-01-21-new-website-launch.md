@@ -5,11 +5,11 @@ published: true
 title: "The New BCO-DMO Website is Here!"
 description: "Announcing the new BCO-DMO website! We look forward to hearing your thoughts!"
 date: 2025-01-21
+lastModified: 2025-01-21
 author: [danie]
 category: news
 tags: 
   - website
-
 images:
   - id: bcodmo_logo
     primary: false
