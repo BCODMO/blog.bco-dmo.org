@@ -21,6 +21,7 @@ images:
     primary: false
     path: ../newBCODMOSite.png
     border: false
+    max-width: 256px
     caption: New BCO-DMO website
 ---
 {% include image.html id="bcodmo_logo" position="centered" width="70%" %}
