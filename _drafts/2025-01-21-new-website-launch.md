@@ -20,7 +20,7 @@ images:
   - id: newBCODMOSite
     primary: false
     path: ../newBCODMOSite.png
-    border: false
+    border: true
     max-width: 1200px
     caption: New BCO-DMO website
 ---
