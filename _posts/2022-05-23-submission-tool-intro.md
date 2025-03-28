@@ -14,6 +14,7 @@ tags:
   - data management
   - BCO-DMO
   - project registration
+  - frictionlessdata
 images:
   - id: bcodmo_logo
     primary: false
