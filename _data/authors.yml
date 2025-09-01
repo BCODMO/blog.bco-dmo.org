@@ -91,3 +91,13 @@ bcodmo:
     linkedin: 
       id: 6378439
       url: https://www.linkedin.com/company/biological-and-chemical-oceanography-data-management-office
+conrad:
+  type: Person
+  name: Conrad Schloer
+  email: cschloer@whoi.edu
+  role: Developer
+  url: https://github.com/cschloer
+  social:
+    orcid:
+      id: 0000-0001-9414-722X
+      url: https://orcid.org/0000-0001-9414-722X
