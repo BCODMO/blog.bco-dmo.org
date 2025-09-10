@@ -101,3 +101,26 @@ conrad:
     orcid:
       id: 0000-0001-9414-722X
       url: https://orcid.org/0000-0001-9414-722X
+vimal:
+  type: Person
+  name: Vimal Narepalepu
+  email: vimal.narepalepu@whoi.edu
+  role: Developer
+  url: https://github.com/vimalabhi9
+  social:
+    orcid:
+      id: 0000-0003-3359-9120
+      url: https://orcid.org/0000-0003-3359-9120
+    linkedin: 
+      id: abh1pr0
+      url: https://www.linkedin.com/in/abh1pr0/
+shravani:
+  type: Person
+  name: Shravani Nagala
+  email: shravani.nagala@whoi.edu
+  role: Developer
+  url: https://github.com/shravani-whoi
+  social:
+    orcid:
+      id: 0000-0003-2109-706X
+      url: https://orcid.org/0000-0003-2109-706X
