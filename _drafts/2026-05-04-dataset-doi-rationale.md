@@ -14,16 +14,9 @@ tags:
   - BCO-DMO
   - philosophy
 images:
-  - id: bcodmo_logo
-    primary: true
-    path: ../bcodmo-logo.jpg
-    url: https://www.bco-dmo.org
-    border: false
-    max-width: 500px
   - id: doi-page
-    primary: false
+    primary: true
     path: doi-series/doi-page_956677.2.png
-    max-width: 600px
     border: true
     caption: "New DOI Landing Page: https://www.bco-dmo.org/doi/dataset/10.26008/1912/bco-dmo.956677.2"
   - id: doi-versions
@@ -34,13 +27,11 @@ images:
   - id: doi-orcids
     primary: false
     path: doi-series/doi-orcids.png
-    max-width: 600px
     border: true
 ---
-{% include image.html id="bcodmo_logo" position="right" %}
-Dataset Digital Object Identifiers (Data DOIs) are unique and persistent alphanumeric strings assigned to a collection of data files and metadata at a specific point in time (i.e., a particular dataset version). Providing them to a journal along with your manuscript has become a routine part of the scholarly publication process… and that’s a good thing! DOIs identify specific data versions, aid in data discovery, and facilitate data author attribution. BCO-DMO was early on the dataset DOI scene, collaborating with our Institutional library back in 2011 to mint DOIs for the published datasets that BCO-DMO curates, long before current data DOI services were established. As of December 2025, we've joined DataCite as a minting agent and have begun hosting DOI webpages as part of our data curation and publication process. Why? There are actually several reasons that we’d like to share with you… 
+{% include image.html id="doi-page" position="right" %}
 
-{% include image.html id="doi-page" position="centered" %}
+Dataset Digital Object Identifiers (Data DOIs) are unique and persistent alphanumeric strings assigned to a collection of data files and metadata at a specific point in time (i.e., a particular dataset version). Providing them to a journal along with your manuscript has become a routine part of the scholarly publication process… and that’s a good thing! DOIs identify specific data versions, aid in data discovery, and facilitate data author attribution. BCO-DMO was early on the dataset DOI scene, collaborating with our Institutional library back in 2011 to mint DOIs for the published datasets that BCO-DMO curates, long before current data DOI services were established. As of December 2025, we've joined DataCite as a minting agent and have begun hosting DOI webpages as part of our data curation and publication process. Why? There are actually several reasons that we’d like to share with you… 
 
 _Alignment with our Mission_:  Previously, BCO-DMO DOI web pages were provided by WHOI’s institutional library. By hosting DOI webpages on the BCO-DMO website, we convey our commitment to the long-term preservation of our data catalog by becoming the responsible party, creating a clear chain of custodianship; aligning stewardship and accountability. 
 
