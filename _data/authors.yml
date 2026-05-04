@@ -101,6 +101,17 @@ conrad:
     orcid:
       id: 0000-0001-9414-722X
       url: https://orcid.org/0000-0001-9414-722X
+audrey:
+  type: Person
+  name: Audrey Mickle
+  email: amickle@whoi.edu
+  role: Data Manager
+  url: https://www.whoi.edu/profile/amickle
+  social:
+    orcid:
+      id: 0000-0003-3888-8810
+      url: https://orcid.org/0000-0003-3888-8810
+  
 vimal:
   type: Person
   name: Vimal Narepalepu
