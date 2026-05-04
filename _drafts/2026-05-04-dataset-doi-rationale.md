@@ -23,7 +23,6 @@ images:
   - id: doi-versions
     primary: false
     path: doi-series/doi-versions_956677.2 .png
-    max-width: 300px
     border: true
   - id: doi-orcids
     primary: false
