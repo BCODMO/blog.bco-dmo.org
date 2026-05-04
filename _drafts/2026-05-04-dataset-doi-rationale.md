@@ -1,7 +1,7 @@
 ---
 layout: post
 type: BlogPosting
-published: false 
+published: true 
 title: "Our Rationale for Dataset DOIs"
 description: "Dataset Digital Object Identifiers (Data DOIs) are unique and persistent alphanumeric strings assigned to a collection of data files and metadata at a specific point in time (i.e., a particular dataset version)"
 category: insights
