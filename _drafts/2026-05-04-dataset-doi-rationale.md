@@ -24,6 +24,7 @@ images:
     primary: false
     path: doi-series/doi-versions_956677.2 .png
     border: true
+    max-width: 250px
   - id: doi-orcids
     primary: false
     path: doi-series/doi-orcids.png
@@ -38,8 +39,10 @@ _Alignment with our Mission_:  Previously, BCO-DMO DOI web pages were provided b
 _Disciplinary Stewardship_: Domain-specific repositories work closely to respond to the needs of their communities. Hosting the DOI webpage allows us to incorporate community-relevant metadata as part of the DOI experience, making them more meaningful within our disciplinary context.
 
 _Trust and Authoritative Source Recognition_: Users can trust that a DOI minted by BCO-DMO is backed by curated content from a highly trained BCO-DMO Data Manager that has worked with the data originators to make the data as clean, FAIR, and research-ready as possible, versus a dataset DOI from a generalist repository, where little to no disciplinary curation has happened. 
-{% include image.html id="doi-versions" position="centered" %}
+
 _Improved User Experience_: By hosting our own DOI webpages, we can achieve a more cohesive experience for our users, including both journal editors and reviewers. They can clearly see other versions of newer and older DOIs for the same dataset.
+
+{% include image.html id="doi-versions" position="right" %}
 
 _Versioning Control_: BCO-DMO can implement its own versioning strategy, minting new DOIs that resolve to the latest versions quickly, along with clear access to the previous and later versions, without negotiating relevant workflows through an intermediary entity.
 
