@@ -3,6 +3,7 @@ layout: post
 type: BlogPosting
 published: true 
 title: "Our Rationale for Dataset DOIs"
+subtitle: "This post is part of a multi-part series on <a href='https://blog.bco-dmo.org/tag.html#doi'>DOIs</a>"
 description: "Dataset Digital Object Identifiers (Data DOIs) are unique and persistent alphanumeric strings assigned to a collection of data files and metadata at a specific point in time (i.e., a particular dataset version)"
 category: insights
 date: 2026-05-04
@@ -19,11 +20,11 @@ images:
     path: doi-series/doi-page_956677.2.png
     border: false
     max-width: 600px
-    caption: "New DOI Landing Page: <a href='https://www.bco-dmo.org/doi/dataset/10.26008/1912/bco-dmo.956677.2'>https://www.bco-dmo.org/doi/dataset/10.26008/1912/bco-dmo.956677.2</a>"
+    caption: "New DOI Landing Page:<br/><a href='https://www.bco-dmo.org/doi/dataset/10.26008/1912/bco-dmo.956677.2'>https://www.bco-dmo.org/doi/dataset/10.26008/1912/bco-dmo.956677.2</a>"
   - id: doi-versions
     primary: false
     path: doi-series/doi-versions_956677.2 .png
-    border: true
+    border: false
     max-width: 400px
   - id: doi-orcids
     primary: false
