@@ -18,11 +18,12 @@ images:
     primary: true
     path: doi-series/doi-page_956677.2.png
     border: true
-    caption: "New DOI Landing Page: {% include link.html url='https://www.bco-dmo.org/doi/dataset/10.26008/1912/bco-dmo.956677.2' external=true %}"
+    max-width: 300px
+    caption: "New DOI Landing Page: <a href='https://www.bco-dmo.org/doi/dataset/10.26008/1912/bco-dmo.956677.2'>https://www.bco-dmo.org/doi/dataset/10.26008/1912/bco-dmo.956677.2</a>"
   - id: doi-versions
     primary: false
     path: doi-series/doi-versions_956677.2 .png
-    max-width: 600px
+    max-width: 300px
     border: true
   - id: doi-orcids
     primary: false
@@ -38,14 +39,14 @@ _Alignment with our Mission_:  Previously, BCO-DMO DOI web pages were provided b
 _Disciplinary Stewardship_: Domain-specific repositories work closely to respond to the needs of their communities. Hosting the DOI webpage allows us to incorporate community-relevant metadata as part of the DOI experience, making them more meaningful within our disciplinary context.
 
 _Trust and Authoritative Source Recognition_: Users can trust that a DOI minted by BCO-DMO is backed by curated content from a highly trained BCO-DMO Data Manager that has worked with the data originators to make the data as clean, FAIR, and research-ready as possible, versus a dataset DOI from a generalist repository, where little to no disciplinary curation has happened. 
-
-_Improved User Experience_: By hosting our own DOI webpages, we can achieve a more cohesive experience for our users, including both journal editors and reviewers. They can clearly see other versions of newer and older DOIs for the same dataset.
 {% include image.html id="doi-versions" position="right" %}
+_Improved User Experience_: By hosting our own DOI webpages, we can achieve a more cohesive experience for our users, including both journal editors and reviewers. They can clearly see other versions of newer and older DOIs for the same dataset.
+
 _Versioning Control_: BCO-DMO can implement its own versioning strategy, minting new DOIs that resolve to the latest versions quickly, along with clear access to the previous and later versions, without negotiating relevant workflows through an intermediary entity.
 
 _Landing Page Content Quality_: Similarly, BCO-DMO now ensures the landing page is rich, machine-readable (e.g., with schema.org markup), and tailored to our mission and user needs, rather than a generic splash page. Our new DOI landing pages allow users to access discrete versions while also linking to the latest data.
 
 _Control and support for Linked Data and the PID Ecosystem_: As always, we’ll continue to link out of the BCO-DMO system to other authoritative content such as related publications, cruises, and other data, but now you’ll see that we’ve linked data authors to their ORCiDs on our DOI landing pages, and we can create more connections contributing to the scholarly knowledge graph that a third-party cannot always support.
-{% include image.html id="doi-orcids" position="centered" %}
+{% include image.html id="doi-orcids" position="left" %}
 By gaining authority and technical control over the DOI webpage, BCO-DMO becomes a primary actor in the broader scholarly communication infrastructure. Our datasets will be more findable, trustworthy, and integrated into the research ecosystem. We invite you to take a look at your favorite published BCO-DMO for the dataset DOI page, and let us know what you think! 
 
