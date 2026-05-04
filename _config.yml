@@ -5,7 +5,7 @@ exclude: ["vendor", "CNAME", "Gemfile", "LICENSE", "README.md"]
 
 google_analytics: UA-16906710-9
     
-comments: true
+comments: false
 
 collections:
   drafts:
