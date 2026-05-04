@@ -25,7 +25,7 @@ images:
     primary: false
     path: doi-series/doi-versions_956677.2 .png
     border: false
-    max-width: 400px
+    max-width: 350px
   - id: doi-orcids
     primary: false
     path: doi-series/doi-orcids.png
