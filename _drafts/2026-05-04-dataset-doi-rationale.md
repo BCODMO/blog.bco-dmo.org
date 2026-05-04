@@ -18,7 +18,7 @@ images:
     primary: true
     path: doi-series/doi-page_956677.2.png
     border: true
-    caption: "New DOI Landing Page: https://www.bco-dmo.org/doi/dataset/10.26008/1912/bco-dmo.956677.2"
+    caption: "New DOI Landing Page: {% include link.html url='https://www.bco-dmo.org/doi/dataset/10.26008/1912/bco-dmo.956677.2' external=true %}"
   - id: doi-versions
     primary: false
     path: doi-series/doi-versions_956677.2 .png
