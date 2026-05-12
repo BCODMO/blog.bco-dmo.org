@@ -26,10 +26,12 @@ images:
     path: doi-series/doi-versions_956677.2 .png
     border: false
     max-width: 350px
+    caption: "<strong>Versioning Control</strong><br/>Specifying the version history of a dataset and providing a link to the most recent content for the dataset."
   - id: doi-orcids
     primary: false
     path: doi-series/doi-orcids.png
     border: true
+    caption: "Contributors with ORCID identifiers display a clickable badge to their entire ORCID record."
 ---
 {% include image.html id="doi-page" position="right" %}
 
@@ -45,13 +47,13 @@ _Trust and Authoritative Source Recognition_: Users can trust that a DOI minted 
 
 _Improved User Experience_: By hosting our own DOI webpages, we can achieve a more cohesive experience for our users, including both journal editors and reviewers. They can clearly see other versions of newer and older DOIs for the same dataset.
 
-_Versioning Control_: BCO-DMO can implement its own versioning strategy, minting new DOIs that resolve to the latest versions quickly, along with clear access to the previous and later versions, without negotiating relevant workflows through an intermediary entity.
+_Versioning Control_: BCO-DMO can implement its own versioning strategy, minting new DOIs that resolve to the latest versions quickly, along with clear access to the previous and later versions, without negotiating relevant workflows through an intermediary entity. See the image 'Versioning Control'.
 
 _Landing Page Content Quality_: Similarly, BCO-DMO now ensures the landing page is rich, machine-readable (e.g., with schema.org markup), and tailored to our mission and user needs, rather than a generic splash page. Our new DOI landing pages allow users to access discrete versions while also linking to the latest data.
 
-_Control and support for Linked Data and the PID Ecosystem_: As always, we’ll continue to link out of the BCO-DMO system to other authoritative content such as related publications, cruises, and other data, but now you’ll see that we’ve linked data authors to their ORCiDs on our DOI landing pages, and we can create more connections contributing to the scholarly knowledge graph that a third-party cannot always support.
+_Control and support for Linked Data and the PID Ecosystem_: As always, we’ll continue to link out of the BCO-DMO system to other authoritative content such as related publications, cruises, and other data, but now you’ll see that we’ve linked data authors to their ORCiDs on our DOI landing pages, and we can create more connections contributing to the scholarly knowledge graph that a third-party cannot always support. See the image below for how ORCID ids are presented:
 
 {% include image.html id="doi-orcids" position="centered" %}
 
-By gaining authority and technical control over the DOI webpage, BCO-DMO becomes a primary actor in the broader scholarly communication infrastructure. Our datasets will be more findable, trustworthy, and integrated into the research ecosystem. We invite you to take a look at your favorite published BCO-DMO for the dataset DOI page, and let us know what you think! 
+By gaining authority and technical control over the DOI webpage, BCO-DMO becomes a primary actor in the broader scholarly communication infrastructure. Our datasets will be more findable, trustworthy, and integrated into the research ecosystem. We invite you to take a look at your favorite published BCO-DMO dataset for the DOI page, and let us know what you think!
 
