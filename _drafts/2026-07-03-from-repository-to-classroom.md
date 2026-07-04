@@ -1,7 +1,7 @@
 ---
 layout: post
 type: BlogPosting
-published: false 
+published: true 
 title: "TEMPLATE FOR NEW DRAFTS"
 subtitle: "Subtitle goes here"
 description: "A template for starting a new blog post"
