@@ -6,8 +6,8 @@ title: "TEMPLATE FOR NEW DRAFTS"
 subtitle: "Subtitle goes here"
 description: "A template for starting a new blog post"
 category: news
-date: 2222-01-01
-lastModified: 2222-01-01 12:43
+date: 2026-07-03
+lastModified: 2026-07-03 12:43
 author: [shannon,danie,adam,amber,bcodmo] 
 tags: 
   - data submission
