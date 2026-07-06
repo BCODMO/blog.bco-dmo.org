@@ -1,3 +1,12 @@
+dana:
+  type: Person
+  name: Dana Gerlach
+  email: dgerlach@whoi.edu
+  role: Data Manager
+  social:
+    orcid: 
+      id: 0000-0003-3781-4641
+      url: https://orcid.org/0000-0003-3781-4641
 karen:
   type: Person
   name: Karen Soenen
