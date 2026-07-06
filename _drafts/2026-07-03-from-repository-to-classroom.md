@@ -8,7 +8,7 @@ description: "A talk given by BCO-DMO at the 2026 ICASE World Conference on Scie
 category: news
 date: 2026-07-03
 lastModified: 2026-07-03 12:43
-author: [adam,dana,danie,audrey,sawyer,shannon,amber] 
+author: [adam,dana,danie,audrey,sawyer,shannon,karen,amber] 
 tags: 
   - data management
   - BCO-DMO
