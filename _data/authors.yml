@@ -11,7 +11,16 @@ karen:
     twitter:
       id: kasoenen
       url: https://twitter.com/kasoenen
-
+sawyer:
+  type: Person
+  name: Sawyer Newman
+  email: snewman@whoi.edu
+  role: Data Manager
+  url:
+  social:
+    orcid:
+      id: 0000-0003-3583-7284
+      url: https://orcid.org/0000-0003-3583-7284
 shannon:
   type: Person
   name: Shannon Rauch
