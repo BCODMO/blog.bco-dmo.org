@@ -2,18 +2,17 @@
 layout: post
 type: BlogPosting
 published: true 
-title: "TEMPLATE FOR NEW DRAFTS"
-subtitle: "Subtitle goes here"
-description: "A template for starting a new blog post"
+title: "From Repository to Classroom"
+subtitle: "Turning Ocean Data into Teaching Tools"
+description: "A talk given by BCO-DMO at the 2026 ICASE World Conference on Science and Technology Education."
 category: news
 date: 2026-07-03
 lastModified: 2026-07-03 12:43
-author: [shannon,danie,adam,amber,bcodmo] 
+author: [adam,dana,danie,audrey,sawyer,shannon,amber] 
 tags: 
-  - data submission
   - data management
   - BCO-DMO
-  - project registration
+  - education
 images:
   - id: bcodmo_logo
     primary: true
@@ -37,53 +36,36 @@ images:
 ---
 # From Repository to Classroom: Turning Ocean Data into Teaching Tools
 
-Something beautiful can happen when two good things come together to make something even better. Chocolate and peanut butter. Research and education. Ocean data and the classroom.
-
-That same kind of connection is at the heart of a new effort by the Biological and Chemical Oceanography Data Management Office, better known as BCO-DMO. BCO-DMO is a data repository that serves as a long-term home for biological, chemical, and biogeochemical oceanographic data, primarily from U.S. National Science Foundation-funded research. The repository holds a wide range of ocean data across topics, scales, formats, and methods, from molecular measurements to ecosystem observations, from local field studies to global datasets.
-
-But BCO-DMO is not just a place where data are stored. It is also a place where data can become useful, reusable, and discoverable. And increasingly, that means asking a new question:
-
-> How can a research data repository help educators turn real-world ocean data into meaningful classroom experiences?
+What happens when educators and data repositories unite? It can be like when chocolate met peanut butter — two great things that become even better together.
+That same kind of connection is at the heart of a new effort to connect real-world ocean data in a way that is impactful for educators. 
 
 ## Why Real Data Matters in the Classroom
 
-Educators already know the value of using real data in their curricula. Authentic data can make abstract concepts tangible. It can help students connect classroom theory to real-world phenomena. It can also build the skills students increasingly need: data literacy, critical thinking, problem solving, and comfort working with complex information.
+Educators already know the value of using data in their curricula. It can make abstract concepts tangible and help students connect classroom theory to real-world phenomena. It can also build the skills students increasingly need: data literacy, critical thinking, problem solving, and comfort working with complex information.
 
-In oceanography, those skills are especially important. Students are entering a field where data are central to research, decision-making, and communication. Yet authentic oceanographic datasets are rarely classroom-ready.
+From a survey we conducted at Ocean Sciences 2026, we found that educators  want to use real ocean data, but they often lack the time, tools, or support needed to adapt research datasets for teaching. The datasets may be large, complex, or difficult to access. Students may arrive with limited quantitative, coding, or data-wrangling experience. As a result, too much time can be spent getting students to the point where they can finally begin asking scientific questions.
 
-That gap creates a challenge.
+What we heard clearly from educators is this: **the cognitive load needs to be reduced.** The goal is to help students get to the “lightbulb moment” faster, where they can interrogate the data, test ideas, and connect patterns to oceanographic concepts.
 
-Educators may want to use real ocean data, but they often lack the time, tools, or support needed to adapt research datasets for teaching. The datasets may be large, complex, or difficult to access. Metadata may be written for researchers rather than students. Students may arrive with limited quantitative, coding, or data-wrangling experience. As a result, too much class time can be spent getting students to the point where they can finally begin asking scientific questions.
-
-What we heard clearly from educators is this: **the cognitive load needs to be reduced.**
-
-Students should not have to struggle through file formats, coding syntax, data discovery, or basic visualization before they can engage with the science. Those skills matter, but they should be scaffolded. The goal is to help students get to the “lightbulb moment” faster, where they can interrogate the data, test ideas, and connect patterns to oceanographic concepts.
+The question becomes: **How can a research data repository help educators turn real-world ocean data into meaningful classroom experiences?**
 
 ## Why BCO-DMO Is Well Positioned to Help
 
-BCO-DMO brings together a data management team with expertise across oceanography, informatics, data and software carpentry, data management training, and information sciences.
-
-That combination matters. The team understands the scientific context of the data, the technical infrastructure needed to make data accessible, and the documentation required to support reuse. BCO-DMO already works to lower barriers for researchers who want to find, understand, and reuse oceanographic datasets.
-
-Now, there is an opportunity to extend that support to educators.
+BCO-DMO brings together a data management team with expertise across oceanography, informatics, data and software carpentry, data management training, and information sciences. The team understands the scientific context of the data and the technical skills needed to work with the data. 
 
 BCO-DMO can help identify appropriate datasets, provide metadata and context summaries, support guided analyses, and host or link to educational products associated with research datasets. In other words, the repository can help create a bridge between research workflows and classroom workflows.
 
-## A Successful Example: BIOS DataBytes
+## BIOS DataBytes: An Inspiration
 
-One model for this work already exists.
+The Bermuda Institute of Ocean Sciences (BIOS), developed DataBytes, a teaching resource that uses datasets hosted at BCO-DMO. The goal was to take data and core scientific concepts from researchers and make them available to educators and their classrooms in a streamlined format. BIOS and BCO-DMO provided reciprocal links, making the educational materials and the underlying data easier to discover together. The result was a successful example of how a research data repository and an educational institution can collaborate to support classroom learning.
 
-The Bermuda Institute of Ocean Sciences, or BIOS, developed DataBytes, a teaching resource that uses datasets hosted at BCO-DMO. The goal was to take data and core scientific concepts from researchers and make them available to educators and their classrooms in a streamlined format. By using curated datasets, educators can help students work with real data that highlight key oceanographic and atmospheric concepts and patterns.
-
-The partnership worked well. BIOS and BCO-DMO provided reciprocal links, making the educational materials and the underlying data easier to discover together. The result was a successful example of how a research data repository and an educational institution can collaborate to support classroom learning.
-
-That success points toward a larger vision.
+That success inspired us to dig deeper on a larger vision for partnership with educators.
 
 ## The Vision: Educator Use Case + BCO-DMO Data = Teaching Tool
 
-BCO-DMO’s goal is not to replace educators or become a curriculum-development organization. Educators bring the pedagogical expertise. They know their students, their learning goals, their course levels, and their classroom constraints.
+Educators know their students, their learning goals, their course levels, and their classroom constraints. BCO-DMO brings the data expertise.
 
-BCO-DMO brings the data expertise.
+Chocolate. Peanut Butter.
 
 The vision is to bring those strengths together. If educators can share specific teaching use cases, BCO-DMO can help identify appropriate datasets and support the development of teaching tools around them.
 
@@ -117,32 +99,16 @@ For example, a teaching notebook might guide students through examining seasonal
 
 The slide deck included an example from the Ocean Observatories Initiative showing how a Python notebook can function as a teaching tool, with step-by-step code, explanatory text, visualizations, and opportunities for student exploration.
 
-## Building the Next Generation of Ocean Data Teaching Resources
+## Building Ocean Data Teaching Resources
 
 BCO-DMO is now asking educators to help shape this effort.
 
-The key is the educator use case. What are you trying to teach? What data would help students understand it? What parts of the data workflow create barriers? Where do students need scaffolding? What would make a dataset truly classroom-ready?
-
-By collecting these use cases, BCO-DMO can work with educators to develop teaching tools that address the three major challenges educators face when using real data in the classroom:
+The key is the educator use case. By collecting these use cases, BCO-DMO can work with educators to develop teaching tools that address the three major challenges educators face when using real data in the classroom:
 
 1. Limited time
 2. Lack of ready-to-use materials
 3. Students’ limited quantitative or coding skills
 
-The opportunity is simple but powerful.
+The opportunity is simple but powerful so that we can assist eduactors with turning on student lightbulbs.
 
-> Educators have the teaching goals.  
-> BCO-DMO has the data and data-management expertise.  
-> Together, they can create tools that help students engage directly with real oceanographic data.
-
-That is where the lightbulbs turn on.
-
-Educators interested in collaborating with BCO-DMO are invited to complete the survey:
-
-**[bit.ly/Rep2Edu](https://bit.ly/Rep2Edu)**
-
-Share your teaching objectives, data needs, course level, and ideas for classroom use. BCO-DMO will use these responses to identify opportunities to work with educators on developing teaching tools that bring ocean data into the classroom.
-
-When educators and data repositories work together, real research data can become more than archived information. It can become an entry point for discovery, analysis, and student learning.
-
-And like chocolate and peanut butter, sometimes the right combination makes something better than either part could be alone.
+If you are an educator interested in collaborating with BCO-DMO, we invite you to complete our use case survey: **[bit.ly/Rep2Edu](https://bit.ly/Rep2Edu)**
