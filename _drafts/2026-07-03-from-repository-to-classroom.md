@@ -37,13 +37,14 @@ images:
   - id: notebook
     primary: false
     path: repo-to-classroom/notebook.png
-    max-width: 500px
+    max-width: 600px
     border: true
  
 ---
-# From Repository to Classroom: Turning Ocean Data into Teaching Tools
 
 {% include image.html id="chocolate-pb" position="right" %}
+
+# From Repository to Classroom: Turning Ocean Data into Teaching Tools
 
 What happens when educators and data repositories unite? It can be like when chocolate met peanut butter — two great things that become even better together.
 That same kind of connection is at the heart of an effort to make real-world ocean data impactful for educators. 
@@ -52,14 +53,13 @@ That same kind of connection is at the heart of an effort to make real-world oce
 
 Educators already know the value of using data in their curricula. It can make abstract concepts tangible and help students connect classroom theory to real-world phenomena. It can also build the skills students increasingly need: data literacy, critical thinking, problem solving, and comfort working with complex information.
 
-
 From a survey BCO-DMO conducted at Ocean Sciences 2026, we found that educators want to use real ocean data, but 
+
+{% include image.html id="survey" position="left" %}
 
 - they often lack the time, tools, or support needed to adapt research datasets for teaching;
 - the datasets may be large, complex, or difficult to access; and
 - students may arrive with limited quantitative, coding, or data-wrangling experience.
-
-{% include image.html id="survey" position="left" %}
 
 What we heard clearly from educators is this: **the cognitive load needs to be reduced.** Ultimately, the goal is to help students get to the “lightbulb moment” faster, where they can interrogate the data, test ideas, and make connections between the data and oceanographic concepts.
 
@@ -101,9 +101,9 @@ With that information, BCO-DMO and educators can work together to develop resour
 
 The result is a curated teaching layer: a bridge from BCO-DMO datasets to classroom-ready learning experiences.
 
-## What Might These Teaching Tools Look Like?
-
 {% include image.html id="notebook" position="right" %}
+
+## What Might These Teaching Tools Look Like?
 
 One possible format is a Python notebook.
 
