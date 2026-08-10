@@ -135,4 +135,4 @@ The opportunity is simple but powerful so that we can assist eduactors with turn
 
 If you are an educator interested in collaborating with BCO-DMO, we invite you to complete our use case survey: **[bit.ly/Rep2Edu](https://bit.ly/Rep2Edu)**
 
-{% include image_centered.html id="bitly-form" %}
+{% include image.html id="bitly-form" position="centered" %}
