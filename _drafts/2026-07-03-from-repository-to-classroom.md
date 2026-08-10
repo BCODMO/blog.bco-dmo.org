@@ -18,7 +18,7 @@ images:
     primary: true
     path: repo-to-classroom/Choco-and-PB.png
     border: false
-    max-width: 500px
+    max-width: 300px
   - id: survey
     primary: false
     path: repo-to-classroom/survey-pie-chart.png
@@ -27,23 +27,23 @@ images:
   - id: lightbulb-off
     primary: false
     path: repo-to-classroom/student-lightbulb-off.png
-    max-width: 300
+    max-width: 200px
     border: true
   - id: lightbulb-on
     primary: false
     path: repo-to-classroom/student-lightbulb-on.png
-    max-width: 300
+    max-width: 200px
     border: true
   - id: notebook
     primary: false
     path: repo-to-classroom/notebook.png
-    max-width: 300
+    max-width: 300px
     border: true
  
 ---
 # From Repository to Classroom: Turning Ocean Data into Teaching Tools
 
-{% include image.html id="chocolate-pb" position="left" %}
+{% include image.html id="chocolate-pb" position="right" %}
 
 What happens when educators and data repositories unite? It can be like when chocolate met peanut butter — two great things that become even better together.
 That same kind of connection is at the heart of an effort to make real-world ocean data impactful for educators. 
@@ -62,7 +62,7 @@ From a survey BCO-DMO conducted at Ocean Sciences 2026, we found that educators 
 
 What we heard clearly from educators is this: **the cognitive load needs to be reduced.** Ultimately, the goal is to help students get to the “lightbulb moment” faster, where they can interrogate the data, test ideas, and make connections between the data and oceanographic concepts.
 
-{% include image.html id="lightbulb-off" position="right" %}
+{% include image.html id="lightbulb-off" position="left" %}
 
 
 So, the question becomes: **How can a research data repository help educators turn real-world ocean data into meaningful classroom experiences?**
