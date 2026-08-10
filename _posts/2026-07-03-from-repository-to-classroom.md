@@ -75,7 +75,7 @@ So, the question becomes: **How can a research data repository help educators tu
 
 BCO-DMO brings together a data management team with expertise across oceanography, informatics, data and software carpentry, data management training, and information sciences. The team understands the scientific context of the data and the technical skills needed to work with the data. We can help identify appropriate datasets, provide metadata and context summaries, support guided analyses, and host or link to educational products associated with research datasets. In other words, the repository can help create a bridge between research workflows and classroom workflows.
 
-## Exmaples in Practice: BIOS DataBytes
+## Examples in Practice: BIOS DataBytes
 
 The Bermuda Institute of Ocean Sciences (BIOS), developed DataBytes, a teaching resource that uses datasets hosted at BCO-DMO. The goal was to take data and core scientific concepts from researchers and make them available to educators and their classrooms in a streamlined format. BIOS and BCO-DMO provided reciprocal links, making the educational materials and the underlying data easier to discover together. The result was a successful example of how a research data repository and an educational institution can collaborate to support classroom learning.
 
