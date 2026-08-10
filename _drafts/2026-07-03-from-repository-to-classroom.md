@@ -39,6 +39,11 @@ images:
     path: repo-to-classroom/notebook.png
     max-width: 600px
     border: true
+  - id: bitly-form
+    primary: false
+    path: repo-to-classroom/survey-bitly.png
+    max-width: 600px
+    border: true
  
 ---
 
@@ -128,3 +133,5 @@ The key is the educator use case. By collecting these use cases, BCO-DMO can wor
 The opportunity is simple but powerful so that we can assist eduactors with turning on student lightbulbs.
 
 If you are an educator interested in collaborating with BCO-DMO, we invite you to complete our use case survey: **[bit.ly/Rep2Edu](https://bit.ly/Rep2Edu)**
+
+{% include image.html id="bitly-form" position="center" %}
