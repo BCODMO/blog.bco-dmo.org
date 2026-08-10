@@ -37,7 +37,7 @@ images:
   - id: notebook
     primary: false
     path: repo-to-classroom/notebook.png
-    max-width: 300px
+    max-width: 500px
     border: true
  
 ---
@@ -52,7 +52,6 @@ That same kind of connection is at the heart of an effort to make real-world oce
 
 Educators already know the value of using data in their curricula. It can make abstract concepts tangible and help students connect classroom theory to real-world phenomena. It can also build the skills students increasingly need: data literacy, critical thinking, problem solving, and comfort working with complex information.
 
-{% include image.html id="survey" position="right" %}
 
 From a survey BCO-DMO conducted at Ocean Sciences 2026, we found that educators want to use real ocean data, but 
 
@@ -60,10 +59,9 @@ From a survey BCO-DMO conducted at Ocean Sciences 2026, we found that educators 
 - the datasets may be large, complex, or difficult to access; and
 - students may arrive with limited quantitative, coding, or data-wrangling experience.
 
+{% include image.html id="survey" position="left" %}
+
 What we heard clearly from educators is this: **the cognitive load needs to be reduced.** Ultimately, the goal is to help students get to the “lightbulb moment” faster, where they can interrogate the data, test ideas, and make connections between the data and oceanographic concepts.
-
-{% include image.html id="lightbulb-off" position="left" %}
-
 
 So, the question becomes: **How can a research data repository help educators turn real-world ocean data into meaningful classroom experiences?**
 
@@ -128,8 +126,5 @@ The key is the educator use case. By collecting these use cases, BCO-DMO can wor
 3. Students’ limited quantitative or coding skills
 
 The opportunity is simple but powerful so that we can assist eduactors with turning on student lightbulbs.
-
-{% include image.html id="lightbulb-on" position="right" %}
-
 
 If you are an educator interested in collaborating with BCO-DMO, we invite you to complete our use case survey: **[bit.ly/Rep2Edu](https://bit.ly/Rep2Edu)**
