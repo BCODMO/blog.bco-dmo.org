@@ -22,7 +22,6 @@ images:
   - id: diagram
     primary: 
     path: doi-series/diagram.png
-    max-width: 600px
     border: true
     caption: Preview of the Submission Tool login screen.
  
