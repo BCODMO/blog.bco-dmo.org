@@ -23,7 +23,7 @@ images:
     primary: 
     path: doi-series/diagram.png
     border: true
-    caption: Preview of the Submission Tool login screen.
+    caption: DOI Workflow Overview
  
 ---
 {% include image.html id="bcodmo_logo" position="right" %}
