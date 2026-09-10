@@ -9,6 +9,7 @@ date: 2026-05-11
 lastModified: 2026-05-11 11:36
 author: [shravani,vimal,adam]  
 tags: 
+  - DOI
   - data submission
   - data management
   - BCO-DMO
