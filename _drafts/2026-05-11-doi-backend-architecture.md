@@ -21,7 +21,7 @@ images:
     max-width: 500px
   - id: diagram
     primary: 
-    path: ../diagram.png
+    path: doi-series/diagram.png
     max-width: 600px
     border: true
     caption: Preview of the Submission Tool login screen.
@@ -34,17 +34,17 @@ The main architectural principle behind this pipeline is the clear separation be
 
 <hr/>
 **Core Components of the Backend Architecture:**
-1. **Database**: The DOI Metadata for each dataset in stored in AWS DynamoDB which enables fast writes & reads, and also a highly scalable, cost-effective on-demand solution.
+1. **Database**: The DOI Metadata for each dataset is stored in AWS DynamoDB which enables fast writes & reads, and also a highly scalable, cost-effective on-demand solution.
 2. **Storage**: A DOI version’s package files are stored in S3 and most of BCO-DMO’s data files are on AWS S3 and some on WHOI on-prem Data servers.
 3. **API**: User interfaces of Submission Tool & Website interact with AWS API Gateway and Lambda Invocation Urls
 4. **Server/Logic**: The DOI flow is logically divided into Build, Review and Publish steps which are hosted on AWS Lambda with a Python Runtime environment.
-5. **Datacite**:
+5. **Datacite**: Datacite Dataset DOI metadata is generated
 <hr/>
 
 ## DOI Workflow: Build → Review → Publish 
 
 ### 1. Build Step:
-This is an AWS Lambda invoked internally from submission tool that extracts required metadata from the Dataset constructed and builds private and public versions of Frictionless JSON-LD formatted Datapackage, NOAA XML and a Dataset Description pdf.
+This is an AWS Lambda invoked internally from submission tool that extracts required metadata from the Dataset constructed and builds private and public versions of a JSON-LD record capturing all BCO-DMO semantics, a Frictionless Datapackage, NOAA ISO19115-2 XML, and a Dataset Description pdf.
 
 {% include image.html id="diagram" position="centered" %}
 
@@ -64,7 +64,7 @@ The DOI pipeline is designed to fail safe with visibility and traceability.
 
 ## Governance, Embargo and Access Control
 
-Embargo implementation and validation are deployed as a backend responsibility. The datapackage associated with a Dataset serves as a source of truth on access policies with respect to the files or the dataset itself. 
+Embargo implementation and validation are deployed as a backend responsibility. The canonical JSON-LD data associated with a Dataset DOI serves as a source of truth on access policies with respect to the files or the dataset itself. 
 
 _Key aspects:_
-All file Urls are masked and can only be redirected to the original data url by the receiving AWS API upon verifying the embargo policy on the Dataset based on the private datapackage.
+All file URLs are masked and can only be redirected to the original data url by the receiving AWS API upon verifying the embargo policy on the Dataset based on the private JSON-LD.
